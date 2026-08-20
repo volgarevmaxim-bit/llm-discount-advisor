@@ -10,7 +10,7 @@ Legacy snapshot: **416** строк каталога / **345** семейств;
 Primary price: **Avg Price Per 100 Requests** (`costPerRequest`), unit: `usd_per_100_requests`.
 Это operational metric OpenRouter Rankings, не `avg_cost_per_task`.
 
-Discount calibration: `unknown`; sample size: 20.
+Discount calibration: `inconsistent`; sample size: 20.
 Discount не умножается на observed `costPerRequest`; до подтверждения это только overlay/action signal.
 
 ### Профиль `chat`
@@ -55,8 +55,8 @@ Candidates: 19; raw Pareto: 6; stable Pareto: 11.
 
 ### Secondary evidence coverage
 
-Families total: 345; uncovered: 221;
-`worthy_candidate`: 0; `likely_low_signal`: 221.
+Families total: 345; uncovered: 183;
+`worthy_candidate`: 0; `likely_low_signal`: 183.
 Benchmark `avg_cost_per_task` и session-cost остаются разными units и не входят в primary Pareto.
 
 ### YAML patch preview
@@ -87,7 +87,7 @@ Status: `baseline`; events: 0.
 ### Агентный workflow (`agentic`)
 
 - **Это твой рабочий вариант** — `Z.ai: GLM 5.2 (free)` через Decart: $0.0000/1M, agentic 45.7. Почему: agentic 45.7 при цене $0.000/1M; от лидера по качеству отстаёт на 13.5 п. Reasoning: `high`, можно отключить/не указан.
-- **Та же модель, но дешевле провайдер** — `OpenAI: GPT-5.6 Luna` через OpenAI: $0.2250/1M, agentic 46.9. Почему: У этой же модели есть провайдер дешевле в 2.0 раза при uptime 99.92%. Reasoning: `medium`, можно отключить/не указан.
+- **Та же модель, но дешевле провайдер** — `OpenAI: GPT-5.6 Luna` через OpenAI: $0.2250/1M, agentic 46.9. Почему: У этой же модели есть провайдер дешевле в 2.0 раза при uptime 99.93%. Reasoning: `medium`, можно отключить/не указан.
 - **Большая скидка, но не для основной работы** — `DeepSeek: DeepSeek V4 Flash 0731` через OpenInference: $0.0838/1M, agentic 48.4, скидка 44%. Почему: Скидка 44% активна, но качество 48.4 требует осторожной проверки. Reasoning: `high`, можно отключить/не указан.
 - **Скорее всего, менять не стоит** — `Google: Gemini 3.7 Flash` через Google: $0.3750/1M, agentic 45.1, скидка 75%. Почему: Преимущество не окупает смену: цена $0.375/1M без минимум 30% экономии относительно дефолта. Reasoning: `medium`, обязателен.
 
