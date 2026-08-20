@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+.venv/
+.DS_Store
+/tmp/
+
+# Keep generated PoC artifacts in git.
+!data/latest.json
+!data/gate_rejected.json
+!data/snapshots/
+!data/snapshots/*.json
+!shortlist.json
+!report.md
+!index.html
+
+# Never commit local raw API captures.
+raw_*.json
+/tmp-*.json

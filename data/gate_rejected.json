@@ -1,0 +1,1241 @@
+{
+  "generated_at": "2026-08-20T08:44:47Z",
+  "total": 414,
+  "total_unique_families": 343,
+  "passed": 108,
+  "passed_unique_families": 76,
+  "normalized": 107,
+  "eligible_after_prefilter": 387,
+  "eligible_unique_families": 316,
+  "rejected": [
+    {
+      "slug": "~z-ai/glm-latest",
+      "reason": "alias"
+    },
+    {
+      "slug": "~deepseek/deepseek-v4-flash-latest",
+      "reason": "alias"
+    },
+    {
+      "slug": "openrouter/auto-beta",
+      "reason": "non_text_output"
+    },
+    {
+      "slug": "~x-ai/grok-latest",
+      "reason": "alias"
+    },
+    {
+      "slug": "google/gemini-3.1-flash-lite-image-20260630",
+      "reason": "non_text_output"
+    },
+    {
+      "slug": "google/gemini-3.1-flash-image-20260528",
+      "reason": "non_text_output"
+    },
+    {
+      "slug": "google/gemini-3-pro-image-20260528",
+      "reason": "non_text_output"
+    },
+    {
+      "slug": "~anthropic/claude-fable-latest",
+      "reason": "alias"
+    },
+    {
+      "slug": "~anthropic/claude-haiku-latest",
+      "reason": "alias"
+    },
+    {
+      "slug": "~openai/gpt-mini-latest",
+      "reason": "alias"
+    },
+    {
+      "slug": "~google/gemini-pro-latest",
+      "reason": "alias"
+    },
+    {
+      "slug": "~moonshotai/kimi-latest",
+      "reason": "alias"
+    },
+    {
+      "slug": "~google/gemini-flash-latest",
+      "reason": "alias"
+    },
+    {
+      "slug": "~anthropic/claude-sonnet-latest",
+      "reason": "alias"
+    },
+    {
+      "slug": "~openai/gpt-latest",
+      "reason": "alias"
+    },
+    {
+      "slug": "openai/gpt-5.4-image-2-20260421",
+      "reason": "non_text_output"
+    },
+    {
+      "slug": "~anthropic/claude-opus-latest",
+      "reason": "alias"
+    },
+    {
+      "slug": "google/lyria-3-pro-preview-20260330",
+      "reason": "non_text_output"
+    },
+    {
+      "slug": "google/lyria-3-clip-preview-20260330",
+      "reason": "non_text_output"
+    },
+    {
+      "slug": "google/gemini-3.1-flash-image-preview-20260226",
+      "reason": "non_text_output"
+    },
+    {
+      "slug": "openai/gpt-audio",
+      "reason": "non_text_output"
+    },
+    {
+      "slug": "openai/gpt-audio-mini",
+      "reason": "non_text_output"
+    },
+    {
+      "slug": "google/gemini-3-pro-image-preview-20251120",
+      "reason": "non_text_output"
+    },
+    {
+      "slug": "openai/gpt-5-image-mini",
+      "reason": "non_text_output"
+    },
+    {
+      "slug": "openai/gpt-5-image",
+      "reason": "non_text_output"
+    },
+    {
+      "slug": "google/gemini-2.5-flash-image",
+      "reason": "non_text_output"
+    },
+    {
+      "slug": "openrouter/auto",
+      "reason": "non_text_output"
+    },
+    {
+      "slug": "bytedance-seed/seed-2-1-turbo",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "bytedance-seed/seed-2.0-code",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "sakana/sakana-namazu",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "meta/muse-glimmer-30b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "thinkingmachines/inkling-small",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3.7-flash",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "anthropic/claude-opus-5-fast",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "google/gemini-3.5-flash-lite",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "google/gemini-3.5-flash-lite:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "meituan/longcat-2.0",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "kwaipilot/kat-coder-air-v2.5",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "kwaipilot/kat-coder-pro-v2.5",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.6-luna-pro",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.6-luna-pro:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.6-terra-pro",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.6-terra-pro:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.6-sol-pro",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.6-sol-pro:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "aion-labs/aion-3.0-mini",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "aion-labs/aion-3.0",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "nex-agi/nex-n2-mini",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "sakana/fugu-ultra",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openrouter/fusion",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "anthropic/claude-opus-4.8-fast",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "x-ai/grok-build-0.1",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "anthropic/claude-opus-4.7-fast",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "perceptron/perceptron-mk1",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "inclusionai/ring-2.6-1t",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "google/gemini-3.1-flash-lite",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "google/gemini-3.1-flash-lite:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-chat-latest",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "ibm-granite/granite-4.1-8b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "mistralai/mistral-medium-3-5",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3.5-plus-20260420",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3.6-flash",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3.6-35b-a3b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3.6-max-preview",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3.6-27b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.5-pro",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.5-pro:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "inclusionai/ling-2.6-1t",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openrouter/pareto-code",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "x-ai/grok-4.20-multi-agent",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "kwaipilot/kat-coder-pro-v2",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "rekaai/reka-edge",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.4-mini",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.4-mini:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "mistralai/mistral-small-2603",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "bytedance-seed/seed-2.0-lite",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.4-pro",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.4-pro:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "bytedance-seed/seed-2.0-mini",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3.5-35b-a3b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3.5-27b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3.5-122b-a10b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3.5-flash-02-23",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "google/gemini-3.1-pro-preview-customtools",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "aion-labs/aion-2.0",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3.5-plus-02-15",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3.5-397b-a17b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "minimax/minimax-m2.5",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "z-ai/glm-5",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-max-thinking",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-coder-next",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "stepfun/step-3.5-flash",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "moonshotai/kimi-k2.5",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "upstage/solar-pro-3",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "minimax/minimax-m2-her",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "writer/palmyra-x5",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "z-ai/glm-4.7-flash",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.2-codex",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "bytedance-seed/seed-1.6-flash",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "bytedance-seed/seed-1.6",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "minimax/minimax-m2.1",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "z-ai/glm-4.7",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "google/gemini-3-flash-preview",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "google/gemini-3-flash-preview:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.2-chat",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.2-pro",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.2-pro:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.2",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.2:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "relace/relace-search",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "z-ai/glm-4.6v",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openrouter/bodybuilder",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.1-codex-max",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "amazon/nova-2-lite-v1",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "mistralai/ministral-14b-2512",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "mistralai/ministral-8b-2512",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "mistralai/ministral-3b-2512",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "mistralai/mistral-large-2512",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "deepseek/deepseek-v3.2",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "anthropic/claude-opus-4.5",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "anthropic/claude-opus-4.5:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "allenai/olmo-3-32b-think",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "deepcogito/cogito-v2.1-671b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.1",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.1:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.1-codex",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.1-codex-mini",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "moonshotai/kimi-k2-thinking",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "amazon/nova-premier-v1",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "perplexity/sonar-pro-search",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "mistralai/voxtral-small-24b-2507",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-oss-safeguard-20b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "minimax/minimax-m2",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-vl-32b-instruct",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "ibm-granite/granite-4.0-h-micro",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "anthropic/claude-haiku-4.5",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "anthropic/claude-haiku-4.5:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-vl-8b-thinking",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-vl-8b-instruct",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-vl-30b-a3b-thinking",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-vl-30b-a3b-instruct",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5-pro",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5-pro:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "z-ai/glm-4.6",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "anthropic/claude-sonnet-4.5",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "anthropic/claude-sonnet-4.5:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "deepseek/deepseek-v3.2-exp",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "thedrummer/cydonia-24b-v4.1",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "relace/relace-apply-3",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-vl-235b-a22b-thinking",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-vl-235b-a22b-instruct",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-max",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-coder-plus",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5-codex:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "deepseek/deepseek-v3.1-terminus",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-coder-flash",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-next-80b-a3b-thinking",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-next-80b-a3b-instruct",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen-plus-2025-07-28",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen-plus-2025-07-28:thinking",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "moonshotai/kimi-k2-0905",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-30b-a3b-thinking-2507",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "nousresearch/hermes-4-70b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "nousresearch/hermes-4-405b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "deepseek/deepseek-chat-v3.1",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "mistralai/mistral-medium-3.1",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "z-ai/glm-4.5v",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5-mini",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5-mini:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5-nano",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5-nano:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "anthropic/claude-opus-4.1",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "anthropic/claude-opus-4.1:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "mistralai/codestral-2508",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-coder-30b-a3b-instruct",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-30b-a3b-instruct-2507",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "z-ai/glm-4.5",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "z-ai/glm-4.5-air",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-235b-a22b-thinking-2507",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-coder",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "bytedance/ui-tars-1.5-7b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "google/gemini-2.5-flash-lite",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "google/gemini-2.5-flash-lite:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-235b-a22b-2507",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "moonshotai/kimi-k2",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "cognitivecomputations/dolphin-mistral-24b-venice-edition",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "tencent/hunyuan-a13b-instruct",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "morph/morph-v3-large",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "morph/morph-v3-fast",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "baidu/ernie-4.5-vl-424b-a47b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "mistralai/mistral-small-3.2-24b-instruct",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "minimax/minimax-m1",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "google/gemini-2.5-flash",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "google/gemini-2.5-flash:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "google/gemini-2.5-pro",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "google/gemini-2.5-pro:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/o3-pro",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/o3-pro:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "google/gemini-2.5-pro-preview",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "deepseek/deepseek-r1-0528",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "anthropic/claude-opus-4",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "anthropic/claude-sonnet-4",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "google/gemma-3n-e4b-it",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "mistralai/mistral-medium-3",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "google/gemini-2.5-pro-preview-05-06",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "arcee-ai/virtuoso-large",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "meta-llama/llama-guard-4-12b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-30b-a3b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-8b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-14b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-32b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-235b-a22b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/o4-mini-high",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/o4-mini-high:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/o3",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/o3:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/o4-mini",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/o4-mini:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-4.1",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-4.1:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-4.1-mini",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-4.1-mini:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-4.1-nano",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-4.1-nano:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "meta-llama/llama-4-maverick",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "meta-llama/llama-4-scout",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "deepseek/deepseek-chat-v3-0324",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/o1-pro",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/o1-pro:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "mistralai/mistral-small-3.1-24b-instruct",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "google/gemma-3-4b-it",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "google/gemma-3-12b-it",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "cohere/command-a",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "rekaai/reka-flash-3",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "google/gemma-3-27b-it",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "thedrummer/skyfall-36b-v2",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "perplexity/sonar-reasoning-pro",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "perplexity/sonar-pro",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "perplexity/sonar-deep-research",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "mistralai/mistral-saba",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/o3-mini-high",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/o3-mini-high:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "aion-labs/aion-rp-llama-3.1-8b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen2.5-vl-72b-instruct",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen-plus",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/o3-mini",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/o3-mini:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "mistralai/mistral-small-24b-instruct-2501",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "perplexity/sonar",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "deepseek/deepseek-r1-distill-llama-70b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "deepseek/deepseek-r1",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "minimax/minimax-01",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "microsoft/phi-4",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "deepseek/deepseek-chat",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "sao10k/l3.3-euryale-70b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/o1",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/o1:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "cohere/command-r7b-12-2024",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "meta-llama/llama-3.3-70b-instruct",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "amazon/nova-lite-v1",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "amazon/nova-micro-v1",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "amazon/nova-pro-v1",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-4o-2024-11-20",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "mistralai/mistral-large-2407",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen-2.5-coder-32b-instruct",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "thedrummer/unslopnemo-12b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "anthracite-org/magnum-v4-72b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen-2.5-7b-instruct",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "thedrummer/rocinante-12b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "meta-llama/llama-3.2-1b-instruct",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "meta-llama/llama-3.2-3b-instruct",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen-2.5-72b-instruct",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "cohere/command-r-08-2024",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "cohere/command-r-plus-08-2024",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "sao10k/l3.1-euryale-70b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "nousresearch/hermes-3-llama-3.1-70b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "nousresearch/hermes-3-llama-3.1-405b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "sao10k/l3-lunaris-8b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-4o-2024-08-06",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "meta-llama/llama-3.1-70b-instruct",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "meta-llama/llama-3.1-8b-instruct",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "mistralai/mistral-nemo",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-4o-mini",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-4o-mini:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-4o-mini-2024-07-18",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "google/gemma-2-27b-it",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-4o",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-4o:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-4o-2024-05-13",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "mistralai/mixtral-8x22b-instruct",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "microsoft/wizardlm-2-8x22b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-4-turbo",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-4-turbo:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "anthropic/claude-3-haiku",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "mistralai/mistral-large",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-3.5-turbo-0613",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-4-turbo-preview",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-3.5-turbo-instruct",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-3.5-turbo-16k",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "undi95/remm-slerp-l2-13b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "gryphe/mythomax-l2-13b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-3.5-turbo",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-3.5-turbo:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-4",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openrouter/free",
+      "canonical_slug": "openrouter/free",
+      "reason": "endpoint_unusable: no usable endpoints for openrouter/free"
+    }
+  ]
+}
