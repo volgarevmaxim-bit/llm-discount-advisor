@@ -1,169 +1,244 @@
-Локальная версия PoC реализована. После продолжения выполнены live acceptance и исправлена идентичность model family/variant; GitHub-деплой ещё не начинался.
+# LLM Discount Advisor — PoC Session Summary
 
-### Что сделано
+**Дата закрытия PoC:** 2026-08-20
+**Локальный путь:** `C:\Users\volga\llm-discount-advisor`
+**GitHub:** https://github.com/volgarevmaxim-bit/llm-discount-advisor
+**GitHub Pages:** https://volgarevmaxim-bit.github.io/llm-discount-advisor/
 
-Сохранён план реализации:
+## 1. Что проверял PoC
 
-`C:\Users\volga\.hermes\plans\2026-08-20_002900-llm-discount-advisor-poc.md`
+PoC отвечает на один практический вопрос нулевого пользователя: какую модель и вариант провайдера поставить в Hermes `config.yaml`, если хочется сохранить достаточное качество и не переплачивать.
 
-Создан локальный репозиторий:
+Нулевой пользователь — автор проекта. Фальсифицируемый критерий успеха H1: за 14 дней хотя бы один раз изменить модель в Hermes по рекомендации и не откатить изменение. Сам факт пользовательского изменения в этой сессии не заявляется: его нужно фиксировать вручную в `NOTES.md`.
 
-`C:\Users\volga\llm-discount-advisor`
+## 2. Что реализовано
 
-Реализованы:
-
-- Python-пайплайн без сторонних фреймворков;
-- scope gate до обхода endpoint-ов;
-- ключ сопоставления `canonical_slug`;
-- `canonical_slug` используется как family key, а уникальный `id` — как endpoint/price key для вариантов `:free` и `:batch`;
-- G1–G4 и G6;
-- запросы `/models/{id}/endpoints`;
-- конкурентность 8;
-- retry/backoff и логирование 429;
-- выбор лучшего надёжного провайдера;
-- `pricing.discount` и восстановление базовой цены;
-- флаг `has_tiered_pricing`;
-- reasoning `default_effort` / `mandatory`;
-- дисквалификация `mandatory=true` для `bulk`;
-- четыре профиля: `chat`, `code`, `longdoc`, `bulk`;
+- Python-пайплайн только на stdlib, без фреймворков;
+- один статический русский `index.html` без сборки, backend и БД;
+- публичный OpenRouter `/api/v1/models`;
+- prefilter для aliases, non-text и voice-моделей;
+- scope gate G1–G4 и G6 до обхода endpoint-ов;
+- `canonical_slug` как ключ семейства модели для gate/benchmark-логики;
+- уникальный `id` как ключ endpoint/price-запроса, поэтому `:free` и `:batch` остаются отдельными вариантами;
+- до 8 конкурентных endpoint-запросов;
+- retry/backoff и логирование HTTP 429;
+- цены только из `/api/v1/models/{id}/endpoints`;
+- выбор лучшего надёжного провайдера с uptime-фильтром;
+- discounted price, восстановление base price и overpay-сравнение;
+- сохранение `pricing.overrides` и флаг `has_tiered_pricing`;
+- reasoning `default_effort`, `mandatory`, supported efforts;
+- исключение `mandatory=true` для профиля `bulk`;
+- профили `chat`, `code`, `longdoc`, `bulk`;
 - пять статусов рекомендаций;
-- обязательная строка «Почему»;
-- русский `index.html`;
-- `report.md`;
-- `NOTES.md`;
-- GitHub Actions с ежедневным cron;
-- unit-тесты.
+- обязательная русская строка «Почему» в каждой карточке;
+- `report.md`, `NOTES.md`, JSON-снапшоты и `data/gate_rejected.json`;
+- ежедневный GitHub Actions workflow;
+- GitHub Pages из `main` / root;
+- unit-тесты и live full-vs-gated acceptance.
 
-### Проверка тестами
+## 3. Тесты
 
-Локально прошло:
+Последняя локальная проверка:
 
 ```text
 Ran 16 tests
 OK
 ```
 
-Проверены:
+Дополнительно проверено:
 
-- gate и причины reject;
-- G4 free;
-- G6 participation;
-- `canonical_slug`;
-- discount/base price;
-- provider selection;
-- tiered pricing;
-- bulk reasoning filter;
-- наличие объяснимой причины;
-- синтетический acceptance-прогон.
-
-Синтетический acceptance-прогон дал:
-
-```text
-full top-10: 10
-gated top-10: 10
-overlap: 10
-target: 9
-passed: true
+```bash
+python -m unittest discover -s tests -v
+git diff --check
 ```
 
-Это тестовый результат на фикстуре, не результат live-каталога.
+Проверки покрывают gate/reject reasons, G4 free, G6 participation, family/variant identity, discount/base price, provider selection, tiered pricing, reasoning bulk filter, explainable reasons и acceptance-дедупликацию по семействам.
 
-### Live-прогон OpenRouter
+## 4. Live-каталог и исправление расхождения 97 vs 77
 
-Предыдущий live-прогон публичного OpenRouter API от 19 августа дал:
-
-```text
-models=415
-prefiltered=388
-gated=97
-rejected=318
-```
-
-Сгенерированы:
-
-- `data/snapshots/2026-08-19.json`
-- `data/latest.json`
-- `data/gate_rejected.json`
-- `shortlist.json`
-- `report.md`
-
-В live-прогоне:
+Исторический аудит 19 августа был сделан на другом snapshot:
 
 ```text
-scope gate: 97 моделей
-нормализовано: 89
-endpoint errors: 8
+/models rows:     415
+prefiltered:      388
+old gated rows:    97
+normalized:        89
 ```
 
-Это был важный промежуточный результат: прежняя реализация на фактических данных давала **97**, а не ожидаемые в спеке 77. Число нельзя было подменять на 77. Ниже зафиксирован разбор расхождения и выполнен live acceptance-прогон full-vs-gated по одному кешу endpoint-данных.
-
-### Продолжение PoC: live acceptance и исправление gate
-
-На текущем каталоге OpenRouter от 20 августа получено:
+Текущий live-каталог 20 августа:
 
 ```text
 /models rows:                 414
 unique canonical_slug:        343
 prefilter rows:               387
 prefilter unique families:    316
-gated rows:                   108
+gated variant rows:           108
 gated unique families:         76
 normalized rows:              107
 endpoint errors in gated:       1
 ```
 
-Причина расхождения `97` vs `77` установлена. `97` — это прежний подсчёт строк `/models`, в котором варианты с одинаковым `canonical_slug` (`:free`/`:batch`) выглядели как отдельные модели; на текущем каталоге это 69 уникальных семейств. `77` — число из исторического аудита на другом snapshot и невалидный target для сегодняшнего каталога. В текущей реализации gate агрегирует benchmark-сигналы на уровне семейства, но сохраняет все variant rows; endpoint-запросы идут по `id`.
+Число `77` из спеки нельзя использовать как постоянный target: это результат старого snapshot и другой единицы подсчёта. Старые `97` были количеством строк каталога. На текущих данных прежняя строковая логика давала 97 gate-строк, но только 69 уникальных семейств.
 
-Live acceptance выполнен на одном и том же кеше endpoint-данных:
+Причина — OpenRouter публикует несколько строк с одним `canonical_slug`, например базовый вариант, `:free` и `:batch`. Исправленная логика агрегирует benchmark-сигналы на уровне семейства, но получает цены каждого варианта отдельно по `id`.
+
+Честная текущая контрольная цифра: **76 gated-семейств / 108 variant-строк**.
+
+## 5. Live acceptance
+
+Full и gated прогон использовали один и тот же кеш endpoint-данных. Сравнивались top-10 семейств профиля `code`.
+
+Дата acceptance: `2026-08-20T08:28:32Z`.
 
 ```text
 full normalized rows:         382
 gated normalized rows:        108
-full code eligible:            32
-gated code eligible:           32
+full code eligible:             32
+gated code eligible:            32
 full/gated top-10 overlap:   10/10
-target:                         9
-passed:                      true
+target:                          9
+passed:                       true
 ```
 
-Полные и gated top-10 совпали по всем десяти `canonical_slug`-семействам. Это фактический результат live API, не синтетическая фикстура.
-
-На странице сейчас по 4 карточки для каждого профиля:
-
-- `chat`
-- `code`
-- `longdoc`
-- `bulk`
-
-### Что не завершено
-
-Не выполнены:
-
-1. создание публичного GitHub-репозитория;
-2. commit/push в `main`;
-3. настройка GitHub Pages;
-4. запуск и проверка GitHub Actions;
-5. проверка live URL.
-
-Причина блокировки GitHub:
-
-- `gh` CLI отсутствует;
-- `GITHUB_TOKEN` в dotenv нет;
-- SSH-ключ есть, но первое подключение завершилось `Host key verification failed`.
-
-Поэтому я не заявляю, что репозиторий опубликован или сайт работает live.
-
-Локальная реализация находится здесь:
+Все десять семейств top-10 совпали:
 
 ```text
-C:\Users\volga\llm-discount-advisor
+z-ai/glm-5.2-20260616
+deepseek/deepseek-v4-flash-20260731
+openai/gpt-5.6-luna-20260709
+google/gemini-3.7-flash-20260813
+xiaomi/mimo-v2.5-pro-20260422
+google/gemini-3.6-flash-20260721
+qwen/qwen3.8-27b-20260814
+moonshotai/kimi-k2.6-20260420
+moonshotai/kimi-k2.7-code-20260612
+google/gemini-3.5-flash-20260519
 ```
 
-Открыть локально можно командой:
+Это live-результат, не синтетическая фикстура.
+
+## 6. Деплой
+
+Создан публичный репозиторий:
+
+```text
+https://github.com/volgarevmaxim-bit/llm-discount-advisor
+```
+
+Первый локальный commit:
+
+```text
+21354af feat: build LLM Discount Advisor PoC
+```
+
+После Actions remote `main` получил artifact commit; последний проверенный remote ref:
+
+```text
+82289af1c760bdc22a5f04dce95e6089b6490707 refs/heads/main
+```
+
+GitHub Pages настроен из `main` / root:
+
+```text
+https://volgarevmaxim-bit.github.io/llm-discount-advisor/
+```
+
+Финально проверено:
+
+- Pages API: `built`;
+- Pages source: `main /`;
+- `index.html`: HTTP 200;
+- `shortlist.json`: HTTP 200;
+- `data/latest.json`: HTTP 200;
+- `report.md`: HTTP 200;
+- remote `main` существует;
+- локальное рабочее дерево чистое;
+- токен удалён из Git remote URL.
+
+## 7. Actions
+
+Ручной запуск ежедневного workflow:
+
+```text
+Workflow: Daily OpenRouter snapshot
+Run: 32353701879
+Status: completed
+Conclusion: success
+```
+
+Последний Pages deployment:
+
+```text
+Run: 32353718458
+Status: completed
+Conclusion: success
+```
+
+После Actions live-артефакты содержали:
+
+```text
+generated_at: 2026-08-20T09:24:24Z
+normalized models: 107
+gated variant rows: 108
+gated families: 76
+endpoint errors: 1
+```
+
+## 8. Главные ограничения, сознательно оставленные в PoC
+
+Не реализованы графики, Telegram, change detection, исторические дельты, alerts, watchlists, personalization, Data API с ключом, поиск, фильтры, аккаунты, backend, БД и автоматическое изменение Hermes-конфига.
+
+`blended_price` остаётся прокси с фиксированными ratio: `3:1` для chat/code, `10:1` для longdoc, `1:3` для bulk. Универсальная стоимость задачи не вычисляется.
+
+Latency и throughput не используются. Reasoning effort явно показывается, но сравнение разных default effort пока не нормализовано экспериментально.
+
+Один gated вариант имеет unusable endpoints и записывается в reject-артефакт; пайплайн не публикует его как рабочую рекомендацию.
+
+## 9. Артефакты
+
+- `README.md` — описание, аудит, acceptance и статус деплоя;
+- `LLM_Discount_Advisor_Design_Spec.md` — исходная design spec v1.3;
+- `LLM_Discount_PoC_Session_Summary.md` — этот handoff;
+- `LLM_Discount_Advisor_NEXT_STAGE_PROMPT.md` — промт старта MVP-1;
+- `advisor/` — код пайплайна;
+- `tests/` — тесты;
+- `data/snapshots/` — append-only snapshots;
+- `data/latest.json` — последний нормализованный snapshot;
+- `data/gate_rejected.json` — модели/варианты, отвергнутые gate или endpoint-нормализацией;
+- `shortlist.json` — данные для HTML;
+- `report.md` — русский текстовый отчёт;
+- `index.html` — статический UI;
+- `.github/workflows/update.yml` — daily workflow;
+- `NOTES.md` — ручной журнал пользовательской валидации.
+
+## 10. Команды продолжения
 
 ```bash
 cd /c/Users/volga/llm-discount-advisor
+python -m unittest discover -s tests -v
+python -m advisor.pipeline --no-key
 python -m http.server 8000
 ```
 
-Технический вопрос о расхождении `97` vs `77` закрыт: это смешение snapshot-дат и row-count с family-count, усиленное вариантами `:free`/`:batch`. Перед публикацией остаётся только GitHub-аутентификация, push, Pages и проверка live-артефактов.
+Проверка удалённого проекта:
+
+```bash
+git remote -v
+git status --short --branch
+git ls-remote origin refs/heads/main
+```
+
+## 11. Следующий этап
+
+PoC закрыт. Следующий этап по разделу 14.2 спеки — **MVP-1 change detection**:
+
+- `changes.json`;
+- блок «Что изменилось» выше shortlist;
+- сравнение соседних нормализованных snapshots;
+- события изменения цены, discount, best provider, появления/исчезновения варианта и model family;
+- dominance with margins;
+- hysteresis против дрожания рекомендаций;
+- `pareto_rank` как аккуратный дополнительный сигнал;
+- первые две недели наблюдений H1/H2/H3 на себе.
+
+Стартовать нужно с промта в `LLM_Discount_Advisor_NEXT_STAGE_PROMPT.md`. Код не начинать до чтения спеки и показа плана.

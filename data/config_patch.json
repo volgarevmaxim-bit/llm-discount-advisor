@@ -1,0 +1,14 @@
+{
+  "status": "not_applied",
+  "requires_confirmation": true,
+  "applied": false,
+  "profile": "code",
+  "from": {},
+  "to": {
+    "model": "openai/gpt-5.6-terra",
+    "provider": "OpenAI",
+    "variant": "openai/gpt-5.6-terra"
+  },
+  "yaml_diff": "--- config.yaml\n+++ proposed config.yaml\n- before:\n+ after:\n+   model: \"openai/gpt-5.6-terra\"\n+   provider: \"OpenAI\"\n+   variant: \"openai/gpt-5.6-terra\"",
+  "reason": "MVP-1 recommendation preview; no automatic config changes."
+}

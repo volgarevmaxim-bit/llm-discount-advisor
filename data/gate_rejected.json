@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-20T08:44:47Z",
-  "total": 414,
-  "total_unique_families": 343,
+  "generated_at": "2026-08-20T14:05:25Z",
+  "total": 416,
+  "total_unique_families": 345,
   "passed": 108,
   "passed_unique_families": 76,
   "normalized": 107,
-  "eligible_after_prefilter": 387,
-  "eligible_unique_families": 316,
+  "eligible_after_prefilter": 389,
+  "eligible_unique_families": 318,
   "rejected": [
     {
       "slug": "~z-ai/glm-latest",
@@ -115,6 +115,14 @@
     {
       "slug": "openrouter/auto",
       "reason": "non_text_output"
+    },
+    {
+      "slug": "tencent/hy-mt2-1.8b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "tencent/hy-mt2-30b-a3b",
+      "reason": "below_all_thresholds"
     },
     {
       "slug": "bytedance-seed/seed-2-1-turbo",

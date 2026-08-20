@@ -1,10 +1,74 @@
 # LLM Discount Advisor — отчёт от 2026-08-20
 
-Короткий PoC-shortlist для ручного решения, какую модель поставить в Hermes config.yaml.
+Decision-support для выбора модели и provider/variant в Hermes.
 
-Рассмотрено **414** строк каталога (**343** семейств); после scope gate прошло **108** строк / **76** семейств, нормализовано **107**. Отсеяно и не обработано: **307**.
+Legacy snapshot: **416** строк каталога / **345** семейств; после scope gate прошло **108** строк / **76** семейств.
 
-## Рекомендации
+## Decision surface
+
+Режим: `rankings_cost_per_request`.
+Primary price: **Avg Price Per 100 Requests** (`costPerRequest`), unit: `usd_per_100_requests`.
+Это operational metric OpenRouter Rankings, не `avg_cost_per_task`.
+
+Discount calibration: `inconsistent`; sample size: 20.
+Discount не умножается на observed `costPerRequest`; до подтверждения это только overlay/action signal.
+
+### Профиль `chat`
+
+Quality: `intelligence`; floor: —.
+Candidates: 16; raw Pareto: 7; stable Pareto: 12.
+- balanced default: `anthropic/claude-opus-5-20260723` / Amazon Bedrock / $16.0006395082 / score 63.1
+- cost option: `google/gemini-3.7-flash-20260813` / Google / $0.7727942935 / score 56.0
+- quality option: `anthropic/claude-opus-5-20260723` / Amazon Bedrock / $16.0006395082 / score 63.1
+
+### Профиль `code`
+
+Quality: `coding`; floor: —.
+Candidates: 31; raw Pareto: 4; stable Pareto: 9.
+- balanced default: `openai/gpt-5.6-terra-20260709` / OpenAI / $2.5805532792 / score 76.7
+- cost option: `openai/gpt-5.6-luna-20260709` / OpenAI / $0.0536517323 / score 71.4
+- quality option: `openai/gpt-5.6-sol-20260709` / OpenAI / $5.9365360178 / score 78.3
+
+### Профиль `agentic`
+
+Quality: `agentic`; floor: —.
+Candidates: 21; raw Pareto: 6; stable Pareto: 11.
+- balanced default: `z-ai/glm-5.3-20260816` / Z.AI / $4.0906264022 / score 59.1
+- cost option: `openai/gpt-5.6-luna-20260709` / OpenAI / $0.0536517323 / score 46.9
+- quality option: `anthropic/claude-opus-5-20260723` / Amazon Bedrock / $16.0006395082 / score 59.2
+
+### Профиль `longdoc`
+
+Quality: `intelligence`; floor: —.
+Candidates: 16; raw Pareto: 7; stable Pareto: 12.
+- balanced default: `anthropic/claude-opus-5-20260723` / Amazon Bedrock / $16.0006395082 / score 63.1
+- cost option: `google/gemini-3.7-flash-20260813` / Google / $0.7727942935 / score 56.0
+- quality option: `anthropic/claude-opus-5-20260723` / Amazon Bedrock / $16.0006395082 / score 63.1
+
+### Профиль `bulk`
+
+Quality: `intelligence`; floor: —.
+Candidates: 19; raw Pareto: 6; stable Pareto: 11.
+- balanced default: `anthropic/claude-opus-5-20260723` / Amazon Bedrock / $16.0006395082 / score 63.1
+- cost option: `openai/gpt-5.6-luna-20260709` / OpenAI / $0.0536517323 / score 52.3
+- quality option: `anthropic/claude-opus-5-20260723` / Amazon Bedrock / $16.0006395082 / score 63.1
+
+### Secondary evidence coverage
+
+Families total: 345; uncovered: 183;
+`worthy_candidate`: 0; `likely_low_signal`: 183.
+Benchmark `avg_cost_per_task` и session-cost остаются разными units и не входят в primary Pareto.
+
+### YAML patch preview
+
+Status: `not_applied`; requires confirmation: `True`.
+Конфигурация автоматически не изменялась.
+
+### Что изменилось
+
+Status: `baseline`; events: 0.
+
+## Legacy shortlist
 
 ### Быстрый ассистент (`chat`)
 
@@ -16,9 +80,16 @@
 ### Код (`code`)
 
 - **Это твой рабочий вариант** — `Z.ai: GLM 5.2 (free)` через Decart: $0.0000/1M, coding 68.8. Почему: coding 68.8 при цене $0.000/1M; от лидера по качеству отстаёт на 9.2 п. Reasoning: `high`, можно отключить/не указан.
-- **Та же модель, но дешевле провайдер** — `Google: Gemini 3.6 Flash` через Google: $0.7500/1M, coding 69.2. Почему: У этой же модели есть провайдер дешевле в 2.0 раза при uptime 99.42%. Reasoning: `medium`, обязателен.
+- **Та же модель, но дешевле провайдер** — `Google: Gemini 3.6 Flash` через Google: $0.7500/1M, coding 69.2. Почему: У этой же модели есть провайдер дешевле в 2.0 раза при uptime 99.54%. Reasoning: `medium`, обязателен.
 - **Большая скидка, но не для основной работы** — `DeepSeek: DeepSeek V4 Flash 0731` через OpenInference: $0.0838/1M, coding 69.1, скидка 44%. Почему: Скидка 44% активна, но качество 69.1 требует осторожной проверки. Reasoning: `high`, можно отключить/не указан.
 - **Скорее всего, менять не стоит** — `OpenAI: GPT-5.6 Luna` через OpenAI: $0.2250/1M, coding 71.4. Почему: Преимущество не окупает смену: цена $0.225/1M без минимум 30% экономии относительно дефолта. Reasoning: `medium`, можно отключить/не указан.
+
+### Агентный workflow (`agentic`)
+
+- **Это твой рабочий вариант** — `Z.ai: GLM 5.2 (free)` через Decart: $0.0000/1M, agentic 45.7. Почему: agentic 45.7 при цене $0.000/1M; от лидера по качеству отстаёт на 13.5 п. Reasoning: `high`, можно отключить/не указан.
+- **Та же модель, но дешевле провайдер** — `OpenAI: GPT-5.6 Luna` через OpenAI: $0.2250/1M, agentic 46.9. Почему: У этой же модели есть провайдер дешевле в 2.0 раза при uptime 99.92%. Reasoning: `medium`, можно отключить/не указан.
+- **Большая скидка, но не для основной работы** — `DeepSeek: DeepSeek V4 Flash 0731` через OpenInference: $0.0838/1M, agentic 48.4, скидка 44%. Почему: Скидка 44% активна, но качество 48.4 требует осторожной проверки. Reasoning: `high`, можно отключить/не указан.
+- **Скорее всего, менять не стоит** — `Google: Gemini 3.7 Flash` через Google: $0.3750/1M, agentic 45.1, скидка 75%. Почему: Преимущество не окупает смену: цена $0.375/1M без минимум 30% экономии относительно дефолта. Reasoning: `medium`, обязателен.
 
 ### Длинные документы (`longdoc`)
 
@@ -30,21 +101,16 @@
 ### Массовая генерация (`bulk`)
 
 - **Это твой рабочий вариант** — `Z.ai: GLM 5.2 (free)` через Decart: $0.0000/1M, intelligence 52.6. Почему: intelligence 52.6 при цене $0.000/1M; от лидера по качеству отстаёт на 10.5 п. Reasoning: `high`, можно отключить/не указан.
-- **Та же модель, но дешевле провайдер** — `OpenAI: GPT-5.6 Luna` через OpenAI: $0.4750/1M, intelligence 52.3. Почему: У этой же модели есть провайдер дешевле в 2.0 раза при uptime 99.83%. Reasoning: `medium`, можно отключить/не указан.
+- **Та же модель, но дешевле провайдер** — `DeepSeek: DeepSeek V4 Pro 0423` через DeepSeek: $1.6500/1M, intelligence 45.3, скидка 41%. Почему: У этой же модели есть провайдер дешевле в 2.0 раза при uptime 99.84%. Reasoning: `high`, можно отключить/не указан.
 - **Большая скидка, но не для основной работы** — `DeepSeek: DeepSeek V4 Flash 0731` через OpenInference: $0.1213/1M, intelligence 51.8, скидка 44%. Почему: Скидка 44% активна, но качество 51.8 требует осторожной проверки. Reasoning: `high`, можно отключить/не указан.
-- **Скорее всего, менять не стоит** — `MiniMax: MiniMax M3` через CoreWeave: $0.7775/1M, intelligence 45.4, скидка 60%. Почему: Преимущество не окупает смену: цена $0.777/1M без минимум 30% экономии относительно дефолта. Reasoning: `не указан`, можно отключить/не указан.
+- **Скорее всего, менять не стоит** — `OpenAI: GPT-5.6 Luna` через OpenAI: $0.4750/1M, intelligence 52.3. Почему: Преимущество не окупает смену: цена $0.475/1M без минимум 30% экономии относительно дефолта. Reasoning: `medium`, можно отключить/не указан.
 
-## Допущения и честные ограничения
+## Ограничения
 
-- Цена берётся только из `/api/v1/models/{id}/endpoints`; `canonical_slug` — ключ семейства, а `id` сохраняет варианты `:free` и `:batch`. Цена `/models` используется только как цена дефолтного провайдера для overpay-сравнения.
-- `discount` уже применён к цене. База восстановлена как `price / (1 - discount)`.
-- Blended price — прокси, а не стоимость задачи: для профилей используется фиксированное соотношение input:output, указанное рядом с профилем. Универсальный cost per task не вычисляется.
-- Latency и throughput эндпоинтов не используются: в аудите эти поля пусты у 100% проверенных endpoint-строк. Uptime — только фильтр надёжности.
-- Цена соответствует дефолтному reasoning effort модели. При `high` фактический расход может быть выше: reasoning-токены тарифицируются как output.
-- `pricing.overrides` не игнорируется: наличие ступенчатой цены отмечено флагом `has_tiered_pricing`; детальный калькулятор длинного контекста отложен.
-- Data API, G5 по объёму, история изменений, дельты, алерты, поиск, фильтры, графики и персонализация не входят в PoC.
-- Источник: OpenRouter public API. Бенчмарки показываются как поля, полученные через OpenRouter, а не как собственное измерение.
+- `costPerRequest` — operational metric OpenRouter Rankings за 100 requests; это не универсальная стоимость пользовательской задачи.
+- `avg_cost_per_task` benchmark evidence и session-cost не смешиваются с primary ranking.
+- Discount не применяется вторично к `costPerRequest` до прохождения calibration gate.
+- Цена token view зависит от reasoning effort; эта MVP-1 версия показывает labels, но не измеряет расход при разных effort.
+- Если frontend Rankings schema ломается, normal decision surface не публикуется.
 
-## Что смотреть вручную
-
-`data/gate_rejected.json` — обязательный ежедневный просмотр в первую неделю: ошибка gate невидима, пока нужная модель не окажется среди rejects.
+Источник: OpenRouter public API и публичная frontend Rankings surface.

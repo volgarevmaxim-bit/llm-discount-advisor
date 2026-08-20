@@ -1,15 +1,50 @@
 <!doctype html>
 <html lang="ru">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>LLM Discount Advisor</title>
 <style>
-:root{--bg:#f6f7fb;--ink:#172033;--muted:#647087;--card:#fff;--line:#e4e8f0;--blue:#3d65d8;--green:#16845b;--orange:#b15a12;--yellow:#936c00}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}main{max-width:1080px;margin:auto;padding:42px 20px 72px}header{margin-bottom:28px}h1{font-size:clamp(30px,5vw,52px);line-height:1.05;margin:0 0 10px;letter-spacing:-.04em}h2{margin:42px 0 15px;font-size:25px}.lede,.note{color:var(--muted);max-width:760px}.meta{font-size:13px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:19px;box-shadow:0 4px 14px #1b2a5010}.card h3{margin:0 0 4px;font-size:19px}.slug{font-size:12px;color:var(--muted);word-break:break-all}.badge{display:inline-block;border-radius:999px;padding:4px 9px;font-size:12px;font-weight:700;margin:10px 0 12px}.default{background:#daf5e9;color:var(--green)}.good_enough_cheaper{background:#e2ebff;color:#234da9}.big_discount_not_safe{background:#fff0c8;color:var(--yellow)}.cheaper_provider{background:#ffe1c4;color:var(--orange)}.not_worth_switching{background:#edf0f4;color:#5b6575}.price{font-size:24px;font-weight:750;margin:2px 0}.facts{display:flex;flex-wrap:wrap;gap:6px;margin:11px 0}.fact{font-size:12px;background:#f0f2f6;border-radius:7px;padding:4px 7px}.why{border-left:3px solid var(--blue);padding-left:10px;margin:14px 0 0}.limits{margin-top:38px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 22px;color:var(--muted)}a{color:var(--blue)}footer{margin-top:30px;font-size:13px;color:var(--muted)}
-</style></head>
-<body><main><header><div class="meta">Обновляется раз в сутки · публичный PoC</div><h1>Что поставить сегодня?</h1><p class="lede">Короткий список моделей OpenRouter с ценой по лучшему надёжному провайдеру. Это decision-support, не каталог: откройте профиль, прочитайте причины, примите одно решение.</p><p id="updated" class="meta"></p></header><div id="app"><p>Загрузка shortlist.json…</p></div><section class="limits"><h2>Как читать цифры</h2><p>Цена — прокси при указанном соотношении input:output, а не стоимость произвольной задачи. Discount уже применён к цене. Цена соответствует дефолтному reasoning effort; при high расход может быть выше.</p><p>Latency и throughput не используются: в проверенных endpoint-данных они пусты. Uptime — фильтр надёжности. Подробный аудит и ограничения: <a href="report.md">report.md</a>.</p></section><footer>Источник данных: OpenRouter public API. Цена для рекомендации берётся из endpoint-ответов, не из карточки /models.</footer></main>
+:root{--bg:#f6f7fb;--ink:#172033;--muted:#647087;--card:#fff;--line:#e4e8f0;--blue:#3d65d8;--green:#16845b;--orange:#b15a12;--yellow:#936c00;--red:#a53b35}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}main{max-width:1120px;margin:auto;padding:34px 18px 64px}header{margin-bottom:24px}h1{font-size:clamp(30px,5vw,50px);line-height:1.05;margin:0 0 10px;letter-spacing:-.04em}h2{margin:30px 0 12px;font-size:23px}h3{margin:0 0 5px;font-size:17px}.lede,.note{color:var(--muted);max-width:800px}.meta{font-size:12px;color:var(--muted)}.status{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:4px 9px;margin:0 5px 8px 0;background:#fff;font-size:12px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:0 4px 14px #1b2a500b}.card.default{border-color:#9bd8bd}.slug{font-size:12px;color:var(--muted);word-break:break-all}.role{font-size:12px;color:var(--green);font-weight:700;text-transform:uppercase;letter-spacing:.04em}.price{font-size:22px;font-weight:750;margin:8px 0 2px}.facts{display:flex;flex-wrap:wrap;gap:5px;margin:9px 0}.fact{font-size:11px;background:#f0f2f6;border-radius:6px;padding:3px 6px}.why{border-left:3px solid var(--blue);padding-left:9px;margin:12px 0 0}.panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;margin-top:12px}.muted{color:var(--muted)}.warning{color:var(--yellow)}.error{color:var(--red)}.columns{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}.small{font-size:13px}.code{font:12px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre-wrap;background:#f2f4f8;border-radius:8px;padding:10px;overflow:auto}a{color:var(--blue)}footer{margin-top:28px;font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="meta">Обновляется раз в сутки · revised MVP-1</div>
+  <h1>Что выбрать для профиля?</h1>
+  <p class="lede">Сначала decision surface OpenRouter Rankings: релевантное качество, Avg Price Per 100 Requests, Pareto и текущий provider/variant overlay. Ниже — evidence и preview действия.</p>
+  <p id="updated" class="meta">Загрузка snapshot…</p>
+</header>
+<section id="decision"><p class="muted">Загрузка decision surface…</p></section>
+<section id="coverage"></section>
+<section id="changes"></section>
+<section id="patch"></section>
+<section id="legacy"></section>
+<section class="panel small">
+  <h2>Как читать цифры</h2>
+  <p>Primary price — <strong>Avg Price Per 100 Requests</strong> (`costPerRequest`), единица `usd_per_100_requests`. Это operational metric OpenRouter Rankings, не универсальный `avg_cost_per_task`.</p>
+  <p>Discount не умножается на observed ranking cost до прохождения calibration gate. Benchmark task-cost и session-cost остаются отдельными evidence units.</p>
+  <p>Подробный отчёт: <a href="report.md">report.md</a>. Source snapshot: <a href="data/rankings_surface.json">rankings_surface.json</a>.</p>
+</section>
+<footer>Источник: OpenRouter public API и frontend Rankings surface. YAML patch только preview; конфигурация Hermes автоматически не изменяется.</footer>
+</main>
 <script>
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const fmt=n=>n==null?'—':Number(n).toFixed(3);
-fetch('./shortlist.json?cache='+Date.now()).then(r=>r.json()).then(data=>{document.getElementById('updated').textContent='Снимок: '+esc(data.generated_at)+' · scope gate: '+data.gate.passed+' моделей';document.getElementById('app').innerHTML=data.profiles.map(p=>`<section><h2>${esc(p.title)} <span class="meta">(${esc(p.profile)})</span></h2><div class="grid">${p.picks.map(x=>`<article class="card"><h3>${esc(x.name)}</h3><div class="slug">${esc(x.slug)} · ${esc(x.provider||'провайдер не указан')}</div><div class="badge ${esc(x.status)}">${esc(x.label)}</div><div class="price">$${fmt(x.blended_price)}<small>/1M</small></div><div class="facts"><span class="fact">${esc(x.quality_metric)}: ${esc(x.quality)}</span><span class="fact">контекст: ${Number(x.context||0).toLocaleString('ru-RU')}</span><span class="fact">uptime: ${esc(x.uptime_1d)}%</span>${x.discount?`<span class="fact">скидка: ${(x.discount*100).toFixed(0)}%</span>`:''}<span class="fact">effort: ${esc(x.reasoning_default_effort||'—')}${x.reasoning_mandatory?' · обязателен':''}</span>${x.has_tiered_pricing?'<span class="fact">ступенчатая цена</span>':''}</div><p class="why"><strong>Почему:</strong> ${esc(x.reason)}</p></article>`).join('')}</div></section>`).join('')}).catch(e=>{document.getElementById('app').innerHTML='<p>Не удалось загрузить дневной снимок. Откройте report.md для диагностики.</p>';console.error(e)});
-</script></body></html>
+const n=v=>v==null?'—':Number(v).toLocaleString('ru-RU',{maximumFractionDigits:3});
+const role=(name,item)=>item?`<article class="card ${name==='balanced_default'?'default':''}"><div class="role">${esc(name)}</div><h3>${esc(item.ranking_key||'—')}</h3><div class="slug">${esc(item.provider||'provider не указан')} · variant: ${esc(item.variant_id||'—')}</div><div class="price">$${n(item.price)}<small> / 100 requests</small></div><div class="facts"><span class="fact">quality: ${n(item.score)}</span><span class="fact">discount: ${item.discount_max?Number(item.discount_max*100).toFixed(0)+'%':'—'}</span><span class="fact">uptime: ${n(item.uptime_1d)}%</span></div></article>`:'<article class="card muted">Нет сравнимого кандидата.</article>';
+const profileView=p=>`<section><h2>${esc(p.profile)} <span class="meta">· ${esc(p.quality_metric)} · floor ${n(p.quality_floor)}</span></h2><p class="meta">${p.candidate_count} candidates · raw Pareto ${p.raw_pareto_count} · stable Pareto ${p.stable_pareto_count} · price unit ${esc(p.price_unit)}</p><div class="grid">${role('balanced_default',p.roles&&p.roles.balanced_default)}${role('cost_option',p.roles&&p.roles.cost_option)}${role('quality_option',p.roles&&p.roles.quality_option)}</div></section>`;
+Promise.all(['data/decision_surface.json','data/task_cost_coverage.json','data/config_patch.json','changes.json','shortlist.json'].map(path=>fetch('./'+path+'?cache='+Date.now()).then(r=>{if(!r.ok)throw new Error(path+' '+r.status);return r.json()}))).then(([surface,coverage,patch,changes,legacy])=>{
+ document.getElementById('updated').textContent='Снимок: '+esc(surface.generated_at)+' · режим: '+esc(surface.ranking_mode);
+ const cal=surface.discount_calibration||{};
+ document.getElementById('decision').innerHTML=`<h2>Decision surface</h2><div class="panel"><span class="status">Avg Price Per 100 Requests</span><span class="status">${esc(surface.ranking_mode)}</span><span class="status">Discount calibration: ${esc(cal.status||'unknown')}</span><p class="note">Observed ranking cost не корректируется discount. Margins: 10% price / 2 quality points.</p></div>${(surface.profiles||[]).map(profileView).join('')}`;
+ const c=coverage.counts||{};
+ document.getElementById('coverage').innerHTML=`<h2>Task-cost validation coverage</h2><div class="panel"><div class="columns"><div><strong>Families total</strong><br>${n(c.families_total)}</div><div><strong>Uncovered</strong><br>${n(c.uncovered)}</div><div><strong>worthy_candidate</strong><br>${n(c.worthy_uncovered)}</div><div><strong>likely_low_signal</strong><br>${n(c.likely_low_signal_uncovered)}</div></div><p class="note">Benchmark avg_cost_per_task и session-cost не смешиваются с primary Pareto.</p></div>`;
+ document.getElementById('changes').innerHTML=`<h2>Что изменилось</h2><div class="panel"><strong>Status:</strong> ${esc(changes.status)} · events: ${n((changes.events||[]).length)}${(changes.events||[]).length?'<div class="code">'+esc(JSON.stringify(changes.events,null,2))+'</div>':''}</div>`;
+ document.getElementById('patch').innerHTML=`<h2>YAML patch preview</h2><div class="panel"><strong>Status:</strong> <span class="warning">${esc(patch.status)}</span> · requires confirmation: ${esc(patch.requires_confirmation)}<div class="code">${esc(patch.yaml_diff||'Нет изменений')}</div></div>`;
+ document.getElementById('legacy').innerHTML=`<h2>Legacy shortlist</h2><div class="panel muted">Старый token-price shortlist сохранён для обратной совместимости. Профили: ${n((legacy.profiles||[]).length)}. Основная рекомендация выше строится по Rankings surface.</div>`;
+}).catch(error=>{document.getElementById('decision').innerHTML='<div class="panel error">Не удалось загрузить revised MVP-1 artifacts. Откройте report.md для диагностики.</div>';console.error(error)});
+</script>
+</body>
+</html>
