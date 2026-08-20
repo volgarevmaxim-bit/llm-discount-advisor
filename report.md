@@ -10,53 +10,53 @@ Legacy snapshot: **416** строк каталога / **345** семейств;
 Primary price: **Avg Price Per 100 Requests** (`costPerRequest`), unit: `usd_per_100_requests`.
 Это operational metric OpenRouter Rankings, не `avg_cost_per_task`.
 
-Discount calibration: `inconsistent`; sample size: 20.
+Discount calibration: `unknown`; sample size: 20.
 Discount не умножается на observed `costPerRequest`; до подтверждения это только overlay/action signal.
 
 ### Профиль `chat`
 
 Quality: `intelligence`; floor: —.
 Candidates: 16; raw Pareto: 7; stable Pareto: 12.
-- balanced default: `anthropic/claude-opus-5-20260723` / Amazon Bedrock / $16.0006395082 / score 63.1
-- cost option: `google/gemini-3.7-flash-20260813` / Google / $0.7727942935 / score 56.0
-- quality option: `anthropic/claude-opus-5-20260723` / Amazon Bedrock / $16.0006395082 / score 63.1
+- balanced default: `anthropic/claude-opus-5-20260723` / Amazon Bedrock / $15.7935501317 / score 63.1
+- cost option: `google/gemini-3.7-flash-20260813` / Google / $0.7804779696 / score 56.0
+- quality option: `anthropic/claude-opus-5-20260723` / Amazon Bedrock / $15.7935501317 / score 63.1
 
 ### Профиль `code`
 
 Quality: `coding`; floor: —.
 Candidates: 31; raw Pareto: 4; stable Pareto: 9.
-- balanced default: `openai/gpt-5.6-terra-20260709` / OpenAI / $2.5805532792 / score 76.7
-- cost option: `openai/gpt-5.6-luna-20260709` / OpenAI / $0.0536517323 / score 71.4
-- quality option: `openai/gpt-5.6-sol-20260709` / OpenAI / $5.9365360178 / score 78.3
+- balanced default: `openai/gpt-5.6-terra-20260709` / OpenAI / $2.6090323043 / score 76.7
+- cost option: `openai/gpt-5.6-luna-20260709` / OpenAI / $0.0519655924 / score 71.4
+- quality option: `openai/gpt-5.6-sol-20260709` / OpenAI / $5.9419096297 / score 78.3
 
 ### Профиль `agentic`
 
 Quality: `agentic`; floor: —.
 Candidates: 21; raw Pareto: 6; stable Pareto: 11.
-- balanced default: `z-ai/glm-5.3-20260816` / Z.AI / $4.0906264022 / score 59.1
-- cost option: `openai/gpt-5.6-luna-20260709` / OpenAI / $0.0536517323 / score 46.9
-- quality option: `anthropic/claude-opus-5-20260723` / Amazon Bedrock / $16.0006395082 / score 59.2
+- balanced default: `z-ai/glm-5.3-20260816` / Z.AI / $4.1613818589 / score 59.1
+- cost option: `openai/gpt-5.6-luna-20260709` / OpenAI / $0.0519655924 / score 46.9
+- quality option: `anthropic/claude-opus-5-20260723` / Amazon Bedrock / $15.7935501317 / score 59.2
 
 ### Профиль `longdoc`
 
 Quality: `intelligence`; floor: —.
 Candidates: 16; raw Pareto: 7; stable Pareto: 12.
-- balanced default: `anthropic/claude-opus-5-20260723` / Amazon Bedrock / $16.0006395082 / score 63.1
-- cost option: `google/gemini-3.7-flash-20260813` / Google / $0.7727942935 / score 56.0
-- quality option: `anthropic/claude-opus-5-20260723` / Amazon Bedrock / $16.0006395082 / score 63.1
+- balanced default: `anthropic/claude-opus-5-20260723` / Amazon Bedrock / $15.7935501317 / score 63.1
+- cost option: `google/gemini-3.7-flash-20260813` / Google / $0.7804779696 / score 56.0
+- quality option: `anthropic/claude-opus-5-20260723` / Amazon Bedrock / $15.7935501317 / score 63.1
 
 ### Профиль `bulk`
 
 Quality: `intelligence`; floor: —.
 Candidates: 19; raw Pareto: 6; stable Pareto: 11.
-- balanced default: `anthropic/claude-opus-5-20260723` / Amazon Bedrock / $16.0006395082 / score 63.1
-- cost option: `openai/gpt-5.6-luna-20260709` / OpenAI / $0.0536517323 / score 52.3
-- quality option: `anthropic/claude-opus-5-20260723` / Amazon Bedrock / $16.0006395082 / score 63.1
+- balanced default: `anthropic/claude-opus-5-20260723` / Amazon Bedrock / $15.7935501317 / score 63.1
+- cost option: `openai/gpt-5.6-luna-20260709` / OpenAI / $0.0519655924 / score 52.3
+- quality option: `anthropic/claude-opus-5-20260723` / Amazon Bedrock / $15.7935501317 / score 63.1
 
 ### Secondary evidence coverage
 
-Families total: 345; uncovered: 183;
-`worthy_candidate`: 0; `likely_low_signal`: 183.
+Families total: 345; uncovered: 221;
+`worthy_candidate`: 0; `likely_low_signal`: 221.
 Benchmark `avg_cost_per_task` и session-cost остаются разными units и не входят в primary Pareto.
 
 ### YAML patch preview
@@ -80,7 +80,7 @@ Status: `baseline`; events: 0.
 ### Код (`code`)
 
 - **Это твой рабочий вариант** — `Z.ai: GLM 5.2 (free)` через Decart: $0.0000/1M, coding 68.8. Почему: coding 68.8 при цене $0.000/1M; от лидера по качеству отстаёт на 9.2 п. Reasoning: `high`, можно отключить/не указан.
-- **Та же модель, но дешевле провайдер** — `Google: Gemini 3.6 Flash` через Google: $0.7500/1M, coding 69.2. Почему: У этой же модели есть провайдер дешевле в 2.0 раза при uptime 99.54%. Reasoning: `medium`, обязателен.
+- **Та же модель, но дешевле провайдер** — `Google: Gemini 3.6 Flash` через Google: $0.7500/1M, coding 69.2. Почему: У этой же модели есть провайдер дешевле в 2.0 раза при uptime 99.55%. Reasoning: `medium`, обязателен.
 - **Большая скидка, но не для основной работы** — `DeepSeek: DeepSeek V4 Flash 0731` через OpenInference: $0.0838/1M, coding 69.1, скидка 44%. Почему: Скидка 44% активна, но качество 69.1 требует осторожной проверки. Reasoning: `high`, можно отключить/не указан.
 - **Скорее всего, менять не стоит** — `OpenAI: GPT-5.6 Luna` через OpenAI: $0.2250/1M, coding 71.4. Почему: Преимущество не окупает смену: цена $0.225/1M без минимум 30% экономии относительно дефолта. Reasoning: `medium`, можно отключить/не указан.
 
