@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-20T14:16:50Z",
-  "total": 416,
-  "total_unique_families": 345,
-  "passed": 108,
-  "passed_unique_families": 76,
-  "normalized": 107,
-  "eligible_after_prefilter": 389,
-  "eligible_unique_families": 318,
+  "generated_at": "2026-08-21T05:50:12Z",
+  "total": 419,
+  "total_unique_families": 348,
+  "passed": 109,
+  "passed_unique_families": 77,
+  "normalized": 108,
+  "eligible_after_prefilter": 392,
+  "eligible_unique_families": 321,
   "rejected": [
     {
       "slug": "~z-ai/glm-latest",
@@ -1093,6 +1093,10 @@
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "mistralai/ministral-8b",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "qwen/qwen-2.5-7b-instruct",
       "reason": "below_all_thresholds"
     },
@@ -1218,6 +1222,10 @@
     },
     {
       "slug": "openai/gpt-3.5-turbo-16k",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "mancer/weaver",
       "reason": "below_all_thresholds"
     },
     {

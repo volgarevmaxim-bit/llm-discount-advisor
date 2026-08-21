@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 345,
+    "families_total": 348,
     "rankings_surface_families": 140,
     "benchmark_cost_families": 106,
     "session_cost_families": 34,
     "union_secondary_covered": 113,
-    "uncovered": 183,
+    "uncovered": 186,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 183
+    "likely_low_signal_uncovered": 186
   },
   "families": [
     {
@@ -651,6 +651,11 @@
       "classification": "likely_low_signal"
     },
     {
+      "canonical_family": "mancer/weaver",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
       "canonical_family": "meituan/longcat-2.0-20260720",
       "covered_by": [
         "rankings_surface"
@@ -806,6 +811,11 @@
         "rankings_surface"
       ],
       "classification": "covered"
+    },
+    {
+      "canonical_family": "mistralai/ministral-8b",
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "mistralai/ministral-8b-2512",
@@ -1847,6 +1857,11 @@
     },
     {
       "canonical_family": "sao10k/l3.3-euryale-70b-v2.3",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "stealth/ox-alpha",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
