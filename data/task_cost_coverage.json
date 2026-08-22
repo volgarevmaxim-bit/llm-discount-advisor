@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 348,
+    "families_total": 349,
     "rankings_surface_families": 140,
     "benchmark_cost_families": 106,
     "session_cost_families": 34,
     "union_secondary_covered": 113,
-    "uncovered": 186,
+    "uncovered": 187,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 186
+    "likely_low_signal_uncovered": 187
   },
   "families": [
     {
@@ -279,11 +279,6 @@
       "classification": "covered"
     },
     {
-      "canonical_family": "deepcogito/cogito-v2.1-671b-20251118",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
       "canonical_family": "deepseek/deepseek-chat-v3",
       "covered_by": [
         "session_cost"
@@ -364,6 +359,11 @@
         "session_cost"
       ],
       "classification": "covered"
+    },
+    {
+      "canonical_family": "deepseek/deepseek-v4-flash-vision-exp-20260821",
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "deepseek/deepseek-v4-pro-20260423",
@@ -731,6 +731,11 @@
         "rankings_surface"
       ],
       "classification": "covered"
+    },
+    {
+      "canonical_family": "meta/muse-spark-1.2-contributor-20260805",
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "microsoft/phi-4",

@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-21T05:50:12Z",
-  "total": 419,
-  "total_unique_families": 348,
-  "passed": 109,
+  "generated_at": "2026-08-22T05:45:33Z",
+  "total": 421,
+  "total_unique_families": 349,
+  "passed": 110,
   "passed_unique_families": 77,
-  "normalized": 108,
-  "eligible_after_prefilter": 392,
-  "eligible_unique_families": 321,
+  "normalized": 109,
+  "eligible_after_prefilter": 394,
+  "eligible_unique_families": 322,
   "rejected": [
     {
       "slug": "~z-ai/glm-latest",
@@ -117,6 +117,14 @@
       "reason": "non_text_output"
     },
     {
+      "slug": "meta/muse-spark-1.2-contributor",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "deepseek/deepseek-v4-flash-vision-exp",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "tencent/hy-mt2-1.8b",
       "reason": "below_all_thresholds"
     },
@@ -138,10 +146,6 @@
     },
     {
       "slug": "meta/muse-glimmer-30b",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "thinkingmachines/inkling-small",
       "reason": "below_all_thresholds"
     },
     {
@@ -286,6 +290,10 @@
     },
     {
       "slug": "inclusionai/ling-2.6-1t",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "tencent/hy3-preview",
       "reason": "below_all_thresholds"
     },
     {
@@ -502,10 +510,6 @@
     },
     {
       "slug": "allenai/olmo-3-32b-think",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "deepcogito/cogito-v2.1-671b",
       "reason": "below_all_thresholds"
     },
     {

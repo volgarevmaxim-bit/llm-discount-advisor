@@ -1,71 +1,7 @@
 {
   "schema_version": "1.0",
-  "from": "2026-08-20T14:16:50Z",
-  "to": "2026-08-21T05:50:12Z",
-  "events": [
-    {
-      "type": "discount_action_changed",
-      "profile": "bulk",
-      "before": {
-        "ranking_key": "anthropic/claude-opus-5-20260723",
-        "provider": "Amazon Bedrock",
-        "variant_id": "anthropic/claude-opus-5",
-        "price": 15.7935501317,
-        "score": 63.1,
-        "stable": true
-      },
-      "after": {
-        "ranking_key": "anthropic/claude-opus-5-20260723",
-        "provider": "Claude Platform on AWS",
-        "variant_id": "anthropic/claude-opus-5",
-        "price": 11.5850224725,
-        "score": 63.1,
-        "stable": true
-      },
-      "reason": "Current actionable provider changed."
-    },
-    {
-      "type": "discount_action_changed",
-      "profile": "chat",
-      "before": {
-        "ranking_key": "anthropic/claude-opus-5-20260723",
-        "provider": "Amazon Bedrock",
-        "variant_id": "anthropic/claude-opus-5",
-        "price": 15.7935501317,
-        "score": 63.1,
-        "stable": true
-      },
-      "after": {
-        "ranking_key": "anthropic/claude-opus-5-20260723",
-        "provider": "Claude Platform on AWS",
-        "variant_id": "anthropic/claude-opus-5",
-        "price": 11.5850224725,
-        "score": 63.1,
-        "stable": true
-      },
-      "reason": "Current actionable provider changed."
-    },
-    {
-      "type": "discount_action_changed",
-      "profile": "longdoc",
-      "before": {
-        "ranking_key": "anthropic/claude-opus-5-20260723",
-        "provider": "Amazon Bedrock",
-        "variant_id": "anthropic/claude-opus-5",
-        "price": 15.7935501317,
-        "score": 63.1,
-        "stable": true
-      },
-      "after": {
-        "ranking_key": "anthropic/claude-opus-5-20260723",
-        "provider": "Claude Platform on AWS",
-        "variant_id": "anthropic/claude-opus-5",
-        "price": 11.5850224725,
-        "score": 63.1,
-        "stable": true
-      },
-      "reason": "Current actionable provider changed."
-    }
-  ],
+  "from": "2026-08-21T05:50:12Z",
+  "to": "2026-08-22T05:45:33Z",
+  "events": [],
   "status": "compared"
 }
