@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 349,
+    "families_total": 350,
     "rankings_surface_families": 140,
     "benchmark_cost_families": 106,
     "session_cost_families": 34,
     "union_secondary_covered": 113,
-    "uncovered": 187,
+    "uncovered": 188,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 187
+    "likely_low_signal_uncovered": 188
   },
   "families": [
     {
@@ -1895,6 +1895,11 @@
     },
     {
       "canonical_family": "tencent/hy-mt2-30b-a3b-20260521",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "tencent/hy-mt2-7b-20260521",
       "covered_by": [],
       "classification": "likely_low_signal"
     },

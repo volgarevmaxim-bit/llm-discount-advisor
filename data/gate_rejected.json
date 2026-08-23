@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-22T05:45:33Z",
-  "total": 421,
-  "total_unique_families": 349,
+  "generated_at": "2026-08-23T05:48:04Z",
+  "total": 422,
+  "total_unique_families": 350,
   "passed": 110,
   "passed_unique_families": 77,
   "normalized": 109,
-  "eligible_after_prefilter": 394,
-  "eligible_unique_families": 322,
+  "eligible_after_prefilter": 395,
+  "eligible_unique_families": 323,
   "rejected": [
     {
       "slug": "~z-ai/glm-latest",
@@ -130,6 +130,10 @@
     },
     {
       "slug": "tencent/hy-mt2-30b-a3b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "tencent/hy-mt2-7b",
       "reason": "below_all_thresholds"
     },
     {
