@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-23T05:48:04Z",
+  "generated_at": "2026-08-24T05:55:53Z",
   "total": 422,
   "total_unique_families": 350,
-  "passed": 110,
-  "passed_unique_families": 77,
-  "normalized": 109,
+  "passed": 109,
+  "passed_unique_families": 76,
+  "normalized": 108,
   "eligible_after_prefilter": 395,
   "eligible_unique_families": 323,
   "rejected": [
@@ -362,6 +362,10 @@
     },
     {
       "slug": "google/gemini-3.1-pro-preview-customtools",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.3-codex",
       "reason": "below_all_thresholds"
     },
     {
