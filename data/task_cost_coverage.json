@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 350,
+    "families_total": 346,
     "rankings_surface_families": 140,
     "benchmark_cost_families": 106,
-    "session_cost_families": 34,
-    "union_secondary_covered": 113,
-    "uncovered": 188,
+    "session_cost_families": 37,
+    "union_secondary_covered": 115,
+    "uncovered": 184,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 188
+    "likely_low_signal_uncovered": 184
   },
   "families": [
     {
@@ -391,7 +391,8 @@
     {
       "canonical_family": "google/gemini-2.5-flash",
       "covered_by": [
-        "benchmark_cost"
+        "benchmark_cost",
+        "session_cost"
       ],
       "classification": "covered"
     },
@@ -403,8 +404,7 @@
     {
       "canonical_family": "google/gemini-2.5-flash-lite",
       "covered_by": [
-        "benchmark_cost",
-        "session_cost"
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -514,7 +514,8 @@
       "canonical_family": "google/gemini-3.7-flash-20260813",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost"
+        "benchmark_cost",
+        "session_cost"
       ],
       "classification": "covered"
     },
@@ -563,7 +564,8 @@
       "canonical_family": "google/gemma-4-31b-it-20260402",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost"
+        "benchmark_cost",
+        "session_cost"
       ],
       "classification": "covered"
     },
@@ -602,29 +604,10 @@
       "classification": "covered"
     },
     {
-      "canonical_family": "inclusionai/ling-2.6-1t-20260423",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "inclusionai/ling-2.6-flash-20260421",
-      "covered_by": [
-        "rankings_surface"
-      ],
-      "classification": "covered"
-    },
-    {
       "canonical_family": "inclusionai/ling-3.0-flash-20260723",
       "covered_by": [
         "rankings_surface",
         "benchmark_cost"
-      ],
-      "classification": "covered"
-    },
-    {
-      "canonical_family": "inclusionai/ring-2.6-1t-20260508",
-      "covered_by": [
-        "rankings_surface"
       ],
       "classification": "covered"
     },
@@ -802,6 +785,13 @@
       "canonical_family": "mistralai/codestral-2508",
       "covered_by": [],
       "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "mistralai/devstral-2512",
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "mistralai/ministral-14b-2512",
@@ -1047,16 +1037,6 @@
         "benchmark_cost"
       ],
       "classification": "covered"
-    },
-    {
-      "canonical_family": "nvidia/nemotron-nano-12b-v2-vl",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "nvidia/nemotron-nano-9b-v2",
-      "covered_by": [],
-      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "openai/gpt-3.5-turbo",
@@ -1605,8 +1585,7 @@
     {
       "canonical_family": "qwen/qwen3-coder-480b-a35b-07-25",
       "covered_by": [
-        "benchmark_cost",
-        "session_cost"
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -1867,8 +1846,10 @@
     },
     {
       "canonical_family": "stealth/ox-alpha",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "session_cost"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "stepfun/step-3.5-flash",
@@ -2116,7 +2097,8 @@
     {
       "canonical_family": "z-ai/glm-5.3-20260816",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "session_cost"
       ],
       "classification": "covered"
     },

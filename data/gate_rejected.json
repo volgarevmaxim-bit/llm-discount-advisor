@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-24T05:55:53Z",
-  "total": 422,
-  "total_unique_families": 350,
-  "passed": 109,
-  "passed_unique_families": 76,
-  "normalized": 108,
-  "eligible_after_prefilter": 395,
-  "eligible_unique_families": 323,
+  "generated_at": "2026-08-25T05:49:46Z",
+  "total": 418,
+  "total_unique_families": 346,
+  "passed": 104,
+  "passed_unique_families": 72,
+  "normalized": 103,
+  "eligible_after_prefilter": 391,
+  "eligible_unique_families": 319,
   "rejected": [
     {
       "slug": "~z-ai/glm-latest",
@@ -241,10 +241,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "inclusionai/ring-2.6-1t",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "google/gemini-3.1-flash-lite",
       "reason": "below_all_thresholds"
     },
@@ -290,14 +286,6 @@
     },
     {
       "slug": "openai/gpt-5.5-pro:batch",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "inclusionai/ling-2.6-1t",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "tencent/hy3-preview",
       "reason": "below_all_thresholds"
     },
     {
@@ -393,6 +381,14 @@
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "anthropic/claude-opus-4.6",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "anthropic/claude-opus-4.6:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "qwen/qwen3-coder-next",
       "reason": "below_all_thresholds"
     },
@@ -449,6 +445,10 @@
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "nvidia/nemotron-3-nano-30b-a3b",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "openai/gpt-5.2-chat",
       "reason": "below_all_thresholds"
     },
@@ -466,6 +466,10 @@
     },
     {
       "slug": "openai/gpt-5.2:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "mistralai/devstral-2512",
       "reason": "below_all_thresholds"
     },
     {

@@ -1,8 +1,8 @@
-# LLM Discount Advisor — отчёт от 2026-08-24
+# LLM Discount Advisor — отчёт от 2026-08-25
 
 Decision-support для выбора модели и provider/variant в Hermes.
 
-Legacy snapshot: **422** строк каталога / **350** семейств; после scope gate прошло **109** строк / **76** семейств.
+Legacy snapshot: **418** строк каталога / **346** семейств; после scope gate прошло **104** строк / **72** семейств.
 
 ## Decision surface
 
@@ -16,47 +16,47 @@ Discount не умножается на observed `costPerRequest`; до подт
 ### Профиль `chat`
 
 Quality: `intelligence`; floor: —.
-Candidates: 16; raw Pareto: 6; stable Pareto: 12.
-- balanced default: `anthropic/claude-opus-5-20260723` / Claude Platform on AWS / $12.4491975433 / score 63.1
-- cost option: `google/gemini-3.7-flash-20260813` / Google / $0.6517975455 / score 56.0
-- quality option: `anthropic/claude-opus-5-20260723` / Claude Platform on AWS / $12.4491975433 / score 63.1
+Candidates: 16; raw Pareto: 4; stable Pareto: 9.
+- balanced default: `anthropic/claude-opus-5-20260723` / Claude Platform on AWS / $14.1190945165 / score 63.1
+- cost option: `google/gemini-3.7-flash-20260813` / Google / $0.7384610288 / score 56.0
+- quality option: `anthropic/claude-opus-5-20260723` / Claude Platform on AWS / $14.1190945165 / score 63.1
 
 ### Профиль `code`
 
 Quality: `coding`; floor: —.
 Candidates: 31; raw Pareto: 5; stable Pareto: 9.
-- balanced default: `openai/gpt-5.6-terra-20260709` / OpenAI / $2.9949356976 / score 76.7
-- cost option: `deepseek/deepseek-v4-flash-20260731` / Relace / $0.1120550008 / score 69.1
-- quality option: `openai/gpt-5.6-sol-20260709` / OpenAI / $4.7183724756 / score 78.3
+- balanced default: `openai/gpt-5.6-terra-20260709` / OpenAI / $2.9959023675 / score 76.7
+- cost option: `deepseek/deepseek-v4-flash-20260731` / OpenInference / $0.1176340048 / score 69.1
+- quality option: `openai/gpt-5.6-sol-20260709` / OpenAI / $3.0689978479 / score 78.3
 
 ### Профиль `agentic`
 
 Quality: `agentic`; floor: —.
-Candidates: 21; raw Pareto: 5; stable Pareto: 12.
-- balanced default: `z-ai/glm-5.3-20260816` / Z.AI / $3.3412693604 / score 59.1
-- cost option: `deepseek/deepseek-v4-flash-20260731` / Relace / $0.1120550008 / score 48.4
-- quality option: `anthropic/claude-opus-5-20260723` / Claude Platform on AWS / $12.4491975433 / score 59.2
+Candidates: 21; raw Pareto: 5; stable Pareto: 11.
+- balanced default: `z-ai/glm-5.3-20260816` / Z.AI / $2.8566010619 / score 59.1
+- cost option: `deepseek/deepseek-v4-flash-20260731` / OpenInference / $0.1176340048 / score 48.4
+- quality option: `anthropic/claude-opus-5-20260723` / Claude Platform on AWS / $14.1190945165 / score 59.2
 
 ### Профиль `longdoc`
 
 Quality: `intelligence`; floor: —.
-Candidates: 16; raw Pareto: 6; stable Pareto: 12.
-- balanced default: `anthropic/claude-opus-5-20260723` / Claude Platform on AWS / $12.4491975433 / score 63.1
-- cost option: `google/gemini-3.7-flash-20260813` / Google / $0.6517975455 / score 56.0
-- quality option: `anthropic/claude-opus-5-20260723` / Claude Platform on AWS / $12.4491975433 / score 63.1
+Candidates: 16; raw Pareto: 4; stable Pareto: 9.
+- balanced default: `anthropic/claude-opus-5-20260723` / Claude Platform on AWS / $14.1190945165 / score 63.1
+- cost option: `google/gemini-3.7-flash-20260813` / Google / $0.7384610288 / score 56.0
+- quality option: `anthropic/claude-opus-5-20260723` / Claude Platform on AWS / $14.1190945165 / score 63.1
 
 ### Профиль `bulk`
 
 Quality: `intelligence`; floor: —.
-Candidates: 19; raw Pareto: 6; stable Pareto: 11.
-- balanced default: `anthropic/claude-opus-5-20260723` / Claude Platform on AWS / $12.4491975433 / score 63.1
-- cost option: `deepseek/deepseek-v4-flash-20260731` / Relace / $0.1120550008 / score 51.8
-- quality option: `anthropic/claude-opus-5-20260723` / Claude Platform on AWS / $12.4491975433 / score 63.1
+Candidates: 19; raw Pareto: 6; stable Pareto: 10.
+- balanced default: `anthropic/claude-opus-5-20260723` / Claude Platform on AWS / $14.1190945165 / score 63.1
+- cost option: `deepseek/deepseek-v4-flash-20260731` / OpenInference / $0.1176340048 / score 51.8
+- quality option: `anthropic/claude-opus-5-20260723` / Claude Platform on AWS / $14.1190945165 / score 63.1
 
 ### Secondary evidence coverage
 
-Families total: 350; uncovered: 188;
-`worthy_candidate`: 0; `likely_low_signal`: 188.
+Families total: 346; uncovered: 184;
+`worthy_candidate`: 0; `likely_low_signal`: 184.
 Benchmark `avg_cost_per_task` и session-cost остаются разными units и не входят в primary Pareto.
 
 ### YAML patch preview
@@ -73,36 +73,36 @@ Status: `compared`; events: 0.
 ### Быстрый ассистент (`chat`)
 
 - **Это твой рабочий вариант** — `Google: Gemini 3.7 Flash` через Google: $0.3750/1M, intelligence 56.0, скидка 75%. Почему: intelligence 56.0 при цене $0.375/1M; от лидера по качеству отстаёт на 7.1 п. Reasoning: `medium`, обязателен.
-- **Та же модель, но дешевле провайдер** — `OpenAI: GPT-5.6 Terra` через OpenAI: $2.2500/1M, intelligence 56.6. Почему: У этой же модели есть провайдер дешевле в 2.0 раза при uptime 99.97%. Reasoning: `medium`, можно отключить/не указан.
+- **Та же модель, но дешевле провайдер** — `OpenAI: GPT-5.6 Terra` через OpenAI: $2.2500/1M, intelligence 56.6. Почему: У этой же модели есть провайдер дешевле в 2.0 раза при uptime 99.92%. Reasoning: `medium`, можно отключить/не указан.
 - **Большая скидка, но не для основной работы** — `OpenAI: GPT-5.6 Sol` через OpenAI: $2.0000/1M, intelligence 60.9, скидка 50%. Почему: Скидка 50% активна, но качество 60.9 требует осторожной проверки. Reasoning: `medium`, можно отключить/не указан.
 - **Скорее всего, менять не стоит** — `Meta: Muse Spark 1.2` через Meta: $2.0000/1M, intelligence 56.8. Почему: Преимущество не окупает смену: цена $2.000/1M без минимум 30% экономии относительно дефолта. Reasoning: `medium`, обязателен.
 
 ### Код (`code`)
 
-- **Это твой рабочий вариант** — `DeepSeek: DeepSeek V4 Flash 0731` через Relace: $0.0500/1M, coding 69.1, скидка 53%. Почему: coding 69.1 при цене $0.050/1M; от лидера по качеству отстаёт на 8.9 п. Reasoning: `high`, можно отключить/не указан.
-- **Та же модель, но дешевле провайдер** — `Google: Gemini 3.7 Flash` через Google: $0.3750/1M, coding 76.1, скидка 75%. Почему: У этой же модели есть провайдер дешевле в 2.0 раза при uptime 99.64%. Reasoning: `medium`, обязателен.
-- **Большая скидка, но не для основной работы** — `Xiaomi: MiMo-V2.5-Pro` через Xiaomi: $0.5437/1M, coding 60.2, скидка 30%. Почему: Скидка 30% активна, но качество 60.2 требует осторожной проверки. Reasoning: `не указан`, можно отключить/не указан.
+- **Это твой рабочий вариант** — `Z.ai: GLM 5.2 (free)` через Decart: $0.0000/1M, coding 68.8. Почему: coding 68.8 при цене $0.000/1M; от лидера по качеству отстаёт на 9.2 п. Reasoning: `high`, можно отключить/не указан.
+- **Та же модель, но дешевле провайдер** — `DeepSeek: DeepSeek V4 Flash 0731` через OpenInference: $0.0450/1M, coding 69.1, скидка 80%. Почему: У этой же модели есть провайдер дешевле в 3.9 раза при uptime 100.00%. Reasoning: `high`, можно отключить/не указан.
+- **Большая скидка, но не для основной работы** — `Google: Gemini 3.7 Flash` через Google: $0.3750/1M, coding 76.1, скидка 75%. Почему: Скидка 75% активна, но качество 76.1 требует осторожной проверки. Reasoning: `medium`, обязателен.
 - **Скорее всего, менять не стоит** — `OpenAI: GPT-5.6 Luna` через OpenAI: $0.2250/1M, coding 71.4. Почему: Преимущество не окупает смену: цена $0.225/1M без минимум 30% экономии относительно дефолта. Reasoning: `medium`, можно отключить/не указан.
 
 ### Агентный workflow (`agentic`)
 
-- **Это твой рабочий вариант** — `DeepSeek: DeepSeek V4 Flash 0731` через Relace: $0.0500/1M, agentic 48.4, скидка 53%. Почему: agentic 48.4 при цене $0.050/1M; от лидера по качеству отстаёт на 10.8 п. Reasoning: `high`, можно отключить/не указан.
-- **Та же модель, но дешевле провайдер** — `Google: Gemini 3.7 Flash` через Google: $0.3750/1M, agentic 45.1, скидка 75%. Почему: У этой же модели есть провайдер дешевле в 2.0 раза при uptime 99.64%. Reasoning: `medium`, обязателен.
-- **Большая скидка, но не для основной работы** — `Z.ai: GLM 5.2` через StreamLake: $1.0642/1M, agentic 45.7, скидка 50%. Почему: Скидка 50% активна, но качество 45.7 требует осторожной проверки. Reasoning: `high`, можно отключить/не указан.
+- **Это твой рабочий вариант** — `Z.ai: GLM 5.2 (free)` через Decart: $0.0000/1M, agentic 45.7. Почему: agentic 45.7 при цене $0.000/1M; от лидера по качеству отстаёт на 13.5 п. Reasoning: `high`, можно отключить/не указан.
+- **Та же модель, но дешевле провайдер** — `DeepSeek: DeepSeek V4 Flash 0731` через OpenInference: $0.0450/1M, agentic 48.4, скидка 80%. Почему: У этой же модели есть провайдер дешевле в 3.9 раза при uptime 100.00%. Reasoning: `high`, можно отключить/не указан.
+- **Большая скидка, но не для основной работы** — `Google: Gemini 3.7 Flash` через Google: $0.3750/1M, agentic 45.1, скидка 75%. Почему: Скидка 75% активна, но качество 45.1 требует осторожной проверки. Reasoning: `medium`, обязателен.
 - **Скорее всего, менять не стоит** — `OpenAI: GPT-5.6 Luna` через OpenAI: $0.2250/1M, agentic 46.9. Почему: Преимущество не окупает смену: цена $0.225/1M без минимум 30% экономии относительно дефолта. Reasoning: `medium`, можно отключить/не указан.
 
 ### Длинные документы (`longdoc`)
 
 - **Это твой рабочий вариант** — `Google: Gemini 3.7 Flash` через Google: $0.2557/1M, intelligence 56.0, скидка 75%. Почему: intelligence 56.0 при цене $0.256/1M; от лидера по качеству отстаёт на 7.1 п. Reasoning: `medium`, обязателен.
-- **Та же модель, но дешевле провайдер** — `OpenAI: GPT-5.6 Terra` через OpenAI: $1.4545/1M, intelligence 56.6. Почему: У этой же модели есть провайдер дешевле в 2.0 раза при uptime 99.97%. Reasoning: `medium`, можно отключить/не указан.
+- **Та же модель, но дешевле провайдер** — `OpenAI: GPT-5.6 Terra` через OpenAI: $1.4545/1M, intelligence 56.6. Почему: У этой же модели есть провайдер дешевле в 2.0 раза при uptime 99.92%. Reasoning: `medium`, можно отключить/не указан.
 - **Большая скидка, но не для основной работы** — `OpenAI: GPT-5.6 Sol` через OpenAI: $1.3636/1M, intelligence 60.9, скидка 50%. Почему: Скидка 50% активна, но качество 60.9 требует осторожной проверки. Reasoning: `medium`, можно отключить/не указан.
 - **Скорее всего, менять не стоит** — `Meta: Muse Spark 1.2` через Meta: $1.5227/1M, intelligence 56.8. Почему: Преимущество не окупает смену: цена $1.523/1M без минимум 30% экономии относительно дефолта. Reasoning: `medium`, обязателен.
 
 ### Массовая генерация (`bulk`)
 
-- **Это твой рабочий вариант** — `DeepSeek: DeepSeek V4 Flash 0731` через Relace: $0.0700/1M, intelligence 51.8, скидка 53%. Почему: intelligence 51.8 при цене $0.070/1M; от лидера по качеству отстаёт на 11.3 п. Reasoning: `high`, можно отключить/не указан.
-- **Та же модель, но дешевле провайдер** — `OpenAI: GPT-5.6 Terra` через OpenAI: $4.7500/1M, intelligence 56.6. Почему: У этой же модели есть провайдер дешевле в 2.0 раза при uptime 99.97%. Reasoning: `medium`, можно отключить/не указан.
-- **Большая скидка, но не для основной работы** — `MiniMax: MiniMax M3` через CoreWeave: $0.7775/1M, intelligence 45.4, скидка 60%. Почему: Скидка 60% активна, но качество 45.4 требует осторожной проверки. Reasoning: `не указан`, можно отключить/не указан.
+- **Это твой рабочий вариант** — `Z.ai: GLM 5.2 (free)` через Decart: $0.0000/1M, intelligence 52.6. Почему: intelligence 52.6 при цене $0.000/1M; от лидера по качеству отстаёт на 10.5 п. Reasoning: `high`, можно отключить/не указан.
+- **Та же модель, но дешевле провайдер** — `DeepSeek: DeepSeek V4 Flash 0731` через OpenInference: $0.0650/1M, intelligence 51.8, скидка 80%. Почему: У этой же модели есть провайдер дешевле в 3.9 раза при uptime 100.00%. Reasoning: `high`, можно отключить/не указан.
+- **Большая скидка, но не для основной работы** — `MiniMax: MiniMax M3` через CoreWeave: $0.7775/1M, intelligence 45.4, скидка 50%. Почему: Скидка 50% активна, но качество 45.4 требует осторожной проверки. Reasoning: `не указан`, можно отключить/не указан.
 - **Скорее всего, менять не стоит** — `OpenAI: GPT-5.6 Luna` через OpenAI: $0.4750/1M, intelligence 52.3. Почему: Преимущество не окупает смену: цена $0.475/1M без минимум 30% экономии относительно дефолта. Reasoning: `medium`, можно отключить/не указан.
 
 ## Ограничения
