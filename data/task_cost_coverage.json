@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 346,
+    "families_total": 345,
     "rankings_surface_families": 140,
-    "benchmark_cost_families": 106,
+    "benchmark_cost_families": 107,
     "session_cost_families": 37,
     "union_secondary_covered": 115,
     "uncovered": 184,
@@ -540,13 +540,6 @@
     },
     {
       "canonical_family": "google/gemma-3-4b-it",
-      "covered_by": [
-        "rankings_surface"
-      ],
-      "classification": "covered"
-    },
-    {
-      "canonical_family": "google/gemma-3n-e4b-it",
       "covered_by": [
         "rankings_surface"
       ],
@@ -1992,6 +1985,7 @@
       "canonical_family": "x-ai/grok-4.6-20260810",
       "covered_by": [
         "rankings_surface",
+        "benchmark_cost",
         "session_cost"
       ],
       "classification": "covered"

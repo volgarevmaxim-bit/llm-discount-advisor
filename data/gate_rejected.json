@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-25T05:49:46Z",
-  "total": 418,
-  "total_unique_families": 346,
+  "generated_at": "2026-08-26T05:52:10Z",
+  "total": 417,
+  "total_unique_families": 345,
   "passed": 104,
-  "passed_unique_families": 72,
+  "passed_unique_families": 71,
   "normalized": 103,
-  "eligible_after_prefilter": 391,
-  "eligible_unique_families": 319,
+  "eligible_after_prefilter": 390,
+  "eligible_unique_families": 318,
   "rejected": [
     {
       "slug": "~z-ai/glm-latest",
@@ -286,6 +286,10 @@
     },
     {
       "slug": "openai/gpt-5.5-pro:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "tencent/hy3-preview",
       "reason": "below_all_thresholds"
     },
     {
@@ -669,10 +673,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "qwen/qwen-plus-2025-07-28:thinking",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "moonshotai/kimi-k2-0905",
       "reason": "below_all_thresholds"
     },
@@ -846,10 +846,6 @@
     },
     {
       "slug": "anthropic/claude-sonnet-4",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "google/gemma-3n-e4b-it",
       "reason": "below_all_thresholds"
     },
     {
