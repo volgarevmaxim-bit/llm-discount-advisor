@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-26T05:52:10Z",
-  "total": 417,
-  "total_unique_families": 345,
-  "passed": 104,
+  "generated_at": "2026-08-27T16:33:03Z",
+  "total": 418,
+  "total_unique_families": 347,
+  "passed": 103,
   "passed_unique_families": 71,
-  "normalized": 103,
-  "eligible_after_prefilter": 390,
-  "eligible_unique_families": 318,
+  "normalized": 102,
+  "eligible_after_prefilter": 391,
+  "eligible_unique_families": 320,
   "rejected": [
     {
       "slug": "~z-ai/glm-latest",
@@ -115,6 +115,10 @@
     {
       "slug": "openrouter/auto",
       "reason": "non_text_output"
+    },
+    {
+      "slug": "qwen/qwen3.8-flash",
+      "reason": "below_all_thresholds"
     },
     {
       "slug": "meta/muse-spark-1.2-contributor",
@@ -322,6 +326,10 @@
     },
     {
       "slug": "bytedance-seed/seed-2.0-lite",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3.5-9b",
       "reason": "below_all_thresholds"
     },
     {
