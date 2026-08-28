@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 347,
+    "families_total": 345,
     "rankings_surface_families": 141,
     "benchmark_cost_families": 109,
     "session_cost_families": 37,
     "union_secondary_covered": 117,
-    "uncovered": 186,
+    "uncovered": 184,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 186
+    "likely_low_signal_uncovered": 184
   },
   "families": [
     {
@@ -806,11 +806,6 @@
       "classification": "covered"
     },
     {
-      "canonical_family": "mistralai/ministral-8b",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
       "canonical_family": "mistralai/ministral-8b-2512",
       "covered_by": [
         "rankings_surface"
@@ -1144,11 +1139,6 @@
         "benchmark_cost"
       ],
       "classification": "covered"
-    },
-    {
-      "canonical_family": "openai/gpt-5-codex",
-      "covered_by": [],
-      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "openai/gpt-5-image",
@@ -1896,12 +1886,12 @@
       "classification": "covered"
     },
     {
-      "canonical_family": "thedrummer/cydonia-24b-v4.1",
+      "canonical_family": "tencent/hy4-preview-20260827",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
     {
-      "canonical_family": "thedrummer/rocinante-12b",
+      "canonical_family": "thedrummer/cydonia-24b-v4.1",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
