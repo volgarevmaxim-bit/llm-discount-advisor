@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 345,
+    "families_total": 343,
     "rankings_surface_families": 141,
-    "benchmark_cost_families": 109,
-    "session_cost_families": 37,
-    "union_secondary_covered": 117,
-    "uncovered": 184,
+    "benchmark_cost_families": 107,
+    "session_cost_families": 36,
+    "union_secondary_covered": 113,
+    "uncovered": 183,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 184
+    "likely_low_signal_uncovered": 183
   },
   "families": [
     {
@@ -28,11 +28,6 @@
     },
     {
       "canonical_family": "aion-labs/aion-rp-llama-3.1-8b",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "allenai/olmo-3-32b-think-20251121",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
@@ -205,11 +200,6 @@
       "classification": "covered"
     },
     {
-      "canonical_family": "arcee-ai/virtuoso-large",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
       "canonical_family": "baidu/ernie-4.5-vl-424b-a47b",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -288,8 +278,7 @@
     {
       "canonical_family": "deepseek/deepseek-chat-v3-0324",
       "covered_by": [
-        "rankings_surface",
-        "benchmark_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },
@@ -1160,10 +1149,8 @@
     },
     {
       "canonical_family": "openai/gpt-5-nano-2025-08-07",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "openai/gpt-5-pro-2025-10-06",
@@ -1502,8 +1489,7 @@
     {
       "canonical_family": "qwen/qwen3-14b-04-28",
       "covered_by": [
-        "rankings_surface",
-        "benchmark_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },
@@ -2086,6 +2072,7 @@
       "canonical_family": "z-ai/glm-5.3-20260816",
       "covered_by": [
         "rankings_surface",
+        "benchmark_cost",
         "session_cost"
       ],
       "classification": "covered"

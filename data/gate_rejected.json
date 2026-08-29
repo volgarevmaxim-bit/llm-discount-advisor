@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-28T17:27:56Z",
-  "total": 388,
-  "total_unique_families": 345,
-  "passed": 98,
+  "generated_at": "2026-08-29T11:40:45Z",
+  "total": 396,
+  "total_unique_families": 343,
+  "passed": 107,
   "passed_unique_families": 72,
-  "normalized": 97,
-  "eligible_after_prefilter": 361,
-  "eligible_unique_families": 318,
+  "normalized": 106,
+  "eligible_after_prefilter": 369,
+  "eligible_unique_families": 316,
   "rejected": [
     {
       "slug": "~z-ai/glm-latest",
@@ -158,6 +158,10 @@
     },
     {
       "slug": "meta/muse-glimmer-30b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "meta/muse-glimmer-30b:batch",
       "reason": "below_all_thresholds"
     },
     {
@@ -517,10 +521,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "allenai/olmo-3-32b-think",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "openai/gpt-5.1",
       "reason": "below_all_thresholds"
     },
@@ -826,10 +826,6 @@
     },
     {
       "slug": "google/gemini-2.5-pro-preview-05-06",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "arcee-ai/virtuoso-large",
       "reason": "below_all_thresholds"
     },
     {
