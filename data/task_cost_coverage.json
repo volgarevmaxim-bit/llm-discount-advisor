@@ -4,8 +4,8 @@
     "families_total": 343,
     "rankings_surface_families": 141,
     "benchmark_cost_families": 107,
-    "session_cost_families": 36,
-    "union_secondary_covered": 113,
+    "session_cost_families": 37,
+    "union_secondary_covered": 114,
     "uncovered": 183,
     "worthy_uncovered": 0,
     "likely_low_signal_uncovered": 183
@@ -1489,7 +1489,8 @@
     {
       "canonical_family": "qwen/qwen3-14b-04-28",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -1537,8 +1538,7 @@
     {
       "canonical_family": "qwen/qwen3-32b-04-28",
       "covered_by": [
-        "rankings_surface",
-        "benchmark_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },
