@@ -4,11 +4,11 @@
     "families_total": 343,
     "rankings_surface_families": 141,
     "benchmark_cost_families": 107,
-    "session_cost_families": 37,
+    "session_cost_families": 36,
     "union_secondary_covered": 114,
-    "uncovered": 183,
+    "uncovered": 182,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 183
+    "likely_low_signal_uncovered": 182
   },
   "families": [
     {
@@ -67,8 +67,10 @@
     },
     {
       "canonical_family": "anthropic/claude-3-haiku",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "session_cost"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "anthropic/claude-4-opus-20250522",
@@ -494,8 +496,7 @@
       "canonical_family": "google/gemini-3.6-flash-20260721",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost",
-        "session_cost"
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -546,8 +547,7 @@
       "canonical_family": "google/gemma-4-31b-it-20260402",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost",
-        "session_cost"
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -912,8 +912,7 @@
       "canonical_family": "moonshotai/kimi-k2.6-20260420",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost",
-        "session_cost"
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -1762,7 +1761,8 @@
       "canonical_family": "qwen/qwen3.8-27b-20260814",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost"
+        "benchmark_cost",
+        "session_cost"
       ],
       "classification": "covered"
     },
@@ -2081,7 +2081,8 @@
       "canonical_family": "z-ai/glm-5.3-flash-20260826",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost"
+        "benchmark_cost",
+        "session_cost"
       ],
       "classification": "covered"
     },

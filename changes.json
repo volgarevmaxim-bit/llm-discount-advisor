@@ -1,29 +1,7 @@
 {
   "schema_version": "1.0",
-  "from": "2026-08-29T11:40:45Z",
-  "to": "2026-08-30T10:30:05Z",
-  "events": [
-    {
-      "type": "discount_action_changed",
-      "profile": "agentic",
-      "before": {
-        "ranking_key": "z-ai/glm-5.3-flash-20260826",
-        "provider": "Z.AI",
-        "variant_id": "z-ai/glm-5.3-flash",
-        "price": 0.1327824056,
-        "score": 58.2,
-        "stable": true
-      },
-      "after": {
-        "ranking_key": "z-ai/glm-5.3-flash-20260826",
-        "provider": "Relace",
-        "variant_id": "z-ai/glm-5.3-flash",
-        "price": 0.1692119474,
-        "score": 58.2,
-        "stable": true
-      },
-      "reason": "Current actionable provider changed."
-    }
-  ],
+  "from": "2026-08-30T10:30:05Z",
+  "to": "2026-08-31T11:38:03Z",
+  "events": [],
   "status": "compared"
 }
