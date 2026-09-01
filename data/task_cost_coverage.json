@@ -2,13 +2,13 @@
   "schema_version": "1.0",
   "counts": {
     "families_total": 343,
-    "rankings_surface_families": 141,
+    "rankings_surface_families": 142,
     "benchmark_cost_families": 107,
     "session_cost_families": 36,
     "union_secondary_covered": 114,
-    "uncovered": 182,
+    "uncovered": 181,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 182
+    "likely_low_signal_uncovered": 181
   },
   "families": [
     {
@@ -579,6 +579,13 @@
       "classification": "covered"
     },
     {
+      "canonical_family": "ibm-granite/granite-4.2-8b-20260831",
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
+    },
+    {
       "canonical_family": "inception/mercury-2-20260304",
       "covered_by": [
         "rankings_surface"
@@ -595,11 +602,6 @@
     },
     {
       "canonical_family": "inclusionai/ling-3.0-flash-fin-20260827",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "kwaipilot/kat-coder-air-v2.5-20260710",
       "covered_by": [],
       "classification": "likely_low_signal"
     },

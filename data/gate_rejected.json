@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-31T11:38:03Z",
-  "total": 396,
+  "generated_at": "2026-09-01T10:10:37Z",
+  "total": 420,
   "total_unique_families": 343,
-  "passed": 106,
-  "passed_unique_families": 71,
-  "normalized": 105,
-  "eligible_after_prefilter": 369,
+  "passed": 109,
+  "passed_unique_families": 69,
+  "normalized": 108,
+  "eligible_after_prefilter": 393,
   "eligible_unique_families": 316,
   "rejected": [
     {
@@ -117,6 +117,10 @@
       "reason": "non_text_output"
     },
     {
+      "slug": "ibm-granite/granite-4.2-8b",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "tencent/hy4-preview",
       "reason": "below_all_thresholds"
     },
@@ -185,10 +189,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "kwaipilot/kat-coder-air-v2.5",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "kwaipilot/kat-coder-pro-v2.5",
       "reason": "below_all_thresholds"
     },
@@ -197,11 +197,23 @@
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "openai/gpt-5.6-luna-pro:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "openai/gpt-5.6-terra-pro",
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "openai/gpt-5.6-terra-pro:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "openai/gpt-5.6-sol-pro",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.6-sol-pro:batch",
       "reason": "below_all_thresholds"
     },
     {
@@ -289,6 +301,14 @@
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "openai/gpt-5.5-pro:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "tencent/hy3-preview",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "openrouter/pareto-code",
       "reason": "below_all_thresholds"
     },
@@ -305,11 +325,11 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "openai/gpt-5.4-nano",
+      "slug": "openai/gpt-5.4-mini",
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "openai/gpt-5.4-mini",
+      "slug": "openai/gpt-5.4-mini:batch",
       "reason": "below_all_thresholds"
     },
     {
@@ -317,15 +337,27 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "mistralai/mistral-small-2603:batch",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "bytedance-seed/seed-2.0-lite",
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "qwen/qwen3.5-9b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3.5-9b:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "openai/gpt-5.4-pro",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.4-pro:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "inception/mercury-2",
       "reason": "below_all_thresholds"
     },
     {
@@ -461,7 +493,15 @@
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "openai/gpt-5.2-pro:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "openai/gpt-5.2",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.2:batch",
       "reason": "below_all_thresholds"
     },
     {
@@ -497,19 +537,11 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "mistralai/ministral-8b-2512:batch",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "mistralai/ministral-3b-2512",
       "reason": "below_all_thresholds"
     },
     {
       "slug": "mistralai/mistral-large-2512",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "mistralai/mistral-large-2512:batch",
       "reason": "below_all_thresholds"
     },
     {
@@ -526,6 +558,10 @@
     },
     {
       "slug": "openai/gpt-5.1",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.1:batch",
       "reason": "below_all_thresholds"
     },
     {
@@ -594,6 +630,10 @@
     },
     {
       "slug": "openai/gpt-5-pro",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5-pro:batch",
       "reason": "below_all_thresholds"
     },
     {
@@ -681,10 +721,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "mistralai/mistral-medium-3.1:batch",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "z-ai/glm-4.5v",
       "reason": "below_all_thresholds"
     },
@@ -693,11 +729,23 @@
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "openai/gpt-5:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "openai/gpt-5-mini",
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "openai/gpt-5-mini:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "openai/gpt-5-nano",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5-nano:batch",
       "reason": "below_all_thresholds"
     },
     {
@@ -710,10 +758,6 @@
     },
     {
       "slug": "mistralai/codestral-2508",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "mistralai/codestral-2508:batch",
       "reason": "below_all_thresholds"
     },
     {
@@ -865,7 +909,15 @@
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "openai/o3:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "openai/o4-mini",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/o4-mini:batch",
       "reason": "below_all_thresholds"
     },
     {
@@ -873,11 +925,23 @@
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "openai/gpt-4.1:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "openai/gpt-4.1-mini",
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "openai/gpt-4.1-mini:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "openai/gpt-4.1-nano",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-4.1-nano:batch",
       "reason": "below_all_thresholds"
     },
     {
@@ -958,6 +1022,10 @@
     },
     {
       "slug": "openai/o3-mini",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/o3-mini:batch",
       "reason": "below_all_thresholds"
     },
     {
@@ -1097,6 +1165,10 @@
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "openai/gpt-4o-mini:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "openai/gpt-4o-mini-2024-07-18",
       "reason": "below_all_thresholds"
     },
@@ -1106,6 +1178,10 @@
     },
     {
       "slug": "openai/gpt-4o",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-4o:batch",
       "reason": "below_all_thresholds"
     },
     {
@@ -1122,6 +1198,10 @@
     },
     {
       "slug": "openai/gpt-4-turbo",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-4-turbo:batch",
       "reason": "below_all_thresholds"
     },
     {
@@ -1162,6 +1242,10 @@
     },
     {
       "slug": "openai/gpt-3.5-turbo",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-3.5-turbo:batch",
       "reason": "below_all_thresholds"
     },
     {
