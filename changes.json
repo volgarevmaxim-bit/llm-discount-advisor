@@ -1,20 +1,12 @@
 {
   "schema_version": "1.0",
-  "from": "2026-08-31T11:38:03Z",
-  "to": "2026-09-01T10:10:37Z",
+  "from": "2026-09-01T10:10:37Z",
+  "to": "2026-09-02T09:41:27Z",
   "events": [
     {
-      "type": "discount_action_changed",
+      "type": "decision_changed",
       "profile": "agentic",
       "before": {
-        "ranking_key": "z-ai/glm-5.3-flash-20260826",
-        "provider": "Relace",
-        "variant_id": "z-ai/glm-5.3-flash",
-        "price": 0.0695505756,
-        "score": 58.2,
-        "stable": true
-      },
-      "after": {
         "ranking_key": "z-ai/glm-5.3-flash-20260826",
         "provider": "Z.AI",
         "variant_id": "z-ai/glm-5.3-flash",
@@ -22,7 +14,82 @@
         "score": 58.2,
         "stable": true
       },
-      "reason": "Current actionable provider changed."
+      "after": {
+        "ranking_key": "anthropic/claude-fable-5.1-20260831",
+        "provider": "Google",
+        "variant_id": "anthropic/claude-fable-5.1",
+        "price": 27.3133366051,
+        "score": 61.3,
+        "stable": true
+      },
+      "reason": "Actionable balanced default changed.",
+      "confirmed": false
+    },
+    {
+      "type": "decision_changed",
+      "profile": "chat",
+      "before": {
+        "ranking_key": "anthropic/claude-opus-5-20260723",
+        "provider": "Claude Platform on AWS",
+        "variant_id": "anthropic/claude-opus-5",
+        "price": 11.6962927054,
+        "score": 63.1,
+        "stable": true
+      },
+      "after": {
+        "ranking_key": "anthropic/claude-fable-5.1-20260831",
+        "provider": "Google",
+        "variant_id": "anthropic/claude-fable-5.1",
+        "price": 27.3133366051,
+        "score": 65.7,
+        "stable": true
+      },
+      "reason": "Actionable balanced default changed.",
+      "confirmed": false
+    },
+    {
+      "type": "decision_changed",
+      "profile": "code",
+      "before": {
+        "ranking_key": "openai/gpt-5.6-terra-20260709",
+        "provider": "OpenAI",
+        "variant_id": "openai/gpt-5.6-terra",
+        "price": 2.7891389899,
+        "score": 76.7,
+        "stable": true
+      },
+      "after": {
+        "ranking_key": "anthropic/claude-fable-5.1-20260831",
+        "provider": "Google",
+        "variant_id": "anthropic/claude-fable-5.1",
+        "price": 27.3133366051,
+        "score": 81.6,
+        "stable": true
+      },
+      "reason": "Actionable balanced default changed.",
+      "confirmed": false
+    },
+    {
+      "type": "decision_changed",
+      "profile": "longdoc",
+      "before": {
+        "ranking_key": "anthropic/claude-opus-5-20260723",
+        "provider": "Claude Platform on AWS",
+        "variant_id": "anthropic/claude-opus-5",
+        "price": 11.6962927054,
+        "score": 63.1,
+        "stable": true
+      },
+      "after": {
+        "ranking_key": "anthropic/claude-fable-5.1-20260831",
+        "provider": "Google",
+        "variant_id": "anthropic/claude-fable-5.1",
+        "price": 27.3133366051,
+        "score": 65.7,
+        "stable": true
+      },
+      "reason": "Actionable balanced default changed.",
+      "confirmed": false
     }
   ],
   "status": "compared"

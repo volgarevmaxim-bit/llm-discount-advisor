@@ -1,13 +1,17 @@
 {
-  "generated_at": "2026-09-01T10:10:37Z",
-  "total": 420,
+  "generated_at": "2026-09-02T09:41:27Z",
+  "total": 421,
   "total_unique_families": 343,
   "passed": 109,
   "passed_unique_families": 69,
   "normalized": 108,
   "eligible_after_prefilter": 393,
-  "eligible_unique_families": 316,
+  "eligible_unique_families": 315,
   "rejected": [
+    {
+      "slug": "~z-ai/glm-flash-latest",
+      "reason": "alias"
+    },
     {
       "slug": "~z-ai/glm-latest",
       "reason": "alias"
@@ -117,6 +121,10 @@
       "reason": "non_text_output"
     },
     {
+      "slug": "inception/mercury-2.5-preview",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "ibm-granite/granite-4.2-8b",
       "reason": "below_all_thresholds"
     },
@@ -170,10 +178,6 @@
     },
     {
       "slug": "qwen/qwen3.7-flash",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "anthropic/claude-opus-5-fast",
       "reason": "below_all_thresholds"
     },
     {
@@ -237,15 +241,7 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "anthropic/claude-opus-4.8-fast",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "x-ai/grok-build-0.1",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "anthropic/claude-opus-4.7-fast",
       "reason": "below_all_thresholds"
     },
     {
@@ -354,6 +350,14 @@
     },
     {
       "slug": "openai/gpt-5.4-pro:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.4",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-5.4:batch",
       "reason": "below_all_thresholds"
     },
     {
