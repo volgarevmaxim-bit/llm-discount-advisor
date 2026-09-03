@@ -6,9 +6,9 @@
   "from": {},
   "to": {
     "model": "anthropic/claude-fable-5.1",
-    "provider": "Google",
+    "provider": "Azure",
     "variant": "anthropic/claude-fable-5.1"
   },
-  "yaml_diff": "--- config.yaml\n+++ proposed config.yaml\n- before:\n+ after:\n+   model: \"anthropic/claude-fable-5.1\"\n+   provider: \"Google\"\n+   variant: \"anthropic/claude-fable-5.1\"",
+  "yaml_diff": "--- config.yaml\n+++ proposed config.yaml\n- before:\n+ after:\n+   model: \"anthropic/claude-fable-5.1\"\n+   provider: \"Azure\"\n+   variant: \"anthropic/claude-fable-5.1\"",
   "reason": "MVP-1 recommendation preview; no automatic config changes."
 }

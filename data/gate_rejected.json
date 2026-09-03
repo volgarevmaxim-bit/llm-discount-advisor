@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-02T09:41:27Z",
-  "total": 421,
-  "total_unique_families": 343,
-  "passed": 109,
-  "passed_unique_families": 69,
-  "normalized": 108,
-  "eligible_after_prefilter": 393,
-  "eligible_unique_families": 315,
+  "generated_at": "2026-09-03T09:54:25Z",
+  "total": 424,
+  "total_unique_families": 346,
+  "passed": 110,
+  "passed_unique_families": 70,
+  "normalized": 109,
+  "eligible_after_prefilter": 396,
+  "eligible_unique_families": 318,
   "rejected": [
     {
       "slug": "~z-ai/glm-flash-latest",
@@ -119,6 +119,14 @@
     {
       "slug": "openrouter/auto",
       "reason": "non_text_output"
+    },
+    {
+      "slug": "meta/muse-spark-1.3-contributor",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "meta/muse-spark-1.3",
+      "reason": "below_all_thresholds"
     },
     {
       "slug": "inception/mercury-2.5-preview",
