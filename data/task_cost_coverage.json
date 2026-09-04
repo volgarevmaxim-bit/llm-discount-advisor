@@ -6,9 +6,9 @@
     "benchmark_cost_families": 106,
     "session_cost_families": 36,
     "union_secondary_covered": 113,
-    "uncovered": 183,
+    "uncovered": 184,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 183
+    "likely_low_signal_uncovered": 184
   },
   "families": [
     {
@@ -162,7 +162,8 @@
     {
       "canonical_family": "anthropic/claude-fable-5.1-20260831",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -1537,10 +1538,8 @@
     },
     {
       "canonical_family": "qwen/qwen3-30b-a3b-instruct-2507",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "qwen/qwen3-30b-a3b-thinking-2507",

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-03T09:54:25Z",
+  "generated_at": "2026-09-04T09:42:20Z",
   "sources": {
     "benchmarks": {
       "urls": [
@@ -8,7 +8,7 @@
       ],
       "meta": [
         {
-          "as_of": "2026-09-01T18:06:42.346Z",
+          "as_of": "2026-09-03T21:14:17.509Z",
           "version": "v1",
           "source": "openrouter",
           "source_url": "https://openrouter.ai/rankings",
@@ -17,7 +17,7 @@
           "task_type": null
         },
         {
-          "as_of": "2026-09-01T17:31:47.883Z",
+          "as_of": "2026-09-03T15:07:26.523Z",
           "version": "v1",
           "source": "openrouter",
           "source_url": "https://openrouter.ai/rankings",
@@ -703,6 +703,19 @@
     },
     {
       "benchmark_type": "gpqa_diamond",
+      "model_permaslug": "anthropic/claude-fable-5.1-20260831",
+      "canonical_family": "anthropic/claude-fable-5.1-20260831",
+      "avg_cost_per_task_usd": 0.11986998484848485,
+      "quality_metric": "accuracy",
+      "quality": 0.8265989999999999,
+      "total_tasks": 198,
+      "last_run_at": "2026-09-03T15:15:42.258Z",
+      "source": "openrouter",
+      "evidence_tier": "A",
+      "scope": "named_benchmark_run"
+    },
+    {
+      "benchmark_type": "gpqa_diamond",
       "model_permaslug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
       "canonical_family": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
       "avg_cost_per_task_usd": 0.08296633678756477,
@@ -1326,19 +1339,6 @@
       "scope": "named_benchmark_run"
     },
     {
-      "benchmark_type": "gpqa_diamond",
-      "model_permaslug": "qwen/qwen3-30b-a3b-instruct-2507",
-      "canonical_family": "qwen/qwen3-30b-a3b-instruct-2507",
-      "avg_cost_per_task_usd": 0.0013303306908267274,
-      "quality_metric": "accuracy",
-      "quality": 0.6381654054360136,
-      "total_tasks": 5298,
-      "last_run_at": "2026-08-29T19:32:59.441Z",
-      "source": "openrouter",
-      "evidence_tier": "A",
-      "scope": "named_benchmark_run"
-    },
-    {
       "benchmark_type": "tau_bench_verified_airline",
       "model_permaslug": "anthropic/claude-5-fable-20260609",
       "canonical_family": "anthropic/claude-5-fable-20260609",
@@ -1529,6 +1529,19 @@
       "quality": 0.7674072222222222,
       "total_tasks": 450,
       "last_run_at": "2026-08-29T08:00:58.361Z",
+      "source": "openrouter",
+      "evidence_tier": "A",
+      "scope": "named_benchmark_run"
+    },
+    {
+      "benchmark_type": "tau_bench_verified_airline",
+      "model_permaslug": "anthropic/claude-fable-5.1-20260831",
+      "canonical_family": "anthropic/claude-fable-5.1-20260831",
+      "avg_cost_per_task_usd": 0.79583198,
+      "quality_metric": "accuracy",
+      "quality": 0.7666669999999999,
+      "total_tasks": 50,
+      "last_run_at": "2026-09-03T15:07:26.523Z",
       "source": "openrouter",
       "evidence_tier": "A",
       "scope": "named_benchmark_run"
@@ -2621,19 +2634,6 @@
       "quality": 0.4466665,
       "total_tasks": 100,
       "last_run_at": "2026-09-01T12:58:37.172Z",
-      "source": "openrouter",
-      "evidence_tier": "A",
-      "scope": "named_benchmark_run"
-    },
-    {
-      "benchmark_type": "tau_bench_verified_airline",
-      "model_permaslug": "meta-llama/llama-4-maverick-17b-128e-instruct",
-      "canonical_family": "meta-llama/llama-4-maverick-17b-128e-instruct",
-      "avg_cost_per_task_usd": 0.04059176116071428,
-      "quality_metric": "accuracy",
-      "quality": 0.44642858482142855,
-      "total_tasks": 448,
-      "last_run_at": "2026-08-29T16:33:29.885Z",
       "source": "openrouter",
       "evidence_tier": "A",
       "scope": "named_benchmark_run"
