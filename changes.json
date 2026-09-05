@@ -1,7 +1,30 @@
 {
   "schema_version": "1.0",
-  "from": "2026-09-03T09:54:25Z",
-  "to": "2026-09-04T09:42:20Z",
-  "events": [],
+  "from": "2026-09-04T09:42:20Z",
+  "to": "2026-09-05T09:07:41Z",
+  "events": [
+    {
+      "type": "decision_changed",
+      "profile": "agentic",
+      "before": {
+        "ranking_key": "anthropic/claude-fable-5.1-20260831",
+        "provider": "Azure",
+        "variant_id": "anthropic/claude-fable-5.1",
+        "price": 29.9802717342,
+        "score": 61.3,
+        "stable": true
+      },
+      "after": {
+        "ranking_key": "anthropic/claude-opus-5-20260723",
+        "provider": "Azure",
+        "variant_id": "anthropic/claude-opus-5",
+        "price": 9.3918747905,
+        "score": 56.4,
+        "stable": true
+      },
+      "reason": "Actionable balanced default changed.",
+      "confirmed": false
+    }
+  ],
   "status": "compared"
 }

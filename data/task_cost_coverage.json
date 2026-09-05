@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 346,
-    "rankings_surface_families": 144,
+    "families_total": 348,
+    "rankings_surface_families": 146,
     "benchmark_cost_families": 106,
     "session_cost_families": 36,
     "union_secondary_covered": 113,
-    "uncovered": 184,
+    "uncovered": 186,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 184
+    "likely_low_signal_uncovered": 186
   },
   "families": [
     {
@@ -572,13 +572,6 @@
       "classification": "likely_low_signal"
     },
     {
-      "canonical_family": "ibm-granite/granite-4.1-8b-20260429",
-      "covered_by": [
-        "rankings_surface"
-      ],
-      "classification": "covered"
-    },
-    {
       "canonical_family": "ibm-granite/granite-4.2-8b-20260831",
       "covered_by": [
         "rankings_surface"
@@ -607,6 +600,11 @@
     },
     {
       "canonical_family": "inclusionai/ling-3.0-flash-fin-20260827",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "inclusionai/ling-3.0-flash-sante-20260904",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
@@ -1322,6 +1320,18 @@
       "classification": "likely_low_signal"
     },
     {
+      "canonical_family": "openai/gpt-6-astra-20260903",
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
+    },
+    {
+      "canonical_family": "openai/gpt-6-astra-pro-20260903",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
       "canonical_family": "openai/gpt-audio",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -1784,10 +1794,9 @@
       "classification": "likely_low_signal"
     },
     {
-      "canonical_family": "qwen/qwen3.8-max-20260803",
+      "canonical_family": "qwen/qwen3.8-max-20260902",
       "covered_by": [
-        "rankings_surface",
-        "session_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },
