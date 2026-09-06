@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-05T09:07:41Z",
+  "generated_at": "2026-09-06T09:28:41Z",
   "total": 431,
   "total_unique_families": 348,
-  "passed": 119,
-  "passed_unique_families": 74,
-  "normalized": 118,
+  "passed": 120,
+  "passed_unique_families": 75,
+  "normalized": 119,
   "eligible_after_prefilter": 403,
   "eligible_unique_families": 320,
   "rejected": [
@@ -126,10 +126,6 @@
     },
     {
       "slug": "openai/gpt-6-astra-pro:batch",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "qwen/qwen3.8-max-0902",
       "reason": "below_all_thresholds"
     },
     {

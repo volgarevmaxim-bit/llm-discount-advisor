@@ -1085,8 +1085,7 @@
     {
       "canonical_family": "openai/gpt-4.1-mini-2025-04-14",
       "covered_by": [
-        "rankings_surface",
-        "benchmark_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },
@@ -1322,7 +1321,8 @@
     {
       "canonical_family": "openai/gpt-6-astra-20260903",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
