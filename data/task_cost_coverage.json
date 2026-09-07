@@ -4,11 +4,11 @@
     "families_total": 348,
     "rankings_surface_families": 146,
     "benchmark_cost_families": 106,
-    "session_cost_families": 36,
-    "union_secondary_covered": 113,
-    "uncovered": 186,
+    "session_cost_families": 40,
+    "union_secondary_covered": 116,
+    "uncovered": 184,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 186
+    "likely_low_signal_uncovered": 184
   },
   "families": [
     {
@@ -163,7 +163,8 @@
       "canonical_family": "anthropic/claude-fable-5.1-20260831",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost"
+        "benchmark_cost",
+        "session_cost"
       ],
       "classification": "covered"
     },
@@ -505,7 +506,8 @@
     {
       "canonical_family": "google/gemini-3.8-flash-20260902",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "session_cost"
       ],
       "classification": "covered"
     },
@@ -719,8 +721,10 @@
     },
     {
       "canonical_family": "meta/muse-spark-1.3-contributor-20260902",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "session_cost"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "microsoft/phi-4",
@@ -1790,8 +1794,10 @@
     },
     {
       "canonical_family": "qwen/qwen3.8-flash-20260826",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "session_cost"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "qwen/qwen3.8-max-20260902",
