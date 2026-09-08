@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-07T10:24:49Z",
-  "total": 430,
+  "generated_at": "2026-09-08T09:45:51Z",
+  "total": 428,
   "total_unique_families": 348,
-  "passed": 118,
-  "passed_unique_families": 74,
-  "normalized": 117,
-  "eligible_after_prefilter": 402,
+  "passed": 121,
+  "passed_unique_families": 78,
+  "normalized": 120,
+  "eligible_after_prefilter": 400,
   "eligible_unique_families": 320,
   "rejected": [
     {
@@ -138,6 +138,10 @@
     },
     {
       "slug": "inception/mercury-2.5-preview",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "ibm-granite/granite-4.2-8b",
       "reason": "below_all_thresholds"
     },
     {
@@ -281,10 +285,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "qwen/qwen3.6-35b-a3b",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "qwen/qwen3.6-max-preview",
       "reason": "below_all_thresholds"
     },
@@ -298,10 +298,6 @@
     },
     {
       "slug": "openai/gpt-5.5-pro:batch",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "tencent/hy3-preview",
       "reason": "below_all_thresholds"
     },
     {
@@ -321,14 +317,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "openai/gpt-5.4-nano",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "openai/gpt-5.4-nano:batch",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "openai/gpt-5.4-mini",
       "reason": "below_all_thresholds"
     },
@@ -342,14 +330,6 @@
     },
     {
       "slug": "bytedance-seed/seed-2.0-lite",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "qwen/qwen3.5-9b",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "qwen/qwen3.5-9b:batch",
       "reason": "below_all_thresholds"
     },
     {
@@ -493,10 +473,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "nvidia/nemotron-3-nano-30b-a3b",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "openai/gpt-5.2-chat",
       "reason": "below_all_thresholds"
     },
@@ -614,6 +590,14 @@
     },
     {
       "slug": "ibm-granite/granite-4.0-h-micro",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "anthropic/claude-haiku-4.5",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "anthropic/claude-haiku-4.5:batch",
       "reason": "below_all_thresholds"
     },
     {
@@ -894,10 +878,6 @@
     },
     {
       "slug": "qwen/qwen3-14b",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "qwen/qwen3-32b",
       "reason": "below_all_thresholds"
     },
     {

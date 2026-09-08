@@ -1,8 +1,8 @@
-# LLM Discount Advisor — отчёт от 2026-09-07
+# LLM Discount Advisor — отчёт от 2026-09-08
 
 Decision-support для выбора модели и provider/variant в Hermes.
 
-Legacy snapshot: **430** строк каталога / **348** семейств; после scope gate прошло **118** строк / **74** семейств.
+Legacy snapshot: **428** строк каталога / **348** семейств; после scope gate прошло **121** строк / **78** семейств.
 
 ## Decision surface
 
@@ -16,42 +16,42 @@ Discount не умножается на observed `costPerRequest`; до подт
 ### Профиль `chat`
 
 Quality: `intelligence`; floor: —.
-Candidates: 1; raw Pareto: 1; stable Pareto: 1.
-- balanced default: `anthropic/claude-fable-5.1-20260831` / Azure / $23.1571928009 / score 56.8
-- cost option: `anthropic/claude-fable-5.1-20260831` / Azure / $23.1571928009 / score 56.8
-- quality option: `anthropic/claude-fable-5.1-20260831` / Azure / $23.1571928009 / score 56.8
+Candidates: 0; raw Pareto: 0; stable Pareto: 0.
+- balanced default: нет сравнимого кандидата
+- cost option: нет сравнимого кандидата
+- quality option: нет сравнимого кандидата
 
 ### Профиль `code`
 
 Quality: `coding`; floor: —.
-Candidates: 34; raw Pareto: 7; stable Pareto: 13.
-- balanced default: `anthropic/claude-fable-5.1-20260831` / Azure / $23.1571928009 / score 81.6
-- cost option: `deepseek/deepseek-v4-flash-20260731` / OpenInference / $0.1591428064 / score 69.1
-- quality option: `anthropic/claude-fable-5.1-20260831` / Azure / $23.1571928009 / score 81.6
+Candidates: 34; raw Pareto: 8; stable Pareto: 16.
+- balanced default: `anthropic/claude-fable-5.1-20260831` / Azure / $15.7911420514 / score 81.6
+- cost option: `deepseek/deepseek-v4-flash-20260731` / OpenInference / $0.1762359957 / score 69.1
+- quality option: `anthropic/claude-fable-5.1-20260831` / Azure / $15.7911420514 / score 81.6
 
 ### Профиль `agentic`
 
 Quality: `agentic`; floor: —.
 Candidates: 12; raw Pareto: 4; stable Pareto: 6.
-- balanced default: `anthropic/claude-opus-5-20260723` / Azure / $13.6544917414 / score 56.4
-- cost option: `z-ai/glm-5.3-flash-20260826` / Relace / $0.206198774 / score 51.5
-- quality option: `anthropic/claude-fable-5.1-20260831` / Azure / $23.1571928009 / score 58.2
+- balanced default: `anthropic/claude-opus-5-20260723` / Azure / $13.0245299385 / score 56.2
+- cost option: `z-ai/glm-5.3-flash-20260826` / Relace / $0.2513905507 / score 51.2
+- quality option: `anthropic/claude-fable-5.1-20260831` / Azure / $15.7911420514 / score 58.0
 
 ### Профиль `longdoc`
 
 Quality: `intelligence`; floor: —.
-Candidates: 1; raw Pareto: 1; stable Pareto: 1.
-- balanced default: `anthropic/claude-fable-5.1-20260831` / Azure / $23.1571928009 / score 56.8
-- cost option: `anthropic/claude-fable-5.1-20260831` / Azure / $23.1571928009 / score 56.8
-- quality option: `anthropic/claude-fable-5.1-20260831` / Azure / $23.1571928009 / score 56.8
+Candidates: 0; raw Pareto: 0; stable Pareto: 0.
+- balanced default: нет сравнимого кандидата
+- cost option: нет сравнимого кандидата
+- quality option: нет сравнимого кандидата
 
 ### Профиль `bulk`
 
 Quality: `intelligence`; floor: —.
-Candidates: 5; raw Pareto: 4; stable Pareto: 4.
-- balanced default: `anthropic/claude-opus-5-20260723` / Azure / $13.6544917414 / score 54.1
-- cost option: `openai/gpt-5.6-terra-20260709` / OpenAI / $3.0723772155 / score 46.8
-- quality option: `anthropic/claude-opus-5-20260723` / Azure / $13.6544917414 / score 54.1
+Candidates: 2; raw Pareto: 2; stable Pareto: 2.
+- balanced default: `anthropic/claude-opus-5-20260723` / Azure / $13.0245299385 / score 50.7
+- cost option: `openai/gpt-5.6-sol-20260709` / OpenAI / $4.9193255734 / score 47.1
+- quality option: `anthropic/claude-opus-5-20260723` / Azure / $13.0245299385 / score 50.7
 
 ### Secondary evidence coverage
 
@@ -66,13 +66,13 @@ Status: `not_applied`; requires confirmation: `True`.
 
 ### Что изменилось
 
-Status: `compared`; events: 0.
+Status: `compared`; events: 2.
 
 ## Legacy shortlist
 
 ### Быстрый ассистент (`chat`)
 
-- **Это твой рабочий вариант** — `Anthropic: Claude Fable 5.1` через Azure: $20.0000/1M, intelligence 56.8. Почему: intelligence 56.8 при цене $20.000/1M; от лидера по качеству отстаёт на 0.0 п. Reasoning: `high`, обязателен.
+- Недостаточно кандидатов с объяснимыми данными.
 
 ### Код (`code`)
 
@@ -83,20 +83,19 @@ Status: `compared`; events: 0.
 
 ### Агентный workflow (`agentic`)
 
-- **Это твой рабочий вариант** — `Z.ai: GLM 5.3 Flash` через Relace: $0.1128/1M, agentic 51.5, скидка 67%. Почему: agentic 51.5 при цене $0.113/1M; от лидера по качеству отстаёт на 6.7 п. Reasoning: `max`, обязателен.
-- **Та же модель, но дешевле провайдер** — `OpenAI: GPT-6 Astra` через OpenAI: $10.0000/1M, agentic 51.6. Почему: У этой же модели есть провайдер дешевле в 2.0 раза при uptime 100.00%. Reasoning: `medium`, обязателен.
-- **Большая скидка, но не для основной работы** — `OpenAI: GPT-5.6 Sol` через OpenAI: $2.0000/1M, agentic 50.7, скидка 50%. Почему: Скидка 50% активна, но качество 50.7 требует осторожной проверки. Reasoning: `medium`, можно отключить/не указан.
-- **Скорее всего, менять не стоит** — `Qwen: Qwen3.8 27B` через Darkbloom: $0.6125/1M, agentic 46.8. Почему: Преимущество не окупает смену: цена $0.613/1M без минимум 30% экономии относительно дефолта. Reasoning: `xhigh`, можно отключить/не указан.
+- **Это твой рабочий вариант** — `Z.ai: GLM 5.3 Flash` через Relace: $0.1128/1M, agentic 51.2, скидка 67%. Почему: agentic 51.2 при цене $0.113/1M; от лидера по качеству отстаёт на 6.8 п. Reasoning: `max`, обязателен.
+- **Та же модель, но дешевле провайдер** — `OpenAI: GPT-6 Astra` через OpenAI: $10.0000/1M, agentic 51.5. Почему: У этой же модели есть провайдер дешевле в 2.0 раза при uptime 100.00%. Reasoning: `medium`, обязателен.
+- **Большая скидка, но не для основной работы** — `OpenAI: GPT-5.6 Sol` через OpenAI: $2.0000/1M, agentic 50.5, скидка 50%. Почему: Скидка 50% активна, но качество 50.5 требует осторожной проверки. Reasoning: `medium`, можно отключить/не указан.
+- **Скорее всего, менять не стоит** — `Qwen: Qwen3.8 27B` через Darkbloom: $0.6125/1M, agentic 46.5. Почему: Преимущество не окупает смену: цена $0.613/1M без минимум 30% экономии относительно дефолта. Reasoning: `xhigh`, можно отключить/не указан.
 
 ### Длинные документы (`longdoc`)
 
-- **Это твой рабочий вариант** — `Anthropic: Claude Fable 5.1` через Azure: $13.6364/1M, intelligence 56.8. Почему: intelligence 56.8 при цене $13.636/1M; от лидера по качеству отстаёт на 0.0 п. Reasoning: `high`, обязателен.
+- Недостаточно кандидатов с объяснимыми данными.
 
 ### Массовая генерация (`bulk`)
 
-- **Это твой рабочий вариант** — `OpenAI: GPT-5.6 Sol` через OpenAI: $4.0000/1M, intelligence 51.3, скидка 50%. Почему: intelligence 51.3 при цене $4.000/1M; от лидера по качеству отстаёт на 2.8 п. Reasoning: `medium`, можно отключить/не указан.
-- **Та же модель, но дешевле провайдер** — `OpenAI: GPT-5.6 Terra` через OpenAI: $4.7500/1M, intelligence 46.8. Почему: У этой же модели есть провайдер дешевле в 2.0 раза при uptime 99.99%. Reasoning: `medium`, можно отключить/не указан.
-- **Скорее всего, менять не стоит** — `Anthropic: Claude Sonnet 5` через Claude Platform on AWS: $8.0000/1M, intelligence 45.1. Почему: Преимущество не окупает смену: цена $8.000/1M без минимум 30% экономии относительно дефолта. Reasoning: `high`, можно отключить/не указан.
+- **Это твой рабочий вариант** — `OpenAI: GPT-5.6 Sol` через OpenAI: $4.0000/1M, intelligence 47.1, скидка 50%. Почему: intelligence 47.1 при цене $4.000/1M; от лидера по качеству отстаёт на 3.6 п. Reasoning: `medium`, можно отключить/не указан.
+- **Скорее всего, менять не стоит** — `Claude Opus 5` через Azure: $20.0000/1M, intelligence 50.7. Почему: Преимущество не окупает смену: цена $20.000/1M без минимум 30% экономии относительно дефолта. Reasoning: `high`, можно отключить/не указан.
 
 ## Ограничения
 
