@@ -6,9 +6,9 @@
     "benchmark_cost_families": 106,
     "session_cost_families": 40,
     "union_secondary_covered": 116,
-    "uncovered": 184,
+    "uncovered": 185,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 184
+    "likely_low_signal_uncovered": 185
   },
   "families": [
     {
@@ -588,7 +588,7 @@
       "classification": "covered"
     },
     {
-      "canonical_family": "inception/mercury-2.5-preview-20260831",
+      "canonical_family": "inception/mercury-2.5-20260908",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
@@ -964,16 +964,14 @@
       "classification": "likely_low_signal"
     },
     {
-      "canonical_family": "nex-agi/nex-n2-mini",
+      "canonical_family": "nex-agi/nex-n2.5-mini-20260908",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
     {
-      "canonical_family": "nex-agi/nex-n2-pro",
-      "covered_by": [
-        "rankings_surface"
-      ],
-      "classification": "covered"
+      "canonical_family": "nex-agi/nex-n2.5-pro-20260907",
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "nousresearch/hermes-3-llama-3.1-405b",

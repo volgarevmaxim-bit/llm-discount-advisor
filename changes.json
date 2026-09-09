@@ -1,52 +1,7 @@
 {
   "schema_version": "1.0",
-  "from": "2026-09-07T10:24:49Z",
-  "to": "2026-09-08T09:45:51Z",
-  "events": [
-    {
-      "type": "decision_changed",
-      "profile": "chat",
-      "before": {
-        "ranking_key": "anthropic/claude-fable-5.1-20260831",
-        "provider": "Azure",
-        "variant_id": "anthropic/claude-fable-5.1",
-        "price": 23.1571928009,
-        "score": 56.8,
-        "stable": true
-      },
-      "after": {
-        "ranking_key": null,
-        "provider": null,
-        "variant_id": null,
-        "price": null,
-        "score": null,
-        "stable": false
-      },
-      "reason": "Actionable balanced default changed.",
-      "confirmed": false
-    },
-    {
-      "type": "decision_changed",
-      "profile": "longdoc",
-      "before": {
-        "ranking_key": "anthropic/claude-fable-5.1-20260831",
-        "provider": "Azure",
-        "variant_id": "anthropic/claude-fable-5.1",
-        "price": 23.1571928009,
-        "score": 56.8,
-        "stable": true
-      },
-      "after": {
-        "ranking_key": null,
-        "provider": null,
-        "variant_id": null,
-        "price": null,
-        "score": null,
-        "stable": false
-      },
-      "reason": "Actionable balanced default changed.",
-      "confirmed": false
-    }
-  ],
+  "from": "2026-09-08T09:45:51Z",
+  "to": "2026-09-09T09:50:02Z",
+  "events": [],
   "status": "compared"
 }
