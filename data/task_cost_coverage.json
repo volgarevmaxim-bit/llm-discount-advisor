@@ -3,7 +3,7 @@
   "counts": {
     "families_total": 348,
     "rankings_surface_families": 146,
-    "benchmark_cost_families": 106,
+    "benchmark_cost_families": 107,
     "session_cost_families": 40,
     "union_secondary_covered": 116,
     "uncovered": 185,
@@ -367,6 +367,11 @@
         "session_cost"
       ],
       "classification": "covered"
+    },
+    {
+      "canonical_family": "deepseek/deepseek-v4.1-flash-20260910",
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "dots-studio/dots-3-note-preview-20260813",
@@ -985,11 +990,6 @@
     },
     {
       "canonical_family": "nousresearch/hermes-4-405b",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "nousresearch/hermes-4-70b",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
@@ -1793,6 +1793,7 @@
     {
       "canonical_family": "qwen/qwen3.8-flash-20260826",
       "covered_by": [
+        "benchmark_cost",
         "session_cost"
       ],
       "classification": "covered"
