@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-10T09:48:13Z",
-  "total": 436,
-  "total_unique_families": 348,
+  "generated_at": "2026-09-11T09:47:14Z",
+  "total": 439,
+  "total_unique_families": 351,
   "passed": 127,
-  "passed_unique_families": 81,
+  "passed_unique_families": 82,
   "normalized": 126,
-  "eligible_after_prefilter": 408,
-  "eligible_unique_families": 320,
+  "eligible_after_prefilter": 411,
+  "eligible_unique_families": 323,
   "rejected": [
     {
       "slug": "~z-ai/glm-flash-latest",
@@ -121,7 +121,11 @@
       "reason": "non_text_output"
     },
     {
-      "slug": "deepseek/deepseek-v4.1-flash",
+      "slug": "sakana/fugu-ultra-v2",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "sakana/fugu-max",
       "reason": "below_all_thresholds"
     },
     {
@@ -138,10 +142,6 @@
     },
     {
       "slug": "meta/muse-spark-1.3-contributor",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "ibm-granite/granite-4.2-8b",
       "reason": "below_all_thresholds"
     },
     {
@@ -525,6 +525,14 @@
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "mistralai/ministral-8b-2512",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "mistralai/ministral-8b-2512:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "mistralai/ministral-3b-2512",
       "reason": "below_all_thresholds"
     },
@@ -886,6 +894,10 @@
     },
     {
       "slug": "qwen/qwen3-14b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3-32b",
       "reason": "below_all_thresholds"
     },
     {

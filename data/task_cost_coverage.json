@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 348,
-    "rankings_surface_families": 146,
-    "benchmark_cost_families": 107,
+    "families_total": 351,
+    "rankings_surface_families": 148,
+    "benchmark_cost_families": 106,
     "session_cost_families": 40,
-    "union_secondary_covered": 116,
-    "uncovered": 185,
+    "union_secondary_covered": 115,
+    "uncovered": 188,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 185
+    "likely_low_signal_uncovered": 188
   },
   "families": [
     {
@@ -370,8 +370,11 @@
     },
     {
       "canonical_family": "deepseek/deepseek-v4.1-flash-20260910",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface",
+        "benchmark_cost"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "dots-studio/dots-3-note-preview-20260813",
@@ -614,6 +617,13 @@
       "canonical_family": "inclusionai/ling-3.0-flash-sante-20260904",
       "covered_by": [],
       "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "inclusionai/ling-3.0-flash-vl-20260910",
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "kwaipilot/kat-coder-pro-v2-20260327",
@@ -1114,10 +1124,8 @@
     },
     {
       "canonical_family": "openai/gpt-4o-2024-08-06",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "openai/gpt-4o-2024-11-20",
@@ -1642,10 +1650,8 @@
     },
     {
       "canonical_family": "qwen/qwen3-vl-30b-a3b-instruct",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "qwen/qwen3-vl-30b-a3b-thinking",
@@ -1826,7 +1832,17 @@
       "classification": "likely_low_signal"
     },
     {
+      "canonical_family": "sakana/fugu-max-20260911",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
       "canonical_family": "sakana/fugu-ultra-20260615",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "sakana/fugu-ultra-v2-20260911",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
