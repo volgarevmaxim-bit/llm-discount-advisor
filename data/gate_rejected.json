@@ -1,13 +1,29 @@
 {
-  "generated_at": "2026-09-11T09:47:14Z",
-  "total": 439,
-  "total_unique_families": 351,
-  "passed": 127,
-  "passed_unique_families": 82,
-  "normalized": 126,
-  "eligible_after_prefilter": 411,
-  "eligible_unique_families": 323,
+  "generated_at": "2026-09-12T09:24:57Z",
+  "total": 445,
+  "total_unique_families": 356,
+  "passed": 126,
+  "passed_unique_families": 80,
+  "normalized": 125,
+  "eligible_after_prefilter": 414,
+  "eligible_unique_families": 325,
   "rejected": [
+    {
+      "slug": "~openai/gpt-astra-latest",
+      "reason": "alias"
+    },
+    {
+      "slug": "~openai/gpt-sol-latest",
+      "reason": "alias"
+    },
+    {
+      "slug": "~openai/gpt-terra-latest",
+      "reason": "alias"
+    },
+    {
+      "slug": "~openai/gpt-luna-latest",
+      "reason": "alias"
+    },
     {
       "slug": "~z-ai/glm-flash-latest",
       "reason": "alias"
@@ -69,10 +85,6 @@
       "reason": "alias"
     },
     {
-      "slug": "~openai/gpt-latest",
-      "reason": "alias"
-    },
-    {
       "slug": "openai/gpt-5.4-image-2-20260421",
       "reason": "non_text_output"
     },
@@ -119,6 +131,14 @@
     {
       "slug": "openrouter/auto",
       "reason": "non_text_output"
+    },
+    {
+      "slug": "inference-net/schematron-v2-turbo",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "inference-net/schematron-v2-small",
+      "reason": "below_all_thresholds"
     },
     {
       "slug": "sakana/fugu-ultra-v2",
@@ -293,6 +313,10 @@
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "qwen/qwen3.6-35b-a3b",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "qwen/qwen3.6-max-preview",
       "reason": "below_all_thresholds"
     },
@@ -330,6 +354,10 @@
     },
     {
       "slug": "openai/gpt-5.4-mini:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "z-ai/glm-5-turbo",
       "reason": "below_all_thresholds"
     },
     {

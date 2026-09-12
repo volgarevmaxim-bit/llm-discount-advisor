@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 351,
+    "families_total": 356,
     "rankings_surface_families": 148,
     "benchmark_cost_families": 106,
     "session_cost_families": 40,
     "union_secondary_covered": 115,
-    "uncovered": 188,
+    "uncovered": 193,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 188
+    "likely_low_signal_uncovered": 193
   },
   "families": [
     {
@@ -624,6 +624,16 @@
         "rankings_surface"
       ],
       "classification": "covered"
+    },
+    {
+      "canonical_family": "inference-net/schematron-v2-small-20260902",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "inference-net/schematron-v2-turbo-20260902",
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "kwaipilot/kat-coder-pro-v2-20260327",
@@ -2174,12 +2184,27 @@
       "classification": "likely_low_signal"
     },
     {
-      "canonical_family": "~openai/gpt-latest",
+      "canonical_family": "~openai/gpt-astra-latest",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "~openai/gpt-luna-latest",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
     {
       "canonical_family": "~openai/gpt-mini-latest",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "~openai/gpt-sol-latest",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "~openai/gpt-terra-latest",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
