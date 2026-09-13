@@ -3,12 +3,12 @@
   "counts": {
     "families_total": 356,
     "rankings_surface_families": 148,
-    "benchmark_cost_families": 106,
+    "benchmark_cost_families": 107,
     "session_cost_families": 40,
-    "union_secondary_covered": 115,
-    "uncovered": 193,
+    "union_secondary_covered": 116,
+    "uncovered": 192,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 193
+    "likely_low_signal_uncovered": 192
   },
   "families": [
     {
@@ -1660,8 +1660,10 @@
     },
     {
       "canonical_family": "qwen/qwen3-vl-30b-a3b-instruct",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "benchmark_cost"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "qwen/qwen3-vl-30b-a3b-thinking",
