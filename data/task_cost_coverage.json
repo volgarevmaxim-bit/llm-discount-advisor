@@ -412,11 +412,6 @@
       "classification": "covered"
     },
     {
-      "canonical_family": "google/gemini-2.5-pro-preview-03-25",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
       "canonical_family": "google/gemini-2.5-pro-preview-06-05",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -1095,11 +1090,6 @@
         "rankings_surface"
       ],
       "classification": "covered"
-    },
-    {
-      "canonical_family": "openai/gpt-4-turbo-preview",
-      "covered_by": [],
-      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "openai/gpt-4.1-2025-04-14",
@@ -2167,6 +2157,16 @@
     },
     {
       "canonical_family": "~anthropic/claude-sonnet-latest",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "~deepseek/deepseek-flash-latest",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "~deepseek/deepseek-pro-latest",
       "covered_by": [],
       "classification": "likely_low_signal"
     },

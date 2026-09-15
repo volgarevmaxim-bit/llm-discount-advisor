@@ -1,13 +1,21 @@
 {
-  "generated_at": "2026-09-14T10:44:21Z",
+  "generated_at": "2026-09-15T10:08:19Z",
   "total": 445,
   "total_unique_families": 356,
-  "passed": 126,
-  "passed_unique_families": 80,
-  "normalized": 125,
-  "eligible_after_prefilter": 414,
-  "eligible_unique_families": 325,
+  "passed": 125,
+  "passed_unique_families": 79,
+  "normalized": 124,
+  "eligible_after_prefilter": 412,
+  "eligible_unique_families": 323,
   "rejected": [
+    {
+      "slug": "~deepseek/deepseek-pro-latest",
+      "reason": "alias"
+    },
+    {
+      "slug": "~deepseek/deepseek-flash-latest",
+      "reason": "alias"
+    },
     {
       "slug": "~openai/gpt-astra-latest",
       "reason": "alias"
@@ -346,6 +354,10 @@
     },
     {
       "slug": "rekaai/reka-edge",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "minimax/minimax-m2.7",
       "reason": "below_all_thresholds"
     },
     {
@@ -905,10 +917,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "google/gemini-2.5-pro-preview-05-06",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "meta-llama/llama-guard-4-12b",
       "reason": "below_all_thresholds"
     },
@@ -1246,10 +1254,6 @@
     },
     {
       "slug": "openai/gpt-3.5-turbo-0613",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "openai/gpt-4-turbo-preview",
       "reason": "below_all_thresholds"
     },
     {
