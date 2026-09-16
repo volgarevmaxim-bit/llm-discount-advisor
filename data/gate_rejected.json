@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-15T10:08:19Z",
-  "total": 445,
+  "generated_at": "2026-09-16T09:59:39Z",
+  "total": 443,
   "total_unique_families": 356,
-  "passed": 125,
-  "passed_unique_families": 79,
-  "normalized": 124,
-  "eligible_after_prefilter": 412,
+  "passed": 119,
+  "passed_unique_families": 77,
+  "normalized": 118,
+  "eligible_after_prefilter": 410,
   "eligible_unique_families": 323,
   "rejected": [
     {
@@ -369,11 +369,27 @@
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "mistralai/mistral-small-2603",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "mistralai/mistral-small-2603:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "z-ai/glm-5-turbo",
       "reason": "below_all_thresholds"
     },
     {
       "slug": "bytedance-seed/seed-2.0-lite",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3.5-9b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3.5-9b:batch",
       "reason": "below_all_thresholds"
     },
     {

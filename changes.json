@@ -1,7 +1,30 @@
 {
   "schema_version": "1.0",
-  "from": "2026-09-14T10:44:21Z",
-  "to": "2026-09-15T10:08:19Z",
-  "events": [],
+  "from": "2026-09-15T10:08:19Z",
+  "to": "2026-09-16T09:59:39Z",
+  "events": [
+    {
+      "type": "decision_changed",
+      "profile": "agentic",
+      "before": {
+        "ranking_key": "anthropic/claude-opus-5-20260723",
+        "provider": "Azure",
+        "variant_id": "anthropic/claude-opus-5",
+        "price": 16.2639741466,
+        "score": 56.2,
+        "stable": true
+      },
+      "after": {
+        "ranking_key": "qwen/qwen3.8-max-20260902",
+        "provider": "Alibaba",
+        "variant_id": "qwen/qwen3.8-max-0902",
+        "price": 5.0620093583,
+        "score": 56.1,
+        "stable": true
+      },
+      "reason": "Actionable balanced default changed.",
+      "confirmed": false
+    }
+  ],
   "status": "compared"
 }
