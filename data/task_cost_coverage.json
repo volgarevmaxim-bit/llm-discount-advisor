@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 356,
-    "rankings_surface_families": 148,
-    "benchmark_cost_families": 107,
+    "families_total": 357,
+    "rankings_surface_families": 149,
+    "benchmark_cost_families": 110,
     "session_cost_families": 44,
-    "union_secondary_covered": 116,
-    "uncovered": 191,
+    "union_secondary_covered": 119,
+    "uncovered": 190,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 191
+    "likely_low_signal_uncovered": 190
   },
   "families": [
     {
@@ -607,8 +607,10 @@
     },
     {
       "canonical_family": "inclusionai/ling-3.0-flash-fin-20260827",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "inclusionai/ling-3.0-flash-sante-20260904",
@@ -693,8 +695,7 @@
     {
       "canonical_family": "meta-llama/llama-4-maverick-17b-128e-instruct",
       "covered_by": [
-        "rankings_surface",
-        "benchmark_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },
@@ -1429,8 +1430,10 @@
     },
     {
       "canonical_family": "openrouter/auto",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "benchmark_cost"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "openrouter/auto-beta",
@@ -1656,10 +1659,8 @@
     },
     {
       "canonical_family": "qwen/qwen3-vl-30b-a3b-instruct",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "qwen/qwen3-vl-30b-a3b-thinking",
@@ -1873,6 +1874,13 @@
       "canonical_family": "sao10k/l3.3-euryale-70b-v2.3",
       "covered_by": [],
       "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "stealth/union-alpha",
+      "covered_by": [
+        "benchmark_cost"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "stepfun/step-3.5-flash",

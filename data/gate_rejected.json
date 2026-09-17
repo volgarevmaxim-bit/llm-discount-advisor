@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-16T09:59:39Z",
-  "total": 443,
-  "total_unique_families": 356,
+  "generated_at": "2026-09-17T10:02:51Z",
+  "total": 444,
+  "total_unique_families": 357,
   "passed": 119,
   "passed_unique_families": 77,
   "normalized": 118,
-  "eligible_after_prefilter": 410,
-  "eligible_unique_families": 323,
+  "eligible_after_prefilter": 411,
+  "eligible_unique_families": 324,
   "rejected": [
     {
       "slug": "~deepseek/deepseek-pro-latest",
@@ -530,6 +530,10 @@
     },
     {
       "slug": "google/gemini-3-flash-preview:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "nvidia/nemotron-3-nano-30b-a3b",
       "reason": "below_all_thresholds"
     },
     {
