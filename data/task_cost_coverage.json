@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 357,
+    "families_total": 359,
     "rankings_surface_families": 149,
     "benchmark_cost_families": 110,
     "session_cost_families": 44,
     "union_secondary_covered": 119,
-    "uncovered": 190,
+    "uncovered": 193,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 190
+    "likely_low_signal_uncovered": 193
   },
   "families": [
     {
@@ -1503,6 +1503,11 @@
       "classification": "likely_low_signal"
     },
     {
+      "canonical_family": "prism-ml/ternary-bonsai-2-27b-20260918",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
       "canonical_family": "qwen/qwen-2.5-72b-instruct",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -1876,13 +1881,6 @@
       "classification": "likely_low_signal"
     },
     {
-      "canonical_family": "stealth/union-alpha",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
-    },
-    {
       "canonical_family": "stepfun/step-3.5-flash",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -1964,6 +1962,11 @@
         "benchmark_cost"
       ],
       "classification": "covered"
+    },
+    {
+      "canonical_family": "unbiased/pareto-20260917",
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "undi95/remm-slerp-l2-13b",
@@ -2142,6 +2145,11 @@
         "session_cost"
       ],
       "classification": "covered"
+    },
+    {
+      "canonical_family": "z-ai/glm-5.3-flashx-20260918",
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "z-ai/glm-5v-turbo-20260401",
