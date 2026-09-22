@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 359,
-    "rankings_surface_families": 149,
+    "families_total": 361,
+    "rankings_surface_families": 151,
     "benchmark_cost_families": 110,
     "session_cost_families": 44,
     "union_secondary_covered": 120,
-    "uncovered": 193,
+    "uncovered": 194,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 193
+    "likely_low_signal_uncovered": 194
   },
   "families": [
     {
@@ -71,11 +71,6 @@
         "session_cost"
       ],
       "classification": "covered"
-    },
-    {
-      "canonical_family": "anthropic/claude-4-opus-20250522",
-      "covered_by": [],
-      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "anthropic/claude-4-sonnet-20250522",
@@ -633,13 +628,6 @@
       "canonical_family": "inference-net/schematron-v2-turbo-20260902",
       "covered_by": [],
       "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "kwaipilot/kat-coder-pro-v2-20260327",
-      "covered_by": [
-        "rankings_surface"
-      ],
-      "classification": "covered"
     },
     {
       "canonical_family": "kwaipilot/kat-coder-pro-v2.5-20260710",
@@ -2031,6 +2019,13 @@
       "classification": "covered"
     },
     {
+      "canonical_family": "x-ai/grok-4.7-20260916",
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
+    },
+    {
       "canonical_family": "x-ai/grok-build-0.1-20260520",
       "covered_by": [
         "rankings_surface"
@@ -2053,6 +2048,23 @@
         "benchmark_cost"
       ],
       "classification": "covered"
+    },
+    {
+      "canonical_family": "xiaomi/mimo-v2.6-flash-20260921",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "xiaomi/mimo-v2.6-pro-20260921",
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
+    },
+    {
+      "canonical_family": "xiaomi/mimo-v2.6-pro-ultraspeed-20260921",
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "z-ai/glm-4.5",

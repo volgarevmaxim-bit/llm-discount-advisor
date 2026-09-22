@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-21T10:47:29Z",
-  "total": 446,
-  "total_unique_families": 359,
+  "generated_at": "2026-09-22T10:02:30Z",
+  "total": 444,
+  "total_unique_families": 361,
   "passed": 120,
-  "passed_unique_families": 77,
+  "passed_unique_families": 79,
   "normalized": 119,
-  "eligible_after_prefilter": 413,
-  "eligible_unique_families": 326,
+  "eligible_after_prefilter": 411,
+  "eligible_unique_families": 328,
   "rejected": [
     {
       "slug": "~deepseek/deepseek-pro-latest",
@@ -139,6 +139,14 @@
     {
       "slug": "openrouter/auto",
       "reason": "non_text_output"
+    },
+    {
+      "slug": "xiaomi/mimo-v2.6-pro-ultraspeed",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "xiaomi/mimo-v2.6-flash",
+      "reason": "below_all_thresholds"
     },
     {
       "slug": "prism-ml/ternary-bonsai-2-27b",
@@ -361,10 +369,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "kwaipilot/kat-coder-pro-v2",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "rekaai/reka-edge",
       "reason": "below_all_thresholds"
     },
@@ -390,10 +394,6 @@
     },
     {
       "slug": "qwen/qwen3.5-9b",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "qwen/qwen3.5-9b:batch",
       "reason": "below_all_thresholds"
     },
     {
@@ -809,10 +809,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "openai/gpt-oss-120b:batch",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "anthropic/claude-opus-4.1",
       "reason": "below_all_thresholds"
     },
@@ -926,10 +922,6 @@
     },
     {
       "slug": "deepseek/deepseek-r1-0528",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "anthropic/claude-opus-4",
       "reason": "below_all_thresholds"
     },
     {
