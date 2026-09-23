@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 361,
-    "rankings_surface_families": 151,
+    "families_total": 368,
+    "rankings_surface_families": 154,
     "benchmark_cost_families": 110,
     "session_cost_families": 44,
-    "union_secondary_covered": 120,
-    "uncovered": 194,
+    "union_secondary_covered": 119,
+    "uncovered": 200,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 194
+    "likely_low_signal_uncovered": 200
   },
   "families": [
     {
@@ -173,6 +173,13 @@
       "classification": "covered"
     },
     {
+      "canonical_family": "anthropic/claude-opus-5.5-20260921",
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
+    },
+    {
       "canonical_family": "anthropic/claude-sonnet-5-20260630",
       "covered_by": [
         "rankings_surface",
@@ -234,6 +241,11 @@
         "rankings_surface"
       ],
       "classification": "covered"
+    },
+    {
+      "canonical_family": "cohere/command-a-plus-05-2026",
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "cohere/command-r-08-2024",
@@ -1103,10 +1115,8 @@
     },
     {
       "canonical_family": "openai/gpt-4o",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "openai/gpt-4o-2024-05-13",
@@ -1332,6 +1342,31 @@
     },
     {
       "canonical_family": "openai/gpt-6-astra-pro-20260903",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "openai/gpt-6-luna-20260922",
+      "covered_by": [
+        "rankings_surface",
+        "benchmark_cost"
+      ],
+      "classification": "covered"
+    },
+    {
+      "canonical_family": "openai/gpt-6-luna-pro-20260922",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "openai/gpt-6-sol-20260922",
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
+    },
+    {
+      "canonical_family": "openai/gpt-6-sol-pro-20260922",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
@@ -1590,10 +1625,8 @@
     },
     {
       "canonical_family": "qwen/qwen3-coder-480b-a35b-07-25",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "qwen/qwen3-coder-flash",
@@ -1639,10 +1672,8 @@
     },
     {
       "canonical_family": "qwen/qwen3-vl-235b-a22b-instruct",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "qwen/qwen3-vl-235b-a22b-thinking",
@@ -1814,6 +1845,11 @@
       "classification": "covered"
     },
     {
+      "canonical_family": "qwen/qwen3.8-omni-flash-20260918",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
       "canonical_family": "rekaai/reka-edge-2603",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -1916,6 +1952,7 @@
     {
       "canonical_family": "tencent/hy4-preview-20260827",
       "covered_by": [
+        "benchmark_cost",
         "session_cost"
       ],
       "classification": "covered"
@@ -2051,8 +2088,10 @@
     },
     {
       "canonical_family": "xiaomi/mimo-v2.6-flash-20260921",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "benchmark_cost"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "xiaomi/mimo-v2.6-pro-20260921",
