@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-23T10:02:45Z",
-  "total": 454,
-  "total_unique_families": 368,
-  "passed": 124,
-  "passed_unique_families": 81,
-  "normalized": 123,
-  "eligible_after_prefilter": 421,
-  "eligible_unique_families": 335,
+  "generated_at": "2026-09-24T10:05:49Z",
+  "total": 458,
+  "total_unique_families": 374,
+  "passed": 122,
+  "passed_unique_families": 82,
+  "normalized": 121,
+  "eligible_after_prefilter": 425,
+  "eligible_unique_families": 341,
   "rejected": [
     {
       "slug": "~deepseek/deepseek-pro-latest",
@@ -139,6 +139,30 @@
     {
       "slug": "openrouter/auto",
       "reason": "non_text_output"
+    },
+    {
+      "slug": "fireworks/ember-1",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "z-ai/glm-5.3-prime",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3.8-max-prime",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "aion-labs/aion-3.5-mini",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "aion-labs/aion-3.5",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "upstage/solar-mini4",
+      "reason": "below_all_thresholds"
     },
     {
       "slug": "cohere/command-a-plus",
@@ -477,6 +501,14 @@
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "anthropic/claude-sonnet-4.6",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "anthropic/claude-sonnet-4.6:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "qwen/qwen3.5-plus-02-15",
       "reason": "below_all_thresholds"
     },
@@ -578,10 +610,6 @@
     },
     {
       "slug": "openai/gpt-5.2:batch",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "mistralai/devstral-2512",
       "reason": "below_all_thresholds"
     },
     {
@@ -826,10 +854,6 @@
     },
     {
       "slug": "openai/gpt-5-nano:batch",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "openai/gpt-oss-120b",
       "reason": "below_all_thresholds"
     },
     {

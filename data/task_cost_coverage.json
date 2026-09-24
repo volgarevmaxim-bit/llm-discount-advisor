@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 368,
+    "families_total": 374,
     "rankings_surface_families": 154,
     "benchmark_cost_families": 110,
     "session_cost_families": 44,
     "union_secondary_covered": 119,
-    "uncovered": 200,
+    "uncovered": 210,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 200
+    "likely_low_signal_uncovered": 210
   },
   "families": [
     {
@@ -23,6 +23,16 @@
     },
     {
       "canonical_family": "aion-labs/aion-3.0-mini-20260707",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "aion-labs/aion-3.5-20260923",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "aion-labs/aion-3.5-mini-20260923",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
@@ -175,7 +185,8 @@
     {
       "canonical_family": "anthropic/claude-opus-5.5-20260921",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -391,6 +402,11 @@
       "classification": "likely_low_signal"
     },
     {
+      "canonical_family": "fireworks/ember-1-20260923",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
       "canonical_family": "google/gemini-2.5-flash",
       "covered_by": [
         "benchmark_cost",
@@ -405,10 +421,8 @@
     },
     {
       "canonical_family": "google/gemini-2.5-flash-lite",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "google/gemini-2.5-pro",
@@ -627,7 +641,8 @@
     {
       "canonical_family": "inclusionai/ling-3.0-flash-vl-20260910",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -816,13 +831,6 @@
       "canonical_family": "mistralai/codestral-2508",
       "covered_by": [],
       "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "mistralai/devstral-2512",
-      "covered_by": [
-        "rankings_surface"
-      ],
-      "classification": "covered"
     },
     {
       "canonical_family": "mistralai/ministral-14b-2512",
@@ -1094,10 +1102,8 @@
     },
     {
       "canonical_family": "openai/gpt-4.1-2025-04-14",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "openai/gpt-4.1-mini-2025-04-14",
@@ -1175,10 +1181,8 @@
     },
     {
       "canonical_family": "openai/gpt-5-nano-2025-08-07",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "openai/gpt-5-pro-2025-10-06",
@@ -1355,13 +1359,16 @@
     },
     {
       "canonical_family": "openai/gpt-6-luna-pro-20260922",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "benchmark_cost"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "openai/gpt-6-sol-20260922",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -1658,10 +1665,8 @@
     },
     {
       "canonical_family": "qwen/qwen3-next-80b-a3b-instruct-2509",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "qwen/qwen3-next-80b-a3b-thinking-2509",
@@ -1845,6 +1850,11 @@
       "classification": "covered"
     },
     {
+      "canonical_family": "qwen/qwen3.8-max-prime-20260923",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
       "canonical_family": "qwen/qwen3.8-omni-flash-20260918",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -1901,6 +1911,11 @@
     },
     {
       "canonical_family": "sao10k/l3.3-euryale-70b-v2.3",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "stealth/space-bunny-alpha",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
@@ -1995,6 +2010,11 @@
     },
     {
       "canonical_family": "undi95/remm-slerp-l2-13b",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "upstage/solar-mini4-20260922",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
@@ -2199,6 +2219,11 @@
     },
     {
       "canonical_family": "z-ai/glm-5.3-flashx-20260918",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "z-ai/glm-5.3-prime-20260921",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
