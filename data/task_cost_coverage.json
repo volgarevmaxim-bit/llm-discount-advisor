@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 374,
-    "rankings_surface_families": 154,
+    "families_total": 375,
+    "rankings_surface_families": 155,
     "benchmark_cost_families": 110,
     "session_cost_families": 44,
     "union_secondary_covered": 119,
-    "uncovered": 210,
+    "uncovered": 209,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 210
+    "likely_low_signal_uncovered": 209
   },
   "families": [
     {
@@ -615,8 +615,10 @@
     },
     {
       "canonical_family": "inception/mercury-2.5-20260908",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "inclusionai/ling-3.0-flash-20260723",
@@ -831,6 +833,13 @@
       "canonical_family": "mistralai/codestral-2508",
       "covered_by": [],
       "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "mistralai/devstral-2512",
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "mistralai/ministral-14b-2512",

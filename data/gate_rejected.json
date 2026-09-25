@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-24T10:05:49Z",
-  "total": 458,
-  "total_unique_families": 374,
-  "passed": 122,
-  "passed_unique_families": 82,
-  "normalized": 121,
-  "eligible_after_prefilter": 425,
-  "eligible_unique_families": 341,
+  "generated_at": "2026-09-25T10:14:38Z",
+  "total": 460,
+  "total_unique_families": 375,
+  "passed": 123,
+  "passed_unique_families": 83,
+  "normalized": 122,
+  "eligible_after_prefilter": 427,
+  "eligible_unique_families": 342,
   "rejected": [
     {
       "slug": "~deepseek/deepseek-pro-latest",
@@ -222,10 +222,6 @@
     },
     {
       "slug": "sakana/fugu-max",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "inception/mercury-2.5",
       "reason": "below_all_thresholds"
     },
     {
@@ -613,6 +609,10 @@
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "mistralai/devstral-2512",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "relace/relace-search",
       "reason": "below_all_thresholds"
     },
@@ -646,6 +646,10 @@
     },
     {
       "slug": "mistralai/ministral-3b-2512",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "mistralai/mistral-large-2512",
       "reason": "below_all_thresholds"
     },
     {
