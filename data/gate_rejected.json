@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-25T10:14:38Z",
-  "total": 460,
-  "total_unique_families": 375,
-  "passed": 123,
-  "passed_unique_families": 83,
-  "normalized": 122,
-  "eligible_after_prefilter": 427,
-  "eligible_unique_families": 342,
+  "generated_at": "2026-09-26T09:55:44Z",
+  "total": 458,
+  "total_unique_families": 374,
+  "passed": 120,
+  "passed_unique_families": 81,
+  "normalized": 119,
+  "eligible_after_prefilter": 425,
+  "eligible_unique_families": 341,
   "rejected": [
     {
       "slug": "~deepseek/deepseek-pro-latest",
@@ -139,6 +139,14 @@
     {
       "slug": "openrouter/auto",
       "reason": "non_text_output"
+    },
+    {
+      "slug": "typesafe/jev-router",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "perceptron/perceptron-mk1.5",
+      "reason": "below_all_thresholds"
     },
     {
       "slug": "fireworks/ember-1",
@@ -1310,10 +1318,6 @@
     },
     {
       "slug": "openai/gpt-4-turbo:batch",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "anthropic/claude-3-haiku",
       "reason": "below_all_thresholds"
     },
     {

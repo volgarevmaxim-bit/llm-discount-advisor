@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 375,
+    "families_total": 374,
     "rankings_surface_families": 155,
     "benchmark_cost_families": 110,
     "session_cost_families": 44,
     "union_secondary_covered": 119,
-    "uncovered": 209,
+    "uncovered": 210,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 209
+    "likely_low_signal_uncovered": 210
   },
   "families": [
     {
@@ -74,13 +74,6 @@
       "canonical_family": "anthracite-org/magnum-v4-72b",
       "covered_by": [],
       "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "anthropic/claude-3-haiku",
-      "covered_by": [
-        "session_cost"
-      ],
-      "classification": "covered"
     },
     {
       "canonical_family": "anthropic/claude-4-sonnet-20250522",
@@ -1006,16 +999,6 @@
       "classification": "likely_low_signal"
     },
     {
-      "canonical_family": "nex-agi/nex-n2.5-mini-20260908",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "nex-agi/nex-n2.5-pro-20260907",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
       "canonical_family": "nousresearch/hermes-3-llama-3.1-405b",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -1413,8 +1396,7 @@
     {
       "canonical_family": "openai/gpt-oss-20b",
       "covered_by": [
-        "rankings_surface",
-        "benchmark_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },
@@ -1507,6 +1489,11 @@
       "classification": "likely_low_signal"
     },
     {
+      "canonical_family": "perceptron/perceptron-mk1.5-20260925",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
       "canonical_family": "perplexity/sonar",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -1590,10 +1577,8 @@
     },
     {
       "canonical_family": "qwen/qwen3-235b-a22b-07-25",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "qwen/qwen3-235b-a22b-thinking-2507",
@@ -2013,6 +1998,11 @@
       "classification": "covered"
     },
     {
+      "canonical_family": "typesafe/jev-router",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
       "canonical_family": "unbiased/pareto-20260917",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -2125,7 +2115,8 @@
     {
       "canonical_family": "xiaomi/mimo-v2.6-pro-20260921",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
