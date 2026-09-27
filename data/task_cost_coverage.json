@@ -1016,8 +1016,7 @@
     {
       "canonical_family": "nvidia/nemotron-3-nano-30b-a3b",
       "covered_by": [
-        "rankings_surface",
-        "benchmark_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },
@@ -1799,7 +1798,8 @@
     {
       "canonical_family": "qwen/qwen3.7-max-20260520",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
