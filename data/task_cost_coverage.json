@@ -4,8 +4,8 @@
     "families_total": 374,
     "rankings_surface_families": 155,
     "benchmark_cost_families": 110,
-    "session_cost_families": 44,
-    "union_secondary_covered": 119,
+    "session_cost_families": 45,
+    "union_secondary_covered": 117,
     "uncovered": 210,
     "worthy_uncovered": 0,
     "likely_low_signal_uncovered": 210
@@ -179,7 +179,8 @@
       "canonical_family": "anthropic/claude-opus-5.5-20260921",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost"
+        "benchmark_cost",
+        "session_cost"
       ],
       "classification": "covered"
     },
@@ -357,8 +358,7 @@
     {
       "canonical_family": "deepseek/deepseek-v4-flash-vision-exp-20260821",
       "covered_by": [
-        "benchmark_cost",
-        "session_cost"
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -402,8 +402,7 @@
     {
       "canonical_family": "google/gemini-2.5-flash",
       "covered_by": [
-        "benchmark_cost",
-        "session_cost"
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -1344,7 +1343,8 @@
       "canonical_family": "openai/gpt-6-luna-20260922",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost"
+        "benchmark_cost",
+        "session_cost"
       ],
       "classification": "covered"
     },
@@ -1637,7 +1637,8 @@
       "canonical_family": "qwen/qwen3-coder-next-2025-02-03",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost"
+        "benchmark_cost",
+        "session_cost"
       ],
       "classification": "covered"
     },
@@ -2108,7 +2109,8 @@
     {
       "canonical_family": "xiaomi/mimo-v2.6-flash-20260921",
       "covered_by": [
-        "benchmark_cost"
+        "benchmark_cost",
+        "session_cost"
       ],
       "classification": "covered"
     },
@@ -2116,7 +2118,8 @@
       "canonical_family": "xiaomi/mimo-v2.6-pro-20260921",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost"
+        "benchmark_cost",
+        "session_cost"
       ],
       "classification": "covered"
     },

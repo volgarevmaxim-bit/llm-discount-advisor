@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-27T10:35:30Z",
+  "generated_at": "2026-09-28T11:44:59Z",
   "total": 458,
   "total_unique_families": 374,
-  "passed": 120,
-  "passed_unique_families": 81,
-  "normalized": 119,
+  "passed": 119,
+  "passed_unique_families": 80,
+  "normalized": 118,
   "eligible_after_prefilter": 425,
   "eligible_unique_families": 341,
   "rejected": [
@@ -410,6 +410,10 @@
     },
     {
       "slug": "x-ai/grok-4.20-multi-agent",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "x-ai/grok-4.20",
       "reason": "below_all_thresholds"
     },
     {
