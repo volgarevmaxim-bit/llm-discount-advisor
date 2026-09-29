@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 374,
-    "rankings_surface_families": 155,
-    "benchmark_cost_families": 110,
+    "families_total": 376,
+    "rankings_surface_families": 157,
+    "benchmark_cost_families": 111,
     "session_cost_families": 45,
-    "union_secondary_covered": 117,
+    "union_secondary_covered": 118,
     "uncovered": 210,
     "worthy_uncovered": 0,
     "likely_low_signal_uncovered": 210
@@ -194,6 +194,13 @@
       "classification": "covered"
     },
     {
+      "canonical_family": "anthropic/claude-sonnet-5.5-20260928",
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
+    },
+    {
       "canonical_family": "arcee-ai/trinity-large-thinking",
       "covered_by": [
         "rankings_surface"
@@ -308,11 +315,6 @@
         "benchmark_cost"
       ],
       "classification": "covered"
-    },
-    {
-      "canonical_family": "deepseek/deepseek-r1-distill-llama-70b",
-      "covered_by": [],
-      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "deepseek/deepseek-v3.1-terminus",
@@ -623,7 +625,8 @@
     {
       "canonical_family": "inclusionai/ling-3.0-flash-fin-20260827",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -994,6 +997,16 @@
     },
     {
       "canonical_family": "morph/morph-v3-large",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "nex-agi/nex-n2.5-mini-20260908",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "nex-agi/nex-n2.5-pro-20260907",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
@@ -2000,8 +2013,10 @@
     },
     {
       "canonical_family": "typesafe/jev-router",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "benchmark_cost"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "unbiased/pareto-20260917",
@@ -2109,6 +2124,7 @@
     {
       "canonical_family": "xiaomi/mimo-v2.6-flash-20260921",
       "covered_by": [
+        "rankings_surface",
         "benchmark_cost",
         "session_cost"
       ],

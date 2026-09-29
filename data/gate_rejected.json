@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-28T11:44:59Z",
-  "total": 458,
-  "total_unique_families": 374,
-  "passed": 119,
-  "passed_unique_families": 80,
-  "normalized": 118,
-  "eligible_after_prefilter": 425,
-  "eligible_unique_families": 341,
+  "generated_at": "2026-09-29T11:23:58Z",
+  "total": 460,
+  "total_unique_families": 376,
+  "passed": 120,
+  "passed_unique_families": 81,
+  "normalized": 119,
+  "eligible_after_prefilter": 427,
+  "eligible_unique_families": 343,
   "rejected": [
     {
       "slug": "~deepseek/deepseek-pro-latest",
@@ -197,10 +197,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "xiaomi/mimo-v2.6-flash",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "qwen/qwen3.8-omni-flash",
       "reason": "below_all_thresholds"
     },
@@ -230,6 +226,14 @@
     },
     {
       "slug": "sakana/fugu-max",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "nex-agi/nex-n2.5-mini",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "nex-agi/nex-n2.5-pro",
       "reason": "below_all_thresholds"
     },
     {
@@ -406,6 +410,10 @@
     },
     {
       "slug": "openrouter/pareto-code",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "arcee-ai/trinity-large-thinking",
       "reason": "below_all_thresholds"
     },
     {
@@ -1154,10 +1162,6 @@
     },
     {
       "slug": "perplexity/sonar",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "deepseek/deepseek-r1-distill-llama-70b",
       "reason": "below_all_thresholds"
     },
     {
