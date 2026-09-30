@@ -1,52 +1,7 @@
 {
   "schema_version": "1.0",
-  "from": "2026-09-28T11:44:59Z",
-  "to": "2026-09-29T11:23:58Z",
-  "events": [
-    {
-      "type": "decision_changed",
-      "profile": "chat",
-      "before": {
-        "ranking_key": "anthropic/claude-opus-5.5-20260921",
-        "provider": "Amazon Bedrock",
-        "variant_id": "anthropic/claude-opus-5.5",
-        "price": 12.8310461998,
-        "score": 57.6,
-        "stable": true
-      },
-      "after": {
-        "ranking_key": "anthropic/claude-sonnet-5.5-20260928",
-        "provider": "Google",
-        "variant_id": "anthropic/claude-sonnet-5.5",
-        "price": 4.2888215959,
-        "score": 56.0,
-        "stable": true
-      },
-      "reason": "Actionable balanced default changed.",
-      "confirmed": false
-    },
-    {
-      "type": "decision_changed",
-      "profile": "longdoc",
-      "before": {
-        "ranking_key": "anthropic/claude-opus-5.5-20260921",
-        "provider": "Amazon Bedrock",
-        "variant_id": "anthropic/claude-opus-5.5",
-        "price": 12.8310461998,
-        "score": 57.6,
-        "stable": true
-      },
-      "after": {
-        "ranking_key": "anthropic/claude-sonnet-5.5-20260928",
-        "provider": "Google",
-        "variant_id": "anthropic/claude-sonnet-5.5",
-        "price": 4.2888215959,
-        "score": 56.0,
-        "stable": true
-      },
-      "reason": "Actionable balanced default changed.",
-      "confirmed": false
-    }
-  ],
+  "from": "2026-09-29T11:23:58Z",
+  "to": "2026-09-30T11:11:58Z",
+  "events": [],
   "status": "compared"
 }

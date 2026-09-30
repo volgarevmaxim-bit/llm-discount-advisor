@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 376,
-    "rankings_surface_families": 157,
+    "families_total": 378,
+    "rankings_surface_families": 158,
     "benchmark_cost_families": 111,
     "session_cost_families": 45,
-    "union_secondary_covered": 118,
-    "uncovered": 210,
+    "union_secondary_covered": 119,
+    "uncovered": 211,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 210
+    "likely_low_signal_uncovered": 211
   },
   "families": [
     {
@@ -196,7 +196,8 @@
     {
       "canonical_family": "anthropic/claude-sonnet-5.5-20260928",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -617,8 +618,7 @@
     {
       "canonical_family": "inclusionai/ling-3.0-flash-20260723",
       "covered_by": [
-        "rankings_surface",
-        "benchmark_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },
@@ -1382,6 +1382,19 @@
       "classification": "likely_low_signal"
     },
     {
+      "canonical_family": "openai/gpt-6.1-sol-20260929",
+      "covered_by": [
+        "rankings_surface",
+        "benchmark_cost"
+      ],
+      "classification": "covered"
+    },
+    {
+      "canonical_family": "openai/gpt-6.1-sol-pro-20260929",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
       "canonical_family": "openai/gpt-audio",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -1650,7 +1663,6 @@
       "canonical_family": "qwen/qwen3-coder-next-2025-02-03",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost",
         "session_cost"
       ],
       "classification": "covered"
