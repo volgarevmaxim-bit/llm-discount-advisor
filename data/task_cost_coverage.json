@@ -2,13 +2,13 @@
   "schema_version": "1.0",
   "counts": {
     "families_total": 378,
-    "rankings_surface_families": 158,
-    "benchmark_cost_families": 111,
+    "rankings_surface_families": 159,
+    "benchmark_cost_families": 112,
     "session_cost_families": 45,
     "union_secondary_covered": 119,
-    "uncovered": 211,
+    "uncovered": 210,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 211
+    "likely_low_signal_uncovered": 210
   },
   "families": [
     {
@@ -404,10 +404,8 @@
     },
     {
       "canonical_family": "google/gemini-2.5-flash",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "google/gemini-2.5-flash-image",
@@ -528,6 +526,7 @@
       "canonical_family": "google/gemini-3.8-flash-20260902",
       "covered_by": [
         "rankings_surface",
+        "benchmark_cost",
         "session_cost"
       ],
       "classification": "covered"
@@ -911,8 +910,7 @@
     {
       "canonical_family": "mistralai/mistral-small-2603",
       "covered_by": [
-        "rankings_surface",
-        "benchmark_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },
@@ -943,10 +941,8 @@
     },
     {
       "canonical_family": "moonshotai/kimi-k2-0905",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "moonshotai/kimi-k2-thinking-20251106",
@@ -1349,8 +1345,10 @@
     },
     {
       "canonical_family": "openai/gpt-6-astra-pro-20260903",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "benchmark_cost"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "openai/gpt-6-luna-20260922",
@@ -1832,7 +1830,8 @@
     {
       "canonical_family": "qwen/qwen3.7-plus-20260602",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -2042,8 +2041,10 @@
     },
     {
       "canonical_family": "upstage/solar-mini4-20260922",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "upstage/solar-pro-3",
@@ -2183,8 +2184,10 @@
     },
     {
       "canonical_family": "z-ai/glm-4.6-20251208",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "benchmark_cost"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "z-ai/glm-4.7-20251222",
