@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 378,
+    "families_total": 380,
     "rankings_surface_families": 159,
-    "benchmark_cost_families": 112,
+    "benchmark_cost_families": 113,
     "session_cost_families": 45,
-    "union_secondary_covered": 119,
-    "uncovered": 210,
+    "union_secondary_covered": 120,
+    "uncovered": 214,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 210
+    "likely_low_signal_uncovered": 214
   },
   "families": [
     {
@@ -200,6 +200,11 @@
         "benchmark_cost"
       ],
       "classification": "covered"
+    },
+    {
+      "canonical_family": "apodex/apodex-1.1-mini-20261001",
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "arcee-ai/trinity-large-thinking",
@@ -617,7 +622,8 @@
     {
       "canonical_family": "inclusionai/ling-3.0-flash-20260723",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -1481,10 +1487,8 @@
     },
     {
       "canonical_family": "openrouter/auto-beta",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "openrouter/bodybuilder",
@@ -2035,6 +2039,11 @@
       "classification": "likely_low_signal"
     },
     {
+      "canonical_family": "unbiased/pareto-26.10-preview-20260929",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
       "canonical_family": "undi95/remm-slerp-l2-13b",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -2184,10 +2193,8 @@
     },
     {
       "canonical_family": "z-ai/glm-4.6-20251208",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "z-ai/glm-4.7-20251222",

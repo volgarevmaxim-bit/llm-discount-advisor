@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-01T11:39:15Z",
-  "total": 462,
-  "total_unique_families": 378,
-  "passed": 119,
-  "passed_unique_families": 80,
-  "normalized": 118,
-  "eligible_after_prefilter": 429,
-  "eligible_unique_families": 345,
+  "generated_at": "2026-10-02T11:08:55Z",
+  "total": 464,
+  "total_unique_families": 380,
+  "passed": 120,
+  "passed_unique_families": 81,
+  "normalized": 119,
+  "eligible_after_prefilter": 431,
+  "eligible_unique_families": 347,
   "rejected": [
     {
       "slug": "~deepseek/deepseek-pro-latest",
@@ -139,6 +139,10 @@
     {
       "slug": "openrouter/auto",
       "reason": "non_text_output"
+    },
+    {
+      "slug": "unbiased/pareto-26.10-preview",
+      "reason": "below_all_thresholds"
     },
     {
       "slug": "openai/gpt-6.1-sol-pro",
