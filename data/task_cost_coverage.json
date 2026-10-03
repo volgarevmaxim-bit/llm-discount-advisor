@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 380,
+    "families_total": 382,
     "rankings_surface_families": 159,
     "benchmark_cost_families": 113,
     "session_cost_families": 45,
     "union_secondary_covered": 120,
-    "uncovered": 214,
+    "uncovered": 215,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 214
+    "likely_low_signal_uncovered": 215
   },
   "families": [
     {
@@ -303,10 +303,8 @@
     },
     {
       "canonical_family": "deepseek/deepseek-chat-v3.1",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "deepseek/deepseek-r1",
@@ -647,6 +645,11 @@
         "benchmark_cost"
       ],
       "classification": "covered"
+    },
+    {
+      "canonical_family": "inclusionai/ling-3.1-flash-20261002",
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "inference-net/schematron-v2-small-20260902",
@@ -1070,6 +1073,13 @@
       "classification": "covered"
     },
     {
+      "canonical_family": "nvidia/switchyard",
+      "covered_by": [
+        "benchmark_cost"
+      ],
+      "classification": "covered"
+    },
+    {
       "canonical_family": "openai/gpt-3.5-turbo",
       "covered_by": [
         "rankings_surface"
@@ -1243,8 +1253,10 @@
     },
     {
       "canonical_family": "openai/gpt-5.3-codex-20260224",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "benchmark_cost"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "openai/gpt-5.4-20260305",
