@@ -3,7 +3,7 @@
   "counts": {
     "families_total": 382,
     "rankings_surface_families": 159,
-    "benchmark_cost_families": 113,
+    "benchmark_cost_families": 112,
     "session_cost_families": 45,
     "union_secondary_covered": 120,
     "uncovered": 215,
@@ -1429,7 +1429,6 @@
       "canonical_family": "openai/gpt-oss-120b",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost",
         "session_cost"
       ],
       "classification": "covered"
