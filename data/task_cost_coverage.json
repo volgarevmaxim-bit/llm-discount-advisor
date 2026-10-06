@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 382,
-    "rankings_surface_families": 160,
+    "families_total": 381,
+    "rankings_surface_families": 345,
     "benchmark_cost_families": 112,
     "session_cost_families": 44,
     "union_secondary_covered": 120,
-    "uncovered": 215,
+    "uncovered": 145,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 215
+    "likely_low_signal_uncovered": 145
   },
   "families": [
     {
@@ -50,25 +50,32 @@
     },
     {
       "canonical_family": "amazon/nova-lite-v1",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "amazon/nova-micro-v1",
       "covered_by": [
+        "rankings_surface",
         "benchmark_cost"
       ],
       "classification": "covered"
     },
     {
       "canonical_family": "amazon/nova-premier-v1",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "amazon/nova-pro-v1",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "anthracite-org/magnum-v4-72b",
@@ -85,8 +92,10 @@
     },
     {
       "canonical_family": "anthropic/claude-4.1-opus-20250805",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "anthropic/claude-4.5-haiku-20251001",
@@ -100,6 +109,7 @@
     {
       "canonical_family": "anthropic/claude-4.5-opus-20251124",
       "covered_by": [
+        "rankings_surface",
         "benchmark_cost"
       ],
       "classification": "covered"
@@ -116,6 +126,7 @@
     {
       "canonical_family": "anthropic/claude-4.6-opus-20260205",
       "covered_by": [
+        "rankings_surface",
         "benchmark_cost",
         "session_cost"
       ],
@@ -302,8 +313,10 @@
     },
     {
       "canonical_family": "deepseek/deepseek-chat-v3.1",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "deepseek/deepseek-r1",
@@ -315,6 +328,7 @@
     {
       "canonical_family": "deepseek/deepseek-r1-0528",
       "covered_by": [
+        "rankings_surface",
         "benchmark_cost"
       ],
       "classification": "covered"
@@ -338,6 +352,7 @@
     {
       "canonical_family": "deepseek/deepseek-v3.2-exp",
       "covered_by": [
+        "rankings_surface",
         "benchmark_cost"
       ],
       "classification": "covered"
@@ -363,6 +378,7 @@
     {
       "canonical_family": "deepseek/deepseek-v4-flash-vision-exp-20260821",
       "covered_by": [
+        "rankings_surface",
         "benchmark_cost"
       ],
       "classification": "covered"
@@ -406,8 +422,10 @@
     },
     {
       "canonical_family": "google/gemini-2.5-flash",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "google/gemini-2.5-flash-image",
@@ -416,8 +434,10 @@
     },
     {
       "canonical_family": "google/gemini-2.5-flash-lite",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "google/gemini-2.5-pro",
@@ -435,6 +455,7 @@
     {
       "canonical_family": "google/gemini-3-flash-preview-20251217",
       "covered_by": [
+        "rankings_surface",
         "benchmark_cost"
       ],
       "classification": "covered"
@@ -591,8 +612,10 @@
     },
     {
       "canonical_family": "ibm-granite/granite-4.0-h-micro",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "ibm-granite/granite-4.2-8b-20260831",
@@ -668,8 +691,10 @@
     },
     {
       "canonical_family": "liquid/lfm-2.5-2.6b-20260811",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "mancer/weaver",
@@ -685,8 +710,10 @@
     },
     {
       "canonical_family": "meta-llama/llama-3.1-70b-instruct",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "meta-llama/llama-3.1-8b-instruct",
@@ -697,13 +724,17 @@
     },
     {
       "canonical_family": "meta-llama/llama-3.2-1b-instruct",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "meta-llama/llama-3.2-3b-instruct",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "meta-llama/llama-3.3-70b-instruct",
@@ -734,6 +765,7 @@
     {
       "canonical_family": "meta/muse-glimmer-30b-20260810",
       "covered_by": [
+        "rankings_surface",
         "benchmark_cost"
       ],
       "classification": "covered"
@@ -760,6 +792,7 @@
     {
       "canonical_family": "meta/muse-spark-1.3-20260902",
       "covered_by": [
+        "rankings_surface",
         "session_cost"
       ],
       "classification": "covered"
@@ -773,8 +806,10 @@
     },
     {
       "canonical_family": "microsoft/phi-4",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "microsoft/wizardlm-2-8x22b",
@@ -788,13 +823,17 @@
     },
     {
       "canonical_family": "minimax/minimax-m1",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "minimax/minimax-m2",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "minimax/minimax-m2-her-20260123",
@@ -804,6 +843,7 @@
     {
       "canonical_family": "minimax/minimax-m2.1",
       "covered_by": [
+        "rankings_surface",
         "benchmark_cost"
       ],
       "classification": "covered"
@@ -811,6 +851,7 @@
     {
       "canonical_family": "minimax/minimax-m2.5-20260211",
       "covered_by": [
+        "rankings_surface",
         "benchmark_cost"
       ],
       "classification": "covered"
@@ -867,13 +908,17 @@
     },
     {
       "canonical_family": "mistralai/mistral-large",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "mistralai/mistral-large-2407",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "mistralai/mistral-large-2512",
@@ -884,8 +929,10 @@
     },
     {
       "canonical_family": "mistralai/mistral-medium-3",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "mistralai/mistral-medium-3.1",
@@ -908,13 +955,17 @@
     },
     {
       "canonical_family": "mistralai/mistral-saba-2502",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "mistralai/mistral-small-24b-instruct-2501",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "mistralai/mistral-small-2603",
@@ -935,8 +986,10 @@
     },
     {
       "canonical_family": "mistralai/mixtral-8x22b-instruct",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "mistralai/voxtral-small-24b-2507",
@@ -945,13 +998,17 @@
     },
     {
       "canonical_family": "moonshotai/kimi-k2",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "moonshotai/kimi-k2-0905",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "moonshotai/kimi-k2-thinking-20251106",
@@ -1017,18 +1074,24 @@
     },
     {
       "canonical_family": "nousresearch/hermes-3-llama-3.1-405b",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "nousresearch/hermes-3-llama-3.1-70b",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "nousresearch/hermes-4-405b",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "nvidia/nemotron-3-nano-30b-a3b",
@@ -1117,8 +1180,10 @@
     },
     {
       "canonical_family": "openai/gpt-4.1-2025-04-14",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "openai/gpt-4.1-mini-2025-04-14",
@@ -1148,13 +1213,17 @@
     },
     {
       "canonical_family": "openai/gpt-4o-2024-08-06",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "openai/gpt-4o-2024-11-20",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "openai/gpt-4o-mini",
@@ -1196,8 +1265,10 @@
     },
     {
       "canonical_family": "openai/gpt-5-nano-2025-08-07",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "openai/gpt-5-pro-2025-10-06",
@@ -1214,8 +1285,10 @@
     },
     {
       "canonical_family": "openai/gpt-5.1-codex-20251113",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "openai/gpt-5.1-codex-max-20251204",
@@ -1224,12 +1297,15 @@
     },
     {
       "canonical_family": "openai/gpt-5.1-codex-mini-20251113",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "openai/gpt-5.2-20251211",
       "covered_by": [
+        "rankings_surface",
         "benchmark_cost"
       ],
       "classification": "covered"
@@ -1243,8 +1319,10 @@
     },
     {
       "canonical_family": "openai/gpt-5.2-codex-20260114",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "openai/gpt-5.2-pro-20251211",
@@ -1254,6 +1332,7 @@
     {
       "canonical_family": "openai/gpt-5.3-codex-20260224",
       "covered_by": [
+        "rankings_surface",
         "benchmark_cost"
       ],
       "classification": "covered"
@@ -1454,18 +1533,24 @@
     },
     {
       "canonical_family": "openai/o1-pro",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "openai/o3-2025-04-16",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "openai/o3-mini-2025-01-31",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "openai/o3-mini-high-2025-01-31",
@@ -1476,13 +1561,17 @@
     },
     {
       "canonical_family": "openai/o3-pro-2025-06-10",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "openai/o4-mini-2025-04-16",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "openai/o4-mini-high-2025-04-16",
@@ -1533,8 +1622,10 @@
     },
     {
       "canonical_family": "perplexity/sonar",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "perplexity/sonar-deep-research",
@@ -1543,8 +1634,10 @@
     },
     {
       "canonical_family": "perplexity/sonar-pro",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "perplexity/sonar-pro-search",
@@ -1553,8 +1646,10 @@
     },
     {
       "canonical_family": "perplexity/sonar-reasoning-pro",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "poolside/laguna-s-2.1-20260720",
@@ -1573,8 +1668,10 @@
     },
     {
       "canonical_family": "qwen/qwen-2.5-72b-instruct",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "qwen/qwen-2.5-7b-instruct",
@@ -1583,8 +1680,10 @@
     },
     {
       "canonical_family": "qwen/qwen-2.5-coder-32b-instruct",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "qwen/qwen-plus-2025-01-25",
@@ -1610,13 +1709,17 @@
     },
     {
       "canonical_family": "qwen/qwen3-235b-a22b-04-28",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "qwen/qwen3-235b-a22b-07-25",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "qwen/qwen3-235b-a22b-thinking-2507",
@@ -1628,13 +1731,17 @@
     },
     {
       "canonical_family": "qwen/qwen3-30b-a3b-04-28",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "qwen/qwen3-30b-a3b-instruct-2507",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "qwen/qwen3-30b-a3b-thinking-2507",
@@ -1659,13 +1766,17 @@
     },
     {
       "canonical_family": "qwen/qwen3-coder-30b-a3b-instruct",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "qwen/qwen3-coder-480b-a35b-07-25",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "qwen/qwen3-coder-flash",
@@ -1687,18 +1798,24 @@
     },
     {
       "canonical_family": "qwen/qwen3-max",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "qwen/qwen3-max-thinking-20260123",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "qwen/qwen3-next-80b-a3b-instruct-2509",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "qwen/qwen3-next-80b-a3b-thinking-2509",
@@ -1709,38 +1826,52 @@
     },
     {
       "canonical_family": "qwen/qwen3-vl-235b-a22b-instruct",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "qwen/qwen3-vl-235b-a22b-thinking",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "qwen/qwen3-vl-30b-a3b-instruct",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "qwen/qwen3-vl-30b-a3b-thinking",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "qwen/qwen3-vl-32b-instruct",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "qwen/qwen3-vl-8b-instruct",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "qwen/qwen3-vl-8b-thinking",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "qwen/qwen3.5-122b-a10b-20260224",
@@ -1752,8 +1883,10 @@
     },
     {
       "canonical_family": "qwen/qwen3.5-27b-20260224",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "qwen/qwen3.5-35b-a3b-20260224",
@@ -1817,8 +1950,10 @@
     },
     {
       "canonical_family": "qwen/qwen3.6-max-preview-20260420",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "qwen/qwen3.6-plus-04-02",
@@ -1900,8 +2035,10 @@
     },
     {
       "canonical_family": "rekaai/reka-flash-3",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "relace/relace-apply-3",
@@ -1949,14 +2086,11 @@
       "classification": "likely_low_signal"
     },
     {
-      "canonical_family": "stealth/space-bunny-alpha",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
       "canonical_family": "stepfun/step-3.5-flash",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "stepfun/step-3.7-flash-20260528",
@@ -2092,8 +2226,10 @@
     },
     {
       "canonical_family": "x-ai/grok-4.20-20260309",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "x-ai/grok-4.20-multi-agent-20260309",
@@ -2179,20 +2315,25 @@
     },
     {
       "canonical_family": "z-ai/glm-4.5",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "z-ai/glm-4.5-air",
       "covered_by": [
+        "rankings_surface",
         "benchmark_cost"
       ],
       "classification": "covered"
     },
     {
       "canonical_family": "z-ai/glm-4.5v",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "z-ai/glm-4.6",
@@ -2204,8 +2345,10 @@
     },
     {
       "canonical_family": "z-ai/glm-4.6-20251208",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "z-ai/glm-4.7-20251222",
@@ -2218,6 +2361,7 @@
     {
       "canonical_family": "z-ai/glm-4.7-flash-20260119",
       "covered_by": [
+        "rankings_surface",
         "benchmark_cost"
       ],
       "classification": "covered"
@@ -2225,14 +2369,17 @@
     {
       "canonical_family": "z-ai/glm-5-20260211",
       "covered_by": [
+        "rankings_surface",
         "benchmark_cost"
       ],
       "classification": "covered"
     },
     {
       "canonical_family": "z-ai/glm-5-turbo-20260315",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "z-ai/glm-5.1-20260406",
@@ -2281,8 +2428,10 @@
     },
     {
       "canonical_family": "z-ai/glm-5v-turbo-20260401",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "~anthropic/claude-fable-latest",

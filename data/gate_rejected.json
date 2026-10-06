@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-05T12:19:52Z",
-  "total": 466,
-  "total_unique_families": 382,
-  "passed": 122,
-  "passed_unique_families": 83,
-  "normalized": 121,
-  "eligible_after_prefilter": 433,
-  "eligible_unique_families": 349,
+  "generated_at": "2026-10-06T12:03:58Z",
+  "total": 464,
+  "total_unique_families": 381,
+  "passed": 119,
+  "passed_unique_families": 81,
+  "normalized": 118,
+  "eligible_after_prefilter": 431,
+  "eligible_unique_families": 348,
   "rejected": [
     {
       "slug": "~deepseek/deepseek-pro-latest",
@@ -237,6 +237,10 @@
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "inception/mercury-2.5",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "nex-agi/nex-n2.5-mini",
       "reason": "below_all_thresholds"
     },
@@ -270,10 +274,6 @@
     },
     {
       "slug": "meta/muse-spark-1.2-contributor",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "deepseek/deepseek-v4-flash-vision-exp",
       "reason": "below_all_thresholds"
     },
     {
@@ -470,6 +470,10 @@
     },
     {
       "slug": "bytedance-seed/seed-2.0-lite",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3.5-9b",
       "reason": "below_all_thresholds"
     },
     {
