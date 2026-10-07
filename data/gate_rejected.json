@@ -1,13 +1,17 @@
 {
-  "generated_at": "2026-10-06T12:03:58Z",
-  "total": 464,
-  "total_unique_families": 381,
+  "generated_at": "2026-10-07T11:49:27Z",
+  "total": 465,
+  "total_unique_families": 382,
   "passed": 119,
   "passed_unique_families": 81,
   "normalized": 118,
   "eligible_after_prefilter": 431,
   "eligible_unique_families": 348,
   "rejected": [
+    {
+      "slug": "google/gemini-nano-banana-2.1-20261006",
+      "reason": "non_text_output"
+    },
     {
       "slug": "~deepseek/deepseek-pro-latest",
       "reason": "alias"
@@ -139,6 +143,10 @@
     {
       "slug": "openrouter/auto",
       "reason": "non_text_output"
+    },
+    {
+      "slug": "mistralai/mistral-large-4-0",
+      "reason": "below_all_thresholds"
     },
     {
       "slug": "unbiased/pareto-26.10-preview",
@@ -318,10 +326,6 @@
     },
     {
       "slug": "meituan/longcat-2.0",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "kwaipilot/kat-coder-pro-v2.5",
       "reason": "below_all_thresholds"
     },
     {

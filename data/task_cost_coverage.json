@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 381,
+    "families_total": 382,
     "rankings_surface_families": 345,
     "benchmark_cost_families": 112,
     "session_cost_families": 44,
     "union_secondary_covered": 120,
-    "uncovered": 145,
+    "uncovered": 146,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 145
+    "likely_low_signal_uncovered": 146
   },
   "families": [
     {
@@ -554,6 +554,11 @@
       "classification": "covered"
     },
     {
+      "canonical_family": "google/gemini-nano-banana-2.1-20261006",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
       "canonical_family": "google/gemma-2-27b-it",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -681,11 +686,6 @@
     },
     {
       "canonical_family": "inference-net/schematron-v2-turbo-20260902",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "kwaipilot/kat-coder-pro-v2.5-20260710",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
@@ -926,6 +926,11 @@
         "rankings_surface"
       ],
       "classification": "covered"
+    },
+    {
+      "canonical_family": "mistralai/mistral-large-4-0-20261006",
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "mistralai/mistral-medium-3",
