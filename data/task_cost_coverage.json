@@ -3,9 +3,9 @@
   "counts": {
     "families_total": 383,
     "rankings_surface_families": 346,
-    "benchmark_cost_families": 113,
+    "benchmark_cost_families": 116,
     "session_cost_families": 44,
-    "union_secondary_covered": 121,
+    "union_secondary_covered": 124,
     "uncovered": 146,
     "worthy_uncovered": 0,
     "likely_low_signal_uncovered": 146
@@ -232,11 +232,6 @@
         "rankings_surface"
       ],
       "classification": "covered"
-    },
-    {
-      "canonical_family": "baidu/ernie-4.5-vl-424b-a47b",
-      "covered_by": [],
-      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "bytedance-seed/seed-1.6-20250625",
@@ -2112,6 +2107,11 @@
         "benchmark_cost"
       ],
       "classification": "covered"
+    },
+    {
+      "canonical_family": "stepfun/step-5-preview-20261008",
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "tencent/hunyuan-a13b-instruct",

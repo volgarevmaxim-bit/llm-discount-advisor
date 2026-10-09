@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-08T12:04:30Z",
-  "total": 467,
+  "generated_at": "2026-10-09T11:56:16Z",
+  "total": 469,
   "total_unique_families": 383,
   "passed": 121,
-  "passed_unique_families": 82,
+  "passed_unique_families": 81,
   "normalized": 120,
-  "eligible_after_prefilter": 433,
+  "eligible_after_prefilter": 435,
   "eligible_unique_families": 349,
   "rejected": [
     {
@@ -145,11 +145,19 @@
       "reason": "non_text_output"
     },
     {
+      "slug": "stepfun/step-5-preview",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "unbiased/pareto-26.10-preview",
       "reason": "below_all_thresholds"
     },
     {
       "slug": "openai/gpt-6.1-sol-pro",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-6.1-sol-pro:batch",
       "reason": "below_all_thresholds"
     },
     {
@@ -262,6 +270,10 @@
     },
     {
       "slug": "openai/gpt-6-astra-pro:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "inclusionai/ling-3.0-flash-sante",
       "reason": "below_all_thresholds"
     },
     {
@@ -978,10 +990,6 @@
     },
     {
       "slug": "morph/morph-v3-fast",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "baidu/ernie-4.5-vl-424b-a47b",
       "reason": "below_all_thresholds"
     },
     {
