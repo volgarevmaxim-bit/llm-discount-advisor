@@ -1,7 +1,29 @@
 {
   "schema_version": "1.0",
-  "from": "2026-10-08T12:04:30Z",
-  "to": "2026-10-09T11:56:16Z",
-  "events": [],
+  "from": "2026-10-09T11:56:16Z",
+  "to": "2026-10-10T11:13:03Z",
+  "events": [
+    {
+      "type": "discount_action_changed",
+      "profile": "code",
+      "before": {
+        "ranking_key": "anthropic/claude-fable-5.1-20260831",
+        "provider": "Azure",
+        "variant_id": "anthropic/claude-fable-5.1",
+        "price": 23.5155945546,
+        "score": 81.6,
+        "stable": true
+      },
+      "after": {
+        "ranking_key": "anthropic/claude-fable-5.1-20260831",
+        "provider": "Anthropic",
+        "variant_id": "anthropic/claude-fable-5.1",
+        "price": 24.6482388715,
+        "score": 81.6,
+        "stable": true
+      },
+      "reason": "Current actionable provider changed."
+    }
+  ],
   "status": "compared"
 }

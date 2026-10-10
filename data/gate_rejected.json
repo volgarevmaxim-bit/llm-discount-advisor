@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-09T11:56:16Z",
-  "total": 469,
-  "total_unique_families": 383,
+  "generated_at": "2026-10-10T11:13:03Z",
+  "total": 458,
+  "total_unique_families": 372,
   "passed": 121,
   "passed_unique_families": 81,
   "normalized": 120,
-  "eligible_after_prefilter": 435,
-  "eligible_unique_families": 349,
+  "eligible_after_prefilter": 424,
+  "eligible_unique_families": 338,
   "rejected": [
     {
       "slug": "google/gemini-nano-banana-2.1-20261006",
@@ -421,10 +421,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "qwen/qwen3.6-max-preview",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "qwen/qwen3.6-27b",
       "reason": "below_all_thresholds"
     },
@@ -570,10 +566,6 @@
     },
     {
       "slug": "z-ai/glm-5",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "qwen/qwen3-max-thinking",
       "reason": "below_all_thresholds"
     },
     {
@@ -765,10 +757,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "qwen/qwen3-vl-32b-instruct",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "ibm-granite/granite-4.0-h-micro",
       "reason": "below_all_thresholds"
     },
@@ -778,10 +766,6 @@
     },
     {
       "slug": "anthropic/claude-haiku-4.5:batch",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "qwen/qwen3-vl-8b-thinking",
       "reason": "below_all_thresholds"
     },
     {
@@ -829,19 +813,7 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "qwen/qwen3-vl-235b-a22b-thinking",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "qwen/qwen3-vl-235b-a22b-instruct",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "qwen/qwen3-max",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "qwen/qwen3-coder-plus",
       "reason": "below_all_thresholds"
     },
     {
@@ -861,15 +833,7 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "qwen/qwen-plus-2025-07-28",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "moonshotai/kimi-k2-0905",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "qwen/qwen3-30b-a3b-thinking-2507",
       "reason": "below_all_thresholds"
     },
     {
@@ -1045,19 +1009,11 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "qwen/qwen3-8b",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "qwen/qwen3-14b",
       "reason": "below_all_thresholds"
     },
     {
       "slug": "qwen/qwen3-32b",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "qwen/qwen3-235b-a22b",
       "reason": "below_all_thresholds"
     },
     {
