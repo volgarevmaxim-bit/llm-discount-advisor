@@ -3,9 +3,9 @@
   "counts": {
     "families_total": 372,
     "rankings_surface_families": 346,
-    "benchmark_cost_families": 116,
+    "benchmark_cost_families": 117,
     "session_cost_families": 44,
-    "union_secondary_covered": 123,
+    "union_secondary_covered": 124,
     "uncovered": 144,
     "worthy_uncovered": 0,
     "likely_low_signal_uncovered": 144
@@ -331,7 +331,8 @@
     {
       "canonical_family": "deepseek/deepseek-r1-0528",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
