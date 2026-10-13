@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-12T13:13:42Z",
-  "total": 458,
-  "total_unique_families": 372,
-  "passed": 121,
-  "passed_unique_families": 81,
-  "normalized": 120,
-  "eligible_after_prefilter": 424,
-  "eligible_unique_families": 338,
+  "generated_at": "2026-10-13T12:45:13Z",
+  "total": 461,
+  "total_unique_families": 375,
+  "passed": 122,
+  "passed_unique_families": 82,
+  "normalized": 121,
+  "eligible_after_prefilter": 427,
+  "eligible_unique_families": 341,
   "rejected": [
     {
       "slug": "google/gemini-nano-banana-2.1-20261006",
@@ -143,6 +143,14 @@
     {
       "slug": "openrouter/auto",
       "reason": "non_text_output"
+    },
+    {
+      "slug": "scaledown/summarize",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "scaledown/extract",
+      "reason": "below_all_thresholds"
     },
     {
       "slug": "stepfun/step-5-preview",

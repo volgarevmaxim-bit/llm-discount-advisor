@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 372,
+    "families_total": 375,
     "rankings_surface_families": 346,
     "benchmark_cost_families": 117,
     "session_cost_families": 44,
     "union_secondary_covered": 122,
-    "uncovered": 143,
+    "uncovered": 146,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 143
+    "likely_low_signal_uncovered": 146
   },
   "families": [
     {
@@ -808,6 +808,11 @@
         "session_cost"
       ],
       "classification": "covered"
+    },
+    {
+      "canonical_family": "meta/muse-wonder-20261012",
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "microsoft/phi-4",
@@ -2021,6 +2026,16 @@
     },
     {
       "canonical_family": "sao10k/l3.3-euryale-70b-v2.3",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "scaledown/extract-20260928",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "scaledown/summarize-20260928",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
