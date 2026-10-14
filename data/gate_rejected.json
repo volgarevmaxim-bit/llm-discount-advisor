@@ -1,13 +1,17 @@
 {
-  "generated_at": "2026-10-13T12:45:13Z",
-  "total": 461,
+  "generated_at": "2026-10-14T10:17:07Z",
+  "total": 462,
   "total_unique_families": 375,
-  "passed": 122,
+  "passed": 123,
   "passed_unique_families": 82,
-  "normalized": 121,
+  "normalized": 122,
   "eligible_after_prefilter": 427,
-  "eligible_unique_families": 341,
+  "eligible_unique_families": 340,
   "rejected": [
+    {
+      "slug": "~unbiased/pareto-latest",
+      "reason": "alias"
+    },
     {
       "slug": "google/gemini-nano-banana-2.1-20261006",
       "reason": "non_text_output"
@@ -145,6 +149,14 @@
       "reason": "non_text_output"
     },
     {
+      "slug": "unbiased/pareto-26.9",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "liquid/lfm-2.5-24b-a2b",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "scaledown/summarize",
       "reason": "below_all_thresholds"
     },
@@ -225,10 +237,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "xiaomi/mimo-v2.6-flash",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "qwen/qwen3.8-omni-flash",
       "reason": "below_all_thresholds"
     },
@@ -238,10 +246,6 @@
     },
     {
       "slug": "z-ai/glm-5.3-flashx",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "unbiased/pareto",
       "reason": "below_all_thresholds"
     },
     {
@@ -278,10 +282,6 @@
     },
     {
       "slug": "openai/gpt-6-astra-pro:batch",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "inclusionai/ling-3.0-flash-sante",
       "reason": "below_all_thresholds"
     },
     {

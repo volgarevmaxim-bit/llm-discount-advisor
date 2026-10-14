@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "counts": {
     "families_total": 375,
-    "rankings_surface_families": 346,
+    "rankings_surface_families": 347,
     "benchmark_cost_families": 117,
     "session_cost_families": 44,
     "union_secondary_covered": 122,
@@ -221,11 +221,6 @@
         "session_cost"
       ],
       "classification": "covered"
-    },
-    {
-      "canonical_family": "apodex/apodex-1.1-mini-20261001",
-      "covered_by": [],
-      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "arcee-ai/trinity-large-thinking",
@@ -560,6 +555,13 @@
       "classification": "covered"
     },
     {
+      "canonical_family": "google/gemini-4-argon-20261013",
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
+    },
+    {
       "canonical_family": "google/gemini-nano-banana-2.1-20261006",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -658,19 +660,6 @@
       "classification": "covered"
     },
     {
-      "canonical_family": "inclusionai/ling-3.0-flash-fin-20260827",
-      "covered_by": [
-        "rankings_surface",
-        "benchmark_cost"
-      ],
-      "classification": "covered"
-    },
-    {
-      "canonical_family": "inclusionai/ling-3.0-flash-sante-20260904",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
       "canonical_family": "inclusionai/ling-3.0-flash-vl-20260910",
       "covered_by": [
         "rankings_surface",
@@ -701,6 +690,11 @@
         "rankings_surface"
       ],
       "classification": "covered"
+    },
+    {
+      "canonical_family": "liquid/lfm-2.5-24b-a2b-20261012",
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "mancer/weaver",
@@ -2137,12 +2131,12 @@
       "classification": "covered"
     },
     {
-      "canonical_family": "unbiased/pareto-20260917",
+      "canonical_family": "unbiased/pareto-26.10-preview-20260929",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
     {
-      "canonical_family": "unbiased/pareto-26.10-preview-20260929",
+      "canonical_family": "unbiased/pareto-26.9-20260917",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
@@ -2463,6 +2457,11 @@
     },
     {
       "canonical_family": "~openai/gpt-terra-latest",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "~unbiased/pareto-latest",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
