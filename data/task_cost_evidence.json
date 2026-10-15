@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-14T10:17:07Z",
+  "generated_at": "2026-10-15T10:00:11Z",
   "sources": {
     "benchmarks": {
       "urls": [
@@ -8,7 +8,7 @@
       ],
       "meta": [
         {
-          "as_of": "2026-10-10T16:28:07.050Z",
+          "as_of": "2026-10-15T03:00:03.049Z",
           "version": "v1",
           "source": "openrouter",
           "source_url": "https://openrouter.ai/rankings",
@@ -17,7 +17,7 @@
           "task_type": null
         },
         {
-          "as_of": "2026-10-10T20:36:24.064Z",
+          "as_of": "2026-10-14T19:17:59.742Z",
           "version": "v1",
           "source": "openrouter",
           "source_url": "https://openrouter.ai/rankings",
@@ -30,7 +30,7 @@
     "session_cost": {
       "url": "https://openrouter.ai/api/v1/datasets/session-cost",
       "meta": {
-        "as_of": "2026-10-13T20:17:44.672Z",
+        "as_of": "2026-10-12T10:00:32.340Z",
         "version": "v1",
         "window_days": 30,
         "window_end_date": "2026-10-11"
@@ -38,6 +38,19 @@
     }
   },
   "benchmarks": [
+    {
+      "benchmark_type": "gpqa_diamond",
+      "model_permaslug": "google/gemini-4-argon-20261013",
+      "canonical_family": "google/gemini-4-argon-20261013",
+      "avg_cost_per_task_usd": 0.09468125757575757,
+      "quality_metric": "accuracy",
+      "quality": 0.964646,
+      "total_tasks": 198,
+      "last_run_at": "2026-10-14T15:00:03.588Z",
+      "source": "openrouter",
+      "evidence_tier": "A",
+      "scope": "named_benchmark_run"
+    },
     {
       "benchmark_type": "gpqa_diamond",
       "model_permaslug": "google/gemini-3.8-flash-20260902",
@@ -1184,6 +1197,19 @@
     },
     {
       "benchmark_type": "gpqa_diamond",
+      "model_permaslug": "inclusionai/ling-3.1-flash-20261002",
+      "canonical_family": "inclusionai/ling-3.1-flash-20261002",
+      "avg_cost_per_task_usd": 0.00766168253968254,
+      "quality_metric": "accuracy",
+      "quality": 0.813051,
+      "total_tasks": 189,
+      "last_run_at": "2026-10-14T18:00:03.925Z",
+      "source": "openrouter",
+      "evidence_tier": "A",
+      "scope": "named_benchmark_run"
+    },
+    {
+      "benchmark_type": "gpqa_diamond",
       "model_permaslug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
       "canonical_family": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
       "avg_cost_per_task_usd": 0.14135672674418603,
@@ -1313,32 +1339,6 @@
       "scope": "named_benchmark_run"
     },
     {
-      "benchmark_type": "gpqa_diamond",
-      "model_permaslug": "openai/gpt-5.4-nano-20260317",
-      "canonical_family": "openai/gpt-5.4-nano-20260317",
-      "avg_cost_per_task_usd": 0.013080006734006736,
-      "quality_metric": "accuracy",
-      "quality": 0.7772166666666667,
-      "total_tasks": 594,
-      "last_run_at": "2026-10-01T19:12:45.924Z",
-      "source": "openrouter",
-      "evidence_tier": "A",
-      "scope": "named_benchmark_run"
-    },
-    {
-      "benchmark_type": "gpqa_diamond",
-      "model_permaslug": "deepseek/deepseek-r1-0528",
-      "canonical_family": "deepseek/deepseek-r1-0528",
-      "avg_cost_per_task_usd": 0.05213979987373737,
-      "quality_metric": "accuracy",
-      "quality": 0.7737795,
-      "total_tasks": 1584,
-      "last_run_at": "2026-10-10T16:19:57.542Z",
-      "source": "openrouter",
-      "evidence_tier": "A",
-      "scope": "named_benchmark_run"
-    },
-    {
       "benchmark_type": "tau_bench_verified_airline",
       "model_permaslug": "anthropic/claude-5-fable-20260609",
       "canonical_family": "anthropic/claude-5-fable-20260609",
@@ -1366,6 +1366,19 @@
     },
     {
       "benchmark_type": "tau_bench_verified_airline",
+      "model_permaslug": "inclusionai/ling-3.1-flash-20261002",
+      "canonical_family": "inclusionai/ling-3.1-flash-20261002",
+      "avg_cost_per_task_usd": 0.03146312,
+      "quality_metric": "accuracy",
+      "quality": 0.793333,
+      "total_tasks": 50,
+      "last_run_at": "2026-10-14T19:17:59.742Z",
+      "source": "openrouter",
+      "evidence_tier": "A",
+      "scope": "named_benchmark_run"
+    },
+    {
+      "benchmark_type": "tau_bench_verified_airline",
       "model_permaslug": "anthropic/claude-fable-5.1-20260831",
       "canonical_family": "anthropic/claude-fable-5.1-20260831",
       "avg_cost_per_task_usd": 0.71616581,
@@ -1386,6 +1399,19 @@
       "quality": 0.7873333,
       "total_tasks": 500,
       "last_run_at": "2026-10-10T11:33:13.840Z",
+      "source": "openrouter",
+      "evidence_tier": "A",
+      "scope": "named_benchmark_run"
+    },
+    {
+      "benchmark_type": "tau_bench_verified_airline",
+      "model_permaslug": "google/gemini-4-argon-20261013",
+      "canonical_family": "google/gemini-4-argon-20261013",
+      "avg_cost_per_task_usd": 0.49828548,
+      "quality_metric": "accuracy",
+      "quality": 0.786667,
+      "total_tasks": 50,
+      "last_run_at": "2026-10-14T15:16:05.578Z",
       "source": "openrouter",
       "evidence_tier": "A",
       "scope": "named_benchmark_run"
@@ -2611,32 +2637,6 @@
       "source": "openrouter",
       "evidence_tier": "A",
       "scope": "named_benchmark_run"
-    },
-    {
-      "benchmark_type": "tau_bench_verified_airline",
-      "model_permaslug": "nvidia/nemotron-3.5-lightning-20260807",
-      "canonical_family": "nvidia/nemotron-3.5-lightning-20260807",
-      "avg_cost_per_task_usd": 0.01677981124497992,
-      "quality_metric": "accuracy",
-      "quality": 0.649933124497992,
-      "total_tasks": 249,
-      "last_run_at": "2026-10-10T13:36:34.540Z",
-      "source": "openrouter",
-      "evidence_tier": "A",
-      "scope": "named_benchmark_run"
-    },
-    {
-      "benchmark_type": "tau_bench_verified_airline",
-      "model_permaslug": "openai/gpt-oss-120b",
-      "canonical_family": "openai/gpt-oss-120b",
-      "avg_cost_per_task_usd": 0.017551492499999998,
-      "quality_metric": "accuracy",
-      "quality": 0.64166675,
-      "total_tasks": 400,
-      "last_run_at": "2026-10-10T19:31:53.275Z",
-      "source": "openrouter",
-      "evidence_tier": "A",
-      "scope": "named_benchmark_run"
     }
   ],
   "session_cost": [
@@ -2646,9 +2646,9 @@
       "turn_range": "1-turn",
       "model_permaslug": "anthropic/claude-fable-5.1-20260831",
       "canonical_family": "anthropic/claude-fable-5.1-20260831",
-      "median_session_cost_usd": 0.30766988,
+      "median_session_cost_usd": 0.30329272,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2659,9 +2659,9 @@
       "turn_range": "1-turn",
       "model_permaslug": "openai/gpt-6-astra-20260903",
       "canonical_family": "openai/gpt-6-astra-20260903",
-      "median_session_cost_usd": 0.21253625,
+      "median_session_cost_usd": 0.21372688,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2672,9 +2672,9 @@
       "turn_range": "1-turn",
       "model_permaslug": "anthropic/claude-opus-5-20260723",
       "canonical_family": "anthropic/claude-opus-5-20260723",
-      "median_session_cost_usd": 0.17353377,
+      "median_session_cost_usd": 0.17302643,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2687,7 +2687,7 @@
       "canonical_family": "anthropic/claude-4.8-opus-20260528",
       "median_session_cost_usd": 0.16710263,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2698,9 +2698,9 @@
       "turn_range": "1-turn",
       "model_permaslug": "anthropic/claude-opus-5.5-20260921",
       "canonical_family": "anthropic/claude-opus-5.5-20260921",
-      "median_session_cost_usd": 0.13438582,
+      "median_session_cost_usd": 0.13416685,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2711,9 +2711,9 @@
       "turn_range": "1-turn",
       "model_permaslug": "anthropic/claude-4.5-sonnet-20250929",
       "canonical_family": "anthropic/claude-4.5-sonnet-20250929",
-      "median_session_cost_usd": 0.09947067,
+      "median_session_cost_usd": 0.09998078,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2726,7 +2726,7 @@
       "canonical_family": "anthropic/claude-4.6-sonnet-20260217",
       "median_session_cost_usd": 0.09365984,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2737,9 +2737,9 @@
       "turn_range": "1-turn",
       "model_permaslug": "anthropic/claude-sonnet-5-20260630",
       "canonical_family": "anthropic/claude-sonnet-5-20260630",
-      "median_session_cost_usd": 0.0928604,
+      "median_session_cost_usd": 0.093309246,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2750,9 +2750,9 @@
       "turn_range": "1-turn",
       "model_permaslug": "anthropic/claude-sonnet-5.5-20260928",
       "canonical_family": "anthropic/claude-sonnet-5.5-20260928",
-      "median_session_cost_usd": 0.06908111,
+      "median_session_cost_usd": 0.069001235,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2765,7 +2765,7 @@
       "canonical_family": "anthropic/claude-5-fable-20260609",
       "median_session_cost_usd": 0.05537522,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2776,9 +2776,9 @@
       "turn_range": "1-turn",
       "model_permaslug": "openai/gpt-5.6-sol-20260709",
       "canonical_family": "openai/gpt-5.6-sol-20260709",
-      "median_session_cost_usd": 0.049681254,
+      "median_session_cost_usd": 0.049762003,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2789,9 +2789,9 @@
       "turn_range": "1-turn",
       "model_permaslug": "qwen/qwen3.8-max-20260902",
       "canonical_family": "qwen/qwen3.8-max-20260902",
-      "median_session_cost_usd": 0.04966275,
+      "median_session_cost_usd": 0.049697377,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2802,9 +2802,9 @@
       "turn_range": "1-turn",
       "model_permaslug": "moonshotai/kimi-k3-20260715",
       "canonical_family": "moonshotai/kimi-k3-20260715",
-      "median_session_cost_usd": 0.047791284,
+      "median_session_cost_usd": 0.047873355,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2817,7 +2817,7 @@
       "canonical_family": "anthropic/claude-4.6-opus-20260205",
       "median_session_cost_usd": 0.047059,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2830,7 +2830,7 @@
       "canonical_family": "openai/gpt-6.1-sol-20260929",
       "median_session_cost_usd": 0.0429205,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2843,7 +2843,7 @@
       "canonical_family": "z-ai/glm-5.3-20260816",
       "median_session_cost_usd": 0.014572192,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2856,7 +2856,7 @@
       "canonical_family": "z-ai/glm-5.2-20260616",
       "median_session_cost_usd": 0.01316,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2867,9 +2867,9 @@
       "turn_range": "1-turn",
       "model_permaslug": "anthropic/claude-4.5-haiku-20251001",
       "canonical_family": "anthropic/claude-4.5-haiku-20251001",
-      "median_session_cost_usd": 0.012179667,
+      "median_session_cost_usd": 0.012224825,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2882,7 +2882,7 @@
       "canonical_family": "deepseek/deepseek-v4-pro-20260813",
       "median_session_cost_usd": 0.010703334,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2895,7 +2895,7 @@
       "canonical_family": "xiaomi/mimo-v2.6-pro-20260921",
       "median_session_cost_usd": 0.008045344,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2908,7 +2908,7 @@
       "canonical_family": "deepseek/deepseek-v4-pro-20260423",
       "median_session_cost_usd": 0.0074005313,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2921,7 +2921,7 @@
       "canonical_family": "openai/gpt-5.6-luna-20260709",
       "median_session_cost_usd": 0.0048479997,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2932,9 +2932,9 @@
       "turn_range": "1-turn",
       "model_permaslug": "google/gemini-3.8-flash-20260902",
       "canonical_family": "google/gemini-3.8-flash-20260902",
-      "median_session_cost_usd": 0.0038052779,
+      "median_session_cost_usd": 0.0038137084,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2945,9 +2945,9 @@
       "turn_range": "1-turn",
       "model_permaslug": "deepseek/deepseek-v4.1-flash-20260910",
       "canonical_family": "deepseek/deepseek-v4.1-flash-20260910",
-      "median_session_cost_usd": 0.0036978414,
+      "median_session_cost_usd": 0.0036885263,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2960,7 +2960,7 @@
       "canonical_family": "qwen/qwen3.8-flash-20260826",
       "median_session_cost_usd": 0.0035744999,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2973,7 +2973,7 @@
       "canonical_family": "deepseek/deepseek-chat-v3",
       "median_session_cost_usd": 0.002865375,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2986,7 +2986,7 @@
       "canonical_family": "z-ai/glm-5.3-flash-20260826",
       "median_session_cost_usd": 0.0024319873,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -2999,7 +2999,7 @@
       "canonical_family": "xiaomi/mimo-v2.6-flash-20260921",
       "median_session_cost_usd": 0.002356,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3010,9 +3010,9 @@
       "turn_range": "1-turn",
       "model_permaslug": "anthropic/claude-haiku-5.5-20261007",
       "canonical_family": "anthropic/claude-haiku-5.5-20261007",
-      "median_session_cost_usd": 0.0022942715,
+      "median_session_cost_usd": 0.0022856232,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3025,7 +3025,7 @@
       "canonical_family": "openai/gpt-6-luna-20260922",
       "median_session_cost_usd": 0.0020658437,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3038,7 +3038,7 @@
       "canonical_family": "meta/muse-spark-1.3-contributor-20260902",
       "median_session_cost_usd": 0.0019906666,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3051,7 +3051,7 @@
       "canonical_family": "deepseek/deepseek-v4-flash-20260423",
       "median_session_cost_usd": 0.00086997956,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3064,7 +3064,7 @@
       "canonical_family": "deepseek/deepseek-v4-flash-20260731",
       "median_session_cost_usd": 0.0008630355,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3075,9 +3075,9 @@
       "turn_range": "2-9-turns",
       "model_permaslug": "anthropic/claude-fable-5.1-20260831",
       "canonical_family": "anthropic/claude-fable-5.1-20260831",
-      "median_session_cost_usd": 1.0206156,
+      "median_session_cost_usd": 1.016331,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3090,7 +3090,7 @@
       "canonical_family": "anthropic/claude-5-fable-20260609",
       "median_session_cost_usd": 0.851352,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3101,9 +3101,9 @@
       "turn_range": "2-9-turns",
       "model_permaslug": "openai/gpt-6-astra-20260903",
       "canonical_family": "openai/gpt-6-astra-20260903",
-      "median_session_cost_usd": 0.52096236,
+      "median_session_cost_usd": 0.521432,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3116,7 +3116,7 @@
       "canonical_family": "anthropic/claude-4.7-opus-20260416",
       "median_session_cost_usd": 0.46498692,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3127,9 +3127,9 @@
       "turn_range": "2-9-turns",
       "model_permaslug": "anthropic/claude-4.8-opus-20260528",
       "canonical_family": "anthropic/claude-4.8-opus-20260528",
-      "median_session_cost_usd": 0.4391531,
+      "median_session_cost_usd": 0.44320792,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3140,9 +3140,9 @@
       "turn_range": "2-9-turns",
       "model_permaslug": "anthropic/claude-opus-5-20260723",
       "canonical_family": "anthropic/claude-opus-5-20260723",
-      "median_session_cost_usd": 0.41070265,
+      "median_session_cost_usd": 0.40992182,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3155,7 +3155,7 @@
       "canonical_family": "anthropic/claude-4.6-opus-20260205",
       "median_session_cost_usd": 0.35224634,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3166,9 +3166,9 @@
       "turn_range": "2-9-turns",
       "model_permaslug": "anthropic/claude-opus-5.5-20260921",
       "canonical_family": "anthropic/claude-opus-5.5-20260921",
-      "median_session_cost_usd": 0.3047399,
+      "median_session_cost_usd": 0.3043589,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3181,7 +3181,7 @@
       "canonical_family": "anthropic/claude-4.6-sonnet-20260217",
       "median_session_cost_usd": 0.19049981,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3192,9 +3192,9 @@
       "turn_range": "2-9-turns",
       "model_permaslug": "anthropic/claude-sonnet-5-20260630",
       "canonical_family": "anthropic/claude-sonnet-5-20260630",
-      "median_session_cost_usd": 0.16112684,
+      "median_session_cost_usd": 0.16103366,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3207,7 +3207,7 @@
       "canonical_family": "anthropic/claude-4.5-sonnet-20250929",
       "median_session_cost_usd": 0.16070472,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3218,9 +3218,9 @@
       "turn_range": "2-9-turns",
       "model_permaslug": "anthropic/claude-sonnet-5.5-20260928",
       "canonical_family": "anthropic/claude-sonnet-5.5-20260928",
-      "median_session_cost_usd": 0.15834926,
+      "median_session_cost_usd": 0.15829164,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3231,9 +3231,9 @@
       "turn_range": "2-9-turns",
       "model_permaslug": "x-ai/grok-4.6-20260810",
       "canonical_family": "x-ai/grok-4.6-20260810",
-      "median_session_cost_usd": 0.14891575,
+      "median_session_cost_usd": 0.1477665,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3244,9 +3244,9 @@
       "turn_range": "2-9-turns",
       "model_permaslug": "openai/gpt-5.6-sol-20260709",
       "canonical_family": "openai/gpt-5.6-sol-20260709",
-      "median_session_cost_usd": 0.14291094,
+      "median_session_cost_usd": 0.14552662,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3257,9 +3257,9 @@
       "turn_range": "2-9-turns",
       "model_permaslug": "qwen/qwen3.8-max-20260902",
       "canonical_family": "qwen/qwen3.8-max-20260902",
-      "median_session_cost_usd": 0.13717297,
+      "median_session_cost_usd": 0.13841562,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3270,9 +3270,9 @@
       "turn_range": "2-9-turns",
       "model_permaslug": "moonshotai/kimi-k3-20260715",
       "canonical_family": "moonshotai/kimi-k3-20260715",
-      "median_session_cost_usd": 0.12891582,
+      "median_session_cost_usd": 0.12882729,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3283,9 +3283,9 @@
       "turn_range": "2-9-turns",
       "model_permaslug": "x-ai/grok-4.7-20260916",
       "canonical_family": "x-ai/grok-4.7-20260916",
-      "median_session_cost_usd": 0.10700589,
+      "median_session_cost_usd": 0.107560165,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3298,7 +3298,7 @@
       "canonical_family": "openai/gpt-6.1-sol-20260929",
       "median_session_cost_usd": 0.10292712,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3311,7 +3311,7 @@
       "canonical_family": "openai/gpt-6-sol-20260922",
       "median_session_cost_usd": 0.077409625,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3324,7 +3324,7 @@
       "canonical_family": "z-ai/glm-5.2-20260616",
       "median_session_cost_usd": 0.060529836,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3335,9 +3335,9 @@
       "turn_range": "2-9-turns",
       "model_permaslug": "z-ai/glm-5.3-20260816",
       "canonical_family": "z-ai/glm-5.3-20260816",
-      "median_session_cost_usd": 0.057000127,
+      "median_session_cost_usd": 0.0571589,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3350,7 +3350,7 @@
       "canonical_family": "anthropic/claude-4.5-haiku-20251001",
       "median_session_cost_usd": 0.0466391,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3363,7 +3363,7 @@
       "canonical_family": "deepseek/deepseek-v4-pro-20260813",
       "median_session_cost_usd": 0.036059026,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3376,7 +3376,7 @@
       "canonical_family": "moonshotai/kimi-k2.7-code-20260612",
       "median_session_cost_usd": 0.033966277,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3389,7 +3389,7 @@
       "canonical_family": "moonshotai/kimi-k2.6-20260420",
       "median_session_cost_usd": 0.0322685,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3402,7 +3402,7 @@
       "canonical_family": "deepseek/deepseek-v4-pro-20260423",
       "median_session_cost_usd": 0.024026487,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3413,9 +3413,9 @@
       "turn_range": "2-9-turns",
       "model_permaslug": "google/gemini-3.8-flash-20260902",
       "canonical_family": "google/gemini-3.8-flash-20260902",
-      "median_session_cost_usd": 0.022348266,
+      "median_session_cost_usd": 0.022533074,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3428,7 +3428,7 @@
       "canonical_family": "minimax/minimax-m3-20260531",
       "median_session_cost_usd": 0.020043876,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3441,7 +3441,7 @@
       "canonical_family": "xiaomi/mimo-v2.6-pro-20260921",
       "median_session_cost_usd": 0.01990446,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3452,9 +3452,9 @@
       "turn_range": "2-9-turns",
       "model_permaslug": "qwen/qwen3.8-27b-20260814",
       "canonical_family": "qwen/qwen3.8-27b-20260814",
-      "median_session_cost_usd": 0.01448025,
+      "median_session_cost_usd": 0.0148065,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3467,7 +3467,7 @@
       "canonical_family": "openai/gpt-6-luna-pro-20260922",
       "median_session_cost_usd": 0.013813,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3480,7 +3480,7 @@
       "canonical_family": "openai/gpt-5.6-luna-20260709",
       "median_session_cost_usd": 0.011232123,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3491,9 +3491,9 @@
       "turn_range": "2-9-turns",
       "model_permaslug": "deepseek/deepseek-v4.1-flash-20260910",
       "canonical_family": "deepseek/deepseek-v4.1-flash-20260910",
-      "median_session_cost_usd": 0.009596064,
+      "median_session_cost_usd": 0.009604931,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3506,7 +3506,7 @@
       "canonical_family": "z-ai/glm-5.3-flash-20260826",
       "median_session_cost_usd": 0.008392649,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3519,7 +3519,7 @@
       "canonical_family": "qwen/qwen3.8-flash-20260826",
       "median_session_cost_usd": 0.00794248,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3532,7 +3532,7 @@
       "canonical_family": "anthropic/claude-haiku-5.5-20261007",
       "median_session_cost_usd": 0.007602139,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3545,7 +3545,7 @@
       "canonical_family": "meta/muse-spark-1.3-contributor-20260902",
       "median_session_cost_usd": 0.007594656,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3556,9 +3556,9 @@
       "turn_range": "2-9-turns",
       "model_permaslug": "xiaomi/mimo-v2.6-flash-20260921",
       "canonical_family": "xiaomi/mimo-v2.6-flash-20260921",
-      "median_session_cost_usd": 0.0073524,
+      "median_session_cost_usd": 0.0073531,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3569,9 +3569,9 @@
       "turn_range": "2-9-turns",
       "model_permaslug": "openai/gpt-6-luna-20260922",
       "canonical_family": "openai/gpt-6-luna-20260922",
-      "median_session_cost_usd": 0.004853037,
+      "median_session_cost_usd": 0.0048647407,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3584,7 +3584,7 @@
       "canonical_family": "deepseek/deepseek-v4-flash-20260731",
       "median_session_cost_usd": 0.004349276,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3597,7 +3597,7 @@
       "canonical_family": "deepseek/deepseek-v4-flash-20260423",
       "median_session_cost_usd": 0.003758964,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3610,7 +3610,7 @@
       "canonical_family": "openai/gpt-oss-120b",
       "median_session_cost_usd": 0.0022065,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3623,7 +3623,7 @@
       "canonical_family": "qwen/qwen3.7-flash-20260727",
       "median_session_cost_usd": 0.0017870001,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3636,7 +3636,7 @@
       "canonical_family": "anthropic/claude-5-fable-20260609",
       "median_session_cost_usd": 4.969459,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3647,9 +3647,9 @@
       "turn_range": "10-49-turns",
       "model_permaslug": "anthropic/claude-fable-5.1-20260831",
       "canonical_family": "anthropic/claude-fable-5.1-20260831",
-      "median_session_cost_usd": 3.5821724,
+      "median_session_cost_usd": 3.5961514,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3662,7 +3662,7 @@
       "canonical_family": "openai/gpt-6-astra-20260903",
       "median_session_cost_usd": 2.678439,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3673,9 +3673,9 @@
       "turn_range": "10-49-turns",
       "model_permaslug": "anthropic/claude-opus-5-20260723",
       "canonical_family": "anthropic/claude-opus-5-20260723",
-      "median_session_cost_usd": 2.0440793,
+      "median_session_cost_usd": 2.0412657,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3688,7 +3688,7 @@
       "canonical_family": "anthropic/claude-4.8-opus-20260528",
       "median_session_cost_usd": 1.8925298,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3701,7 +3701,7 @@
       "canonical_family": "anthropic/claude-4.6-opus-20260205",
       "median_session_cost_usd": 1.4959803,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3712,9 +3712,9 @@
       "turn_range": "10-49-turns",
       "model_permaslug": "anthropic/claude-opus-5.5-20260921",
       "canonical_family": "anthropic/claude-opus-5.5-20260921",
-      "median_session_cost_usd": 1.3842908,
+      "median_session_cost_usd": 1.3832994,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3727,7 +3727,7 @@
       "canonical_family": "anthropic/claude-4.7-opus-20260416",
       "median_session_cost_usd": 1.3819902,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3740,7 +3740,7 @@
       "canonical_family": "x-ai/grok-4.6-20260810",
       "median_session_cost_usd": 1.3328109,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3753,7 +3753,7 @@
       "canonical_family": "x-ai/grok-4.7-20260916",
       "median_session_cost_usd": 1.0884231,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3764,9 +3764,9 @@
       "turn_range": "10-49-turns",
       "model_permaslug": "qwen/qwen3.8-max-20260902",
       "canonical_family": "qwen/qwen3.8-max-20260902",
-      "median_session_cost_usd": 1.0358791,
+      "median_session_cost_usd": 1.0277429,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3779,7 +3779,7 @@
       "canonical_family": "moonshotai/kimi-k3-20260715",
       "median_session_cost_usd": 0.88358694,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3792,20 +3792,7 @@
       "canonical_family": "anthropic/claude-4.6-sonnet-20260217",
       "median_session_cost_usd": 0.7875139,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
-      "source": "openrouter",
-      "evidence_tier": "B",
-      "scope": "named_application_workload"
-    },
-    {
-      "app_slug": "claude-code",
-      "app_name": "Claude Code",
-      "turn_range": "10-49-turns",
-      "model_permaslug": "openai/gpt-5.6-sol-20260709",
-      "canonical_family": "openai/gpt-5.6-sol-20260709",
-      "median_session_cost_usd": 0.6939739,
-      "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3818,7 +3805,20 @@
       "canonical_family": "anthropic/claude-4.5-sonnet-20250929",
       "median_session_cost_usd": 0.6900443,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
+      "source": "openrouter",
+      "evidence_tier": "B",
+      "scope": "named_application_workload"
+    },
+    {
+      "app_slug": "claude-code",
+      "app_name": "Claude Code",
+      "turn_range": "10-49-turns",
+      "model_permaslug": "openai/gpt-5.6-sol-20260709",
+      "canonical_family": "openai/gpt-5.6-sol-20260709",
+      "median_session_cost_usd": 0.6834578,
+      "window_days": 30,
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3829,9 +3829,9 @@
       "turn_range": "10-49-turns",
       "model_permaslug": "anthropic/claude-sonnet-5-20260630",
       "canonical_family": "anthropic/claude-sonnet-5-20260630",
-      "median_session_cost_usd": 0.65924346,
+      "median_session_cost_usd": 0.6577346,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3844,7 +3844,7 @@
       "canonical_family": "anthropic/claude-sonnet-5.5-20260928",
       "median_session_cost_usd": 0.621387,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3855,9 +3855,9 @@
       "turn_range": "10-49-turns",
       "model_permaslug": "z-ai/glm-5.3-20260816",
       "canonical_family": "z-ai/glm-5.3-20260816",
-      "median_session_cost_usd": 0.46284473,
+      "median_session_cost_usd": 0.46221617,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3870,7 +3870,7 @@
       "canonical_family": "openai/gpt-6.1-sol-20260929",
       "median_session_cost_usd": 0.40189657,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3883,7 +3883,7 @@
       "canonical_family": "z-ai/glm-5.2-20260616",
       "median_session_cost_usd": 0.33916655,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3894,9 +3894,9 @@
       "turn_range": "10-49-turns",
       "model_permaslug": "google/gemini-3.8-flash-20260902",
       "canonical_family": "google/gemini-3.8-flash-20260902",
-      "median_session_cost_usd": 0.2985906,
+      "median_session_cost_usd": 0.29938772,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3909,7 +3909,7 @@
       "canonical_family": "moonshotai/kimi-k2.7-code-20260612",
       "median_session_cost_usd": 0.29118925,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3922,7 +3922,7 @@
       "canonical_family": "deepseek/deepseek-v4-pro-20260813",
       "median_session_cost_usd": 0.27663022,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"
@@ -3935,7 +3935,7 @@
       "canonical_family": "anthropic/claude-4.5-haiku-20251001",
       "median_session_cost_usd": 0.25757214,
       "window_days": 30,
-      "as_of": "2026-10-13T20:17:44.672Z",
+      "as_of": "2026-10-12T10:00:32.340Z",
       "source": "openrouter",
       "evidence_tier": "B",
       "scope": "named_application_workload"

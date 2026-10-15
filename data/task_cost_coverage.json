@@ -2,13 +2,13 @@
   "schema_version": "1.0",
   "counts": {
     "families_total": 375,
-    "rankings_surface_families": 347,
-    "benchmark_cost_families": 117,
+    "rankings_surface_families": 348,
+    "benchmark_cost_families": 116,
     "session_cost_families": 44,
     "union_secondary_covered": 122,
-    "uncovered": 146,
+    "uncovered": 145,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 146
+    "likely_low_signal_uncovered": 145
   },
   "families": [
     {
@@ -329,8 +329,7 @@
     {
       "canonical_family": "deepseek/deepseek-r1-0528",
       "covered_by": [
-        "rankings_surface",
-        "benchmark_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },
@@ -557,7 +556,8 @@
     {
       "canonical_family": "google/gemini-4-argon-20261013",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -670,7 +670,8 @@
     {
       "canonical_family": "inclusionai/ling-3.1-flash-20261002",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -933,8 +934,10 @@
     },
     {
       "canonical_family": "mistralai/mistral-large-4-0-20261006",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "mistralai/mistral-medium-3",
@@ -1084,10 +1087,8 @@
     },
     {
       "canonical_family": "nousresearch/hermes-3-llama-3.1-405b",
-      "covered_by": [
-        "rankings_surface"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "nousresearch/hermes-3-llama-3.1-70b",
@@ -1140,8 +1141,7 @@
     {
       "canonical_family": "nvidia/nemotron-3.5-lightning-20260807",
       "covered_by": [
-        "rankings_surface",
-        "benchmark_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },
@@ -1519,7 +1519,6 @@
       "canonical_family": "openai/gpt-oss-120b",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost",
         "session_cost"
       ],
       "classification": "covered"
@@ -2050,8 +2049,10 @@
     },
     {
       "canonical_family": "stepfun/step-5-preview-20261008",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "tencent/hunyuan-a13b-instruct",

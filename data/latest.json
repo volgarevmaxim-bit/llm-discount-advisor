@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-14T10:17:07Z",
+  "generated_at": "2026-10-15T10:00:11Z",
   "source": "openrouter",
   "model_count": 462,
   "model_family_count": 375,
   "eligible_after_prefilter": 427,
   "eligible_unique_families": 340,
-  "gated_count": 123,
-  "gated_unique_families": 82,
+  "gated_count": 124,
+  "gated_unique_families": 83,
   "models": [
     {
       "slug": "google/gemini-4-argon",
@@ -21,13 +21,13 @@
       "default_price_out": 10.0,
       "default_blended_3to1": 4.0,
       "best_provider": "Google AI Studio",
-      "provider_count": 5,
+      "provider_count": 6,
       "provider_spread": 3.6,
       "overpay_ratio": 2.0,
       "discount_max": 0.5,
       "discount_provider": "Google AI Studio",
       "base_price": 4.0,
-      "uptime_1d": 99.717,
+      "uptime_1d": 100.0,
       "context": 1048576,
       "intelligence": 52.6,
       "coding": null,
@@ -37,10 +37,10 @@
       "is_free": false,
       "has_tiered_pricing": false,
       "pricing_overrides": [],
-      "da_categories": 0,
-      "da_best_rank": null,
-      "da_best_elo": null,
-      "age_days": 0,
+      "da_categories": 5,
+      "da_best_rank": 6.0,
+      "da_best_elo": 1378.0,
+      "age_days": 1,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -49,10 +49,11 @@
         "low"
       ],
       "gate_reason": [
-        "q:intelligence"
+        "q:intelligence",
+        "G3:design_arena"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "google/gemini-4-argon:batch",
@@ -83,10 +84,10 @@
       "is_free": false,
       "has_tiered_pricing": false,
       "pricing_overrides": [],
-      "da_categories": 0,
-      "da_best_rank": null,
-      "da_best_elo": null,
-      "age_days": 0,
+      "da_categories": 5,
+      "da_best_rank": 6.0,
+      "da_best_elo": 1378.0,
+      "age_days": 1,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -95,10 +96,11 @@
         "low"
       ],
       "gate_reason": [
-        "q:intelligence"
+        "q:intelligence",
+        "G3:design_arena"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "meta/muse-wonder",
@@ -119,7 +121,7 @@
       "discount_max": 0.0,
       "discount_provider": "Meta",
       "base_price": 8.0,
-      "uptime_1d": 96.528,
+      "uptime_1d": 99.514,
       "context": 1048576,
       "intelligence": null,
       "coding": null,
@@ -131,8 +133,8 @@
       "pricing_overrides": [],
       "da_categories": 6,
       "da_best_rank": 1.0,
-      "da_best_elo": 1436.0,
-      "age_days": 1,
+      "da_best_elo": 1432.0,
+      "age_days": 2,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -148,7 +150,53 @@
         "G6:participation"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
+    },
+    {
+      "slug": "stepfun/step-5-preview",
+      "variant_id": "stepfun/step-5-preview",
+      "canonical_slug": "stepfun/step-5-preview-20261008",
+      "id": "stepfun/step-5-preview",
+      "name": "StepFun: Step 5 Preview",
+      "price_in": 1.0,
+      "price_out": 2.7,
+      "blended_3to1": 1.425,
+      "default_price_in": 1.0,
+      "default_price_out": 2.7,
+      "default_blended_3to1": 1.425,
+      "best_provider": "StepFun",
+      "provider_count": 2,
+      "provider_spread": 1.0,
+      "overpay_ratio": 1.0,
+      "discount_max": 0.0,
+      "discount_provider": "DeepInfra",
+      "base_price": 1.425,
+      "uptime_1d": 97.414,
+      "context": 1048576,
+      "intelligence": 43.7,
+      "coding": null,
+      "agentic": null,
+      "has_tools": true,
+      "modality": "text -> image -> video -> text",
+      "is_free": false,
+      "has_tiered_pricing": false,
+      "pricing_overrides": [],
+      "da_categories": 0,
+      "da_best_rank": null,
+      "da_best_elo": null,
+      "age_days": 6,
+      "reasoning_default_effort": "medium",
+      "reasoning_mandatory": true,
+      "reasoning_efforts": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "gate_reason": [
+        "q:intelligence"
+      ],
+      "variant_count": 1,
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "anthropic/claude-haiku-5.5",
@@ -189,9 +237,9 @@
         }
       ],
       "da_categories": 6,
-      "da_best_rank": 8.0,
-      "da_best_elo": 1355.0,
-      "age_days": 6,
+      "da_best_rank": 9.0,
+      "da_best_elo": 1348.0,
+      "age_days": 7,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -207,7 +255,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "anthropic/claude-haiku-5.5:batch",
@@ -248,9 +296,9 @@
         }
       ],
       "da_categories": 6,
-      "da_best_rank": 8.0,
-      "da_best_elo": 1355.0,
-      "age_days": 6,
+      "da_best_rank": 9.0,
+      "da_best_elo": 1348.0,
+      "age_days": 7,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -266,7 +314,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "mistralai/mistral-large-4-0",
@@ -287,9 +335,9 @@
       "discount_max": 0.5,
       "discount_provider": "Mistral",
       "base_price": 2.065,
-      "uptime_1d": 98.599,
+      "uptime_1d": 100.0,
       "context": 1048576,
-      "intelligence": null,
+      "intelligence": 38.4,
       "coding": null,
       "agentic": null,
       "has_tools": true,
@@ -299,8 +347,8 @@
       "pricing_overrides": [],
       "da_categories": 8,
       "da_best_rank": 17.0,
-      "da_best_elo": 1281.0,
-      "age_days": 7,
+      "da_best_elo": 1279.0,
+      "age_days": 8,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -311,7 +359,7 @@
         "G6:participation"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "inclusionai/ling-3.1-flash",
@@ -326,8 +374,8 @@
       "default_price_out": 0.225,
       "default_blended_3to1": 0.1125,
       "best_provider": "Novita",
-      "provider_count": 1,
-      "provider_spread": 1.0,
+      "provider_count": 2,
+      "provider_spread": 4.0,
       "overpay_ratio": 1.0,
       "discount_max": 0.75,
       "discount_provider": "Novita",
@@ -345,7 +393,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 11,
+      "age_days": 12,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -353,7 +401,7 @@
         "v:intelligence"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "openai/gpt-6.1-sol",
@@ -393,9 +441,9 @@
         }
       ],
       "da_categories": 6,
-      "da_best_rank": 1.0,
-      "da_best_elo": 1482.0,
-      "age_days": 14,
+      "da_best_rank": 2.0,
+      "da_best_elo": 1467.0,
+      "age_days": 15,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -411,7 +459,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "openai/gpt-6.1-sol:batch",
@@ -451,9 +499,9 @@
         }
       ],
       "da_categories": 6,
-      "da_best_rank": 1.0,
-      "da_best_elo": 1482.0,
-      "age_days": 14,
+      "da_best_rank": 2.0,
+      "da_best_elo": 1467.0,
+      "age_days": 15,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -469,7 +517,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "anthropic/claude-sonnet-5.5",
@@ -501,9 +549,9 @@
       "has_tiered_pricing": false,
       "pricing_overrides": [],
       "da_categories": 6,
-      "da_best_rank": 2.0,
-      "da_best_elo": 1477.0,
-      "age_days": 15,
+      "da_best_rank": 1.0,
+      "da_best_elo": 1470.0,
+      "age_days": 16,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -519,7 +567,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "anthropic/claude-sonnet-5.5:batch",
@@ -551,9 +599,9 @@
       "has_tiered_pricing": false,
       "pricing_overrides": [],
       "da_categories": 6,
-      "da_best_rank": 2.0,
-      "da_best_elo": 1477.0,
-      "age_days": 15,
+      "da_best_rank": 1.0,
+      "da_best_elo": 1470.0,
+      "age_days": 16,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -569,7 +617,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "upstage/solar-mini4",
@@ -601,9 +649,9 @@
       "has_tiered_pricing": false,
       "pricing_overrides": [],
       "da_categories": 3,
-      "da_best_rank": 72.0,
-      "da_best_elo": 1173.0,
-      "age_days": 20,
+      "da_best_rank": 73.0,
+      "da_best_elo": 1162.0,
+      "age_days": 21,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -619,7 +667,7 @@
         "v:intelligence"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "openai/gpt-6-luna",
@@ -661,7 +709,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 21,
+      "age_days": 22,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -676,7 +724,7 @@
         "v:intelligence"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "openai/gpt-6-luna:batch",
@@ -718,7 +766,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 21,
+      "age_days": 22,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -733,7 +781,7 @@
         "v:intelligence"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "openai/gpt-6-sol",
@@ -754,7 +802,7 @@
       "discount_max": 0.0,
       "discount_provider": "OpenAI",
       "base_price": 2.0,
-      "uptime_1d": 99.925,
+      "uptime_1d": 100.0,
       "context": 1050000,
       "intelligence": 47.6,
       "coding": null,
@@ -775,7 +823,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 21,
+      "age_days": 22,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -790,7 +838,7 @@
         "q:intelligence"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "openai/gpt-6-sol:batch",
@@ -832,7 +880,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 21,
+      "age_days": 22,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -847,7 +895,7 @@
         "q:intelligence"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "anthropic/claude-opus-5.5",
@@ -868,7 +916,7 @@
       "discount_max": 0.0,
       "discount_provider": "Amazon Bedrock",
       "base_price": 8.0,
-      "uptime_1d": 97.986,
+      "uptime_1d": 100.0,
       "context": 1000000,
       "intelligence": 57.6,
       "coding": null,
@@ -881,7 +929,7 @@
       "da_categories": 8,
       "da_best_rank": 1.0,
       "da_best_elo": 1479.0,
-      "age_days": 21,
+      "age_days": 22,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -897,7 +945,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "anthropic/claude-opus-5.5:batch",
@@ -931,7 +979,7 @@
       "da_categories": 8,
       "da_best_rank": 1.0,
       "da_best_elo": 1479.0,
-      "age_days": 21,
+      "age_days": 22,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -947,7 +995,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "xiaomi/mimo-v2.6-flash",
@@ -963,12 +1011,12 @@
       "default_blended_3to1": 0.175,
       "best_provider": "Darkbloom",
       "provider_count": 8,
-      "provider_spread": 1.509,
+      "provider_spread": 1.276,
       "overpay_ratio": 1.207,
-      "discount_max": 0.0,
-      "discount_provider": "Darkbloom",
+      "discount_max": 0.05,
+      "discount_provider": "DeepInfra",
       "base_price": 0.145,
-      "uptime_1d": 96.476,
+      "uptime_1d": 95.841,
       "context": 1050000,
       "intelligence": 37.9,
       "coding": null,
@@ -981,7 +1029,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 22,
+      "age_days": 23,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -989,7 +1037,7 @@
         "v:intelligence"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "xiaomi/mimo-v2.6-pro",
@@ -1005,7 +1053,7 @@
       "default_blended_3to1": 0.54375,
       "best_provider": "DeepInfra",
       "provider_count": 4,
-      "provider_spread": 1.007,
+      "provider_spread": 1.0,
       "overpay_ratio": 1.007,
       "discount_max": 0.0,
       "discount_provider": "DeepInfra",
@@ -1022,8 +1070,8 @@
       "pricing_overrides": [],
       "da_categories": 7,
       "da_best_rank": 5.0,
-      "da_best_elo": 1338.0,
-      "age_days": 22,
+      "da_best_elo": 1339.0,
+      "age_days": 23,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -1033,7 +1081,7 @@
         "G6:participation"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "x-ai/grok-4.7",
@@ -1054,7 +1102,7 @@
       "discount_max": 0.0,
       "discount_provider": "xAI",
       "base_price": 3.0,
-      "uptime_1d": 99.792,
+      "uptime_1d": 99.653,
       "context": 500000,
       "intelligence": 46.4,
       "coding": null,
@@ -1072,9 +1120,9 @@
         }
       ],
       "da_categories": 6,
-      "da_best_rank": 14.0,
+      "da_best_rank": 16.0,
       "da_best_elo": 1311.0,
-      "age_days": 22,
+      "age_days": 23,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -1088,7 +1136,7 @@
         "G6:participation"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "inclusionai/ling-3.0-flash-vl",
@@ -1109,7 +1157,7 @@
       "discount_max": 0.0,
       "discount_provider": "DeepInfra",
       "base_price": 0.09,
-      "uptime_1d": 99.923,
+      "uptime_1d": 99.29,
       "context": 131072,
       "intelligence": 24.6,
       "coding": 57.0,
@@ -1122,7 +1170,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 33,
+      "age_days": 34,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -1132,7 +1180,7 @@
         "v:agentic"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "deepseek/deepseek-v4.1-flash",
@@ -1143,17 +1191,17 @@
       "price_in": 0.09,
       "price_out": 0.18,
       "blended_3to1": 0.1125,
-      "default_price_in": 0.02016,
-      "default_price_out": 0.891,
-      "default_blended_3to1": 0.23787,
+      "default_price_in": 0.02376,
+      "default_price_out": 0.72,
+      "default_blended_3to1": 0.19782,
       "best_provider": "Decart",
-      "provider_count": 32,
+      "provider_count": 33,
       "provider_spread": 9.333,
-      "overpay_ratio": 2.114,
+      "overpay_ratio": 1.758,
       "discount_max": 0.51,
       "discount_provider": "StreamLake",
       "base_price": 0.1125,
-      "uptime_1d": 99.931,
+      "uptime_1d": 99.861,
       "context": 1048576,
       "intelligence": 39.5,
       "coding": null,
@@ -1166,7 +1214,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 34,
+      "age_days": 35,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -1178,7 +1226,7 @@
         "v:intelligence"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "deepseek/deepseek-v4.1-flash:batch",
@@ -1212,7 +1260,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 34,
+      "age_days": 35,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -1224,7 +1272,7 @@
         "v:intelligence"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "openai/gpt-6-astra",
@@ -1245,7 +1293,7 @@
       "discount_max": 0.0,
       "discount_provider": "OpenAI",
       "base_price": 10.0,
-      "uptime_1d": 100.0,
+      "uptime_1d": 99.91,
       "context": 1050000,
       "intelligence": 52.7,
       "coding": 76.9,
@@ -1266,7 +1314,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 39,
+      "age_days": 40,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -1282,7 +1330,7 @@
         "q:agentic"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "openai/gpt-6-astra:batch",
@@ -1324,7 +1372,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 39,
+      "age_days": 40,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -1340,7 +1388,7 @@
         "q:agentic"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "qwen/qwen3.8-max-0902",
@@ -1361,7 +1409,7 @@
       "discount_max": 0.0,
       "discount_provider": "Alibaba",
       "base_price": 3.0,
-      "uptime_1d": 100.0,
+      "uptime_1d": 99.931,
       "context": 1000000,
       "intelligence": 45.4,
       "coding": 76.2,
@@ -1374,7 +1422,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 40,
+      "age_days": 41,
       "reasoning_default_effort": "xhigh",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -1390,7 +1438,7 @@
         "q:agentic"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "meta/muse-spark-1.3",
@@ -1411,7 +1459,7 @@
       "discount_max": 0.0,
       "discount_provider": "Meta",
       "base_price": 2.0,
-      "uptime_1d": 99.792,
+      "uptime_1d": 99.861,
       "context": 1048576,
       "intelligence": 48.1,
       "coding": 75.8,
@@ -1423,8 +1471,8 @@
       "pricing_overrides": [],
       "da_categories": 13,
       "da_best_rank": 2.0,
-      "da_best_elo": 1398.0,
-      "age_days": 41,
+      "da_best_elo": 1397.0,
+      "age_days": 42,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -1443,7 +1491,7 @@
         "G6:participation"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "google/gemini-3.8-flash",
@@ -1459,12 +1507,12 @@
       "default_blended_3to1": 1.5,
       "best_provider": "Google AI Studio",
       "provider_count": 6,
-      "provider_spread": 3.6,
+      "provider_spread": 2.0,
       "overpay_ratio": 2.0,
       "discount_max": 0.5,
       "discount_provider": "Google AI Studio",
       "base_price": 1.5,
-      "uptime_1d": 99.861,
+      "uptime_1d": 100.0,
       "context": 1048576,
       "intelligence": 40.9,
       "coding": 76.3,
@@ -1477,7 +1525,7 @@
       "da_categories": 14,
       "da_best_rank": 5.0,
       "da_best_elo": 1321.0,
-      "age_days": 41,
+      "age_days": 42,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -1491,7 +1539,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "google/gemini-3.8-flash:batch",
@@ -1525,7 +1573,7 @@
       "da_categories": 14,
       "da_best_rank": 5.0,
       "da_best_elo": 1321.0,
-      "age_days": 41,
+      "age_days": 42,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -1539,7 +1587,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "anthropic/claude-fable-5.1",
@@ -1572,8 +1620,8 @@
       "pricing_overrides": [],
       "da_categories": 13,
       "da_best_rank": 1.0,
-      "da_best_elo": 1394.0,
-      "age_days": 42,
+      "da_best_elo": 1393.0,
+      "age_days": 43,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -1591,7 +1639,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "anthropic/claude-fable-5.1:batch",
@@ -1624,8 +1672,8 @@
       "pricing_overrides": [],
       "da_categories": 13,
       "da_best_rank": 1.0,
-      "da_best_elo": 1394.0,
-      "age_days": 42,
+      "da_best_elo": 1393.0,
+      "age_days": 43,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -1643,7 +1691,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "z-ai/glm-5.3-flash",
@@ -1654,17 +1702,17 @@
       "price_in": 0.0435,
       "price_out": 0.145,
       "blended_3to1": 0.068875,
-      "default_price_in": 0.036,
-      "default_price_out": 0.9,
-      "default_blended_3to1": 0.252,
+      "default_price_in": 0.15,
+      "default_price_out": 0.5,
+      "default_blended_3to1": 0.2375,
       "best_provider": "StreamLake",
-      "provider_count": 33,
+      "provider_count": 34,
       "provider_spread": 6.461,
-      "overpay_ratio": 3.659,
+      "overpay_ratio": 3.448,
       "discount_max": 0.71,
       "discount_provider": "StreamLake",
       "base_price": 0.2375,
-      "uptime_1d": 98.958,
+      "uptime_1d": 96.319,
       "context": 1048576,
       "intelligence": 41.8,
       "coding": 71.5,
@@ -1676,8 +1724,8 @@
       "pricing_overrides": [],
       "da_categories": 8,
       "da_best_rank": 10.0,
-      "da_best_elo": 1321.0,
-      "age_days": 48,
+      "da_best_elo": 1320.0,
+      "age_days": 49,
       "reasoning_default_effort": "max",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -1686,7 +1734,6 @@
         "low"
       ],
       "gate_reason": [
-        "q:intelligence",
         "v:intelligence",
         "q:coding",
         "v:coding",
@@ -1695,7 +1742,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "z-ai/glm-5.3-flash:batch",
@@ -1728,8 +1775,8 @@
       "pricing_overrides": [],
       "da_categories": 8,
       "da_best_rank": 10.0,
-      "da_best_elo": 1321.0,
-      "age_days": 48,
+      "da_best_elo": 1320.0,
+      "age_days": 49,
       "reasoning_default_effort": "max",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -1738,7 +1785,6 @@
         "low"
       ],
       "gate_reason": [
-        "q:intelligence",
         "v:intelligence",
         "q:coding",
         "v:coding",
@@ -1747,7 +1793,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "deepseek/deepseek-v4-flash-vision-exp",
@@ -1781,7 +1827,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 53,
+      "age_days": 54,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -1794,7 +1840,7 @@
         "v:agentic"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "z-ai/glm-5.3",
@@ -1805,17 +1851,17 @@
       "price_in": 0.15,
       "price_out": 3.4,
       "blended_3to1": 0.9625,
-      "default_price_in": 0.079,
+      "default_price_in": 0.03,
       "default_price_out": 4.8,
-      "default_blended_3to1": 1.25925,
+      "default_blended_3to1": 1.2225,
       "best_provider": "Sail Research",
-      "provider_count": 42,
+      "provider_count": 43,
       "provider_spread": 4.468,
-      "overpay_ratio": 1.308,
+      "overpay_ratio": 1.27,
       "discount_max": 0.5,
       "discount_provider": "SiliconFlow",
       "base_price": 0.9625,
-      "uptime_1d": 99.085,
+      "uptime_1d": 100.0,
       "context": 1048576,
       "intelligence": 44.8,
       "coding": 74.8,
@@ -1827,8 +1873,8 @@
       "pricing_overrides": [],
       "da_categories": 11,
       "da_best_rank": 8.0,
-      "da_best_elo": 1335.0,
-      "age_days": 56,
+      "da_best_elo": 1333.0,
+      "age_days": 57,
       "reasoning_default_effort": "max",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -1840,10 +1886,11 @@
         "q:intelligence",
         "q:coding",
         "q:agentic",
+        "v:agentic",
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "z-ai/glm-5.3:batch",
@@ -1876,8 +1923,8 @@
       "pricing_overrides": [],
       "da_categories": 11,
       "da_best_rank": 8.0,
-      "da_best_elo": 1335.0,
-      "age_days": 56,
+      "da_best_elo": 1333.0,
+      "age_days": 57,
       "reasoning_default_effort": "max",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -1889,10 +1936,11 @@
         "q:intelligence",
         "q:coding",
         "q:agentic",
+        "v:agentic",
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "qwen/qwen3.8-27b",
@@ -1900,20 +1948,20 @@
       "canonical_slug": "qwen/qwen3.8-27b-20260814",
       "id": "qwen/qwen3.8-27b",
       "name": "Qwen: Qwen3.8 27B",
-      "price_in": 0.039,
-      "price_out": 1.25,
-      "blended_3to1": 0.34175,
-      "default_price_in": 0.04,
-      "default_price_out": 2.3,
-      "default_blended_3to1": 0.605,
-      "best_provider": "Chutes",
-      "provider_count": 19,
-      "provider_spread": 3.328,
-      "overpay_ratio": 1.77,
+      "price_in": 0.02,
+      "price_out": 0.5,
+      "blended_3to1": 0.14,
+      "default_price_in": 0.24,
+      "default_price_out": 2.2,
+      "default_blended_3to1": 0.73,
+      "best_provider": "Tenstorrent",
+      "provider_count": 20,
+      "provider_spread": 8.125,
+      "overpay_ratio": 5.214,
       "discount_max": 0.25,
       "discount_provider": "DeepInfra",
-      "base_price": 0.34175,
-      "uptime_1d": 99.931,
+      "base_price": 0.14,
+      "uptime_1d": 99.584,
       "context": 1000000,
       "intelligence": 33.7,
       "coding": 68.1,
@@ -1926,7 +1974,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 60,
+      "age_days": 61,
       "reasoning_default_effort": "xhigh",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -1935,11 +1983,10 @@
         "low"
       ],
       "gate_reason": [
-        "q:agentic",
-        "v:agentic"
+        "q:agentic"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "dots-studio/dots-3-note-preview:free",
@@ -1960,7 +2007,7 @@
       "discount_max": 0.0,
       "discount_provider": "AtlasCloud",
       "base_price": 0.0,
-      "uptime_1d": 84.097,
+      "uptime_1d": 99.028,
       "context": 512000,
       "intelligence": null,
       "coding": null,
@@ -1973,7 +2020,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 61,
+      "age_days": 62,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -1981,7 +2028,7 @@
         "G4:free"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "google/gemini-3.7-flash",
@@ -2014,8 +2061,8 @@
       "pricing_overrides": [],
       "da_categories": 14,
       "da_best_rank": 5.0,
-      "da_best_elo": 1324.0,
-      "age_days": 61,
+      "da_best_elo": 1322.0,
+      "age_days": 62,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -2029,7 +2076,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "google/gemini-3.7-flash:batch",
@@ -2062,8 +2109,8 @@
       "pricing_overrides": [],
       "da_categories": 14,
       "da_best_rank": 5.0,
-      "da_best_elo": 1324.0,
-      "age_days": 61,
+      "da_best_elo": 1322.0,
+      "age_days": 62,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -2077,7 +2124,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "qwen/qwen3.8-2.4t-a95b",
@@ -2098,7 +2145,7 @@
       "discount_max": 0.2,
       "discount_provider": "Venice",
       "base_price": 3.0,
-      "uptime_1d": 99.904,
+      "uptime_1d": 100.0,
       "context": 1048576,
       "intelligence": 39.9,
       "coding": 71.9,
@@ -2111,7 +2158,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 62,
+      "age_days": 63,
       "reasoning_default_effort": "xhigh",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -2124,7 +2171,7 @@
         "q:agentic"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "deepseek/deepseek-v4-pro-0813",
@@ -2132,20 +2179,20 @@
       "canonical_slug": "deepseek/deepseek-v4-pro-20260813",
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
-      "price_in": 0.48,
-      "price_out": 1.98,
-      "blended_3to1": 0.855,
-      "default_price_in": 0.66,
-      "default_price_out": 1.98,
-      "default_blended_3to1": 0.99,
+      "price_in": 0.8957,
+      "price_out": 0.99,
+      "blended_3to1": 0.919275,
+      "default_price_in": 1.32,
+      "default_price_out": 3.96,
+      "default_blended_3to1": 1.98,
       "best_provider": "Sail Research",
       "provider_count": 22,
-      "provider_spread": 2.895,
-      "overpay_ratio": 1.158,
+      "provider_spread": 2.692,
+      "overpay_ratio": 2.154,
       "discount_max": 0.5,
       "discount_provider": "StreamLake",
-      "base_price": 0.855,
-      "uptime_1d": 99.043,
+      "base_price": 0.919275,
+      "uptime_1d": 100.0,
       "context": 1048576,
       "intelligence": 36.0,
       "coding": 68.8,
@@ -2158,7 +2205,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 62,
+      "age_days": 63,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -2170,7 +2217,7 @@
         "q:agentic"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "x-ai/grok-4.6",
@@ -2211,7 +2258,7 @@
       "da_categories": 16,
       "da_best_rank": 1.0,
       "da_best_elo": 1303.0,
-      "age_days": 62,
+      "age_days": 63,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -2228,7 +2275,7 @@
         "G6:participation"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "liquid/lfm-2.5-2.6b:free",
@@ -2262,7 +2309,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 63,
+      "age_days": 64,
       "reasoning_default_effort": null,
       "reasoning_mandatory": true,
       "reasoning_efforts": [],
@@ -2272,7 +2319,7 @@
         "G4:free"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "nvidia/nemotron-3.5-lightning",
@@ -2280,20 +2327,20 @@
       "canonical_slug": "nvidia/nemotron-3.5-lightning-20260807",
       "id": "nvidia/nemotron-3.5-lightning",
       "name": "NVIDIA: Nemotron 3.5 Lightning",
-      "price_in": 0.035,
-      "price_out": 0.13,
-      "blended_3to1": 0.05875,
+      "price_in": 0.025,
+      "price_out": 0.12,
+      "blended_3to1": 0.04875,
       "default_price_in": 0.07,
       "default_price_out": 0.2,
       "default_blended_3to1": 0.1025,
-      "best_provider": "Wafer",
+      "best_provider": "Darkbloom",
       "provider_count": 5,
-      "provider_spread": 1.745,
-      "overpay_ratio": 1.745,
+      "provider_spread": 2.103,
+      "overpay_ratio": 2.103,
       "discount_max": 0.33,
       "discount_provider": "Io Net",
-      "base_price": 0.05875,
-      "uptime_1d": 100.0,
+      "base_price": 0.04875,
+      "uptime_1d": 98.387,
       "context": 262144,
       "intelligence": 12.9,
       "coding": 26.8,
@@ -2306,7 +2353,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 63,
+      "age_days": 64,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -2317,7 +2364,7 @@
         "G4:free"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "nvidia/nemotron-3.5-lightning:free",
@@ -2338,7 +2385,7 @@
       "discount_max": 0.0,
       "discount_provider": "Nvidia",
       "base_price": 0.0,
-      "uptime_1d": 97.153,
+      "uptime_1d": 100.0,
       "context": 1000000,
       "intelligence": 12.9,
       "coding": 26.8,
@@ -2351,7 +2398,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 63,
+      "age_days": 64,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -2362,7 +2409,7 @@
         "G4:free"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "upstage/solar-pro4",
@@ -2395,8 +2442,8 @@
       "pricing_overrides": [],
       "da_categories": 7,
       "da_best_rank": 35.0,
-      "da_best_elo": 1185.0,
-      "age_days": 64,
+      "da_best_elo": 1184.0,
+      "age_days": 65,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -2413,7 +2460,7 @@
         "G6:participation"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "meta/muse-spark-1.2",
@@ -2446,8 +2493,8 @@
       "pricing_overrides": [],
       "da_categories": 15,
       "da_best_rank": 4.0,
-      "da_best_elo": 1338.0,
-      "age_days": 69,
+      "da_best_elo": 1337.0,
+      "age_days": 70,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -2464,7 +2511,7 @@
         "G6:participation"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "deepseek/deepseek-v4-flash-0731",
@@ -2497,8 +2544,8 @@
       "pricing_overrides": [],
       "da_categories": 8,
       "da_best_rank": 31.0,
-      "da_best_elo": 1240.0,
-      "age_days": 75,
+      "da_best_elo": 1239.0,
+      "age_days": 76,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -2512,7 +2559,7 @@
         "G6:participation"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "thinkingmachines/inkling-small",
@@ -2546,7 +2593,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 75,
+      "age_days": 76,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -2564,7 +2611,7 @@
         "G4:free"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "thinkingmachines/inkling-small:free",
@@ -2598,7 +2645,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 75,
+      "age_days": 76,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -2616,7 +2663,7 @@
         "G4:free"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "anthropic/claude-opus-5",
@@ -2650,7 +2697,7 @@
       "da_categories": 15,
       "da_best_rank": 1.0,
       "da_best_elo": 1349.0,
-      "age_days": 81,
+      "age_days": 82,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -2668,7 +2715,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "anthropic/claude-opus-5:batch",
@@ -2702,7 +2749,7 @@
       "da_categories": 15,
       "da_best_rank": 1.0,
       "da_best_elo": 1349.0,
-      "age_days": 81,
+      "age_days": 82,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -2720,7 +2767,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "inclusionai/ling-3.0-flash",
@@ -2754,7 +2801,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 82,
+      "age_days": 83,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -2764,7 +2811,7 @@
         "v:agentic"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "poolside/laguna-s-2.1",
@@ -2798,7 +2845,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 84,
+      "age_days": 85,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -2806,7 +2853,7 @@
         "G4:free"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "poolside/laguna-s-2.1:free",
@@ -2840,7 +2887,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 84,
+      "age_days": 85,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -2848,7 +2895,7 @@
         "G4:free"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "google/gemini-3.6-flash",
@@ -2869,7 +2916,7 @@
       "discount_max": 0.0,
       "discount_provider": "Google",
       "base_price": 0.75,
-      "uptime_1d": 98.667,
+      "uptime_1d": 100.0,
       "context": 1048576,
       "intelligence": 34.0,
       "coding": 69.2,
@@ -2881,8 +2928,8 @@
       "pricing_overrides": [],
       "da_categories": 14,
       "da_best_rank": 6.0,
-      "da_best_elo": 1303.0,
-      "age_days": 84,
+      "da_best_elo": 1302.0,
+      "age_days": 85,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -2896,7 +2943,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "google/gemini-3.6-flash:batch",
@@ -2929,8 +2976,8 @@
       "pricing_overrides": [],
       "da_categories": 14,
       "da_best_rank": 6.0,
-      "da_best_elo": 1303.0,
-      "age_days": 84,
+      "da_best_elo": 1302.0,
+      "age_days": 85,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -2944,7 +2991,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "thinkingmachines/inkling",
@@ -2965,7 +3012,7 @@
       "discount_max": 0.0,
       "discount_provider": "DeepInfra",
       "base_price": 1.725,
-      "uptime_1d": 95.942,
+      "uptime_1d": 98.864,
       "context": 524288,
       "intelligence": 25.0,
       "coding": 52.1,
@@ -2978,7 +3025,7 @@
       "da_categories": 9,
       "da_best_rank": 22.0,
       "da_best_elo": 1226.0,
-      "age_days": 88,
+      "age_days": 89,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -2997,7 +3044,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "thinkingmachines/inkling:free",
@@ -3031,7 +3078,7 @@
       "da_categories": 9,
       "da_best_rank": 22.0,
       "da_best_elo": 1226.0,
-      "age_days": 88,
+      "age_days": 89,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -3050,7 +3097,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "moonshotai/kimi-k3",
@@ -3058,19 +3105,19 @@
       "canonical_slug": "moonshotai/kimi-k3-20260715",
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
-      "price_in": 0.7,
-      "price_out": 10.0,
-      "blended_3to1": 3.025,
-      "default_price_in": 0.62,
+      "price_in": 0.3,
+      "price_out": 14.0,
+      "blended_3to1": 3.725,
+      "default_price_in": 0.45,
       "default_price_out": 15.0,
-      "default_blended_3to1": 4.215,
-      "best_provider": "Wafer",
+      "default_blended_3to1": 4.0875,
+      "best_provider": "Relace",
       "provider_count": 25,
-      "provider_spread": 2.975,
-      "overpay_ratio": 1.393,
-      "discount_max": 0.22,
+      "provider_spread": 2.416,
+      "overpay_ratio": 1.097,
+      "discount_max": 0.29,
       "discount_provider": "Decart",
-      "base_price": 3.025,
+      "base_price": 3.725,
       "uptime_1d": 100.0,
       "context": 1048576,
       "intelligence": 43.6,
@@ -3084,7 +3131,7 @@
       "da_categories": 15,
       "da_best_rank": 2.0,
       "da_best_elo": 1389.0,
-      "age_days": 89,
+      "age_days": 90,
       "reasoning_default_effort": "max",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -3100,7 +3147,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "moonshotai/kimi-k3:batch",
@@ -3134,7 +3181,7 @@
       "da_categories": 15,
       "da_best_rank": 2.0,
       "da_best_elo": 1389.0,
-      "age_days": 89,
+      "age_days": 90,
       "reasoning_default_effort": "max",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -3150,7 +3197,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "meta/muse-spark-1.1",
@@ -3184,7 +3231,7 @@
       "da_categories": 16,
       "da_best_rank": 8.0,
       "da_best_elo": 1292.0,
-      "age_days": 89,
+      "age_days": 90,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -3198,7 +3245,7 @@
         "G6:participation"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "openai/gpt-5.6-luna",
@@ -3219,7 +3266,7 @@
       "discount_max": 0.0,
       "discount_provider": "OpenAI",
       "base_price": 0.225,
-      "uptime_1d": 96.667,
+      "uptime_1d": 100.0,
       "context": 1050000,
       "intelligence": 37.3,
       "coding": 71.4,
@@ -3240,7 +3287,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 97,
+      "age_days": 98,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -3257,7 +3304,7 @@
         "v:agentic"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "openai/gpt-5.6-luna:batch",
@@ -3298,7 +3345,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 97,
+      "age_days": 98,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -3315,7 +3362,7 @@
         "v:agentic"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "openai/gpt-5.6-terra",
@@ -3336,7 +3383,7 @@
       "discount_max": 0.0,
       "discount_provider": "OpenAI",
       "base_price": 2.25,
-      "uptime_1d": 99.75,
+      "uptime_1d": 99.401,
       "context": 1050000,
       "intelligence": 42.1,
       "coding": 76.7,
@@ -3357,7 +3404,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 97,
+      "age_days": 98,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -3374,7 +3421,7 @@
         "q:agentic"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "openai/gpt-5.6-terra:batch",
@@ -3415,7 +3462,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 97,
+      "age_days": 98,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -3432,7 +3479,7 @@
         "q:agentic"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "openai/gpt-5.6-sol",
@@ -3440,6 +3487,65 @@
       "canonical_slug": "openai/gpt-5.6-sol-20260709",
       "id": "openai/gpt-5.6-sol",
       "name": "OpenAI: GPT-5.6 Sol",
+      "price_in": 4.0,
+      "price_out": 20.0,
+      "blended_3to1": 8.0,
+      "default_price_in": 4.0,
+      "default_price_out": 20.0,
+      "default_blended_3to1": 8.0,
+      "best_provider": "Azure",
+      "provider_count": 7,
+      "provider_spread": 2.0,
+      "overpay_ratio": 1.0,
+      "discount_max": 0.0,
+      "discount_provider": "OpenAI",
+      "base_price": 8.0,
+      "uptime_1d": 99.722,
+      "context": 1050000,
+      "intelligence": 47.0,
+      "coding": 77.4,
+      "agentic": 50.2,
+      "has_tools": true,
+      "modality": "file -> image -> text -> text",
+      "is_free": false,
+      "has_tiered_pricing": true,
+      "pricing_overrides": [
+        {
+          "min_prompt_tokens": 272000,
+          "prompt": "0.000008",
+          "completion": "0.00003",
+          "input_cache_read": "0.0000008",
+          "input_cache_write": "0.00001"
+        }
+      ],
+      "da_categories": 0,
+      "da_best_rank": null,
+      "da_best_elo": null,
+      "age_days": 98,
+      "reasoning_default_effort": "medium",
+      "reasoning_mandatory": false,
+      "reasoning_efforts": [
+        "max",
+        "xhigh",
+        "high",
+        "medium",
+        "low",
+        "none"
+      ],
+      "gate_reason": [
+        "q:intelligence",
+        "q:coding",
+        "q:agentic"
+      ],
+      "variant_count": 2,
+      "generated_at": "2026-10-15T10:00:11Z"
+    },
+    {
+      "slug": "openai/gpt-5.6-sol:batch",
+      "variant_id": "openai/gpt-5.6-sol:batch",
+      "canonical_slug": "openai/gpt-5.6-sol-20260709",
+      "id": "openai/gpt-5.6-sol:batch",
+      "name": "OpenAI: GPT-5.6 Sol (batch)",
       "price_in": 2.0,
       "price_out": 10.0,
       "blended_3to1": 4.0,
@@ -3447,13 +3553,13 @@
       "default_price_out": 10.0,
       "default_blended_3to1": 4.0,
       "best_provider": "OpenAI",
-      "provider_count": 7,
-      "provider_spread": 2.2,
+      "provider_count": 1,
+      "provider_spread": 1.0,
       "overpay_ratio": 1.0,
-      "discount_max": 0.5,
+      "discount_max": 0.0,
       "discount_provider": "OpenAI",
-      "base_price": 8.0,
-      "uptime_1d": 100.0,
+      "base_price": 4.0,
+      "uptime_1d": 0.0,
       "context": 1050000,
       "intelligence": 47.0,
       "coding": 77.4,
@@ -3474,7 +3580,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 97,
+      "age_days": 98,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -3491,66 +3597,7 @@
         "q:agentic"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
-    },
-    {
-      "slug": "openai/gpt-5.6-sol:batch",
-      "variant_id": "openai/gpt-5.6-sol:batch",
-      "canonical_slug": "openai/gpt-5.6-sol-20260709",
-      "id": "openai/gpt-5.6-sol:batch",
-      "name": "OpenAI: GPT-5.6 Sol (batch)",
-      "price_in": 1.0,
-      "price_out": 5.0,
-      "blended_3to1": 2.0,
-      "default_price_in": 1.0,
-      "default_price_out": 5.0,
-      "default_blended_3to1": 2.0,
-      "best_provider": "OpenAI",
-      "provider_count": 1,
-      "provider_spread": 1.0,
-      "overpay_ratio": 1.0,
-      "discount_max": 0.5,
-      "discount_provider": "OpenAI",
-      "base_price": 4.0,
-      "uptime_1d": 0.0,
-      "context": 1050000,
-      "intelligence": 47.0,
-      "coding": 77.4,
-      "agentic": 50.2,
-      "has_tools": true,
-      "modality": "file -> image -> text -> text",
-      "is_free": false,
-      "has_tiered_pricing": true,
-      "pricing_overrides": [
-        {
-          "min_prompt_tokens": 272000,
-          "prompt": "0.000002",
-          "completion": "0.0000075",
-          "input_cache_read": "0.0000002",
-          "input_cache_write": "0.0000025"
-        }
-      ],
-      "da_categories": 0,
-      "da_best_rank": null,
-      "da_best_elo": null,
-      "age_days": 97,
-      "reasoning_default_effort": "medium",
-      "reasoning_mandatory": false,
-      "reasoning_efforts": [
-        "max",
-        "xhigh",
-        "high",
-        "medium",
-        "low",
-        "none"
-      ],
-      "gate_reason": [
-        "q:intelligence",
-        "q:coding",
-        "q:agentic"
-      ],
-      "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "x-ai/grok-4.5",
@@ -3590,8 +3637,8 @@
       ],
       "da_categories": 16,
       "da_best_rank": 6.0,
-      "da_best_elo": 1284.0,
-      "age_days": 97,
+      "da_best_elo": 1283.0,
+      "age_days": 98,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -3605,7 +3652,7 @@
         "G6:participation"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "tencent/hy3",
@@ -3652,9 +3699,9 @@
         }
       ],
       "da_categories": 6,
-      "da_best_rank": 56.0,
-      "da_best_elo": 1184.0,
-      "age_days": 99,
+      "da_best_rank": 57.0,
+      "da_best_elo": 1183.0,
+      "age_days": 100,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -3666,7 +3713,7 @@
         "G6:participation"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "poolside/laguna-xs-2.1",
@@ -3700,7 +3747,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 103,
+      "age_days": 104,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -3708,7 +3755,7 @@
         "G4:free"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "poolside/laguna-xs-2.1:free",
@@ -3742,7 +3789,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 103,
+      "age_days": 104,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -3750,7 +3797,7 @@
         "G4:free"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "anthropic/claude-sonnet-5",
@@ -3783,8 +3830,8 @@
       "pricing_overrides": [],
       "da_categories": 16,
       "da_best_rank": 5.0,
-      "da_best_elo": 1285.0,
-      "age_days": 105,
+      "da_best_elo": 1283.0,
+      "age_days": 106,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -3800,7 +3847,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "anthropic/claude-sonnet-5:batch",
@@ -3833,8 +3880,8 @@
       "pricing_overrides": [],
       "da_categories": 16,
       "da_best_rank": 5.0,
-      "da_best_elo": 1285.0,
-      "age_days": 105,
+      "da_best_elo": 1283.0,
+      "age_days": 106,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -3850,7 +3897,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "cohere/north-mini-code:free",
@@ -3884,7 +3931,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 118,
+      "age_days": 119,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -3895,7 +3942,7 @@
         "G4:free"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "z-ai/glm-5.2",
@@ -3903,20 +3950,20 @@
       "canonical_slug": "z-ai/glm-5.2-20260616",
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
-      "price_in": 0.3575,
-      "price_out": 2.2,
-      "blended_3to1": 0.818125,
-      "default_price_in": 0.05,
+      "price_in": 0.5625,
+      "price_out": 1.8,
+      "blended_3to1": 0.871875,
+      "default_price_in": 0.02,
       "default_price_out": 7.0,
-      "default_blended_3to1": 1.7875,
-      "best_provider": "Decart",
-      "provider_count": 34,
-      "provider_spread": 5.042,
-      "overpay_ratio": 2.185,
-      "discount_max": 0.541,
+      "default_blended_3to1": 1.765,
+      "best_provider": "DeepInfra",
+      "provider_count": 33,
+      "provider_spread": 4.731,
+      "overpay_ratio": 2.024,
+      "discount_max": 0.5621,
       "discount_provider": "StreamLake",
-      "base_price": 1.4875,
-      "uptime_1d": 100.0,
+      "base_price": 1.1625,
+      "uptime_1d": 99.861,
       "context": 1048576,
       "intelligence": 33.7,
       "coding": 68.8,
@@ -3929,7 +3976,7 @@
       "da_categories": 16,
       "da_best_rank": 10.0,
       "da_best_elo": 1297.0,
-      "age_days": 119,
+      "age_days": 120,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -3940,7 +3987,7 @@
         "G6:participation"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "moonshotai/kimi-k2.7-code",
@@ -3961,7 +4008,7 @@
       "discount_max": 0.25,
       "discount_provider": "StreamLake",
       "base_price": 1.7125,
-      "uptime_1d": 100.0,
+      "uptime_1d": 99.756,
       "context": 262144,
       "intelligence": 25.8,
       "coding": 60.8,
@@ -3973,8 +4020,8 @@
       "pricing_overrides": [],
       "da_categories": 16,
       "da_best_rank": 7.0,
-      "da_best_elo": 1267.0,
-      "age_days": 123,
+      "da_best_elo": 1266.0,
+      "age_days": 124,
       "reasoning_default_effort": null,
       "reasoning_mandatory": true,
       "reasoning_efforts": [],
@@ -3983,7 +4030,7 @@
         "G6:participation"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "anthropic/claude-fable-5",
@@ -3997,14 +4044,14 @@
       "default_price_in": 10.0,
       "default_price_out": 50.0,
       "default_blended_3to1": 20.0,
-      "best_provider": "Azure",
+      "best_provider": "Claude Platform on AWS",
       "provider_count": 6,
       "provider_spread": 1.1,
       "overpay_ratio": 1.0,
       "discount_max": 0.0,
       "discount_provider": "Claude Platform on AWS",
       "base_price": 20.0,
-      "uptime_1d": 99.492,
+      "uptime_1d": 100.0,
       "context": 1000000,
       "intelligence": 49.6,
       "coding": 76.5,
@@ -4016,8 +4063,8 @@
       "pricing_overrides": [],
       "da_categories": 18,
       "da_best_rank": 1.0,
-      "da_best_elo": 1340.0,
-      "age_days": 126,
+      "da_best_elo": 1339.0,
+      "age_days": 127,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -4035,7 +4082,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "anthropic/claude-fable-5:batch",
@@ -4068,8 +4115,8 @@
       "pricing_overrides": [],
       "da_categories": 18,
       "da_best_rank": 1.0,
-      "da_best_elo": 1340.0,
-      "age_days": 126,
+      "da_best_elo": 1339.0,
+      "age_days": 127,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -4087,7 +4134,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "nvidia/nemotron-3.5-content-safety",
@@ -4108,7 +4155,7 @@
       "discount_max": 0.0,
       "discount_provider": "DeepInfra",
       "base_price": 0.2,
-      "uptime_1d": 99.091,
+      "uptime_1d": 100.0,
       "context": 131072,
       "intelligence": null,
       "coding": null,
@@ -4121,7 +4168,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 131,
+      "age_days": 132,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -4129,7 +4176,7 @@
         "G4:free"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "nvidia/nemotron-3.5-content-safety:free",
@@ -4150,7 +4197,7 @@
       "discount_max": 0.0,
       "discount_provider": "Nvidia",
       "base_price": 0.0,
-      "uptime_1d": 98.611,
+      "uptime_1d": 98.264,
       "context": 128000,
       "intelligence": null,
       "coding": null,
@@ -4163,7 +4210,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 131,
+      "age_days": 132,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -4171,7 +4218,7 @@
         "G4:free"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "nvidia/nemotron-3-ultra-550b-a55b",
@@ -4205,7 +4252,7 @@
       "da_categories": 8,
       "da_best_rank": 60.0,
       "da_best_elo": 1148.0,
-      "age_days": 132,
+      "age_days": 133,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -4220,7 +4267,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "nvidia/nemotron-3-ultra-550b-a55b:free",
@@ -4241,7 +4288,7 @@
       "discount_max": 0.0,
       "discount_provider": "Nvidia",
       "base_price": 0.0,
-      "uptime_1d": 78.333,
+      "uptime_1d": 67.153,
       "context": 1000000,
       "intelligence": 22.9,
       "coding": 49.3,
@@ -4254,7 +4301,7 @@
       "da_categories": 8,
       "da_best_rank": 60.0,
       "da_best_elo": 1148.0,
-      "age_days": 132,
+      "age_days": 133,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -4269,7 +4316,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "qwen/qwen3.7-plus",
@@ -4309,9 +4356,9 @@
         }
       ],
       "da_categories": 8,
-      "da_best_rank": 22.0,
-      "da_best_elo": 1278.0,
-      "age_days": 132,
+      "da_best_rank": 23.0,
+      "da_best_elo": 1276.0,
+      "age_days": 133,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -4319,7 +4366,7 @@
         "G6:participation"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "minimax/minimax-m3",
@@ -4340,7 +4387,7 @@
       "discount_max": 0.5,
       "discount_provider": "StreamLake",
       "base_price": 0.4125,
-      "uptime_1d": 98.955,
+      "uptime_1d": 100.0,
       "context": 1048576,
       "intelligence": 29.2,
       "coding": 58.6,
@@ -4352,8 +4399,8 @@
       "pricing_overrides": [],
       "da_categories": 15,
       "da_best_rank": 12.0,
-      "da_best_elo": 1260.0,
-      "age_days": 135,
+      "da_best_elo": 1259.0,
+      "age_days": 136,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -4361,7 +4408,7 @@
         "G6:participation"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "stepfun/step-3.7-flash",
@@ -4395,7 +4442,7 @@
       "da_categories": 8,
       "da_best_rank": 42.0,
       "da_best_elo": 1198.0,
-      "age_days": 138,
+      "age_days": 139,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -4407,7 +4454,7 @@
         "G6:participation"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "anthropic/claude-opus-4.8",
@@ -4441,7 +4488,7 @@
       "da_categories": 21,
       "da_best_rank": 1.0,
       "da_best_elo": 1310.0,
-      "age_days": 139,
+      "age_days": 140,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -4458,7 +4505,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "anthropic/claude-opus-4.8:batch",
@@ -4492,7 +4539,7 @@
       "da_categories": 21,
       "da_best_rank": 1.0,
       "da_best_elo": 1310.0,
-      "age_days": 139,
+      "age_days": 140,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -4509,7 +4556,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "qwen/qwen3.7-max",
@@ -4542,8 +4589,8 @@
       "pricing_overrides": [],
       "da_categories": 16,
       "da_best_rank": 15.0,
-      "da_best_elo": 1278.0,
-      "age_days": 145,
+      "da_best_elo": 1277.0,
+      "age_days": 146,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -4551,7 +4598,7 @@
         "G6:participation"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "google/gemini-3.5-flash",
@@ -4584,8 +4631,8 @@
       "pricing_overrides": [],
       "da_categories": 21,
       "da_best_rank": 2.0,
-      "da_best_elo": 1274.0,
-      "age_days": 147,
+      "da_best_elo": 1275.0,
+      "age_days": 148,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -4599,7 +4646,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "google/gemini-3.5-flash:batch",
@@ -4632,8 +4679,8 @@
       "pricing_overrides": [],
       "da_categories": 21,
       "da_best_rank": 2.0,
-      "da_best_elo": 1274.0,
-      "age_days": 147,
+      "da_best_elo": 1275.0,
+      "age_days": 148,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -4647,7 +4694,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "x-ai/grok-4.3",
@@ -4668,7 +4715,7 @@
       "discount_max": 0.0,
       "discount_provider": "xAI",
       "base_price": 1.5625,
-      "uptime_1d": 96.366,
+      "uptime_1d": 97.847,
       "context": 1000000,
       "intelligence": 24.9,
       "coding": 42.2,
@@ -4687,8 +4734,8 @@
       ],
       "da_categories": 21,
       "da_best_rank": 8.0,
-      "da_best_elo": 1198.0,
-      "age_days": 166,
+      "da_best_elo": 1197.0,
+      "age_days": 167,
       "reasoning_default_effort": "low",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -4701,7 +4748,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "x-ai/grok-4.3:batch",
@@ -4741,8 +4788,8 @@
       ],
       "da_categories": 21,
       "da_best_rank": 8.0,
-      "da_best_elo": 1198.0,
-      "age_days": 166,
+      "da_best_elo": 1197.0,
+      "age_days": 167,
       "reasoning_default_effort": "low",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -4755,7 +4802,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
@@ -4776,7 +4823,7 @@
       "discount_max": 0.0,
       "discount_provider": "Nvidia",
       "base_price": 0.0,
-      "uptime_1d": 7.5,
+      "uptime_1d": 12.153,
       "context": 256000,
       "intelligence": 10.3,
       "coding": 13.8,
@@ -4789,7 +4836,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 168,
+      "age_days": 169,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -4799,7 +4846,7 @@
         "G4:free"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "openai/gpt-5.5",
@@ -4807,20 +4854,20 @@
       "canonical_slug": "openai/gpt-5.5-20260423",
       "id": "openai/gpt-5.5",
       "name": "OpenAI: GPT-5.5",
-      "price_in": 2.5,
-      "price_out": 15.0,
-      "blended_3to1": 5.625,
+      "price_in": 5.0,
+      "price_out": 30.0,
+      "blended_3to1": 11.25,
       "default_price_in": 5.0,
       "default_price_out": 30.0,
       "default_blended_3to1": 11.25,
-      "best_provider": "OpenAI",
+      "best_provider": "Azure",
       "provider_count": 7,
-      "provider_spread": 5.0,
-      "overpay_ratio": 2.0,
+      "provider_spread": 1.1,
+      "overpay_ratio": 1.0,
       "discount_max": 0.0,
       "discount_provider": "OpenAI",
-      "base_price": 5.625,
-      "uptime_1d": 100.0,
+      "base_price": 11.25,
+      "uptime_1d": 99.925,
       "context": 1050000,
       "intelligence": 38.4,
       "coding": 74.9,
@@ -4832,15 +4879,15 @@
       "pricing_overrides": [
         {
           "min_prompt_tokens": 272000,
-          "prompt": "0.000005",
-          "completion": "0.0000225",
-          "input_cache_read": "0.0000005"
+          "prompt": "0.00001",
+          "completion": "0.000045",
+          "input_cache_read": "0.000001"
         }
       ],
       "da_categories": 21,
       "da_best_rank": 6.0,
-      "da_best_elo": 1299.0,
-      "age_days": 172,
+      "da_best_elo": 1297.0,
+      "age_days": 173,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -4856,7 +4903,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "openai/gpt-5.5:batch",
@@ -4896,8 +4943,8 @@
       ],
       "da_categories": 21,
       "da_best_rank": 6.0,
-      "da_best_elo": 1299.0,
-      "age_days": 172,
+      "da_best_elo": 1297.0,
+      "age_days": 173,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -4913,7 +4960,7 @@
         "G6:participation"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "deepseek/deepseek-v4-pro",
@@ -4929,12 +4976,12 @@
       "default_blended_3to1": 1.194075,
       "best_provider": "StreamLake",
       "provider_count": 15,
-      "provider_spread": 2.858,
+      "provider_spread": 2.002,
       "overpay_ratio": 1.0,
       "discount_max": 0.451,
       "discount_provider": "StreamLake",
       "base_price": 2.175,
-      "uptime_1d": 99.861,
+      "uptime_1d": 98.958,
       "context": 1048576,
       "intelligence": 30.4,
       "coding": 59.4,
@@ -4946,8 +4993,8 @@
       "pricing_overrides": [],
       "da_categories": 11,
       "da_best_rank": 30.0,
-      "da_best_elo": 1255.0,
-      "age_days": 173,
+      "da_best_elo": 1254.0,
+      "age_days": 174,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -4958,7 +5005,7 @@
         "G6:participation"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "deepseek/deepseek-v4-flash",
@@ -4974,7 +5021,7 @@
       "default_blended_3to1": 0.11375,
       "best_provider": "StreamLake",
       "provider_count": 16,
-      "provider_spread": 3.462,
+      "provider_spread": 6.392,
       "overpay_ratio": 1.102,
       "discount_max": 0.41,
       "discount_provider": "StreamLake",
@@ -4991,8 +5038,8 @@
       "pricing_overrides": [],
       "da_categories": 8,
       "da_best_rank": 41.0,
-      "da_best_elo": 1210.0,
-      "age_days": 173,
+      "da_best_elo": 1209.0,
+      "age_days": 174,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -5005,7 +5052,7 @@
         "G6:participation"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "tencent/hy3-preview",
@@ -5039,7 +5086,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 174,
+      "age_days": 175,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -5051,7 +5098,7 @@
         "v:agentic"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "xiaomi/mimo-v2.5-pro",
@@ -5072,7 +5119,7 @@
       "discount_max": 0.3,
       "discount_provider": "GMICloud",
       "base_price": 0.54375,
-      "uptime_1d": 96.878,
+      "uptime_1d": 98.865,
       "context": 1050000,
       "intelligence": 26.0,
       "coding": 60.2,
@@ -5083,9 +5130,9 @@
       "has_tiered_pricing": false,
       "pricing_overrides": [],
       "da_categories": 8,
-      "da_best_rank": 29.0,
-      "da_best_elo": 1270.0,
-      "age_days": 174,
+      "da_best_rank": 31.0,
+      "da_best_elo": 1269.0,
+      "age_days": 175,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -5093,7 +5140,7 @@
         "G6:participation"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "xiaomi/mimo-v2.5",
@@ -5101,20 +5148,20 @@
       "canonical_slug": "xiaomi/mimo-v2.5-20260422",
       "id": "xiaomi/mimo-v2.5",
       "name": "Xiaomi: MiMo-V2.5",
-      "price_in": 0.14,
-      "price_out": 0.28,
-      "blended_3to1": 0.175,
+      "price_in": 0.119,
+      "price_out": 0.238,
+      "blended_3to1": 0.14875,
       "default_price_in": 0.14,
       "default_price_out": 0.28,
       "default_blended_3to1": 0.175,
-      "best_provider": "Xiaomi",
+      "best_provider": "GMICloud",
       "provider_count": 5,
-      "provider_spread": 4.571,
-      "overpay_ratio": 1.0,
+      "provider_spread": 5.378,
+      "overpay_ratio": 1.176,
       "discount_max": 0.15,
       "discount_provider": "GMICloud",
       "base_price": 0.175,
-      "uptime_1d": 96.875,
+      "uptime_1d": 82.051,
       "context": 1050000,
       "intelligence": 25.2,
       "coding": 56.8,
@@ -5125,9 +5172,9 @@
       "has_tiered_pricing": false,
       "pricing_overrides": [],
       "da_categories": 8,
-      "da_best_rank": 31.0,
-      "da_best_elo": 1268.0,
-      "age_days": 174,
+      "da_best_rank": 32.0,
+      "da_best_elo": 1267.0,
+      "age_days": 175,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -5137,7 +5184,7 @@
         "G6:participation"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "moonshotai/kimi-k2.6",
@@ -5158,7 +5205,7 @@
       "discount_max": 0.37,
       "discount_provider": "StreamLake",
       "base_price": 0.825,
-      "uptime_1d": 99.558,
+      "uptime_1d": 99.662,
       "context": 262144,
       "intelligence": 27.0,
       "coding": 61.8,
@@ -5170,8 +5217,8 @@
       "pricing_overrides": [],
       "da_categories": 21,
       "da_best_rank": 2.0,
-      "da_best_elo": 1274.0,
-      "age_days": 176,
+      "da_best_elo": 1273.0,
+      "age_days": 177,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -5180,7 +5227,7 @@
         "G6:participation"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "anthropic/claude-opus-4.7",
@@ -5214,7 +5261,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 180,
+      "age_days": 181,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -5228,7 +5275,7 @@
         "q:coding"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "anthropic/claude-opus-4.7:batch",
@@ -5262,7 +5309,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 180,
+      "age_days": 181,
       "reasoning_default_effort": "high",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -5276,7 +5323,7 @@
         "q:coding"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "z-ai/glm-5.1",
@@ -5284,20 +5331,20 @@
       "canonical_slug": "z-ai/glm-5.1-20260406",
       "id": "z-ai/glm-5.1",
       "name": "Z.ai: GLM 5.1",
-      "price_in": 1.19,
-      "price_out": 3.74,
-      "blended_3to1": 1.8275,
-      "default_price_in": 1.33,
-      "default_price_out": 4.18,
-      "default_blended_3to1": 2.0425,
-      "best_provider": "SiliconFlow",
+      "price_in": 0.966,
+      "price_out": 3.036,
+      "blended_3to1": 1.4835,
+      "default_price_in": 0.966,
+      "default_price_out": 3.036,
+      "default_blended_3to1": 1.4835,
+      "best_provider": "StreamLake",
       "provider_count": 13,
-      "provider_spread": 1.176,
-      "overpay_ratio": 1.118,
+      "provider_spread": 1.451,
+      "overpay_ratio": 1.0,
       "discount_max": 0.31,
       "discount_provider": "StreamLake",
-      "base_price": 1.8275,
-      "uptime_1d": 99.292,
+      "base_price": 2.15,
+      "uptime_1d": 98.776,
       "context": 204800,
       "intelligence": 26.1,
       "coding": 55.8,
@@ -5310,7 +5357,7 @@
       "da_categories": 21,
       "da_best_rank": 2.0,
       "da_best_elo": 1366.0,
-      "age_days": 189,
+      "age_days": 190,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -5318,7 +5365,7 @@
         "G3:design_arena"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "google/gemma-4-26b-a4b-it",
@@ -5334,12 +5381,12 @@
       "default_blended_3to1": 0.1425,
       "best_provider": "Darkbloom",
       "provider_count": 13,
-      "provider_spread": 2.37,
+      "provider_spread": 2.283,
       "overpay_ratio": 1.647,
       "discount_max": 0.0,
       "discount_provider": "Darkbloom",
       "base_price": 0.0865,
-      "uptime_1d": 99.58,
+      "uptime_1d": 97.824,
       "context": 262144,
       "intelligence": 16.7,
       "coding": 39.3,
@@ -5352,7 +5399,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 193,
+      "age_days": 194,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -5363,7 +5410,7 @@
         "G4:free"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "google/gemma-4-26b-a4b-it:free",
@@ -5384,7 +5431,7 @@
       "discount_max": 0.0,
       "discount_provider": "Google AI Studio",
       "base_price": 0.0,
-      "uptime_1d": 100.0,
+      "uptime_1d": 99.808,
       "context": 262144,
       "intelligence": 16.7,
       "coding": 39.3,
@@ -5392,51 +5439,6 @@
       "has_tools": true,
       "modality": "image -> text -> video -> text",
       "is_free": true,
-      "has_tiered_pricing": false,
-      "pricing_overrides": [],
-      "da_categories": 0,
-      "da_best_rank": null,
-      "da_best_elo": null,
-      "age_days": 193,
-      "reasoning_default_effort": null,
-      "reasoning_mandatory": false,
-      "reasoning_efforts": [],
-      "gate_reason": [
-        "v:intelligence",
-        "v:coding",
-        "v:agentic",
-        "G4:free"
-      ],
-      "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
-    },
-    {
-      "slug": "google/gemma-4-31b-it",
-      "variant_id": "google/gemma-4-31b-it",
-      "canonical_slug": "google/gemma-4-31b-it-20260402",
-      "id": "google/gemma-4-31b-it",
-      "name": "Google: Gemma 4 31B",
-      "price_in": 0.09,
-      "price_out": 0.34,
-      "blended_3to1": 0.1525,
-      "default_price_in": 0.09,
-      "default_price_out": 0.34,
-      "default_blended_3to1": 0.1525,
-      "best_provider": "DeepInfra",
-      "provider_count": 13,
-      "provider_spread": 5.328,
-      "overpay_ratio": 1.0,
-      "discount_max": 0.05,
-      "discount_provider": "Io Net",
-      "base_price": 0.1525,
-      "uptime_1d": 100.0,
-      "context": 262144,
-      "intelligence": 14.7,
-      "coding": 43.4,
-      "agentic": 4.2,
-      "has_tools": true,
-      "modality": "image -> text -> video -> text",
-      "is_free": false,
       "has_tiered_pricing": false,
       "pricing_overrides": [],
       "da_categories": 0,
@@ -5453,7 +5455,52 @@
         "G4:free"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
+    },
+    {
+      "slug": "google/gemma-4-31b-it",
+      "variant_id": "google/gemma-4-31b-it",
+      "canonical_slug": "google/gemma-4-31b-it-20260402",
+      "id": "google/gemma-4-31b-it",
+      "name": "Google: Gemma 4 31B",
+      "price_in": 0.09,
+      "price_out": 0.34,
+      "blended_3to1": 0.1525,
+      "default_price_in": 0.2,
+      "default_price_out": 0.4,
+      "default_blended_3to1": 0.25,
+      "best_provider": "DeepInfra",
+      "provider_count": 13,
+      "provider_spread": 5.328,
+      "overpay_ratio": 1.639,
+      "discount_max": 0.05,
+      "discount_provider": "Io Net",
+      "base_price": 0.1525,
+      "uptime_1d": 100.0,
+      "context": 262144,
+      "intelligence": 14.7,
+      "coding": 43.4,
+      "agentic": 4.2,
+      "has_tools": true,
+      "modality": "image -> text -> video -> text",
+      "is_free": false,
+      "has_tiered_pricing": false,
+      "pricing_overrides": [],
+      "da_categories": 0,
+      "da_best_rank": null,
+      "da_best_elo": null,
+      "age_days": 195,
+      "reasoning_default_effort": null,
+      "reasoning_mandatory": false,
+      "reasoning_efforts": [],
+      "gate_reason": [
+        "v:intelligence",
+        "v:coding",
+        "v:agentic",
+        "G4:free"
+      ],
+      "variant_count": 2,
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "google/gemma-4-31b-it:free",
@@ -5487,7 +5534,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 194,
+      "age_days": 195,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -5498,7 +5545,7 @@
         "G4:free"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "z-ai/glm-5v-turbo",
@@ -5532,7 +5579,7 @@
       "da_categories": 21,
       "da_best_rank": 4.0,
       "da_best_elo": 1267.0,
-      "age_days": 195,
+      "age_days": 196,
       "reasoning_default_effort": null,
       "reasoning_mandatory": false,
       "reasoning_efforts": [],
@@ -5540,7 +5587,7 @@
         "G3:design_arena"
       ],
       "variant_count": 1,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "openai/gpt-5.4-nano",
@@ -5556,7 +5603,7 @@
       "default_blended_3to1": 0.4625,
       "best_provider": "OpenAI",
       "provider_count": 4,
-      "provider_spread": 2.0,
+      "provider_spread": 2.2,
       "overpay_ratio": 2.0,
       "discount_max": 0.0,
       "discount_provider": "OpenAI",
@@ -5574,7 +5621,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 210,
+      "age_days": 211,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -5589,7 +5636,7 @@
         "v:agentic"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "openai/gpt-5.4-nano:batch",
@@ -5623,7 +5670,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 210,
+      "age_days": 211,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -5638,7 +5685,7 @@
         "v:agentic"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "nvidia/nemotron-3-super-120b-a12b",
@@ -5672,7 +5719,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 216,
+      "age_days": 217,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -5686,7 +5733,7 @@
         "G4:free"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "nvidia/nemotron-3-super-120b-a12b:free",
@@ -5707,7 +5754,7 @@
       "discount_max": 0.0,
       "discount_provider": "Nvidia",
       "base_price": 0.0,
-      "uptime_1d": 100.0,
+      "uptime_1d": 99.931,
       "context": 262144,
       "intelligence": 12.8,
       "coding": 37.7,
@@ -5720,7 +5767,7 @@
       "da_categories": 0,
       "da_best_rank": null,
       "da_best_elo": null,
-      "age_days": 216,
+      "age_days": 217,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": false,
       "reasoning_efforts": [
@@ -5734,7 +5781,7 @@
         "G4:free"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "google/gemini-3.1-pro-preview",
@@ -5748,14 +5795,14 @@
       "default_price_in": 2.0,
       "default_price_out": 12.0,
       "default_blended_3to1": 4.5,
-      "best_provider": "Google AI Studio",
+      "best_provider": "Google",
       "provider_count": 6,
       "provider_spread": 3.6,
       "overpay_ratio": 2.0,
       "discount_max": 0.0,
       "discount_provider": "Google",
       "base_price": 2.25,
-      "uptime_1d": 100.0,
+      "uptime_1d": 99.588,
       "context": 1048576,
       "intelligence": 29.7,
       "coding": 68.8,
@@ -5777,7 +5824,7 @@
       "da_categories": 21,
       "da_best_rank": 4.0,
       "da_best_elo": 1285.0,
-      "age_days": 236,
+      "age_days": 237,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -5789,7 +5836,7 @@
         "G3:design_arena"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "google/gemini-3.1-pro-preview:batch",
@@ -5830,7 +5877,7 @@
       "da_categories": 21,
       "da_best_rank": 4.0,
       "da_best_elo": 1285.0,
-      "age_days": 236,
+      "age_days": 237,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -5842,7 +5889,7 @@
         "G3:design_arena"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "openai/gpt-oss-120b",
@@ -5853,17 +5900,17 @@
       "price_in": 0.03,
       "price_out": 0.15,
       "blended_3to1": 0.06,
-      "default_price_in": 0.037,
-      "default_price_out": 0.17,
-      "default_blended_3to1": 0.07025,
+      "default_price_in": 0.15,
+      "default_price_out": 0.6,
+      "default_blended_3to1": 0.2625,
       "best_provider": "Venice",
       "provider_count": 24,
       "provider_spread": 7.5,
-      "overpay_ratio": 1.171,
+      "overpay_ratio": 4.375,
       "discount_max": 0.0,
       "discount_provider": "Venice",
       "base_price": 0.06,
-      "uptime_1d": 98.175,
+      "uptime_1d": 99.931,
       "context": 131072,
       "intelligence": 11.6,
       "coding": 30.4,
@@ -5875,8 +5922,8 @@
       "pricing_overrides": [],
       "da_categories": 6,
       "da_best_rank": 115.0,
-      "da_best_elo": 997.0,
-      "age_days": 434,
+      "da_best_elo": 995.0,
+      "age_days": 435,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -5889,7 +5936,7 @@
         "v:agentic"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "openai/gpt-oss-120b:batch",
@@ -5922,8 +5969,8 @@
       "pricing_overrides": [],
       "da_categories": 6,
       "da_best_rank": 115.0,
-      "da_best_elo": 997.0,
-      "age_days": 434,
+      "da_best_elo": 995.0,
+      "age_days": 435,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -5936,7 +5983,7 @@
         "v:agentic"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "openai/gpt-oss-20b",
@@ -5957,7 +6004,7 @@
       "discount_max": 0.0,
       "discount_provider": "Darkbloom",
       "base_price": 0.036,
-      "uptime_1d": 99.58,
+      "uptime_1d": 95.115,
       "context": 131072,
       "intelligence": 10.0,
       "coding": null,
@@ -5970,7 +6017,7 @@
       "da_categories": 2,
       "da_best_rank": 121.0,
       "da_best_elo": 933.0,
-      "age_days": 434,
+      "age_days": 435,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -5982,7 +6029,7 @@
         "v:intelligence"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     },
     {
       "slug": "openai/gpt-oss-20b:batch",
@@ -6016,7 +6063,7 @@
       "da_categories": 2,
       "da_best_rank": 121.0,
       "da_best_elo": 933.0,
-      "age_days": 434,
+      "age_days": 435,
       "reasoning_default_effort": "medium",
       "reasoning_mandatory": true,
       "reasoning_efforts": [
@@ -6028,7 +6075,7 @@
         "v:intelligence"
       ],
       "variant_count": 2,
-      "generated_at": "2026-10-14T10:17:07Z"
+      "generated_at": "2026-10-15T10:00:11Z"
     }
   ]
 }
