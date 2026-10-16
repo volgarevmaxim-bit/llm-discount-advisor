@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 375,
-    "rankings_surface_families": 348,
+    "families_total": 377,
+    "rankings_surface_families": 349,
     "benchmark_cost_families": 116,
     "session_cost_families": 44,
     "union_secondary_covered": 122,
-    "uncovered": 145,
+    "uncovered": 147,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 145
+    "likely_low_signal_uncovered": 147
   },
   "families": [
     {
@@ -81,14 +81,6 @@
       "canonical_family": "anthracite-org/magnum-v4-72b",
       "covered_by": [],
       "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "anthropic/claude-4-sonnet-20250522",
-      "covered_by": [
-        "rankings_surface",
-        "benchmark_cost"
-      ],
-      "classification": "covered"
     },
     {
       "canonical_family": "anthropic/claude-4.1-opus-20250805",
@@ -805,6 +797,11 @@
       "classification": "covered"
     },
     {
+      "canonical_family": "meta/muse-spark-open-20261015",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
       "canonical_family": "meta/muse-wonder-20261012",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -1009,6 +1006,16 @@
       "classification": "likely_low_signal"
     },
     {
+      "canonical_family": "moondream/moondream3-preview-20261013",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "moondream/moondream3.1-9b-a2b-20261013",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
       "canonical_family": "moonshotai/kimi-k2",
       "covered_by": [
         "rankings_surface"
@@ -1142,6 +1149,14 @@
       "canonical_family": "nvidia/nemotron-3.5-lightning-20260807",
       "covered_by": [
         "rankings_surface"
+      ],
+      "classification": "covered"
+    },
+    {
+      "canonical_family": "nvidia/nemotron-3.5-super-vl-20261015",
+      "covered_by": [
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -2042,8 +2057,7 @@
     {
       "canonical_family": "stepfun/step-3.7-flash-20260528",
       "covered_by": [
-        "rankings_surface",
-        "benchmark_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },
@@ -2130,11 +2144,6 @@
         "benchmark_cost"
       ],
       "classification": "covered"
-    },
-    {
-      "canonical_family": "unbiased/pareto-26.10-preview-20260929",
-      "covered_by": [],
-      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "unbiased/pareto-26.9-20260917",

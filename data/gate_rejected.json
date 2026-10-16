@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-15T10:00:11Z",
-  "total": 462,
-  "total_unique_families": 375,
-  "passed": 124,
+  "generated_at": "2026-10-16T09:53:32Z",
+  "total": 465,
+  "total_unique_families": 377,
+  "passed": 125,
   "passed_unique_families": 83,
-  "normalized": 123,
-  "eligible_after_prefilter": 427,
-  "eligible_unique_families": 340,
+  "normalized": 124,
+  "eligible_after_prefilter": 430,
+  "eligible_unique_families": 342,
   "rejected": [
     {
       "slug": "~unbiased/pareto-latest",
@@ -149,6 +149,18 @@
       "reason": "non_text_output"
     },
     {
+      "slug": "moondream/moondream3-preview",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "moondream/moondream3.1-9b-a2b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "meta/muse-spark-open",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "unbiased/pareto-26.9",
       "reason": "below_all_thresholds"
     },
@@ -162,10 +174,6 @@
     },
     {
       "slug": "scaledown/extract",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "unbiased/pareto-26.10-preview",
       "reason": "below_all_thresholds"
     },
     {
@@ -230,6 +238,10 @@
     },
     {
       "slug": "xiaomi/mimo-v2.6-pro-ultraspeed",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "xiaomi/mimo-v2.6-flash",
       "reason": "below_all_thresholds"
     },
     {
@@ -994,10 +1006,6 @@
     },
     {
       "slug": "deepseek/deepseek-r1-0528",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "anthropic/claude-sonnet-4",
       "reason": "below_all_thresholds"
     },
     {
