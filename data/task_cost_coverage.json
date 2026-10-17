@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 377,
+    "families_total": 381,
     "rankings_surface_families": 349,
-    "benchmark_cost_families": 116,
+    "benchmark_cost_families": 115,
     "session_cost_families": 44,
-    "union_secondary_covered": 122,
-    "uncovered": 147,
+    "union_secondary_covered": 121,
+    "uncovered": 151,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 147
+    "likely_low_signal_uncovered": 151
   },
   "families": [
     {
@@ -403,7 +403,17 @@
       "classification": "covered"
     },
     {
+      "canonical_family": "deepseek/deepseek-v4.1-flash-20261017",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
       "canonical_family": "dots-studio/dots-3-note-preview-20260813",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "elorian/glimpse-20261016",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
@@ -1738,8 +1748,7 @@
     {
       "canonical_family": "qwen/qwen3-235b-a22b-thinking-2507",
       "covered_by": [
-        "rankings_surface",
-        "benchmark_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },
@@ -1977,6 +1986,11 @@
     },
     {
       "canonical_family": "qwen/qwen3.8-omni-flash-20260918",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "reflection/beam-1.0-501b-a23b-20261016",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
@@ -2272,6 +2286,11 @@
     },
     {
       "canonical_family": "xiaomi/mimo-v2.6-pro-ultraspeed-20260921",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "xingchen-agi/xing4.0-29b-a4b-20261015",
       "covered_by": [],
       "classification": "likely_low_signal"
     },

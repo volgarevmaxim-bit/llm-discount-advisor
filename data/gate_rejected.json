@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-16T09:53:32Z",
-  "total": 465,
-  "total_unique_families": 377,
-  "passed": 125,
-  "passed_unique_families": 83,
-  "normalized": 124,
-  "eligible_after_prefilter": 430,
-  "eligible_unique_families": 342,
+  "generated_at": "2026-10-17T09:26:34Z",
+  "total": 470,
+  "total_unique_families": 381,
+  "passed": 127,
+  "passed_unique_families": 84,
+  "normalized": 126,
+  "eligible_after_prefilter": 435,
+  "eligible_unique_families": 346,
   "rejected": [
     {
       "slug": "~unbiased/pareto-latest",
@@ -147,6 +147,18 @@
     {
       "slug": "openrouter/auto",
       "reason": "non_text_output"
+    },
+    {
+      "slug": "deepseek/deepseek-v4.1-flash-1017",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "elorian/glimpse",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "reflection/beam-1.0-501b-a23b",
+      "reason": "below_all_thresholds"
     },
     {
       "slug": "moondream/moondream3-preview",

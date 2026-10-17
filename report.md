@@ -1,8 +1,8 @@
-# LLM Discount Advisor — отчёт от 2026-10-16
+# LLM Discount Advisor — отчёт от 2026-10-17
 
 Decision-support для выбора модели и provider/variant в Hermes.
 
-Legacy snapshot: **465** строк каталога / **377** семейств; после scope gate прошло **125** строк / **83** семейств.
+Legacy snapshot: **470** строк каталога / **381** семейств; после scope gate прошло **127** строк / **84** семейств.
 
 ## Decision surface
 
@@ -17,46 +17,46 @@ Discount не умножается на observed `costPerRequest`; до подт
 
 Quality: `intelligence`; floor: —.
 Candidates: 2; raw Pareto: 2; stable Pareto: 2.
-- balanced default: `anthropic/claude-sonnet-5.5-20260928` / Google / $3.7714357388 / score 56.0
-- cost option: `anthropic/claude-sonnet-5.5-20260928` / Google / $3.7714357388 / score 56.0
-- quality option: `anthropic/claude-opus-5.5-20260921` / Amazon Bedrock / $11.674662517 / score 57.6
+- balanced default: `anthropic/claude-sonnet-5.5-20260928` / Google / $3.7751391551 / score 56.0
+- cost option: `anthropic/claude-sonnet-5.5-20260928` / Google / $3.7751391551 / score 56.0
+- quality option: `anthropic/claude-opus-5.5-20260921` / Amazon Bedrock / $10.6704011425 / score 57.6
 
 ### Профиль `code`
 
 Quality: `coding`; floor: —.
-Candidates: 35; raw Pareto: 9; stable Pareto: 16.
-- balanced default: `anthropic/claude-fable-5.1-20260831` / Azure / $24.7819789251 / score 81.6
-- cost option: `deepseek/deepseek-v4-flash-20260731` / DeepInfra / $0.105161013 / score 69.1
-- quality option: `anthropic/claude-fable-5.1-20260831` / Azure / $24.7819789251 / score 81.6
+Candidates: 35; raw Pareto: 5; stable Pareto: 12.
+- balanced default: `anthropic/claude-fable-5.1-20260831` / Azure / $24.2240830531 / score 81.6
+- cost option: `deepseek/deepseek-v4-flash-20260731` / Relace / $0.0603573892 / score 69.1
+- quality option: `anthropic/claude-fable-5.1-20260831` / Azure / $24.2240830531 / score 81.6
 
 ### Профиль `agentic`
 
 Quality: `agentic`; floor: —.
-Candidates: 14; raw Pareto: 6; stable Pareto: 7.
-- balanced default: `qwen/qwen3.8-max-20260902` / Alibaba / $3.7696342423 / score 56.0
-- cost option: `z-ai/glm-5.3-flash-20260826` / StreamLake / $0.190804159 / score 50.9
-- quality option: `anthropic/claude-fable-5.1-20260831` / Azure / $24.7819789251 / score 57.9
+Candidates: 14; raw Pareto: 5; stable Pareto: 7.
+- balanced default: `qwen/qwen3.8-max-20260902` / Alibaba / $3.0308836516 / score 56.0
+- cost option: `z-ai/glm-5.3-flash-20260826` / StreamLake / $0.1359401896 / score 50.9
+- quality option: `anthropic/claude-fable-5.1-20260831` / Azure / $24.2240830531 / score 57.9
 
 ### Профиль `longdoc`
 
 Quality: `intelligence`; floor: —.
 Candidates: 2; raw Pareto: 2; stable Pareto: 2.
-- balanced default: `anthropic/claude-sonnet-5.5-20260928` / Google / $3.7714357388 / score 56.0
-- cost option: `anthropic/claude-sonnet-5.5-20260928` / Google / $3.7714357388 / score 56.0
-- quality option: `anthropic/claude-opus-5.5-20260921` / Amazon Bedrock / $11.674662517 / score 57.6
+- balanced default: `anthropic/claude-sonnet-5.5-20260928` / Google / $3.7751391551 / score 56.0
+- cost option: `anthropic/claude-sonnet-5.5-20260928` / Google / $3.7751391551 / score 56.0
+- quality option: `anthropic/claude-opus-5.5-20260921` / Amazon Bedrock / $10.6704011425 / score 57.6
 
 ### Профиль `bulk`
 
 Quality: `intelligence`; floor: —.
 Candidates: 4; raw Pareto: 3; stable Pareto: 4.
-- balanced default: `anthropic/claude-opus-5-20260723` / Claude Platform on AWS / $17.0699040145 / score 50.8
-- cost option: `xiaomi/mimo-v2.6-pro-20260921` / DeepInfra / $0.4227259532 / score 46.3
-- quality option: `anthropic/claude-opus-5-20260723` / Claude Platform on AWS / $17.0699040145 / score 50.8
+- balanced default: `anthropic/claude-opus-5-20260723` / Claude Platform on AWS / $15.6877381978 / score 50.8
+- cost option: `xiaomi/mimo-v2.6-pro-20260921` / DeepInfra / $0.3549155064 / score 46.3
+- quality option: `anthropic/claude-opus-5-20260723` / Claude Platform on AWS / $15.6877381978 / score 50.8
 
 ### Secondary evidence coverage
 
-Families total: 377; uncovered: 147;
-`worthy_candidate`: 0; `likely_low_signal`: 147.
+Families total: 381; uncovered: 151;
+`worthy_candidate`: 0; `likely_low_signal`: 151.
 Benchmark `avg_cost_per_task` и session-cost остаются разными units и не входят в primary Pareto.
 
 ### YAML patch preview
@@ -77,14 +77,14 @@ Status: `compared`; events: 0.
 
 ### Код (`code`)
 
-- **Это твой рабочий вариант** — `Z.ai: GLM 5.3 Flash` через StreamLake: $0.0689/1M, coding 71.5, скидка 71%. Почему: coding 71.5 при цене $0.069/1M; от лидера по качеству отстаёт на 10.1 п. Reasoning: `max`, обязателен.
-- **Та же модель, но дешевле провайдер** — `DeepSeek: DeepSeek V4 Flash 0731` через DeepInfra: $0.0900/1M, coding 69.1, скидка 70%. Почему: У этой же модели есть провайдер дешевле в 3.7 раза при uptime 100.00%. Reasoning: `high`, можно отключить/не указан.
-- **Большая скидка, но не для основной работы** — `DeepSeek: DeepSeek V4 Flash Vision Exp` через DeepInfra: $0.3234/1M, coding 65.0, скидка 51%. Почему: Скидка 51% активна, но качество 65.0 требует осторожной проверки. Reasoning: `high`, можно отключить/не указан.
+- **Это твой рабочий вариант** — `DeepSeek: DeepSeek V4 Flash 0731` через Relace: $0.0815/1M, coding 69.1, скидка 86%. Почему: coding 69.1 при цене $0.082/1M; от лидера по качеству отстаёт на 12.5 п. Reasoning: `high`, можно отключить/не указан.
+- **Та же модель, но дешевле провайдер** — `DeepSeek: DeepSeek V4 Pro 0813` через Baidu: $0.2000/1M, coding 68.8, скидка 90%. Почему: У этой же модели есть провайдер дешевле в 5.0 раза при uptime 100.00%. Reasoning: `high`, можно отключить/не указан.
+- **Большая скидка, но не для основной работы** — `Z.ai: GLM 5.3 Flash` через StreamLake: $0.1187/1M, coding 71.5, скидка 50%. Почему: Скидка 50% активна, но качество 71.5 требует осторожной проверки. Reasoning: `max`, обязателен.
 - **Скорее всего, менять не стоит** — `Qwen: Qwen3.8 27B` через Tenstorrent: $0.1400/1M, coding 68.1, скидка 25%. Почему: Преимущество не окупает смену: цена $0.140/1M без минимум 30% экономии относительно дефолта. Reasoning: `xhigh`, можно отключить/не указан.
 
 ### Агентный workflow (`agentic`)
 
-- **Это твой рабочий вариант** — `Z.ai: GLM 5.3 Flash` через StreamLake: $0.0689/1M, agentic 50.9, скидка 71%. Почему: agentic 50.9 при цене $0.069/1M; от лидера по качеству отстаёт на 7.0 п. Reasoning: `max`, обязателен.
+- **Это твой рабочий вариант** — `Z.ai: GLM 5.3 Flash` через StreamLake: $0.1187/1M, agentic 50.9, скидка 50%. Почему: agentic 50.9 при цене $0.119/1M; от лидера по качеству отстаёт на 7.0 п. Reasoning: `max`, обязателен.
 - **Та же модель, но дешевле провайдер** — `OpenAI: GPT-6 Astra` через OpenAI: $10.0000/1M, agentic 51.0. Почему: У этой же модели есть провайдер дешевле в 2.0 раза при uptime 100.00%. Reasoning: `medium`, обязателен.
 - **Большая скидка, но не для основной работы** — `DeepSeek: DeepSeek V4 Flash Vision Exp` через DeepInfra: $0.3234/1M, agentic 47.5, скидка 51%. Почему: Скидка 51% активна, но качество 47.5 требует осторожной проверки. Reasoning: `high`, можно отключить/не указан.
 - **Скорее всего, менять не стоит** — `Qwen: Qwen3.8 27B` через Tenstorrent: $0.1400/1M, agentic 45.8, скидка 25%. Почему: Преимущество не окупает смену: цена $0.140/1M без минимум 30% экономии относительно дефолта. Reasoning: `xhigh`, можно отключить/не указан.
