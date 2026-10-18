@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-17T09:26:34Z",
-  "total": 470,
-  "total_unique_families": 381,
+  "generated_at": "2026-10-18T09:40:34Z",
+  "total": 471,
+  "total_unique_families": 382,
   "passed": 127,
   "passed_unique_families": 84,
   "normalized": 126,
-  "eligible_after_prefilter": 435,
-  "eligible_unique_families": 346,
+  "eligible_after_prefilter": 436,
+  "eligible_unique_families": 347,
   "rejected": [
     {
       "slug": "~unbiased/pareto-latest",
@@ -170,6 +170,10 @@
     },
     {
       "slug": "meta/muse-spark-open",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "unbiased/pareto-26.10",
       "reason": "below_all_thresholds"
     },
     {

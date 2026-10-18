@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 381,
-    "rankings_surface_families": 349,
-    "benchmark_cost_families": 115,
+    "families_total": 382,
+    "rankings_surface_families": 350,
+    "benchmark_cost_families": 116,
     "session_cost_families": 44,
-    "union_secondary_covered": 121,
-    "uncovered": 151,
+    "union_secondary_covered": 122,
+    "uncovered": 150,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 151
+    "likely_low_signal_uncovered": 150
   },
   "families": [
     {
@@ -404,8 +404,11 @@
     },
     {
       "canonical_family": "deepseek/deepseek-v4.1-flash-20261017",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface",
+        "benchmark_cost"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "dots-studio/dots-3-note-preview-20260813",
@@ -808,8 +811,10 @@
     },
     {
       "canonical_family": "meta/muse-spark-open-20261015",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "benchmark_cost"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "meta/muse-wonder-20261012",
@@ -1396,8 +1401,7 @@
     {
       "canonical_family": "openai/gpt-5.4-nano-20260317",
       "covered_by": [
-        "rankings_surface",
-        "benchmark_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },
@@ -2158,6 +2162,11 @@
         "benchmark_cost"
       ],
       "classification": "covered"
+    },
+    {
+      "canonical_family": "unbiased/pareto-26.10-20261015",
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "unbiased/pareto-26.9-20260917",
