@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 382,
+    "families_total": 379,
     "rankings_surface_families": 350,
-    "benchmark_cost_families": 116,
-    "session_cost_families": 44,
-    "union_secondary_covered": 122,
-    "uncovered": 150,
+    "benchmark_cost_families": 117,
+    "session_cost_families": 45,
+    "union_secondary_covered": 123,
+    "uncovered": 148,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 150
+    "likely_low_signal_uncovered": 148
   },
   "families": [
     {
@@ -292,10 +292,8 @@
     },
     {
       "canonical_family": "deepseek/deepseek-chat-v3",
-      "covered_by": [
-        "session_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "deepseek/deepseek-chat-v3-0324",
@@ -306,13 +304,6 @@
     },
     {
       "canonical_family": "deepseek/deepseek-chat-v3.1",
-      "covered_by": [
-        "rankings_surface"
-      ],
-      "classification": "covered"
-    },
-    {
-      "canonical_family": "deepseek/deepseek-r1",
       "covered_by": [
         "rankings_surface"
       ],
@@ -406,7 +397,8 @@
       "canonical_family": "deepseek/deepseek-v4.1-flash-20261017",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost"
+        "benchmark_cost",
+        "session_cost"
       ],
       "classification": "covered"
     },
@@ -562,7 +554,8 @@
       "canonical_family": "google/gemini-4-argon-20261013",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost"
+        "benchmark_cost",
+        "session_cost"
       ],
       "classification": "covered"
     },
@@ -827,11 +820,6 @@
         "rankings_surface"
       ],
       "classification": "covered"
-    },
-    {
-      "canonical_family": "microsoft/wizardlm-2-8x22b",
-      "covered_by": [],
-      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "minimax/minimax-01",
@@ -1787,7 +1775,8 @@
     {
       "canonical_family": "qwen/qwen3-coder-480b-a35b-07-25",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "session_cost"
       ],
       "classification": "covered"
     },
@@ -1995,8 +1984,10 @@
     },
     {
       "canonical_family": "reflection/beam-1.0-501b-a23b-20261016",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "benchmark_cost"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "rekaai/reka-edge-2603",
@@ -2047,11 +2038,6 @@
     },
     {
       "canonical_family": "sao10k/l3.1-euryale-70b",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "sao10k/l3.3-euryale-70b-v2.3",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
@@ -2239,8 +2225,7 @@
       "canonical_family": "x-ai/grok-4.6-20260810",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost",
-        "session_cost"
+        "benchmark_cost"
       ],
       "classification": "covered"
     },

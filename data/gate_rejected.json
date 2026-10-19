@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-18T09:40:34Z",
-  "total": 471,
-  "total_unique_families": 382,
+  "generated_at": "2026-10-19T10:50:29Z",
+  "total": 468,
+  "total_unique_families": 379,
   "passed": 127,
   "passed_unique_families": 84,
   "normalized": 126,
-  "eligible_after_prefilter": 436,
-  "eligible_unique_families": 347,
+  "eligible_after_prefilter": 433,
+  "eligible_unique_families": 344,
   "rejected": [
     {
       "slug": "~unbiased/pareto-latest",
@@ -1181,10 +1181,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "deepseek/deepseek-r1",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "minimax/minimax-01",
       "reason": "below_all_thresholds"
     },
@@ -1194,10 +1190,6 @@
     },
     {
       "slug": "deepseek/deepseek-chat",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "sao10k/l3.3-euryale-70b",
       "reason": "below_all_thresholds"
     },
     {
@@ -1330,10 +1322,6 @@
     },
     {
       "slug": "mistralai/mixtral-8x22b-instruct",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "microsoft/wizardlm-2-8x22b",
       "reason": "below_all_thresholds"
     },
     {
