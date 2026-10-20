@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-19T10:50:29Z",
-  "total": 468,
-  "total_unique_families": 379,
-  "passed": 127,
-  "passed_unique_families": 84,
-  "normalized": 126,
-  "eligible_after_prefilter": 433,
-  "eligible_unique_families": 344,
+  "generated_at": "2026-10-20T10:07:32Z",
+  "total": 470,
+  "total_unique_families": 381,
+  "passed": 130,
+  "passed_unique_families": 87,
+  "normalized": 129,
+  "eligible_after_prefilter": 435,
+  "eligible_unique_families": 346,
   "rejected": [
     {
       "slug": "~unbiased/pareto-latest",
@@ -149,15 +149,15 @@
       "reason": "non_text_output"
     },
     {
-      "slug": "deepseek/deepseek-v4.1-flash-1017",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "elorian/glimpse",
       "reason": "below_all_thresholds"
     },
     {
       "slug": "reflection/beam-1.0-501b-a23b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "inception/mercury-3",
       "reason": "below_all_thresholds"
     },
     {
@@ -313,10 +313,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "ibm-granite/granite-4.2-8b",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "tencent/hy4-preview",
       "reason": "below_all_thresholds"
     },
@@ -465,6 +461,10 @@
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "xiaomi/mimo-v2.5-pro",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "openrouter/pareto-code",
       "reason": "below_all_thresholds"
     },
@@ -514,10 +514,6 @@
     },
     {
       "slug": "bytedance-seed/seed-2.0-lite",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "qwen/qwen3.5-9b",
       "reason": "below_all_thresholds"
     },
     {

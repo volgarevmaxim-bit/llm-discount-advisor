@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-19T10:50:29Z",
+  "generated_at": "2026-10-20T10:07:32Z",
   "ranking_mode": "rankings_cost_per_request",
   "source_url": "https://openrouter.ai/api/frontend/v1/rankings/benchmarks",
   "profiles": [
@@ -12,14 +12,14 @@
       "candidate_count": 2,
       "raw_pareto_count": 2,
       "stable_pareto_count": 2,
-      "unmatched_quality_rows": 274,
-      "unpriced_rows": 3,
+      "unmatched_quality_rows": 272,
+      "unpriced_rows": 4,
       "roles": {
         "cost_option": {
           "ranking_key": "anthropic/claude-sonnet-5.5-20260928",
           "permaslug": "anthropic/claude-sonnet-5.5-20260928",
           "score": 56.0,
-          "price": 2.8889984205,
+          "price": 3.6290915259,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -41,7 +41,7 @@
           "ranking_key": "anthropic/claude-opus-5.5-20260921",
           "permaslug": "anthropic/claude-opus-5.5-20260921",
           "score": 57.6,
-          "price": 9.4895548112,
+          "price": 11.1945096043,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -63,7 +63,7 @@
           "ranking_key": "anthropic/claude-sonnet-5.5-20260928",
           "permaslug": "anthropic/claude-sonnet-5.5-20260928",
           "score": 56.0,
-          "price": 2.8889984205,
+          "price": 3.6290915259,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -87,7 +87,7 @@
           "ranking_key": "anthropic/claude-sonnet-5.5-20260928",
           "permaslug": "anthropic/claude-sonnet-5.5-20260928",
           "score": 56.0,
-          "price": 2.8889984205,
+          "price": 3.6290915259,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -109,7 +109,7 @@
           "ranking_key": "anthropic/claude-opus-5.5-20260921",
           "permaslug": "anthropic/claude-opus-5.5-20260921",
           "score": 57.6,
-          "price": 9.4895548112,
+          "price": 11.1945096043,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -133,7 +133,7 @@
           "ranking_key": "anthropic/claude-opus-5.5-20260921",
           "permaslug": "anthropic/claude-opus-5.5-20260921",
           "score": 57.6,
-          "price": 9.4895548112,
+          "price": 11.1945096043,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -155,7 +155,7 @@
           "ranking_key": "anthropic/claude-sonnet-5.5-20260928",
           "permaslug": "anthropic/claude-sonnet-5.5-20260928",
           "score": 56.0,
-          "price": 2.8889984205,
+          "price": 3.6290915259,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -179,7 +179,7 @@
           "ranking_key": "anthropic/claude-opus-5.5-20260921",
           "permaslug": "anthropic/claude-opus-5.5-20260921",
           "score": 57.6,
-          "price": 9.4895548112,
+          "price": 11.1945096043,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -201,7 +201,7 @@
           "ranking_key": "anthropic/claude-sonnet-5.5-20260928",
           "permaslug": "anthropic/claude-sonnet-5.5-20260928",
           "score": 56.0,
-          "price": 2.8889984205,
+          "price": 3.6290915259,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -294,6 +294,10 @@
           "reason": "below_quality_floor"
         },
         {
+          "ranking_key": "minimax/minimax-m3.1-flash-20261019",
+          "reason": "missing_cost_per_request"
+        },
+        {
           "ranking_key": "openai/gpt-5.6-terra-20260709",
           "reason": "below_quality_floor"
         },
@@ -331,7 +335,7 @@
         },
         {
           "ranking_key": "deepseek/deepseek-v4.1-flash-20261017",
-          "reason": "unmatched_family_join"
+          "reason": "below_quality_floor"
         },
         {
           "ranking_key": "openai/gpt-5.4-20260305",
@@ -382,11 +386,11 @@
           "reason": "below_quality_floor"
         },
         {
-          "ranking_key": "meta/muse-spark-1.1-20260709",
+          "ranking_key": "qwen/qwen3.8-27b-20260814",
           "reason": "below_quality_floor"
         },
         {
-          "ranking_key": "qwen/qwen3.8-27b-20260814",
+          "ranking_key": "meta/muse-spark-1.1-20260709",
           "reason": "below_quality_floor"
         },
         {
@@ -487,7 +491,7 @@
         },
         {
           "ranking_key": "xiaomi/mimo-v2.5-pro-20260422",
-          "reason": "below_quality_floor"
+          "reason": "unmatched_family_join"
         },
         {
           "ranking_key": "moonshotai/kimi-k2.7-code-20260612",
@@ -574,15 +578,15 @@
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "minimax/minimax-m2.5-20260211",
-          "reason": "unmatched_family_join"
-        },
-        {
           "ranking_key": "minimax/minimax-m2.7-20260318",
           "reason": "unmatched_family_join"
         },
         {
           "ranking_key": "anthropic/claude-4.1-opus-20250805",
+          "reason": "unmatched_family_join"
+        },
+        {
+          "ranking_key": "minimax/minimax-m2.5-20260211",
           "reason": "unmatched_family_join"
         },
         {
@@ -819,7 +823,7 @@
         },
         {
           "ranking_key": "qwen/qwen3.5-9b-20260310",
-          "reason": "unmatched_family_join"
+          "reason": "below_quality_floor"
         },
         {
           "ranking_key": "deepseek/deepseek-r1-0528",
@@ -923,7 +927,7 @@
         },
         {
           "ranking_key": "ibm-granite/granite-4.2-8b-20260831",
-          "reason": "unmatched_family_join"
+          "reason": "below_quality_floor"
         },
         {
           "ranking_key": "z-ai/glm-4.5-air",
@@ -1086,12 +1090,12 @@
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "deepseek/deepseek-r1-distill-qwen-32b",
-          "reason": "unmatched_family_join"
-        },
-        {
           "ranking_key": "liquid/lfm-2.5-2.6b-20260811",
           "reason": "missing_cost_per_request"
+        },
+        {
+          "ranking_key": "deepseek/deepseek-r1-distill-qwen-32b",
+          "reason": "unmatched_family_join"
         },
         {
           "ranking_key": "openai/gpt-4o-2024-11-20",
@@ -1342,15 +1346,15 @@
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "meta-llama/llama-3.2-90b-vision-instruct",
-          "reason": "unmatched_family_join"
-        },
-        {
           "ranking_key": "perplexity/r1-1776",
           "reason": "unmatched_family_join"
         },
         {
           "ranking_key": "qwen/qwen-turbo-2024-11-01",
+          "reason": "unmatched_family_join"
+        },
+        {
+          "ranking_key": "meta-llama/llama-3.2-90b-vision-instruct",
           "reason": "unmatched_family_join"
         },
         {
@@ -1434,11 +1438,11 @@
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "meta-llama/llama-3.2-3b-instruct",
+          "ranking_key": "qwen/qwen-110b-chat",
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "qwen/qwen-110b-chat",
+          "ranking_key": "meta-llama/llama-3.2-3b-instruct",
           "reason": "unmatched_family_join"
         },
         {
@@ -1458,15 +1462,15 @@
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "openai/gpt-3.5-turbo",
-          "reason": "unmatched_family_join"
-        },
-        {
           "ranking_key": "deepseek/deepseek-r1-distill-qwen-1.5b",
           "reason": "unmatched_family_join"
         },
         {
           "ranking_key": "meta-llama/llama-3-70b-instruct",
+          "reason": "unmatched_family_join"
+        },
+        {
+          "ranking_key": "openai/gpt-3.5-turbo",
           "reason": "unmatched_family_join"
         },
         {
@@ -1498,11 +1502,11 @@
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "databricks/dbrx-instruct",
+          "ranking_key": "openchat/openchat-7b",
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "openchat/openchat-7b",
+          "ranking_key": "databricks/dbrx-instruct",
           "reason": "unmatched_family_join"
         },
         {
@@ -1594,15 +1598,15 @@
           "reason": "unmatched_family_join"
         },
         {
+          "ranking_key": "google/gemma-3n-e2b-it",
+          "reason": "unmatched_family_join"
+        },
+        {
           "ranking_key": "meta-llama/llama-3.2-1b-instruct",
           "reason": "unmatched_family_join"
         },
         {
           "ranking_key": "qwen/qwen3-0.6b-04-28",
-          "reason": "unmatched_family_join"
-        },
-        {
-          "ranking_key": "google/gemma-3n-e2b-it",
           "reason": "unmatched_family_join"
         },
         {
@@ -1624,17 +1628,17 @@
       "quality_metric": "coding",
       "price_metric": "costPerRequest",
       "price_unit": "usd_per_100_requests",
-      "candidate_count": 35,
+      "candidate_count": 34,
       "raw_pareto_count": 7,
-      "stable_pareto_count": 18,
-      "unmatched_quality_rows": 92,
+      "stable_pareto_count": 15,
+      "unmatched_quality_rows": 91,
       "unpriced_rows": 3,
       "roles": {
         "cost_option": {
           "ranking_key": "deepseek/deepseek-v4-flash-20260731",
           "permaslug": "deepseek/deepseek-v4-flash-20260731",
           "score": 69.1,
-          "price": 0.1144448314,
+          "price": 0.0815451841,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -1645,10 +1649,10 @@
           "provider": "OpenInference",
           "discount_max": 0.7,
           "discount_provider": "StreamLake",
-          "current_effective_price_in": 0.00392,
+          "current_effective_price_in": 0.01208,
           "current_effective_price_out": 0.12,
-          "base_price": 0.03294,
-          "uptime_1d": 98.956,
+          "base_price": 0.03906,
+          "uptime_1d": 95.764,
           "reasoning_mandatory": false,
           "has_tools": true
         },
@@ -1656,7 +1660,7 @@
           "ranking_key": "anthropic/claude-fable-5.1-20260831",
           "permaslug": "anthropic/claude-fable-5.1-20260831",
           "score": 81.6,
-          "price": 24.2877547165,
+          "price": 24.141409028,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -1678,7 +1682,7 @@
           "ranking_key": "anthropic/claude-fable-5.1-20260831",
           "permaslug": "anthropic/claude-fable-5.1-20260831",
           "score": 81.6,
-          "price": 24.2877547165,
+          "price": 24.141409028,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -1702,7 +1706,7 @@
           "ranking_key": "deepseek/deepseek-v4-flash-20260731",
           "permaslug": "deepseek/deepseek-v4-flash-20260731",
           "score": 69.1,
-          "price": 0.1144448314,
+          "price": 0.0815451841,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -1713,10 +1717,10 @@
           "provider": "OpenInference",
           "discount_max": 0.7,
           "discount_provider": "StreamLake",
-          "current_effective_price_in": 0.00392,
+          "current_effective_price_in": 0.01208,
           "current_effective_price_out": 0.12,
-          "base_price": 0.03294,
-          "uptime_1d": 98.956,
+          "base_price": 0.03906,
+          "uptime_1d": 95.764,
           "reasoning_mandatory": false,
           "has_tools": true
         },
@@ -1724,7 +1728,7 @@
           "ranking_key": "z-ai/glm-5.3-flash-20260826",
           "permaslug": "z-ai/glm-5.3-flash-20260826",
           "score": 71.5,
-          "price": 0.1532439029,
+          "price": 0.0875201536,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -1733,11 +1737,33 @@
           "canonical_slug": "z-ai/glm-5.3-flash-20260826",
           "variant_id": "z-ai/glm-5.3-flash",
           "provider": "OpenInference",
-          "discount_max": 0.501,
+          "discount_max": 0.6077,
           "discount_provider": "StreamLake",
-          "current_effective_price_in": 0.048,
+          "current_effective_price_in": 0.047076,
           "current_effective_price_out": 0.16,
-          "base_price": 0.076,
+          "base_price": 0.075307,
+          "uptime_1d": 100.0,
+          "reasoning_mandatory": true,
+          "has_tools": true
+        },
+        {
+          "ranking_key": "google/gemini-3.7-flash-20260813",
+          "permaslug": "google/gemini-3.7-flash-20260813",
+          "score": 76.1,
+          "price": 0.7878453511,
+          "price_metric": "costPerRequest",
+          "price_unit": "usd_per_100_requests",
+          "quality_metric": "coding",
+          "quality_label": "Coding Index Score",
+          "join_status": "matched",
+          "canonical_slug": "google/gemini-3.7-flash-20260813",
+          "variant_id": "google/gemini-3.7-flash",
+          "provider": "Google AI Studio",
+          "discount_max": 0.5,
+          "discount_provider": "Google",
+          "current_effective_price_in": 0.375,
+          "current_effective_price_out": 1.875,
+          "base_price": 1.5,
           "uptime_1d": 100.0,
           "reasoning_mandatory": true,
           "has_tools": true
@@ -1746,7 +1772,7 @@
           "ranking_key": "google/gemini-3.8-flash-20260902",
           "permaslug": "google/gemini-3.8-flash-20260902",
           "score": 76.3,
-          "price": 0.9762798434,
+          "price": 0.9161099585,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -1760,7 +1786,7 @@
           "current_effective_price_in": 0.375,
           "current_effective_price_out": 1.875,
           "base_price": 1.5,
-          "uptime_1d": 100.0,
+          "uptime_1d": 99.931,
           "reasoning_mandatory": true,
           "has_tools": true
         },
@@ -1768,7 +1794,7 @@
           "ranking_key": "openai/gpt-5.6-terra-20260709",
           "permaslug": "openai/gpt-5.6-terra-20260709",
           "score": 76.7,
-          "price": 2.1329359602,
+          "price": 1.7416952497,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -1782,37 +1808,15 @@
           "current_effective_price_in": 1.0,
           "current_effective_price_out": 6.0,
           "base_price": 2.25,
-          "uptime_1d": 100.0,
+          "uptime_1d": 99.457,
           "reasoning_mandatory": false,
-          "has_tools": true
-        },
-        {
-          "ranking_key": "x-ai/grok-4.6-20260810",
-          "permaslug": "x-ai/grok-4.6-20260810",
-          "score": 76.8,
-          "price": 4.1805241994,
-          "price_metric": "costPerRequest",
-          "price_unit": "usd_per_100_requests",
-          "quality_metric": "coding",
-          "quality_label": "Coding Index Score",
-          "join_status": "matched",
-          "canonical_slug": "x-ai/grok-4.6-20260810",
-          "variant_id": "x-ai/grok-4.6",
-          "provider": "xAI",
-          "discount_max": 0.0,
-          "discount_provider": "xAI",
-          "current_effective_price_in": 2.0,
-          "current_effective_price_out": 6.0,
-          "base_price": 3.0,
-          "uptime_1d": 100.0,
-          "reasoning_mandatory": true,
           "has_tools": true
         },
         {
           "ranking_key": "openai/gpt-5.6-sol-20260709",
           "permaslug": "openai/gpt-5.6-sol-20260709",
           "score": 78.3,
-          "price": 5.0632756378,
+          "price": 2.1679077303,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -1826,7 +1830,7 @@
           "current_effective_price_in": 2.0,
           "current_effective_price_out": 10.0,
           "base_price": 4.0,
-          "uptime_1d": 99.836,
+          "uptime_1d": 100.0,
           "reasoning_mandatory": false,
           "has_tools": true
         },
@@ -1834,7 +1838,7 @@
           "ranking_key": "anthropic/claude-fable-5.1-20260831",
           "permaslug": "anthropic/claude-fable-5.1-20260831",
           "score": 81.6,
-          "price": 24.2877547165,
+          "price": 24.141409028,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -1858,7 +1862,7 @@
           "ranking_key": "anthropic/claude-fable-5.1-20260831",
           "permaslug": "anthropic/claude-fable-5.1-20260831",
           "score": 81.6,
-          "price": 24.2877547165,
+          "price": 24.141409028,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -1880,7 +1884,7 @@
           "ranking_key": "openai/gpt-5.6-sol-20260709",
           "permaslug": "openai/gpt-5.6-sol-20260709",
           "score": 78.3,
-          "price": 5.0632756378,
+          "price": 2.1679077303,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -1894,7 +1898,7 @@
           "current_effective_price_in": 2.0,
           "current_effective_price_out": 10.0,
           "base_price": 4.0,
-          "uptime_1d": 99.836,
+          "uptime_1d": 100.0,
           "reasoning_mandatory": false,
           "has_tools": true
         },
@@ -1902,7 +1906,7 @@
           "ranking_key": "anthropic/claude-opus-5-20260723",
           "permaslug": "anthropic/claude-opus-5-20260723",
           "score": 78.0,
-          "price": 12.84642111,
+          "price": 14.5678518978,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -1924,7 +1928,7 @@
           "ranking_key": "openai/gpt-6-astra-20260903",
           "permaslug": "openai/gpt-6-astra-20260903",
           "score": 77.1,
-          "price": 16.180308141,
+          "price": 18.8517414082,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -1938,7 +1942,7 @@
           "current_effective_price_in": 5.0,
           "current_effective_price_out": 25.0,
           "base_price": 10.0,
-          "uptime_1d": 99.833,
+          "uptime_1d": 99.815,
           "reasoning_mandatory": true,
           "has_tools": true
         },
@@ -1946,7 +1950,7 @@
           "ranking_key": "x-ai/grok-4.6-20260810",
           "permaslug": "x-ai/grok-4.6-20260810",
           "score": 76.8,
-          "price": 4.1805241994,
+          "price": 4.1642542731,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -1960,7 +1964,7 @@
           "current_effective_price_in": 2.0,
           "current_effective_price_out": 6.0,
           "base_price": 3.0,
-          "uptime_1d": 100.0,
+          "uptime_1d": 99.792,
           "reasoning_mandatory": true,
           "has_tools": true
         },
@@ -1968,7 +1972,7 @@
           "ranking_key": "openai/gpt-5.6-terra-20260709",
           "permaslug": "openai/gpt-5.6-terra-20260709",
           "score": 76.7,
-          "price": 2.1329359602,
+          "price": 1.7416952497,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -1982,7 +1986,7 @@
           "current_effective_price_in": 1.0,
           "current_effective_price_out": 6.0,
           "base_price": 2.25,
-          "uptime_1d": 100.0,
+          "uptime_1d": 99.457,
           "reasoning_mandatory": false,
           "has_tools": true
         },
@@ -1990,7 +1994,7 @@
           "ranking_key": "meta/muse-spark-1.3-20260902",
           "permaslug": "meta/muse-spark-1.3-20260902",
           "score": 76.5,
-          "price": 3.2417732532,
+          "price": 2.4146450749,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2004,7 +2008,29 @@
           "current_effective_price_in": 1.25,
           "current_effective_price_out": 4.25,
           "base_price": 2.0,
-          "uptime_1d": 99.722,
+          "uptime_1d": 99.792,
+          "reasoning_mandatory": true,
+          "has_tools": true
+        },
+        {
+          "ranking_key": "anthropic/claude-5-fable-20260609",
+          "permaslug": "anthropic/claude-5-fable-20260609",
+          "score": 76.5,
+          "price": 25.1642130152,
+          "price_metric": "costPerRequest",
+          "price_unit": "usd_per_100_requests",
+          "quality_metric": "coding",
+          "quality_label": "Coding Index Score",
+          "join_status": "matched",
+          "canonical_slug": "anthropic/claude-5-fable-20260609",
+          "variant_id": "anthropic/claude-fable-5",
+          "provider": "Azure",
+          "discount_max": 0.0,
+          "discount_provider": "Claude Platform on AWS",
+          "current_effective_price_in": 10.0,
+          "current_effective_price_out": 50.0,
+          "base_price": 20.0,
+          "uptime_1d": 100.0,
           "reasoning_mandatory": true,
           "has_tools": true
         },
@@ -2012,7 +2038,7 @@
           "ranking_key": "google/gemini-3.8-flash-20260902",
           "permaslug": "google/gemini-3.8-flash-20260902",
           "score": 76.3,
-          "price": 0.9762798434,
+          "price": 0.9161099585,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2026,51 +2052,7 @@
           "current_effective_price_in": 0.375,
           "current_effective_price_out": 1.875,
           "base_price": 1.5,
-          "uptime_1d": 100.0,
-          "reasoning_mandatory": true,
-          "has_tools": true
-        },
-        {
-          "ranking_key": "moonshotai/kimi-k3-20260715",
-          "permaslug": "moonshotai/kimi-k3-20260715",
-          "score": 76.2,
-          "price": 5.5475237709,
-          "price_metric": "costPerRequest",
-          "price_unit": "usd_per_100_requests",
-          "quality_metric": "coding",
-          "quality_label": "Coding Index Score",
-          "join_status": "matched",
-          "canonical_slug": "moonshotai/kimi-k3-20260715",
-          "variant_id": "moonshotai/kimi-k3",
-          "provider": "Relace",
-          "discount_max": 0.45,
-          "discount_provider": "Decart",
-          "current_effective_price_in": 0.8,
-          "current_effective_price_out": 3.0,
-          "base_price": 1.35,
-          "uptime_1d": 99.86,
-          "reasoning_mandatory": false,
-          "has_tools": true
-        },
-        {
-          "ranking_key": "qwen/qwen3.8-max-20260902",
-          "permaslug": "qwen/qwen3.8-max-20260902",
-          "score": 76.2,
-          "price": 3.1121826989,
-          "price_metric": "costPerRequest",
-          "price_unit": "usd_per_100_requests",
-          "quality_metric": "coding",
-          "quality_label": "Coding Index Score",
-          "join_status": "matched",
-          "canonical_slug": "qwen/qwen3.8-max-20260902",
-          "variant_id": "qwen/qwen3.8-max-0902",
-          "provider": "Alibaba",
-          "discount_max": 0.0,
-          "discount_provider": "Alibaba",
-          "current_effective_price_in": 2.0,
-          "current_effective_price_out": 6.0,
-          "base_price": 3.0,
-          "uptime_1d": 100.0,
+          "uptime_1d": 99.931,
           "reasoning_mandatory": true,
           "has_tools": true
         },
@@ -2078,7 +2060,7 @@
           "ranking_key": "google/gemini-3.7-flash-20260813",
           "permaslug": "google/gemini-3.7-flash-20260813",
           "score": 76.1,
-          "price": 1.0691468291,
+          "price": 0.7878453511,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2097,32 +2079,10 @@
           "has_tools": true
         },
         {
-          "ranking_key": "openai/gpt-5.5-20260423",
-          "permaslug": "openai/gpt-5.5-20260423",
-          "score": 74.9,
-          "price": 3.1967239487,
-          "price_metric": "costPerRequest",
-          "price_unit": "usd_per_100_requests",
-          "quality_metric": "coding",
-          "quality_label": "Coding Index Score",
-          "join_status": "matched",
-          "canonical_slug": "openai/gpt-5.5-20260423",
-          "variant_id": "openai/gpt-5.5",
-          "provider": "OpenAI",
-          "discount_max": 0.0,
-          "discount_provider": "OpenAI",
-          "current_effective_price_in": 2.5,
-          "current_effective_price_out": 15.0,
-          "base_price": 5.625,
-          "uptime_1d": 100.0,
-          "reasoning_mandatory": false,
-          "has_tools": true
-        },
-        {
           "ranking_key": "z-ai/glm-5.3-20260816",
           "permaslug": "z-ai/glm-5.3-20260816",
           "score": 74.8,
-          "price": 1.9774710302,
+          "price": 2.33873702,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2130,13 +2090,13 @@
           "join_status": "matched",
           "canonical_slug": "z-ai/glm-5.3-20260816",
           "variant_id": "z-ai/glm-5.3",
-          "provider": "Relace",
-          "discount_max": 0.5,
-          "discount_provider": "SiliconFlow",
+          "provider": "Wafer",
+          "discount_max": 0.55,
+          "discount_provider": "Novita",
           "current_effective_price_in": 0.079,
-          "current_effective_price_out": 1.0,
-          "base_price": 0.30925,
-          "uptime_1d": 100.0,
+          "current_effective_price_out": 1.4,
+          "base_price": 0.40925,
+          "uptime_1d": 99.931,
           "reasoning_mandatory": true,
           "has_tools": true
         },
@@ -2144,7 +2104,7 @@
           "ranking_key": "z-ai/glm-5.3-flash-20260826",
           "permaslug": "z-ai/glm-5.3-flash-20260826",
           "score": 71.5,
-          "price": 0.1532439029,
+          "price": 0.0875201536,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2153,11 +2113,11 @@
           "canonical_slug": "z-ai/glm-5.3-flash-20260826",
           "variant_id": "z-ai/glm-5.3-flash",
           "provider": "OpenInference",
-          "discount_max": 0.501,
+          "discount_max": 0.6077,
           "discount_provider": "StreamLake",
-          "current_effective_price_in": 0.048,
+          "current_effective_price_in": 0.047076,
           "current_effective_price_out": 0.16,
-          "base_price": 0.076,
+          "base_price": 0.075307,
           "uptime_1d": 100.0,
           "reasoning_mandatory": true,
           "has_tools": true
@@ -2166,7 +2126,7 @@
           "ranking_key": "openai/gpt-5.6-luna-20260709",
           "permaslug": "openai/gpt-5.6-luna-20260709",
           "score": 71.4,
-          "price": 0.1622220423,
+          "price": 0.1605491108,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2180,7 +2140,7 @@
           "current_effective_price_in": 0.1,
           "current_effective_price_out": 0.6,
           "base_price": 0.225,
-          "uptime_1d": 100.0,
+          "uptime_1d": 99.028,
           "reasoning_mandatory": false,
           "has_tools": true
         },
@@ -2188,7 +2148,7 @@
           "ranking_key": "meta/muse-spark-1.1-20260709",
           "permaslug": "meta/muse-spark-1.1-20260709",
           "score": 71.3,
-          "price": 0.7923661068,
+          "price": 0.5511037117,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2210,7 +2170,7 @@
           "ranking_key": "deepseek/deepseek-v4-flash-20260731",
           "permaslug": "deepseek/deepseek-v4-flash-20260731",
           "score": 69.1,
-          "price": 0.1144448314,
+          "price": 0.0815451841,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2221,32 +2181,10 @@
           "provider": "OpenInference",
           "discount_max": 0.7,
           "discount_provider": "StreamLake",
-          "current_effective_price_in": 0.00392,
+          "current_effective_price_in": 0.01208,
           "current_effective_price_out": 0.12,
-          "base_price": 0.03294,
-          "uptime_1d": 98.956,
-          "reasoning_mandatory": false,
-          "has_tools": true
-        },
-        {
-          "ranking_key": "qwen/qwen3.8-27b-20260814",
-          "permaslug": "qwen/qwen3.8-27b-20260814",
-          "score": 68.1,
-          "price": 0.1331326034,
-          "price_metric": "costPerRequest",
-          "price_unit": "usd_per_100_requests",
-          "quality_metric": "coding",
-          "quality_label": "Coding Index Score",
-          "join_status": "matched",
-          "canonical_slug": "qwen/qwen3.8-27b-20260814",
-          "variant_id": "qwen/qwen3.8-27b",
-          "provider": "Tenstorrent",
-          "discount_max": 0.25,
-          "discount_provider": "DeepInfra",
-          "current_effective_price_in": 0.02,
-          "current_effective_price_out": 0.5,
-          "base_price": 0.14,
-          "uptime_1d": 99.055,
+          "base_price": 0.03906,
+          "uptime_1d": 95.764,
           "reasoning_mandatory": false,
           "has_tools": true
         }
@@ -2256,7 +2194,7 @@
           "ranking_key": "anthropic/claude-fable-5.1-20260831",
           "permaslug": "anthropic/claude-fable-5.1-20260831",
           "score": 81.6,
-          "price": 24.2877547165,
+          "price": 24.141409028,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2278,7 +2216,7 @@
           "ranking_key": "openai/gpt-5.6-sol-20260709",
           "permaslug": "openai/gpt-5.6-sol-20260709",
           "score": 78.3,
-          "price": 5.0632756378,
+          "price": 2.1679077303,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2292,7 +2230,7 @@
           "current_effective_price_in": 2.0,
           "current_effective_price_out": 10.0,
           "base_price": 4.0,
-          "uptime_1d": 99.836,
+          "uptime_1d": 100.0,
           "reasoning_mandatory": false,
           "has_tools": true
         },
@@ -2300,7 +2238,7 @@
           "ranking_key": "anthropic/claude-opus-5-20260723",
           "permaslug": "anthropic/claude-opus-5-20260723",
           "score": 78.0,
-          "price": 12.84642111,
+          "price": 14.5678518978,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2322,7 +2260,7 @@
           "ranking_key": "openai/gpt-6-astra-20260903",
           "permaslug": "openai/gpt-6-astra-20260903",
           "score": 77.1,
-          "price": 16.180308141,
+          "price": 18.8517414082,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2336,7 +2274,7 @@
           "current_effective_price_in": 5.0,
           "current_effective_price_out": 25.0,
           "base_price": 10.0,
-          "uptime_1d": 99.833,
+          "uptime_1d": 99.815,
           "reasoning_mandatory": true,
           "has_tools": true
         },
@@ -2344,7 +2282,7 @@
           "ranking_key": "x-ai/grok-4.6-20260810",
           "permaslug": "x-ai/grok-4.6-20260810",
           "score": 76.8,
-          "price": 4.1805241994,
+          "price": 4.1642542731,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2358,7 +2296,7 @@
           "current_effective_price_in": 2.0,
           "current_effective_price_out": 6.0,
           "base_price": 3.0,
-          "uptime_1d": 100.0,
+          "uptime_1d": 99.792,
           "reasoning_mandatory": true,
           "has_tools": true
         },
@@ -2366,7 +2304,7 @@
           "ranking_key": "openai/gpt-5.6-terra-20260709",
           "permaslug": "openai/gpt-5.6-terra-20260709",
           "score": 76.7,
-          "price": 2.1329359602,
+          "price": 1.7416952497,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2380,7 +2318,7 @@
           "current_effective_price_in": 1.0,
           "current_effective_price_out": 6.0,
           "base_price": 2.25,
-          "uptime_1d": 100.0,
+          "uptime_1d": 99.457,
           "reasoning_mandatory": false,
           "has_tools": true
         },
@@ -2388,7 +2326,7 @@
           "ranking_key": "meta/muse-spark-1.3-20260902",
           "permaslug": "meta/muse-spark-1.3-20260902",
           "score": 76.5,
-          "price": 3.2417732532,
+          "price": 2.4146450749,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2402,7 +2340,7 @@
           "current_effective_price_in": 1.25,
           "current_effective_price_out": 4.25,
           "base_price": 2.0,
-          "uptime_1d": 99.722,
+          "uptime_1d": 99.792,
           "reasoning_mandatory": true,
           "has_tools": true
         },
@@ -2410,7 +2348,7 @@
           "ranking_key": "anthropic/claude-5-fable-20260609",
           "permaslug": "anthropic/claude-5-fable-20260609",
           "score": 76.5,
-          "price": 29.2142693572,
+          "price": 25.1642130152,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2418,7 +2356,7 @@
           "join_status": "matched",
           "canonical_slug": "anthropic/claude-5-fable-20260609",
           "variant_id": "anthropic/claude-fable-5",
-          "provider": "Claude Platform on AWS",
+          "provider": "Azure",
           "discount_max": 0.0,
           "discount_provider": "Claude Platform on AWS",
           "current_effective_price_in": 10.0,
@@ -2432,7 +2370,7 @@
           "ranking_key": "google/gemini-3.8-flash-20260902",
           "permaslug": "google/gemini-3.8-flash-20260902",
           "score": 76.3,
-          "price": 0.9762798434,
+          "price": 0.9161099585,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2446,7 +2384,7 @@
           "current_effective_price_in": 0.375,
           "current_effective_price_out": 1.875,
           "base_price": 1.5,
-          "uptime_1d": 100.0,
+          "uptime_1d": 99.931,
           "reasoning_mandatory": true,
           "has_tools": true
         },
@@ -2454,7 +2392,7 @@
           "ranking_key": "moonshotai/kimi-k3-20260715",
           "permaslug": "moonshotai/kimi-k3-20260715",
           "score": 76.2,
-          "price": 5.5475237709,
+          "price": 3.392947534,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2468,7 +2406,7 @@
           "current_effective_price_in": 0.8,
           "current_effective_price_out": 3.0,
           "base_price": 1.35,
-          "uptime_1d": 99.86,
+          "uptime_1d": 98.887,
           "reasoning_mandatory": false,
           "has_tools": true
         },
@@ -2476,7 +2414,7 @@
           "ranking_key": "qwen/qwen3.8-max-20260902",
           "permaslug": "qwen/qwen3.8-max-20260902",
           "score": 76.2,
-          "price": 3.1121826989,
+          "price": 3.2687100266,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2498,7 +2436,7 @@
           "ranking_key": "google/gemini-3.7-flash-20260813",
           "permaslug": "google/gemini-3.7-flash-20260813",
           "score": 76.1,
-          "price": 1.0691468291,
+          "price": 0.7878453511,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2520,7 +2458,7 @@
           "ranking_key": "openai/gpt-5.5-20260423",
           "permaslug": "openai/gpt-5.5-20260423",
           "score": 74.9,
-          "price": 3.1967239487,
+          "price": 4.8995236045,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2542,7 +2480,7 @@
           "ranking_key": "z-ai/glm-5.3-20260816",
           "permaslug": "z-ai/glm-5.3-20260816",
           "score": 74.8,
-          "price": 1.9774710302,
+          "price": 2.33873702,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2550,13 +2488,13 @@
           "join_status": "matched",
           "canonical_slug": "z-ai/glm-5.3-20260816",
           "variant_id": "z-ai/glm-5.3",
-          "provider": "Relace",
-          "discount_max": 0.5,
-          "discount_provider": "SiliconFlow",
+          "provider": "Wafer",
+          "discount_max": 0.55,
+          "discount_provider": "Novita",
           "current_effective_price_in": 0.079,
-          "current_effective_price_out": 1.0,
-          "base_price": 0.30925,
-          "uptime_1d": 100.0,
+          "current_effective_price_out": 1.4,
+          "base_price": 0.40925,
+          "uptime_1d": 99.931,
           "reasoning_mandatory": true,
           "has_tools": true
         },
@@ -2564,7 +2502,7 @@
           "ranking_key": "anthropic/claude-4.8-opus-20260528",
           "permaslug": "anthropic/claude-4.8-opus-20260528",
           "score": 74.3,
-          "price": 11.4738874966,
+          "price": 9.1003831833,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2586,7 +2524,7 @@
           "ranking_key": "anthropic/claude-4.7-opus-20260416",
           "permaslug": "anthropic/claude-4.7-opus-20260416",
           "score": 73.6,
-          "price": 8.5964440405,
+          "price": 8.823268565,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2608,7 +2546,7 @@
           "ranking_key": "x-ai/grok-4.5-20260708",
           "permaslug": "x-ai/grok-4.5-20260708",
           "score": 72.4,
-          "price": 1.878800021,
+          "price": 2.3281987073,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2622,7 +2560,7 @@
           "current_effective_price_in": 2.0,
           "current_effective_price_out": 6.0,
           "base_price": 3.0,
-          "uptime_1d": 99.915,
+          "uptime_1d": 98.292,
           "reasoning_mandatory": true,
           "has_tools": true
         },
@@ -2630,7 +2568,7 @@
           "ranking_key": "meta/muse-spark-1.2-20260805",
           "permaslug": "meta/muse-spark-1.2-20260805",
           "score": 72.2,
-          "price": 1.9285494243,
+          "price": 2.5346607383,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2652,7 +2590,7 @@
           "ranking_key": "qwen/qwen3.8-2.4t-a95b-20260812",
           "permaslug": "qwen/qwen3.8-2.4t-a95b-20260812",
           "score": 71.9,
-          "price": 1.7956541856,
+          "price": 4.9608949183,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2674,7 +2612,7 @@
           "ranking_key": "z-ai/glm-5.3-flash-20260826",
           "permaslug": "z-ai/glm-5.3-flash-20260826",
           "score": 71.5,
-          "price": 0.1532439029,
+          "price": 0.0875201536,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2683,11 +2621,11 @@
           "canonical_slug": "z-ai/glm-5.3-flash-20260826",
           "variant_id": "z-ai/glm-5.3-flash",
           "provider": "OpenInference",
-          "discount_max": 0.501,
+          "discount_max": 0.6077,
           "discount_provider": "StreamLake",
-          "current_effective_price_in": 0.048,
+          "current_effective_price_in": 0.047076,
           "current_effective_price_out": 0.16,
-          "base_price": 0.076,
+          "base_price": 0.075307,
           "uptime_1d": 100.0,
           "reasoning_mandatory": true,
           "has_tools": true
@@ -2696,7 +2634,7 @@
           "ranking_key": "anthropic/claude-sonnet-5-20260630",
           "permaslug": "anthropic/claude-sonnet-5-20260630",
           "score": 71.5,
-          "price": 3.4853342733,
+          "price": 3.6898372227,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2718,7 +2656,7 @@
           "ranking_key": "openai/gpt-5.6-luna-20260709",
           "permaslug": "openai/gpt-5.6-luna-20260709",
           "score": 71.4,
-          "price": 0.1622220423,
+          "price": 0.1605491108,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2732,7 +2670,7 @@
           "current_effective_price_in": 0.1,
           "current_effective_price_out": 0.6,
           "base_price": 0.225,
-          "uptime_1d": 100.0,
+          "uptime_1d": 99.028,
           "reasoning_mandatory": false,
           "has_tools": true
         },
@@ -2740,7 +2678,7 @@
           "ranking_key": "meta/muse-spark-1.1-20260709",
           "permaslug": "meta/muse-spark-1.1-20260709",
           "score": 71.3,
-          "price": 0.7923661068,
+          "price": 0.5511037117,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2762,7 +2700,7 @@
           "ranking_key": "google/gemini-3.5-flash-20260519",
           "permaslug": "google/gemini-3.5-flash-20260519",
           "score": 70.1,
-          "price": 1.6155687799,
+          "price": 1.1977072098,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2784,7 +2722,7 @@
           "ranking_key": "google/gemini-3.6-flash-20260721",
           "permaslug": "google/gemini-3.6-flash-20260721",
           "score": 69.2,
-          "price": 0.599878525,
+          "price": 0.57020903,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2792,13 +2730,13 @@
           "join_status": "matched",
           "canonical_slug": "google/gemini-3.6-flash-20260721",
           "variant_id": "google/gemini-3.6-flash",
-          "provider": "Google",
+          "provider": "Google AI Studio",
           "discount_max": 0.0,
           "discount_provider": "Google",
           "current_effective_price_in": 0.375,
           "current_effective_price_out": 1.875,
           "base_price": 0.75,
-          "uptime_1d": 99.153,
+          "uptime_1d": 99.923,
           "reasoning_mandatory": true,
           "has_tools": true
         },
@@ -2806,7 +2744,7 @@
           "ranking_key": "deepseek/deepseek-v4-flash-20260731",
           "permaslug": "deepseek/deepseek-v4-flash-20260731",
           "score": 69.1,
-          "price": 0.1144448314,
+          "price": 0.0815451841,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2817,10 +2755,10 @@
           "provider": "OpenInference",
           "discount_max": 0.7,
           "discount_provider": "StreamLake",
-          "current_effective_price_in": 0.00392,
+          "current_effective_price_in": 0.01208,
           "current_effective_price_out": 0.12,
-          "base_price": 0.03294,
-          "uptime_1d": 98.956,
+          "base_price": 0.03906,
+          "uptime_1d": 95.764,
           "reasoning_mandatory": false,
           "has_tools": true
         },
@@ -2828,7 +2766,7 @@
           "ranking_key": "google/gemini-3.1-pro-preview-20260219",
           "permaslug": "google/gemini-3.1-pro-preview-20260219",
           "score": 68.8,
-          "price": 4.2322836371,
+          "price": 3.9926737782,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2842,7 +2780,7 @@
           "current_effective_price_in": 1.0,
           "current_effective_price_out": 6.0,
           "base_price": 2.25,
-          "uptime_1d": 99.866,
+          "uptime_1d": 99.883,
           "reasoning_mandatory": true,
           "has_tools": true
         },
@@ -2850,7 +2788,7 @@
           "ranking_key": "z-ai/glm-5.2-20260616",
           "permaslug": "z-ai/glm-5.2-20260616",
           "score": 68.8,
-          "price": 0.9114065094,
+          "price": 1.2369914624,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2858,13 +2796,13 @@
           "join_status": "matched",
           "canonical_slug": "z-ai/glm-5.2-20260616",
           "variant_id": "z-ai/glm-5.2",
-          "provider": "Relace",
+          "provider": "DeepInfra",
           "discount_max": 0.5621,
           "discount_provider": "StreamLake",
-          "current_effective_price_in": 0.25,
-          "current_effective_price_out": 1.5,
-          "base_price": 0.5625,
-          "uptime_1d": 100.0,
+          "current_effective_price_in": 0.45,
+          "current_effective_price_out": 1.44,
+          "base_price": 0.93,
+          "uptime_1d": 97.933,
           "reasoning_mandatory": false,
           "has_tools": true
         },
@@ -2872,7 +2810,7 @@
           "ranking_key": "deepseek/deepseek-v4-pro-20260813",
           "permaslug": "deepseek/deepseek-v4-pro-20260813",
           "score": 68.8,
-          "price": 0.603570793,
+          "price": 0.7147668823,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2894,7 +2832,7 @@
           "ranking_key": "qwen/qwen3.8-27b-20260814",
           "permaslug": "qwen/qwen3.8-27b-20260814",
           "score": 68.1,
-          "price": 0.1331326034,
+          "price": 0.2248339462,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2902,13 +2840,13 @@
           "join_status": "matched",
           "canonical_slug": "qwen/qwen3.8-27b-20260814",
           "variant_id": "qwen/qwen3.8-27b",
-          "provider": "Tenstorrent",
+          "provider": "Chutes",
           "discount_max": 0.25,
           "discount_provider": "DeepInfra",
-          "current_effective_price_in": 0.02,
-          "current_effective_price_out": 0.5,
-          "base_price": 0.14,
-          "uptime_1d": 99.055,
+          "current_effective_price_in": 0.039,
+          "current_effective_price_out": 1.25,
+          "base_price": 0.34175,
+          "uptime_1d": 99.931,
           "reasoning_mandatory": false,
           "has_tools": true
         },
@@ -2916,7 +2854,7 @@
           "ranking_key": "qwen/qwen3.7-max-20260520",
           "permaslug": "qwen/qwen3.7-max-20260520",
           "score": 66.0,
-          "price": 1.8522382499,
+          "price": 1.7716625725,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2938,7 +2876,7 @@
           "ranking_key": "deepseek/deepseek-v4-flash-vision-exp-20260821",
           "permaslug": "deepseek/deepseek-v4-flash-vision-exp-20260821",
           "score": 65.0,
-          "price": 0.2183127724,
+          "price": 0.1897241523,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2960,7 +2898,7 @@
           "ranking_key": "moonshotai/kimi-k2.6-20260420",
           "permaslug": "moonshotai/kimi-k2.6-20260420",
           "score": 61.8,
-          "price": 0.8403556375,
+          "price": 0.5840155605,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2974,7 +2912,7 @@
           "current_effective_price_in": 0.45,
           "current_effective_price_out": 1.95,
           "base_price": 0.825,
-          "uptime_1d": 100.0,
+          "uptime_1d": 99.699,
           "reasoning_mandatory": false,
           "has_tools": true
         },
@@ -2982,7 +2920,7 @@
           "ranking_key": "moonshotai/kimi-k2.7-code-20260612",
           "permaslug": "moonshotai/kimi-k2.7-code-20260612",
           "score": 60.8,
-          "price": 1.4994001049,
+          "price": 1.4809475845,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "coding",
@@ -2999,28 +2937,6 @@
           "uptime_1d": 100.0,
           "reasoning_mandatory": true,
           "has_tools": true
-        },
-        {
-          "ranking_key": "xiaomi/mimo-v2.5-pro-20260422",
-          "permaslug": "xiaomi/mimo-v2.5-pro-20260422",
-          "score": 60.2,
-          "price": 0.1272992521,
-          "price_metric": "costPerRequest",
-          "price_unit": "usd_per_100_requests",
-          "quality_metric": "coding",
-          "quality_label": "Coding Index Score",
-          "join_status": "matched",
-          "canonical_slug": "xiaomi/mimo-v2.5-pro-20260422",
-          "variant_id": "xiaomi/mimo-v2.5-pro",
-          "provider": "GMICloud",
-          "discount_max": 0.3,
-          "discount_provider": "GMICloud",
-          "current_effective_price_in": 0.3045,
-          "current_effective_price_out": 0.609,
-          "base_price": 0.54375,
-          "uptime_1d": 98.935,
-          "reasoning_mandatory": false,
-          "has_tools": true
         }
       ],
       "excluded": [
@@ -3034,6 +2950,10 @@
         },
         {
           "ranking_key": "anthropic/claude-4.6-sonnet-20260217",
+          "reason": "unmatched_family_join"
+        },
+        {
+          "ranking_key": "xiaomi/mimo-v2.5-pro-20260422",
           "reason": "unmatched_family_join"
         },
         {
@@ -3270,7 +3190,7 @@
         },
         {
           "ranking_key": "qwen/qwen3.5-9b-20260310",
-          "reason": "unmatched_family_join"
+          "reason": "below_quality_floor"
         },
         {
           "ranking_key": "cohere/command-a-03-2025",
@@ -3326,7 +3246,7 @@
         },
         {
           "ranking_key": "ibm-granite/granite-4.2-8b-20260831",
-          "reason": "unmatched_family_join"
+          "reason": "below_quality_floor"
         },
         {
           "ranking_key": "qwen/qwen3-235b-a22b-thinking-2507",
@@ -3505,37 +3425,37 @@
       "price_unit": "usd_per_100_requests",
       "candidate_count": 14,
       "raw_pareto_count": 6,
-      "stable_pareto_count": 8,
-      "unmatched_quality_rows": 52,
+      "stable_pareto_count": 7,
+      "unmatched_quality_rows": 51,
       "unpriced_rows": 1,
       "roles": {
         "cost_option": {
-          "ranking_key": "qwen/qwen3.8-27b-20260814",
-          "permaslug": "qwen/qwen3.8-27b-20260814",
-          "score": 45.8,
-          "price": 0.1331326034,
+          "ranking_key": "z-ai/glm-5.3-flash-20260826",
+          "permaslug": "z-ai/glm-5.3-flash-20260826",
+          "score": 50.9,
+          "price": 0.0875201536,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "agentic",
           "quality_label": "Agentic Index Score",
           "join_status": "matched",
-          "canonical_slug": "qwen/qwen3.8-27b-20260814",
-          "variant_id": "qwen/qwen3.8-27b",
-          "provider": "Tenstorrent",
-          "discount_max": 0.25,
-          "discount_provider": "DeepInfra",
-          "current_effective_price_in": 0.02,
-          "current_effective_price_out": 0.5,
-          "base_price": 0.14,
-          "uptime_1d": 99.055,
-          "reasoning_mandatory": false,
+          "canonical_slug": "z-ai/glm-5.3-flash-20260826",
+          "variant_id": "z-ai/glm-5.3-flash",
+          "provider": "OpenInference",
+          "discount_max": 0.6077,
+          "discount_provider": "StreamLake",
+          "current_effective_price_in": 0.047076,
+          "current_effective_price_out": 0.16,
+          "base_price": 0.075307,
+          "uptime_1d": 100.0,
+          "reasoning_mandatory": true,
           "has_tools": true
         },
         "quality_option": {
           "ranking_key": "anthropic/claude-fable-5.1-20260831",
           "permaslug": "anthropic/claude-fable-5.1-20260831",
           "score": 57.9,
-          "price": 24.2877547165,
+          "price": 24.141409028,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "agentic",
@@ -3557,7 +3477,7 @@
           "ranking_key": "qwen/qwen3.8-max-20260902",
           "permaslug": "qwen/qwen3.8-max-20260902",
           "score": 56.0,
-          "price": 3.1121826989,
+          "price": 3.2687100266,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "agentic",
@@ -3578,32 +3498,10 @@
       },
       "raw_pareto": [
         {
-          "ranking_key": "qwen/qwen3.8-27b-20260814",
-          "permaslug": "qwen/qwen3.8-27b-20260814",
-          "score": 45.8,
-          "price": 0.1331326034,
-          "price_metric": "costPerRequest",
-          "price_unit": "usd_per_100_requests",
-          "quality_metric": "agentic",
-          "quality_label": "Agentic Index Score",
-          "join_status": "matched",
-          "canonical_slug": "qwen/qwen3.8-27b-20260814",
-          "variant_id": "qwen/qwen3.8-27b",
-          "provider": "Tenstorrent",
-          "discount_max": 0.25,
-          "discount_provider": "DeepInfra",
-          "current_effective_price_in": 0.02,
-          "current_effective_price_out": 0.5,
-          "base_price": 0.14,
-          "uptime_1d": 99.055,
-          "reasoning_mandatory": false,
-          "has_tools": true
-        },
-        {
           "ranking_key": "z-ai/glm-5.3-flash-20260826",
           "permaslug": "z-ai/glm-5.3-flash-20260826",
           "score": 50.9,
-          "price": 0.1532439029,
+          "price": 0.0875201536,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "agentic",
@@ -3612,11 +3510,11 @@
           "canonical_slug": "z-ai/glm-5.3-flash-20260826",
           "variant_id": "z-ai/glm-5.3-flash",
           "provider": "OpenInference",
-          "discount_max": 0.501,
+          "discount_max": 0.6077,
           "discount_provider": "StreamLake",
-          "current_effective_price_in": 0.048,
+          "current_effective_price_in": 0.047076,
           "current_effective_price_out": 0.16,
-          "base_price": 0.076,
+          "base_price": 0.075307,
           "uptime_1d": 100.0,
           "reasoning_mandatory": true,
           "has_tools": true
@@ -3625,7 +3523,7 @@
           "ranking_key": "z-ai/glm-5.3-20260816",
           "permaslug": "z-ai/glm-5.3-20260816",
           "score": 53.1,
-          "price": 1.9774710302,
+          "price": 2.33873702,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "agentic",
@@ -3633,13 +3531,35 @@
           "join_status": "matched",
           "canonical_slug": "z-ai/glm-5.3-20260816",
           "variant_id": "z-ai/glm-5.3",
-          "provider": "Relace",
-          "discount_max": 0.5,
-          "discount_provider": "SiliconFlow",
+          "provider": "Wafer",
+          "discount_max": 0.55,
+          "discount_provider": "Novita",
           "current_effective_price_in": 0.079,
-          "current_effective_price_out": 1.0,
-          "base_price": 0.30925,
-          "uptime_1d": 100.0,
+          "current_effective_price_out": 1.4,
+          "base_price": 0.40925,
+          "uptime_1d": 99.931,
+          "reasoning_mandatory": true,
+          "has_tools": true
+        },
+        {
+          "ranking_key": "meta/muse-spark-1.3-20260902",
+          "permaslug": "meta/muse-spark-1.3-20260902",
+          "score": 55.5,
+          "price": 2.4146450749,
+          "price_metric": "costPerRequest",
+          "price_unit": "usd_per_100_requests",
+          "quality_metric": "agentic",
+          "quality_label": "Agentic Index Score",
+          "join_status": "matched",
+          "canonical_slug": "meta/muse-spark-1.3-20260902",
+          "variant_id": "meta/muse-spark-1.3",
+          "provider": "Meta",
+          "discount_max": 0.0,
+          "discount_provider": "Meta",
+          "current_effective_price_in": 1.25,
+          "current_effective_price_out": 4.25,
+          "base_price": 2.0,
+          "uptime_1d": 99.792,
           "reasoning_mandatory": true,
           "has_tools": true
         },
@@ -3647,7 +3567,7 @@
           "ranking_key": "qwen/qwen3.8-max-20260902",
           "permaslug": "qwen/qwen3.8-max-20260902",
           "score": 56.0,
-          "price": 3.1121826989,
+          "price": 3.2687100266,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "agentic",
@@ -3669,7 +3589,7 @@
           "ranking_key": "anthropic/claude-opus-5-20260723",
           "permaslug": "anthropic/claude-opus-5-20260723",
           "score": 56.5,
-          "price": 12.84642111,
+          "price": 14.5678518978,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "agentic",
@@ -3691,7 +3611,7 @@
           "ranking_key": "anthropic/claude-fable-5.1-20260831",
           "permaslug": "anthropic/claude-fable-5.1-20260831",
           "score": 57.9,
-          "price": 24.2877547165,
+          "price": 24.141409028,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "agentic",
@@ -3715,7 +3635,7 @@
           "ranking_key": "anthropic/claude-fable-5.1-20260831",
           "permaslug": "anthropic/claude-fable-5.1-20260831",
           "score": 57.9,
-          "price": 24.2877547165,
+          "price": 24.141409028,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "agentic",
@@ -3737,7 +3657,7 @@
           "ranking_key": "anthropic/claude-opus-5-20260723",
           "permaslug": "anthropic/claude-opus-5-20260723",
           "score": 56.5,
-          "price": 12.84642111,
+          "price": 14.5678518978,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "agentic",
@@ -3759,7 +3679,7 @@
           "ranking_key": "qwen/qwen3.8-max-20260902",
           "permaslug": "qwen/qwen3.8-max-20260902",
           "score": 56.0,
-          "price": 3.1121826989,
+          "price": 3.2687100266,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "agentic",
@@ -3781,7 +3701,7 @@
           "ranking_key": "meta/muse-spark-1.3-20260902",
           "permaslug": "meta/muse-spark-1.3-20260902",
           "score": 55.5,
-          "price": 3.2417732532,
+          "price": 2.4146450749,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "agentic",
@@ -3795,7 +3715,7 @@
           "current_effective_price_in": 1.25,
           "current_effective_price_out": 4.25,
           "base_price": 2.0,
-          "uptime_1d": 99.722,
+          "uptime_1d": 99.792,
           "reasoning_mandatory": true,
           "has_tools": true
         },
@@ -3803,7 +3723,7 @@
           "ranking_key": "z-ai/glm-5.3-20260816",
           "permaslug": "z-ai/glm-5.3-20260816",
           "score": 53.1,
-          "price": 1.9774710302,
+          "price": 2.33873702,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "agentic",
@@ -3811,13 +3731,13 @@
           "join_status": "matched",
           "canonical_slug": "z-ai/glm-5.3-20260816",
           "variant_id": "z-ai/glm-5.3",
-          "provider": "Relace",
-          "discount_max": 0.5,
-          "discount_provider": "SiliconFlow",
+          "provider": "Wafer",
+          "discount_max": 0.55,
+          "discount_provider": "Novita",
           "current_effective_price_in": 0.079,
-          "current_effective_price_out": 1.0,
-          "base_price": 0.30925,
-          "uptime_1d": 100.0,
+          "current_effective_price_out": 1.4,
+          "base_price": 0.40925,
+          "uptime_1d": 99.931,
           "reasoning_mandatory": true,
           "has_tools": true
         },
@@ -3825,7 +3745,7 @@
           "ranking_key": "z-ai/glm-5.3-flash-20260826",
           "permaslug": "z-ai/glm-5.3-flash-20260826",
           "score": 50.9,
-          "price": 0.1532439029,
+          "price": 0.0875201536,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "agentic",
@@ -3834,255 +3754,11 @@
           "canonical_slug": "z-ai/glm-5.3-flash-20260826",
           "variant_id": "z-ai/glm-5.3-flash",
           "provider": "OpenInference",
-          "discount_max": 0.501,
+          "discount_max": 0.6077,
           "discount_provider": "StreamLake",
-          "current_effective_price_in": 0.048,
+          "current_effective_price_in": 0.047076,
           "current_effective_price_out": 0.16,
-          "base_price": 0.076,
-          "uptime_1d": 100.0,
-          "reasoning_mandatory": true,
-          "has_tools": true
-        },
-        {
-          "ranking_key": "qwen/qwen3.8-2.4t-a95b-20260812",
-          "permaslug": "qwen/qwen3.8-2.4t-a95b-20260812",
-          "score": 50.1,
-          "price": 1.7956541856,
-          "price_metric": "costPerRequest",
-          "price_unit": "usd_per_100_requests",
-          "quality_metric": "agentic",
-          "quality_label": "Agentic Index Score",
-          "join_status": "matched",
-          "canonical_slug": "qwen/qwen3.8-2.4t-a95b-20260812",
-          "variant_id": "qwen/qwen3.8-2.4t-a95b",
-          "provider": "Novita",
-          "discount_max": 0.2,
-          "discount_provider": "Venice",
-          "current_effective_price_in": 2.0,
-          "current_effective_price_out": 6.0,
-          "base_price": 3.0,
-          "uptime_1d": 100.0,
-          "reasoning_mandatory": true,
-          "has_tools": true
-        },
-        {
-          "ranking_key": "qwen/qwen3.8-27b-20260814",
-          "permaslug": "qwen/qwen3.8-27b-20260814",
-          "score": 45.8,
-          "price": 0.1331326034,
-          "price_metric": "costPerRequest",
-          "price_unit": "usd_per_100_requests",
-          "quality_metric": "agentic",
-          "quality_label": "Agentic Index Score",
-          "join_status": "matched",
-          "canonical_slug": "qwen/qwen3.8-27b-20260814",
-          "variant_id": "qwen/qwen3.8-27b",
-          "provider": "Tenstorrent",
-          "discount_max": 0.25,
-          "discount_provider": "DeepInfra",
-          "current_effective_price_in": 0.02,
-          "current_effective_price_out": 0.5,
-          "base_price": 0.14,
-          "uptime_1d": 99.055,
-          "reasoning_mandatory": false,
-          "has_tools": true
-        }
-      ],
-      "candidates": [
-        {
-          "ranking_key": "anthropic/claude-fable-5.1-20260831",
-          "permaslug": "anthropic/claude-fable-5.1-20260831",
-          "score": 57.9,
-          "price": 24.2877547165,
-          "price_metric": "costPerRequest",
-          "price_unit": "usd_per_100_requests",
-          "quality_metric": "agentic",
-          "quality_label": "Agentic Index Score",
-          "join_status": "matched",
-          "canonical_slug": "anthropic/claude-fable-5.1-20260831",
-          "variant_id": "anthropic/claude-fable-5.1",
-          "provider": "Azure",
-          "discount_max": 0.0,
-          "discount_provider": "Azure",
-          "current_effective_price_in": 10.0,
-          "current_effective_price_out": 50.0,
-          "base_price": 20.0,
-          "uptime_1d": 100.0,
-          "reasoning_mandatory": true,
-          "has_tools": true
-        },
-        {
-          "ranking_key": "anthropic/claude-opus-5-20260723",
-          "permaslug": "anthropic/claude-opus-5-20260723",
-          "score": 56.5,
-          "price": 12.84642111,
-          "price_metric": "costPerRequest",
-          "price_unit": "usd_per_100_requests",
-          "quality_metric": "agentic",
-          "quality_label": "Agentic Index Score",
-          "join_status": "matched",
-          "canonical_slug": "anthropic/claude-opus-5-20260723",
-          "variant_id": "anthropic/claude-opus-5",
-          "provider": "Claude Platform on AWS",
-          "discount_max": 0.0,
-          "discount_provider": "Claude Platform on AWS",
-          "current_effective_price_in": 5.0,
-          "current_effective_price_out": 25.0,
-          "base_price": 10.0,
-          "uptime_1d": 100.0,
-          "reasoning_mandatory": false,
-          "has_tools": true
-        },
-        {
-          "ranking_key": "qwen/qwen3.8-max-20260902",
-          "permaslug": "qwen/qwen3.8-max-20260902",
-          "score": 56.0,
-          "price": 3.1121826989,
-          "price_metric": "costPerRequest",
-          "price_unit": "usd_per_100_requests",
-          "quality_metric": "agentic",
-          "quality_label": "Agentic Index Score",
-          "join_status": "matched",
-          "canonical_slug": "qwen/qwen3.8-max-20260902",
-          "variant_id": "qwen/qwen3.8-max-0902",
-          "provider": "Alibaba",
-          "discount_max": 0.0,
-          "discount_provider": "Alibaba",
-          "current_effective_price_in": 2.0,
-          "current_effective_price_out": 6.0,
-          "base_price": 3.0,
-          "uptime_1d": 100.0,
-          "reasoning_mandatory": true,
-          "has_tools": true
-        },
-        {
-          "ranking_key": "meta/muse-spark-1.3-20260902",
-          "permaslug": "meta/muse-spark-1.3-20260902",
-          "score": 55.5,
-          "price": 3.2417732532,
-          "price_metric": "costPerRequest",
-          "price_unit": "usd_per_100_requests",
-          "quality_metric": "agentic",
-          "quality_label": "Agentic Index Score",
-          "join_status": "matched",
-          "canonical_slug": "meta/muse-spark-1.3-20260902",
-          "variant_id": "meta/muse-spark-1.3",
-          "provider": "Meta",
-          "discount_max": 0.0,
-          "discount_provider": "Meta",
-          "current_effective_price_in": 1.25,
-          "current_effective_price_out": 4.25,
-          "base_price": 2.0,
-          "uptime_1d": 99.722,
-          "reasoning_mandatory": true,
-          "has_tools": true
-        },
-        {
-          "ranking_key": "z-ai/glm-5.3-20260816",
-          "permaslug": "z-ai/glm-5.3-20260816",
-          "score": 53.1,
-          "price": 1.9774710302,
-          "price_metric": "costPerRequest",
-          "price_unit": "usd_per_100_requests",
-          "quality_metric": "agentic",
-          "quality_label": "Agentic Index Score",
-          "join_status": "matched",
-          "canonical_slug": "z-ai/glm-5.3-20260816",
-          "variant_id": "z-ai/glm-5.3",
-          "provider": "Relace",
-          "discount_max": 0.5,
-          "discount_provider": "SiliconFlow",
-          "current_effective_price_in": 0.079,
-          "current_effective_price_out": 1.0,
-          "base_price": 0.30925,
-          "uptime_1d": 100.0,
-          "reasoning_mandatory": true,
-          "has_tools": true
-        },
-        {
-          "ranking_key": "x-ai/grok-4.6-20260810",
-          "permaslug": "x-ai/grok-4.6-20260810",
-          "score": 53.0,
-          "price": 4.1805241994,
-          "price_metric": "costPerRequest",
-          "price_unit": "usd_per_100_requests",
-          "quality_metric": "agentic",
-          "quality_label": "Agentic Index Score",
-          "join_status": "matched",
-          "canonical_slug": "x-ai/grok-4.6-20260810",
-          "variant_id": "x-ai/grok-4.6",
-          "provider": "xAI",
-          "discount_max": 0.0,
-          "discount_provider": "xAI",
-          "current_effective_price_in": 2.0,
-          "current_effective_price_out": 6.0,
-          "base_price": 3.0,
-          "uptime_1d": 100.0,
-          "reasoning_mandatory": true,
-          "has_tools": true
-        },
-        {
-          "ranking_key": "openai/gpt-6-astra-20260903",
-          "permaslug": "openai/gpt-6-astra-20260903",
-          "score": 51.0,
-          "price": 16.180308141,
-          "price_metric": "costPerRequest",
-          "price_unit": "usd_per_100_requests",
-          "quality_metric": "agentic",
-          "quality_label": "Agentic Index Score",
-          "join_status": "matched",
-          "canonical_slug": "openai/gpt-6-astra-20260903",
-          "variant_id": "openai/gpt-6-astra",
-          "provider": "OpenAI",
-          "discount_max": 0.0,
-          "discount_provider": "OpenAI",
-          "current_effective_price_in": 5.0,
-          "current_effective_price_out": 25.0,
-          "base_price": 10.0,
-          "uptime_1d": 99.833,
-          "reasoning_mandatory": true,
-          "has_tools": true
-        },
-        {
-          "ranking_key": "z-ai/glm-5.3-flash-20260826",
-          "permaslug": "z-ai/glm-5.3-flash-20260826",
-          "score": 50.9,
-          "price": 0.1532439029,
-          "price_metric": "costPerRequest",
-          "price_unit": "usd_per_100_requests",
-          "quality_metric": "agentic",
-          "quality_label": "Agentic Index Score",
-          "join_status": "matched",
-          "canonical_slug": "z-ai/glm-5.3-flash-20260826",
-          "variant_id": "z-ai/glm-5.3-flash",
-          "provider": "OpenInference",
-          "discount_max": 0.501,
-          "discount_provider": "StreamLake",
-          "current_effective_price_in": 0.048,
-          "current_effective_price_out": 0.16,
-          "base_price": 0.076,
-          "uptime_1d": 100.0,
-          "reasoning_mandatory": true,
-          "has_tools": true
-        },
-        {
-          "ranking_key": "anthropic/claude-5-fable-20260609",
-          "permaslug": "anthropic/claude-5-fable-20260609",
-          "score": 50.7,
-          "price": 29.2142693572,
-          "price_metric": "costPerRequest",
-          "price_unit": "usd_per_100_requests",
-          "quality_metric": "agentic",
-          "quality_label": "Agentic Index Score",
-          "join_status": "matched",
-          "canonical_slug": "anthropic/claude-5-fable-20260609",
-          "variant_id": "anthropic/claude-fable-5",
-          "provider": "Claude Platform on AWS",
-          "discount_max": 0.0,
-          "discount_provider": "Claude Platform on AWS",
-          "current_effective_price_in": 10.0,
-          "current_effective_price_out": 50.0,
-          "base_price": 20.0,
+          "base_price": 0.075307,
           "uptime_1d": 100.0,
           "reasoning_mandatory": true,
           "has_tools": true
@@ -4091,7 +3767,7 @@
           "ranking_key": "openai/gpt-5.6-sol-20260709",
           "permaslug": "openai/gpt-5.6-sol-20260709",
           "score": 50.2,
-          "price": 5.0632756378,
+          "price": 2.1679077303,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "agentic",
@@ -4105,7 +3781,229 @@
           "current_effective_price_in": 2.0,
           "current_effective_price_out": 10.0,
           "base_price": 4.0,
-          "uptime_1d": 99.836,
+          "uptime_1d": 100.0,
+          "reasoning_mandatory": false,
+          "has_tools": true
+        }
+      ],
+      "candidates": [
+        {
+          "ranking_key": "anthropic/claude-fable-5.1-20260831",
+          "permaslug": "anthropic/claude-fable-5.1-20260831",
+          "score": 57.9,
+          "price": 24.141409028,
+          "price_metric": "costPerRequest",
+          "price_unit": "usd_per_100_requests",
+          "quality_metric": "agentic",
+          "quality_label": "Agentic Index Score",
+          "join_status": "matched",
+          "canonical_slug": "anthropic/claude-fable-5.1-20260831",
+          "variant_id": "anthropic/claude-fable-5.1",
+          "provider": "Azure",
+          "discount_max": 0.0,
+          "discount_provider": "Azure",
+          "current_effective_price_in": 10.0,
+          "current_effective_price_out": 50.0,
+          "base_price": 20.0,
+          "uptime_1d": 100.0,
+          "reasoning_mandatory": true,
+          "has_tools": true
+        },
+        {
+          "ranking_key": "anthropic/claude-opus-5-20260723",
+          "permaslug": "anthropic/claude-opus-5-20260723",
+          "score": 56.5,
+          "price": 14.5678518978,
+          "price_metric": "costPerRequest",
+          "price_unit": "usd_per_100_requests",
+          "quality_metric": "agentic",
+          "quality_label": "Agentic Index Score",
+          "join_status": "matched",
+          "canonical_slug": "anthropic/claude-opus-5-20260723",
+          "variant_id": "anthropic/claude-opus-5",
+          "provider": "Claude Platform on AWS",
+          "discount_max": 0.0,
+          "discount_provider": "Claude Platform on AWS",
+          "current_effective_price_in": 5.0,
+          "current_effective_price_out": 25.0,
+          "base_price": 10.0,
+          "uptime_1d": 100.0,
+          "reasoning_mandatory": false,
+          "has_tools": true
+        },
+        {
+          "ranking_key": "qwen/qwen3.8-max-20260902",
+          "permaslug": "qwen/qwen3.8-max-20260902",
+          "score": 56.0,
+          "price": 3.2687100266,
+          "price_metric": "costPerRequest",
+          "price_unit": "usd_per_100_requests",
+          "quality_metric": "agentic",
+          "quality_label": "Agentic Index Score",
+          "join_status": "matched",
+          "canonical_slug": "qwen/qwen3.8-max-20260902",
+          "variant_id": "qwen/qwen3.8-max-0902",
+          "provider": "Alibaba",
+          "discount_max": 0.0,
+          "discount_provider": "Alibaba",
+          "current_effective_price_in": 2.0,
+          "current_effective_price_out": 6.0,
+          "base_price": 3.0,
+          "uptime_1d": 100.0,
+          "reasoning_mandatory": true,
+          "has_tools": true
+        },
+        {
+          "ranking_key": "meta/muse-spark-1.3-20260902",
+          "permaslug": "meta/muse-spark-1.3-20260902",
+          "score": 55.5,
+          "price": 2.4146450749,
+          "price_metric": "costPerRequest",
+          "price_unit": "usd_per_100_requests",
+          "quality_metric": "agentic",
+          "quality_label": "Agentic Index Score",
+          "join_status": "matched",
+          "canonical_slug": "meta/muse-spark-1.3-20260902",
+          "variant_id": "meta/muse-spark-1.3",
+          "provider": "Meta",
+          "discount_max": 0.0,
+          "discount_provider": "Meta",
+          "current_effective_price_in": 1.25,
+          "current_effective_price_out": 4.25,
+          "base_price": 2.0,
+          "uptime_1d": 99.792,
+          "reasoning_mandatory": true,
+          "has_tools": true
+        },
+        {
+          "ranking_key": "z-ai/glm-5.3-20260816",
+          "permaslug": "z-ai/glm-5.3-20260816",
+          "score": 53.1,
+          "price": 2.33873702,
+          "price_metric": "costPerRequest",
+          "price_unit": "usd_per_100_requests",
+          "quality_metric": "agentic",
+          "quality_label": "Agentic Index Score",
+          "join_status": "matched",
+          "canonical_slug": "z-ai/glm-5.3-20260816",
+          "variant_id": "z-ai/glm-5.3",
+          "provider": "Wafer",
+          "discount_max": 0.55,
+          "discount_provider": "Novita",
+          "current_effective_price_in": 0.079,
+          "current_effective_price_out": 1.4,
+          "base_price": 0.40925,
+          "uptime_1d": 99.931,
+          "reasoning_mandatory": true,
+          "has_tools": true
+        },
+        {
+          "ranking_key": "x-ai/grok-4.6-20260810",
+          "permaslug": "x-ai/grok-4.6-20260810",
+          "score": 53.0,
+          "price": 4.1642542731,
+          "price_metric": "costPerRequest",
+          "price_unit": "usd_per_100_requests",
+          "quality_metric": "agentic",
+          "quality_label": "Agentic Index Score",
+          "join_status": "matched",
+          "canonical_slug": "x-ai/grok-4.6-20260810",
+          "variant_id": "x-ai/grok-4.6",
+          "provider": "xAI",
+          "discount_max": 0.0,
+          "discount_provider": "xAI",
+          "current_effective_price_in": 2.0,
+          "current_effective_price_out": 6.0,
+          "base_price": 3.0,
+          "uptime_1d": 99.792,
+          "reasoning_mandatory": true,
+          "has_tools": true
+        },
+        {
+          "ranking_key": "openai/gpt-6-astra-20260903",
+          "permaslug": "openai/gpt-6-astra-20260903",
+          "score": 51.0,
+          "price": 18.8517414082,
+          "price_metric": "costPerRequest",
+          "price_unit": "usd_per_100_requests",
+          "quality_metric": "agentic",
+          "quality_label": "Agentic Index Score",
+          "join_status": "matched",
+          "canonical_slug": "openai/gpt-6-astra-20260903",
+          "variant_id": "openai/gpt-6-astra",
+          "provider": "OpenAI",
+          "discount_max": 0.0,
+          "discount_provider": "OpenAI",
+          "current_effective_price_in": 5.0,
+          "current_effective_price_out": 25.0,
+          "base_price": 10.0,
+          "uptime_1d": 99.815,
+          "reasoning_mandatory": true,
+          "has_tools": true
+        },
+        {
+          "ranking_key": "z-ai/glm-5.3-flash-20260826",
+          "permaslug": "z-ai/glm-5.3-flash-20260826",
+          "score": 50.9,
+          "price": 0.0875201536,
+          "price_metric": "costPerRequest",
+          "price_unit": "usd_per_100_requests",
+          "quality_metric": "agentic",
+          "quality_label": "Agentic Index Score",
+          "join_status": "matched",
+          "canonical_slug": "z-ai/glm-5.3-flash-20260826",
+          "variant_id": "z-ai/glm-5.3-flash",
+          "provider": "OpenInference",
+          "discount_max": 0.6077,
+          "discount_provider": "StreamLake",
+          "current_effective_price_in": 0.047076,
+          "current_effective_price_out": 0.16,
+          "base_price": 0.075307,
+          "uptime_1d": 100.0,
+          "reasoning_mandatory": true,
+          "has_tools": true
+        },
+        {
+          "ranking_key": "anthropic/claude-5-fable-20260609",
+          "permaslug": "anthropic/claude-5-fable-20260609",
+          "score": 50.7,
+          "price": 25.1642130152,
+          "price_metric": "costPerRequest",
+          "price_unit": "usd_per_100_requests",
+          "quality_metric": "agentic",
+          "quality_label": "Agentic Index Score",
+          "join_status": "matched",
+          "canonical_slug": "anthropic/claude-5-fable-20260609",
+          "variant_id": "anthropic/claude-fable-5",
+          "provider": "Azure",
+          "discount_max": 0.0,
+          "discount_provider": "Claude Platform on AWS",
+          "current_effective_price_in": 10.0,
+          "current_effective_price_out": 50.0,
+          "base_price": 20.0,
+          "uptime_1d": 100.0,
+          "reasoning_mandatory": true,
+          "has_tools": true
+        },
+        {
+          "ranking_key": "openai/gpt-5.6-sol-20260709",
+          "permaslug": "openai/gpt-5.6-sol-20260709",
+          "score": 50.2,
+          "price": 2.1679077303,
+          "price_metric": "costPerRequest",
+          "price_unit": "usd_per_100_requests",
+          "quality_metric": "agentic",
+          "quality_label": "Agentic Index Score",
+          "join_status": "matched",
+          "canonical_slug": "openai/gpt-5.6-sol-20260709",
+          "variant_id": "openai/gpt-5.6-sol",
+          "provider": "OpenAI",
+          "discount_max": 0.0,
+          "discount_provider": "OpenAI",
+          "current_effective_price_in": 2.0,
+          "current_effective_price_out": 10.0,
+          "base_price": 4.0,
+          "uptime_1d": 100.0,
           "reasoning_mandatory": false,
           "has_tools": true
         },
@@ -4113,7 +4011,7 @@
           "ranking_key": "qwen/qwen3.8-2.4t-a95b-20260812",
           "permaslug": "qwen/qwen3.8-2.4t-a95b-20260812",
           "score": 50.1,
-          "price": 1.7956541856,
+          "price": 4.9608949183,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "agentic",
@@ -4135,7 +4033,7 @@
           "ranking_key": "moonshotai/kimi-k3-20260715",
           "permaslug": "moonshotai/kimi-k3-20260715",
           "score": 50.0,
-          "price": 5.5475237709,
+          "price": 3.392947534,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "agentic",
@@ -4149,7 +4047,7 @@
           "current_effective_price_in": 0.8,
           "current_effective_price_out": 3.0,
           "base_price": 1.35,
-          "uptime_1d": 99.86,
+          "uptime_1d": 98.887,
           "reasoning_mandatory": false,
           "has_tools": true
         },
@@ -4157,7 +4055,7 @@
           "ranking_key": "deepseek/deepseek-v4-flash-vision-exp-20260821",
           "permaslug": "deepseek/deepseek-v4-flash-vision-exp-20260821",
           "score": 47.5,
-          "price": 0.2183127724,
+          "price": 0.1897241523,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "agentic",
@@ -4179,7 +4077,7 @@
           "ranking_key": "qwen/qwen3.8-27b-20260814",
           "permaslug": "qwen/qwen3.8-27b-20260814",
           "score": 45.8,
-          "price": 0.1331326034,
+          "price": 0.2248339462,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "agentic",
@@ -4187,13 +4085,13 @@
           "join_status": "matched",
           "canonical_slug": "qwen/qwen3.8-27b-20260814",
           "variant_id": "qwen/qwen3.8-27b",
-          "provider": "Tenstorrent",
+          "provider": "Chutes",
           "discount_max": 0.25,
           "discount_provider": "DeepInfra",
-          "current_effective_price_in": 0.02,
-          "current_effective_price_out": 0.5,
-          "base_price": 0.14,
-          "uptime_1d": 99.055,
+          "current_effective_price_in": 0.039,
+          "current_effective_price_out": 1.25,
+          "base_price": 0.34175,
+          "uptime_1d": 99.931,
           "reasoning_mandatory": false,
           "has_tools": true
         }
@@ -4321,7 +4219,7 @@
         },
         {
           "ranking_key": "xiaomi/mimo-v2.5-pro-20260422",
-          "reason": "below_quality_floor"
+          "reason": "unmatched_family_join"
         },
         {
           "ranking_key": "moonshotai/kimi-k2.7-code-20260612",
@@ -4460,11 +4358,11 @@
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "google/gemini-3.1-flash-lite-preview-20260303",
+          "ranking_key": "google/gemini-2.5-pro",
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "google/gemini-2.5-pro",
+          "ranking_key": "google/gemini-3.1-flash-lite-preview-20260303",
           "reason": "unmatched_family_join"
         },
         {
@@ -4473,7 +4371,7 @@
         },
         {
           "ranking_key": "ibm-granite/granite-4.2-8b-20260831",
-          "reason": "unmatched_family_join"
+          "reason": "below_quality_floor"
         },
         {
           "ranking_key": "qwen/qwen3-235b-a22b-thinking-2507",
@@ -4485,7 +4383,7 @@
         },
         {
           "ranking_key": "qwen/qwen3.5-9b-20260310",
-          "reason": "unmatched_family_join"
+          "reason": "below_quality_floor"
         },
         {
           "ranking_key": "openai/gpt-oss-20b",
@@ -4572,11 +4470,11 @@
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "google/gemma-3-27b-it",
+          "ranking_key": "google/gemma-3-12b-it",
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "google/gemma-3-12b-it",
+          "ranking_key": "google/gemma-3-27b-it",
           "reason": "unmatched_family_join"
         }
       ],
@@ -4593,14 +4491,14 @@
       "candidate_count": 2,
       "raw_pareto_count": 2,
       "stable_pareto_count": 2,
-      "unmatched_quality_rows": 274,
-      "unpriced_rows": 3,
+      "unmatched_quality_rows": 272,
+      "unpriced_rows": 4,
       "roles": {
         "cost_option": {
           "ranking_key": "anthropic/claude-sonnet-5.5-20260928",
           "permaslug": "anthropic/claude-sonnet-5.5-20260928",
           "score": 56.0,
-          "price": 2.8889984205,
+          "price": 3.6290915259,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -4622,7 +4520,7 @@
           "ranking_key": "anthropic/claude-opus-5.5-20260921",
           "permaslug": "anthropic/claude-opus-5.5-20260921",
           "score": 57.6,
-          "price": 9.4895548112,
+          "price": 11.1945096043,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -4644,7 +4542,7 @@
           "ranking_key": "anthropic/claude-sonnet-5.5-20260928",
           "permaslug": "anthropic/claude-sonnet-5.5-20260928",
           "score": 56.0,
-          "price": 2.8889984205,
+          "price": 3.6290915259,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -4668,7 +4566,7 @@
           "ranking_key": "anthropic/claude-sonnet-5.5-20260928",
           "permaslug": "anthropic/claude-sonnet-5.5-20260928",
           "score": 56.0,
-          "price": 2.8889984205,
+          "price": 3.6290915259,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -4690,7 +4588,7 @@
           "ranking_key": "anthropic/claude-opus-5.5-20260921",
           "permaslug": "anthropic/claude-opus-5.5-20260921",
           "score": 57.6,
-          "price": 9.4895548112,
+          "price": 11.1945096043,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -4714,7 +4612,7 @@
           "ranking_key": "anthropic/claude-opus-5.5-20260921",
           "permaslug": "anthropic/claude-opus-5.5-20260921",
           "score": 57.6,
-          "price": 9.4895548112,
+          "price": 11.1945096043,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -4736,7 +4634,7 @@
           "ranking_key": "anthropic/claude-sonnet-5.5-20260928",
           "permaslug": "anthropic/claude-sonnet-5.5-20260928",
           "score": 56.0,
-          "price": 2.8889984205,
+          "price": 3.6290915259,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -4760,7 +4658,7 @@
           "ranking_key": "anthropic/claude-opus-5.5-20260921",
           "permaslug": "anthropic/claude-opus-5.5-20260921",
           "score": 57.6,
-          "price": 9.4895548112,
+          "price": 11.1945096043,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -4782,7 +4680,7 @@
           "ranking_key": "anthropic/claude-sonnet-5.5-20260928",
           "permaslug": "anthropic/claude-sonnet-5.5-20260928",
           "score": 56.0,
-          "price": 2.8889984205,
+          "price": 3.6290915259,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -4875,6 +4773,10 @@
           "reason": "below_quality_floor"
         },
         {
+          "ranking_key": "minimax/minimax-m3.1-flash-20261019",
+          "reason": "missing_cost_per_request"
+        },
+        {
           "ranking_key": "openai/gpt-5.6-terra-20260709",
           "reason": "below_quality_floor"
         },
@@ -4912,7 +4814,7 @@
         },
         {
           "ranking_key": "deepseek/deepseek-v4.1-flash-20261017",
-          "reason": "unmatched_family_join"
+          "reason": "below_quality_floor"
         },
         {
           "ranking_key": "openai/gpt-5.4-20260305",
@@ -4963,11 +4865,11 @@
           "reason": "below_quality_floor"
         },
         {
-          "ranking_key": "meta/muse-spark-1.1-20260709",
+          "ranking_key": "qwen/qwen3.8-27b-20260814",
           "reason": "below_quality_floor"
         },
         {
-          "ranking_key": "qwen/qwen3.8-27b-20260814",
+          "ranking_key": "meta/muse-spark-1.1-20260709",
           "reason": "below_quality_floor"
         },
         {
@@ -5068,7 +4970,7 @@
         },
         {
           "ranking_key": "xiaomi/mimo-v2.5-pro-20260422",
-          "reason": "below_quality_floor"
+          "reason": "unmatched_family_join"
         },
         {
           "ranking_key": "moonshotai/kimi-k2.7-code-20260612",
@@ -5155,15 +5057,15 @@
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "minimax/minimax-m2.5-20260211",
-          "reason": "unmatched_family_join"
-        },
-        {
           "ranking_key": "minimax/minimax-m2.7-20260318",
           "reason": "unmatched_family_join"
         },
         {
           "ranking_key": "anthropic/claude-4.1-opus-20250805",
+          "reason": "unmatched_family_join"
+        },
+        {
+          "ranking_key": "minimax/minimax-m2.5-20260211",
           "reason": "unmatched_family_join"
         },
         {
@@ -5400,7 +5302,7 @@
         },
         {
           "ranking_key": "qwen/qwen3.5-9b-20260310",
-          "reason": "unmatched_family_join"
+          "reason": "below_quality_floor"
         },
         {
           "ranking_key": "deepseek/deepseek-r1-0528",
@@ -5504,7 +5406,7 @@
         },
         {
           "ranking_key": "ibm-granite/granite-4.2-8b-20260831",
-          "reason": "unmatched_family_join"
+          "reason": "below_quality_floor"
         },
         {
           "ranking_key": "z-ai/glm-4.5-air",
@@ -5667,12 +5569,12 @@
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "deepseek/deepseek-r1-distill-qwen-32b",
-          "reason": "unmatched_family_join"
-        },
-        {
           "ranking_key": "liquid/lfm-2.5-2.6b-20260811",
           "reason": "missing_cost_per_request"
+        },
+        {
+          "ranking_key": "deepseek/deepseek-r1-distill-qwen-32b",
+          "reason": "unmatched_family_join"
         },
         {
           "ranking_key": "openai/gpt-4o-2024-11-20",
@@ -5923,15 +5825,15 @@
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "meta-llama/llama-3.2-90b-vision-instruct",
-          "reason": "unmatched_family_join"
-        },
-        {
           "ranking_key": "perplexity/r1-1776",
           "reason": "unmatched_family_join"
         },
         {
           "ranking_key": "qwen/qwen-turbo-2024-11-01",
+          "reason": "unmatched_family_join"
+        },
+        {
+          "ranking_key": "meta-llama/llama-3.2-90b-vision-instruct",
           "reason": "unmatched_family_join"
         },
         {
@@ -6015,11 +5917,11 @@
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "meta-llama/llama-3.2-3b-instruct",
+          "ranking_key": "qwen/qwen-110b-chat",
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "qwen/qwen-110b-chat",
+          "ranking_key": "meta-llama/llama-3.2-3b-instruct",
           "reason": "unmatched_family_join"
         },
         {
@@ -6039,15 +5941,15 @@
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "openai/gpt-3.5-turbo",
-          "reason": "unmatched_family_join"
-        },
-        {
           "ranking_key": "deepseek/deepseek-r1-distill-qwen-1.5b",
           "reason": "unmatched_family_join"
         },
         {
           "ranking_key": "meta-llama/llama-3-70b-instruct",
+          "reason": "unmatched_family_join"
+        },
+        {
+          "ranking_key": "openai/gpt-3.5-turbo",
           "reason": "unmatched_family_join"
         },
         {
@@ -6079,11 +5981,11 @@
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "databricks/dbrx-instruct",
+          "ranking_key": "openchat/openchat-7b",
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "openchat/openchat-7b",
+          "ranking_key": "databricks/dbrx-instruct",
           "reason": "unmatched_family_join"
         },
         {
@@ -6175,15 +6077,15 @@
           "reason": "unmatched_family_join"
         },
         {
+          "ranking_key": "google/gemma-3n-e2b-it",
+          "reason": "unmatched_family_join"
+        },
+        {
           "ranking_key": "meta-llama/llama-3.2-1b-instruct",
           "reason": "unmatched_family_join"
         },
         {
           "ranking_key": "qwen/qwen3-0.6b-04-28",
-          "reason": "unmatched_family_join"
-        },
-        {
-          "ranking_key": "google/gemma-3n-e2b-it",
           "reason": "unmatched_family_join"
         },
         {
@@ -6206,16 +6108,16 @@
       "price_metric": "costPerRequest",
       "price_unit": "usd_per_100_requests",
       "candidate_count": 4,
-      "raw_pareto_count": 3,
+      "raw_pareto_count": 4,
       "stable_pareto_count": 4,
-      "unmatched_quality_rows": 274,
-      "unpriced_rows": 3,
+      "unmatched_quality_rows": 272,
+      "unpriced_rows": 4,
       "roles": {
         "cost_option": {
           "ranking_key": "xiaomi/mimo-v2.6-pro-20260921",
           "permaslug": "xiaomi/mimo-v2.6-pro-20260921",
           "score": 46.3,
-          "price": 0.3169486582,
+          "price": 0.3174774692,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -6224,12 +6126,12 @@
           "canonical_slug": "xiaomi/mimo-v2.6-pro-20260921",
           "variant_id": "xiaomi/mimo-v2.6-pro",
           "provider": "DeepInfra",
-          "discount_max": 0.0,
+          "discount_max": 0.1,
           "discount_provider": "DeepInfra",
-          "current_effective_price_in": 0.43,
-          "current_effective_price_out": 0.87,
+          "current_effective_price_in": 0.387,
+          "current_effective_price_out": 0.783,
           "base_price": 0.54,
-          "uptime_1d": 100.0,
+          "uptime_1d": 99.375,
           "reasoning_mandatory": false,
           "has_tools": true
         },
@@ -6237,7 +6139,7 @@
           "ranking_key": "anthropic/claude-opus-5-20260723",
           "permaslug": "anthropic/claude-opus-5-20260723",
           "score": 50.8,
-          "price": 12.84642111,
+          "price": 14.5678518978,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -6259,7 +6161,7 @@
           "ranking_key": "anthropic/claude-opus-5-20260723",
           "permaslug": "anthropic/claude-opus-5-20260723",
           "score": 50.8,
-          "price": 12.84642111,
+          "price": 14.5678518978,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -6283,7 +6185,7 @@
           "ranking_key": "xiaomi/mimo-v2.6-pro-20260921",
           "permaslug": "xiaomi/mimo-v2.6-pro-20260921",
           "score": 46.3,
-          "price": 0.3169486582,
+          "price": 0.3174774692,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -6292,11 +6194,33 @@
           "canonical_slug": "xiaomi/mimo-v2.6-pro-20260921",
           "variant_id": "xiaomi/mimo-v2.6-pro",
           "provider": "DeepInfra",
-          "discount_max": 0.0,
+          "discount_max": 0.1,
           "discount_provider": "DeepInfra",
-          "current_effective_price_in": 0.43,
-          "current_effective_price_out": 0.87,
+          "current_effective_price_in": 0.387,
+          "current_effective_price_out": 0.783,
           "base_price": 0.54,
+          "uptime_1d": 99.375,
+          "reasoning_mandatory": false,
+          "has_tools": true
+        },
+        {
+          "ranking_key": "openai/gpt-5.6-sol-20260709",
+          "permaslug": "openai/gpt-5.6-sol-20260709",
+          "score": 47.0,
+          "price": 2.1679077303,
+          "price_metric": "costPerRequest",
+          "price_unit": "usd_per_100_requests",
+          "quality_metric": "intelligence",
+          "quality_label": "Intelligence Index Score",
+          "join_status": "matched",
+          "canonical_slug": "openai/gpt-5.6-sol-20260709",
+          "variant_id": "openai/gpt-5.6-sol",
+          "provider": "OpenAI",
+          "discount_max": 0.0,
+          "discount_provider": "OpenAI",
+          "current_effective_price_in": 2.0,
+          "current_effective_price_out": 10.0,
+          "base_price": 4.0,
           "uptime_1d": 100.0,
           "reasoning_mandatory": false,
           "has_tools": true
@@ -6305,7 +6229,7 @@
           "ranking_key": "openai/gpt-6-sol-20260922",
           "permaslug": "openai/gpt-6-sol-20260922",
           "score": 47.6,
-          "price": 2.4585321829,
+          "price": 2.8984251418,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -6319,7 +6243,7 @@
           "current_effective_price_in": 1.0,
           "current_effective_price_out": 5.0,
           "base_price": 2.0,
-          "uptime_1d": 99.925,
+          "uptime_1d": 100.0,
           "reasoning_mandatory": false,
           "has_tools": true
         },
@@ -6327,7 +6251,7 @@
           "ranking_key": "anthropic/claude-opus-5-20260723",
           "permaslug": "anthropic/claude-opus-5-20260723",
           "score": 50.8,
-          "price": 12.84642111,
+          "price": 14.5678518978,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -6351,7 +6275,7 @@
           "ranking_key": "anthropic/claude-opus-5-20260723",
           "permaslug": "anthropic/claude-opus-5-20260723",
           "score": 50.8,
-          "price": 12.84642111,
+          "price": 14.5678518978,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -6373,7 +6297,7 @@
           "ranking_key": "openai/gpt-6-sol-20260922",
           "permaslug": "openai/gpt-6-sol-20260922",
           "score": 47.6,
-          "price": 2.4585321829,
+          "price": 2.8984251418,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -6387,7 +6311,7 @@
           "current_effective_price_in": 1.0,
           "current_effective_price_out": 5.0,
           "base_price": 2.0,
-          "uptime_1d": 99.925,
+          "uptime_1d": 100.0,
           "reasoning_mandatory": false,
           "has_tools": true
         },
@@ -6395,7 +6319,7 @@
           "ranking_key": "openai/gpt-5.6-sol-20260709",
           "permaslug": "openai/gpt-5.6-sol-20260709",
           "score": 47.0,
-          "price": 5.0632756378,
+          "price": 2.1679077303,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -6409,7 +6333,7 @@
           "current_effective_price_in": 2.0,
           "current_effective_price_out": 10.0,
           "base_price": 4.0,
-          "uptime_1d": 99.836,
+          "uptime_1d": 100.0,
           "reasoning_mandatory": false,
           "has_tools": true
         },
@@ -6417,7 +6341,7 @@
           "ranking_key": "xiaomi/mimo-v2.6-pro-20260921",
           "permaslug": "xiaomi/mimo-v2.6-pro-20260921",
           "score": 46.3,
-          "price": 0.3169486582,
+          "price": 0.3174774692,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -6426,12 +6350,12 @@
           "canonical_slug": "xiaomi/mimo-v2.6-pro-20260921",
           "variant_id": "xiaomi/mimo-v2.6-pro",
           "provider": "DeepInfra",
-          "discount_max": 0.0,
+          "discount_max": 0.1,
           "discount_provider": "DeepInfra",
-          "current_effective_price_in": 0.43,
-          "current_effective_price_out": 0.87,
+          "current_effective_price_in": 0.387,
+          "current_effective_price_out": 0.783,
           "base_price": 0.54,
-          "uptime_1d": 100.0,
+          "uptime_1d": 99.375,
           "reasoning_mandatory": false,
           "has_tools": true
         }
@@ -6441,7 +6365,7 @@
           "ranking_key": "anthropic/claude-opus-5-20260723",
           "permaslug": "anthropic/claude-opus-5-20260723",
           "score": 50.8,
-          "price": 12.84642111,
+          "price": 14.5678518978,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -6463,7 +6387,7 @@
           "ranking_key": "openai/gpt-6-sol-20260922",
           "permaslug": "openai/gpt-6-sol-20260922",
           "score": 47.6,
-          "price": 2.4585321829,
+          "price": 2.8984251418,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -6477,7 +6401,7 @@
           "current_effective_price_in": 1.0,
           "current_effective_price_out": 5.0,
           "base_price": 2.0,
-          "uptime_1d": 99.925,
+          "uptime_1d": 100.0,
           "reasoning_mandatory": false,
           "has_tools": true
         },
@@ -6485,7 +6409,7 @@
           "ranking_key": "openai/gpt-5.6-sol-20260709",
           "permaslug": "openai/gpt-5.6-sol-20260709",
           "score": 47.0,
-          "price": 5.0632756378,
+          "price": 2.1679077303,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -6499,7 +6423,7 @@
           "current_effective_price_in": 2.0,
           "current_effective_price_out": 10.0,
           "base_price": 4.0,
-          "uptime_1d": 99.836,
+          "uptime_1d": 100.0,
           "reasoning_mandatory": false,
           "has_tools": true
         },
@@ -6507,7 +6431,7 @@
           "ranking_key": "xiaomi/mimo-v2.6-pro-20260921",
           "permaslug": "xiaomi/mimo-v2.6-pro-20260921",
           "score": 46.3,
-          "price": 0.3169486582,
+          "price": 0.3174774692,
           "price_metric": "costPerRequest",
           "price_unit": "usd_per_100_requests",
           "quality_metric": "intelligence",
@@ -6516,12 +6440,12 @@
           "canonical_slug": "xiaomi/mimo-v2.6-pro-20260921",
           "variant_id": "xiaomi/mimo-v2.6-pro",
           "provider": "DeepInfra",
-          "discount_max": 0.0,
+          "discount_max": 0.1,
           "discount_provider": "DeepInfra",
-          "current_effective_price_in": 0.43,
-          "current_effective_price_out": 0.87,
+          "current_effective_price_in": 0.387,
+          "current_effective_price_out": 0.783,
           "base_price": 0.54,
-          "uptime_1d": 100.0,
+          "uptime_1d": 99.375,
           "reasoning_mandatory": false,
           "has_tools": true
         }
@@ -6592,6 +6516,10 @@
           "reason": "below_quality_floor"
         },
         {
+          "ranking_key": "minimax/minimax-m3.1-flash-20261019",
+          "reason": "missing_cost_per_request"
+        },
+        {
           "ranking_key": "openai/gpt-5.6-terra-20260709",
           "reason": "below_quality_floor"
         },
@@ -6629,7 +6557,7 @@
         },
         {
           "ranking_key": "deepseek/deepseek-v4.1-flash-20261017",
-          "reason": "unmatched_family_join"
+          "reason": "below_quality_floor"
         },
         {
           "ranking_key": "openai/gpt-5.4-20260305",
@@ -6680,11 +6608,11 @@
           "reason": "below_quality_floor"
         },
         {
-          "ranking_key": "meta/muse-spark-1.1-20260709",
+          "ranking_key": "qwen/qwen3.8-27b-20260814",
           "reason": "below_quality_floor"
         },
         {
-          "ranking_key": "qwen/qwen3.8-27b-20260814",
+          "ranking_key": "meta/muse-spark-1.1-20260709",
           "reason": "below_quality_floor"
         },
         {
@@ -6785,7 +6713,7 @@
         },
         {
           "ranking_key": "xiaomi/mimo-v2.5-pro-20260422",
-          "reason": "below_quality_floor"
+          "reason": "unmatched_family_join"
         },
         {
           "ranking_key": "moonshotai/kimi-k2.7-code-20260612",
@@ -6872,15 +6800,15 @@
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "minimax/minimax-m2.5-20260211",
-          "reason": "unmatched_family_join"
-        },
-        {
           "ranking_key": "minimax/minimax-m2.7-20260318",
           "reason": "unmatched_family_join"
         },
         {
           "ranking_key": "anthropic/claude-4.1-opus-20250805",
+          "reason": "unmatched_family_join"
+        },
+        {
+          "ranking_key": "minimax/minimax-m2.5-20260211",
           "reason": "unmatched_family_join"
         },
         {
@@ -7117,7 +7045,7 @@
         },
         {
           "ranking_key": "qwen/qwen3.5-9b-20260310",
-          "reason": "unmatched_family_join"
+          "reason": "below_quality_floor"
         },
         {
           "ranking_key": "deepseek/deepseek-r1-0528",
@@ -7221,7 +7149,7 @@
         },
         {
           "ranking_key": "ibm-granite/granite-4.2-8b-20260831",
-          "reason": "unmatched_family_join"
+          "reason": "below_quality_floor"
         },
         {
           "ranking_key": "z-ai/glm-4.5-air",
@@ -7384,12 +7312,12 @@
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "deepseek/deepseek-r1-distill-qwen-32b",
-          "reason": "unmatched_family_join"
-        },
-        {
           "ranking_key": "liquid/lfm-2.5-2.6b-20260811",
           "reason": "missing_cost_per_request"
+        },
+        {
+          "ranking_key": "deepseek/deepseek-r1-distill-qwen-32b",
+          "reason": "unmatched_family_join"
         },
         {
           "ranking_key": "openai/gpt-4o-2024-11-20",
@@ -7640,15 +7568,15 @@
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "meta-llama/llama-3.2-90b-vision-instruct",
-          "reason": "unmatched_family_join"
-        },
-        {
           "ranking_key": "perplexity/r1-1776",
           "reason": "unmatched_family_join"
         },
         {
           "ranking_key": "qwen/qwen-turbo-2024-11-01",
+          "reason": "unmatched_family_join"
+        },
+        {
+          "ranking_key": "meta-llama/llama-3.2-90b-vision-instruct",
           "reason": "unmatched_family_join"
         },
         {
@@ -7732,11 +7660,11 @@
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "meta-llama/llama-3.2-3b-instruct",
+          "ranking_key": "qwen/qwen-110b-chat",
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "qwen/qwen-110b-chat",
+          "ranking_key": "meta-llama/llama-3.2-3b-instruct",
           "reason": "unmatched_family_join"
         },
         {
@@ -7756,15 +7684,15 @@
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "openai/gpt-3.5-turbo",
-          "reason": "unmatched_family_join"
-        },
-        {
           "ranking_key": "deepseek/deepseek-r1-distill-qwen-1.5b",
           "reason": "unmatched_family_join"
         },
         {
           "ranking_key": "meta-llama/llama-3-70b-instruct",
+          "reason": "unmatched_family_join"
+        },
+        {
+          "ranking_key": "openai/gpt-3.5-turbo",
           "reason": "unmatched_family_join"
         },
         {
@@ -7796,11 +7724,11 @@
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "databricks/dbrx-instruct",
+          "ranking_key": "openchat/openchat-7b",
           "reason": "unmatched_family_join"
         },
         {
-          "ranking_key": "openchat/openchat-7b",
+          "ranking_key": "databricks/dbrx-instruct",
           "reason": "unmatched_family_join"
         },
         {
@@ -7892,15 +7820,15 @@
           "reason": "unmatched_family_join"
         },
         {
+          "ranking_key": "google/gemma-3n-e2b-it",
+          "reason": "unmatched_family_join"
+        },
+        {
           "ranking_key": "meta-llama/llama-3.2-1b-instruct",
           "reason": "unmatched_family_join"
         },
         {
           "ranking_key": "qwen/qwen3-0.6b-04-28",
-          "reason": "unmatched_family_join"
-        },
-        {
-          "ranking_key": "google/gemma-3n-e2b-it",
           "reason": "unmatched_family_join"
         },
         {
@@ -7921,230 +7849,230 @@
   "discount_calibration": {
     "status": "inconsistent",
     "sample_size": 20,
-    "within_tolerance": 6,
+    "within_tolerance": 5,
     "tolerance_pct": 20,
     "requested_sample_size": 20,
     "matched_observations": 20,
     "observations": [
       {
         "ranking_key": "anthropic/claude-4.7-opus-20260416",
-        "frontend_cost_per_request": 8.5964440405,
-        "weighted_input_price": 2.765412,
+        "frontend_cost_per_request": 8.823268565,
+        "weighted_input_price": 2.425321,
         "endpoint_prompt_price": 5.0,
         "endpoint_completion_price": 25.0,
         "discount": 0.0,
         "provider": "Amazon Bedrock",
         "uptime_1d": 100,
-        "relative_error": 0.14035559595000002
+        "relative_error": 0.11767314350000006
       },
       {
         "ranking_key": "anthropic/claude-4.8-opus-20260528",
-        "frontend_cost_per_request": 11.4738874966,
-        "weighted_input_price": 1.608804,
+        "frontend_cost_per_request": 9.1003831833,
+        "weighted_input_price": 1.61743,
         "endpoint_prompt_price": 5.0,
         "endpoint_completion_price": 25.0,
         "discount": 0.0,
         "provider": "Amazon Bedrock",
         "uptime_1d": 100,
-        "relative_error": 0.14738874965999998
+        "relative_error": 0.08996168167
       },
       {
         "ranking_key": "anthropic/claude-5-fable-20260609",
-        "frontend_cost_per_request": 29.2142693572,
-        "weighted_input_price": 3.13135,
+        "frontend_cost_per_request": 25.1642130152,
+        "weighted_input_price": 3.91581,
         "endpoint_prompt_price": 10.0,
         "endpoint_completion_price": 50.0,
         "discount": 0.0,
         "provider": "Amazon Bedrock",
         "uptime_1d": null,
-        "relative_error": 0.46071346785999995
+        "relative_error": 0.25821065076000005
       },
       {
         "ranking_key": "anthropic/claude-fable-5.1-20260831",
-        "frontend_cost_per_request": 24.2877547165,
-        "weighted_input_price": 1.518426,
+        "frontend_cost_per_request": 24.141409028,
+        "weighted_input_price": 1.930599,
         "endpoint_prompt_price": 10.0,
         "endpoint_completion_price": 50.0,
         "discount": 0.0,
         "provider": "Amazon Bedrock",
         "uptime_1d": null,
-        "relative_error": 0.214387735825
+        "relative_error": 0.20707045140000008
       },
       {
         "ranking_key": "anthropic/claude-haiku-5.5-20261007",
-        "frontend_cost_per_request": 0.1840486136,
-        "weighted_input_price": 0.098859,
+        "frontend_cost_per_request": 0.1968769409,
+        "weighted_input_price": 0.102019,
         "endpoint_prompt_price": 0.09999999999999999,
         "endpoint_completion_price": 0.5,
         "discount": 0.0,
         "provider": "Amazon Bedrock",
-        "uptime_1d": 99.93055555555556,
-        "relative_error": 0.07975693200000009
+        "uptime_1d": 100,
+        "relative_error": 0.015615295500000098
       },
       {
         "ranking_key": "anthropic/claude-opus-5-20260723",
-        "frontend_cost_per_request": 12.84642111,
-        "weighted_input_price": 1.348499,
+        "frontend_cost_per_request": 14.5678518978,
+        "weighted_input_price": 1.106973,
         "endpoint_prompt_price": 5.0,
         "endpoint_completion_price": 25.0,
         "discount": 0.0,
         "provider": "Amazon Bedrock",
-        "uptime_1d": 100,
-        "relative_error": 0.284642111
+        "uptime_1d": 99.93055555555556,
+        "relative_error": 0.45678518978000004
       },
       {
         "ranking_key": "anthropic/claude-opus-5.5-20260921",
-        "frontend_cost_per_request": 9.4895548112,
-        "weighted_input_price": 0.636746,
+        "frontend_cost_per_request": 11.1945096043,
+        "weighted_input_price": 0.658646,
         "endpoint_prompt_price": 4.0,
         "endpoint_completion_price": 20.0,
         "discount": 0.0,
         "provider": "Amazon Bedrock",
         "uptime_1d": 100,
-        "relative_error": 0.18619435139999996
+        "relative_error": 0.39931370053750004
       },
       {
         "ranking_key": "anthropic/claude-sonnet-5-20260630",
-        "frontend_cost_per_request": 3.4853342733,
-        "weighted_input_price": 0.661335,
+        "frontend_cost_per_request": 3.6898372227,
+        "weighted_input_price": 0.678447,
         "endpoint_prompt_price": 2.0,
         "endpoint_completion_price": 10.0,
         "discount": 0.0,
         "provider": "Amazon Bedrock",
         "uptime_1d": 100,
-        "relative_error": 0.12866643167500003
+        "relative_error": 0.07754069432499999
       },
       {
         "ranking_key": "anthropic/claude-sonnet-5.5-20260928",
-        "frontend_cost_per_request": 2.8889984205,
-        "weighted_input_price": 0.496449,
+        "frontend_cost_per_request": 3.6290915259,
+        "weighted_input_price": 0.42009,
         "endpoint_prompt_price": 2.0,
         "endpoint_completion_price": 10.0,
         "discount": 0.0,
         "provider": "Amazon Bedrock",
-        "uptime_1d": 99.86111111111111,
-        "relative_error": 0.277750394875
+        "uptime_1d": 100,
+        "relative_error": 0.09272711852500004
       },
       {
         "ranking_key": "deepseek/deepseek-v4-flash-20260423",
-        "frontend_cost_per_request": 0.0696479459,
-        "weighted_input_price": 0.056589,
+        "frontend_cost_per_request": 0.0641644591,
+        "weighted_input_price": 0.056005,
         "endpoint_prompt_price": 0.15,
         "endpoint_completion_price": 0.3,
         "discount": 0.0,
         "provider": "Alibaba",
         "uptime_1d": 100,
-        "relative_error": 0.6285442885333333
+        "relative_error": 0.6577895514666666
       },
       {
         "ranking_key": "deepseek/deepseek-v4-flash-20260731",
-        "frontend_cost_per_request": 0.1144448314,
-        "weighted_input_price": 0.068302,
+        "frontend_cost_per_request": 0.0815451841,
+        "weighted_input_price": 0.053845,
         "endpoint_prompt_price": 0.352,
         "endpoint_completion_price": 1.0559999999999998,
         "discount": 0.0,
         "provider": "Alibaba",
-        "uptime_1d": 99.59546925566343,
-        "relative_error": 0.7832484253787879
+        "uptime_1d": 99.34306569343066,
+        "relative_error": 0.8455583634469697
       },
       {
         "ranking_key": "deepseek/deepseek-v4-flash-vision-exp-20260821",
-        "frontend_cost_per_request": 0.2183127724,
-        "weighted_input_price": 0.05643,
+        "frontend_cost_per_request": 0.1897241523,
+        "weighted_input_price": 0.059124,
         "endpoint_prompt_price": 0.21559999999999999,
         "endpoint_completion_price": 0.6468,
         "discount": 0.51,
         "provider": "DeepInfra",
         "uptime_1d": 100,
-        "relative_error": 0.6692230721212121
+        "relative_error": 0.7125391631818182
       },
       {
         "ranking_key": "deepseek/deepseek-v4-pro-20260423",
-        "frontend_cost_per_request": 1.2412637764,
-        "weighted_input_price": 0.330989,
+        "frontend_cost_per_request": 0.8208529074,
+        "weighted_input_price": 0.322963,
         "endpoint_prompt_price": 1.4160000000000001,
         "endpoint_completion_price": 2.8320000000000003,
         "discount": 0.0,
         "provider": "Alibaba",
-        "uptime_1d": 97.30820995962316,
-        "relative_error": 0.29872103028248587
+        "uptime_1d": 99.48867786705624,
+        "relative_error": 0.5362412952542372
       },
       {
         "ranking_key": "deepseek/deepseek-v4-pro-20260813",
-        "frontend_cost_per_request": 0.603570793,
-        "weighted_input_price": 0.211673,
+        "frontend_cost_per_request": 0.7147668823,
+        "weighted_input_price": 0.165403,
         "endpoint_prompt_price": 1.122,
         "endpoint_completion_price": 3.366,
         "discount": 0.0,
         "provider": "Alibaba",
-        "uptime_1d": 99.14236706689536,
-        "relative_error": 0.6413720778371955
+        "uptime_1d": 99.34156378600824,
+        "relative_error": 0.5753019118835414
       },
       {
         "ranking_key": "deepseek/deepseek-v4.1-flash-20260910",
-        "frontend_cost_per_request": 0.1547764917,
-        "weighted_input_price": 0.023281,
-        "endpoint_prompt_price": 0.3,
-        "endpoint_completion_price": 1.2,
+        "frontend_cost_per_request": 0.1441872303,
+        "weighted_input_price": 0.022415,
+        "endpoint_prompt_price": 0.33,
+        "endpoint_completion_price": 1.32,
         "discount": 0.0,
         "provider": "Alibaba",
         "uptime_1d": 100,
-        "relative_error": 0.7051876348571429
+        "relative_error": 0.7503251423376623
+      },
+      {
+        "ranking_key": "deepseek/deepseek-v4.1-flash-20261017",
+        "frontend_cost_per_request": 0.1320289227,
+        "weighted_input_price": 0.021546,
+        "endpoint_prompt_price": 0.33,
+        "endpoint_completion_price": 1.32,
+        "discount": 0.0,
+        "provider": "Alibaba",
+        "uptime_1d": 98.07692307692307,
+        "relative_error": 0.7713784888311689
       },
       {
         "ranking_key": "google/gemini-3.1-pro-preview-20260219",
-        "frontend_cost_per_request": 4.2322836371,
-        "weighted_input_price": 1.662268,
+        "frontend_cost_per_request": 3.9926737782,
+        "weighted_input_price": 1.320593,
         "endpoint_prompt_price": 1.0,
         "endpoint_completion_price": 6.0,
         "discount": 0.0,
         "provider": "Google",
-        "uptime_1d": 69.3069306930693,
-        "relative_error": 0.8810149498222223
+        "uptime_1d": 18.0327868852459,
+        "relative_error": 0.7745216791999999
       },
       {
         "ranking_key": "google/gemini-3.5-flash-20260519",
-        "frontend_cost_per_request": 1.6155687799,
-        "weighted_input_price": 1.137428,
+        "frontend_cost_per_request": 1.1977072098,
+        "weighted_input_price": 1.067766,
         "endpoint_prompt_price": 0.75,
         "endpoint_completion_price": 4.5,
         "discount": 0.0,
         "provider": "Google",
-        "uptime_1d": null,
-        "relative_error": 0.04262590820740739
+        "uptime_1d": 0,
+        "relative_error": 0.29024757937777784
       },
       {
         "ranking_key": "google/gemini-3.6-flash-20260721",
-        "frontend_cost_per_request": 0.599878525,
-        "weighted_input_price": 0.42332,
+        "frontend_cost_per_request": 0.57020903,
+        "weighted_input_price": 0.494939,
         "endpoint_prompt_price": 0.375,
         "endpoint_completion_price": 1.875,
         "discount": 0.0,
         "provider": "Google",
-        "uptime_1d": 99.15254237288136,
-        "relative_error": 0.2001619666666666
+        "uptime_1d": 92.85714285714286,
+        "relative_error": 0.23972129333333334
       },
       {
         "ranking_key": "google/gemini-3.7-flash-20260813",
-        "frontend_cost_per_request": 1.0691468291,
-        "weighted_input_price": 0.591821,
+        "frontend_cost_per_request": 0.7878453511,
+        "weighted_input_price": 0.444163,
         "endpoint_prompt_price": 0.375,
         "endpoint_completion_price": 1.875,
         "discount": 0.5,
         "provider": "Google",
-        "uptime_1d": 57.023060796645694,
-        "relative_error": 0.2872354472666667
-      },
-      {
-        "ranking_key": "google/gemini-3.8-flash-20260902",
-        "frontend_cost_per_request": 0.9762798434,
-        "weighted_input_price": 0.388121,
-        "endpoint_prompt_price": 0.375,
-        "endpoint_completion_price": 1.875,
-        "discount": 0.5,
-        "provider": "Google",
-        "uptime_1d": 69.93464052287581,
-        "relative_error": 0.3491467710666667
+        "uptime_1d": 21.52917505030181,
+        "relative_error": 0.47476976593333337
       }
     ]
   },
