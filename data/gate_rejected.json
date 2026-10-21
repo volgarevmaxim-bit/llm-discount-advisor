@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-20T10:07:32Z",
-  "total": 470,
+  "generated_at": "2026-10-21T10:14:53Z",
+  "total": 468,
   "total_unique_families": 381,
-  "passed": 130,
-  "passed_unique_families": 87,
-  "normalized": 129,
-  "eligible_after_prefilter": 435,
+  "passed": 129,
+  "passed_unique_families": 86,
+  "normalized": 128,
+  "eligible_after_prefilter": 433,
   "eligible_unique_families": 346,
   "rejected": [
     {
@@ -458,6 +458,10 @@
     },
     {
       "slug": "openai/gpt-5.5-pro:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "deepseek/deepseek-v4-pro",
       "reason": "below_all_thresholds"
     },
     {
@@ -997,15 +1001,7 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "google/gemini-2.5-flash:batch",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "google/gemini-2.5-pro",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "google/gemini-2.5-pro:batch",
       "reason": "below_all_thresholds"
     },
     {
