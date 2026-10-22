@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 381,
+    "families_total": 382,
     "rankings_surface_families": 351,
     "benchmark_cost_families": 117,
     "session_cost_families": 45,
     "union_secondary_covered": 123,
-    "uncovered": 149,
+    "uncovered": 150,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 149
+    "likely_low_signal_uncovered": 150
   },
   "families": [
     {
@@ -1991,6 +1991,11 @@
     },
     {
       "canonical_family": "qwen/qwen3.8-omni-flash-20260918",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "recursive/flint-v1.0-20261021",
       "covered_by": [],
       "classification": "likely_low_signal"
     },

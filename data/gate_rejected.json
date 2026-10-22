@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-21T10:14:53Z",
+  "generated_at": "2026-10-22T10:15:51Z",
   "total": 468,
-  "total_unique_families": 381,
-  "passed": 129,
-  "passed_unique_families": 86,
-  "normalized": 128,
+  "total_unique_families": 382,
+  "passed": 131,
+  "passed_unique_families": 88,
+  "normalized": 130,
   "eligible_after_prefilter": 433,
-  "eligible_unique_families": 346,
+  "eligible_unique_families": 347,
   "rejected": [
     {
       "slug": "~unbiased/pareto-latest",
@@ -166,10 +166,6 @@
     },
     {
       "slug": "moondream/moondream3.1-9b-a2b",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "meta/muse-spark-open",
       "reason": "below_all_thresholds"
     },
     {
@@ -958,10 +954,6 @@
     },
     {
       "slug": "google/gemini-2.5-flash-lite",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "google/gemini-2.5-flash-lite:batch",
       "reason": "below_all_thresholds"
     },
     {
