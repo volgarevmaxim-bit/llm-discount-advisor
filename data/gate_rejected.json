@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-22T10:15:51Z",
+  "generated_at": "2026-10-23T10:09:21Z",
   "total": 468,
   "total_unique_families": 382,
-  "passed": 131,
-  "passed_unique_families": 88,
-  "normalized": 130,
+  "passed": 132,
+  "passed_unique_families": 89,
+  "normalized": 131,
   "eligible_after_prefilter": 433,
   "eligible_unique_families": 347,
   "rejected": [
@@ -154,10 +154,6 @@
     },
     {
       "slug": "reflection/beam-1.0-501b-a23b",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "inception/mercury-3",
       "reason": "below_all_thresholds"
     },
     {
@@ -481,10 +477,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "x-ai/grok-4.20",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "rekaai/reka-edge",
       "reason": "below_all_thresholds"
     },
@@ -514,6 +506,10 @@
     },
     {
       "slug": "bytedance-seed/seed-2.0-lite",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3.5-9b",
       "reason": "below_all_thresholds"
     },
     {

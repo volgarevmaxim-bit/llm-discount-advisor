@@ -3,9 +3,9 @@
   "counts": {
     "families_total": 382,
     "rankings_surface_families": 351,
-    "benchmark_cost_families": 117,
+    "benchmark_cost_families": 119,
     "session_cost_families": 45,
-    "union_secondary_covered": 123,
+    "union_secondary_covered": 126,
     "uncovered": 150,
     "worthy_uncovered": 0,
     "likely_low_signal_uncovered": 150
@@ -93,7 +93,6 @@
       "canonical_family": "anthropic/claude-4.5-haiku-20251001",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost",
         "session_cost"
       ],
       "classification": "covered"
@@ -886,7 +885,8 @@
     {
       "canonical_family": "minimax/minimax-m3.1-flash-20261019",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
