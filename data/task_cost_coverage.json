@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 382,
-    "rankings_surface_families": 351,
+    "families_total": 383,
+    "rankings_surface_families": 352,
     "benchmark_cost_families": 119,
     "session_cost_families": 45,
     "union_secondary_covered": 126,
@@ -1084,6 +1084,13 @@
         "rankings_surface",
         "benchmark_cost",
         "session_cost"
+      ],
+      "classification": "covered"
+    },
+    {
+      "canonical_family": "moonshotai/kimi-k3.1-pro-20261023",
+      "covered_by": [
+        "rankings_surface"
       ],
       "classification": "covered"
     },

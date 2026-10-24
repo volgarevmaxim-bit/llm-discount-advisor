@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-23T10:09:21Z",
-  "total": 468,
-  "total_unique_families": 382,
+  "generated_at": "2026-10-24T09:35:31Z",
+  "total": 469,
+  "total_unique_families": 383,
   "passed": 132,
   "passed_unique_families": 89,
   "normalized": 131,
-  "eligible_after_prefilter": 433,
-  "eligible_unique_families": 347,
+  "eligible_after_prefilter": 434,
+  "eligible_unique_families": 348,
   "rejected": [
     {
       "slug": "~unbiased/pareto-latest",
@@ -147,6 +147,10 @@
     {
       "slug": "openrouter/auto",
       "reason": "non_text_output"
+    },
+    {
+      "slug": "minimax/minimax-m3.1-flash",
+      "reason": "below_all_thresholds"
     },
     {
       "slug": "elorian/glimpse",
