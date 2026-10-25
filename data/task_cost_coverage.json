@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 383,
+    "families_total": 381,
     "rankings_surface_families": 352,
     "benchmark_cost_families": 119,
     "session_cost_families": 45,
     "union_secondary_covered": 126,
-    "uncovered": 150,
+    "uncovered": 149,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 150
+    "likely_low_signal_uncovered": 149
   },
   "families": [
     {
@@ -1190,24 +1190,12 @@
       "classification": "covered"
     },
     {
-      "canonical_family": "openai/gpt-3.5-turbo",
-      "covered_by": [
-        "rankings_surface"
-      ],
-      "classification": "covered"
-    },
-    {
       "canonical_family": "openai/gpt-3.5-turbo-0613",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
     {
       "canonical_family": "openai/gpt-3.5-turbo-16k",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "openai/gpt-3.5-turbo-instruct",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
