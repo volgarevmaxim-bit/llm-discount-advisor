@@ -5,10 +5,10 @@
     "rankings_surface_families": 352,
     "benchmark_cost_families": 119,
     "session_cost_families": 45,
-    "union_secondary_covered": 126,
-    "uncovered": 149,
+    "union_secondary_covered": 127,
+    "uncovered": 148,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 149
+    "likely_low_signal_uncovered": 148
   },
   "families": [
     {
@@ -291,8 +291,10 @@
     },
     {
       "canonical_family": "deepseek/deepseek-chat-v3",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "session_cost"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "deepseek/deepseek-chat-v3-0324",
@@ -1090,7 +1092,8 @@
     {
       "canonical_family": "moonshotai/kimi-k3.1-pro-20261023",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "session_cost"
       ],
       "classification": "covered"
     },
@@ -1491,8 +1494,7 @@
     {
       "canonical_family": "openai/gpt-6-luna-pro-20260922",
       "covered_by": [
-        "benchmark_cost",
-        "session_cost"
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -1500,8 +1502,7 @@
       "canonical_family": "openai/gpt-6-sol-20260922",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost",
-        "session_cost"
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -1782,8 +1783,7 @@
     {
       "canonical_family": "qwen/qwen3-coder-480b-a35b-07-25",
       "covered_by": [
-        "rankings_surface",
-        "session_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },
@@ -2119,7 +2119,8 @@
     {
       "canonical_family": "tencent/hy4-preview-20260827",
       "covered_by": [
-        "benchmark_cost"
+        "benchmark_cost",
+        "session_cost"
       ],
       "classification": "covered"
     },

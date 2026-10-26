@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T09:51:51Z",
+  "generated_at": "2026-10-26T11:11:24Z",
   "total": 467,
   "total_unique_families": 381,
   "passed": 132,
@@ -313,10 +313,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "ibm-granite/granite-4.2-8b",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "tencent/hy4-preview",
       "reason": "below_all_thresholds"
     },
@@ -462,6 +458,10 @@
     },
     {
       "slug": "openai/gpt-5.5-pro:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "deepseek/deepseek-v4-pro",
       "reason": "below_all_thresholds"
     },
     {
