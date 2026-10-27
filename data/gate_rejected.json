@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-26T11:11:24Z",
-  "total": 467,
+  "generated_at": "2026-10-27T10:38:52Z",
+  "total": 463,
   "total_unique_families": 381,
-  "passed": 132,
-  "passed_unique_families": 88,
-  "normalized": 131,
-  "eligible_after_prefilter": 432,
+  "passed": 131,
+  "passed_unique_families": 87,
+  "normalized": 130,
+  "eligible_after_prefilter": 428,
   "eligible_unique_families": 346,
   "rejected": [
     {
@@ -147,6 +147,14 @@
     {
       "slug": "openrouter/auto",
       "reason": "non_text_output"
+    },
+    {
+      "slug": "openai/gpt-6.1-terra-pro",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-6.1-terra-pro:batch",
+      "reason": "below_all_thresholds"
     },
     {
       "slug": "minimax/minimax-m3.1-flash",
@@ -469,15 +477,15 @@
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "xiaomi/mimo-v2.5",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "openrouter/pareto-code",
       "reason": "below_all_thresholds"
     },
     {
       "slug": "qwen/qwen3.6-plus",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "arcee-ai/trinity-large-thinking",
       "reason": "below_all_thresholds"
     },
     {
@@ -505,11 +513,11 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "mistralai/mistral-small-2603:batch",
+      "slug": "z-ai/glm-5-turbo",
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "z-ai/glm-5-turbo",
+      "slug": "nvidia/nemotron-3-super-120b-a12b",
       "reason": "below_all_thresholds"
     },
     {
@@ -721,19 +729,11 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "mistralai/ministral-8b-2512:batch",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "mistralai/ministral-3b-2512",
       "reason": "below_all_thresholds"
     },
     {
       "slug": "mistralai/mistral-large-2512",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "mistralai/mistral-large-2512:batch",
       "reason": "below_all_thresholds"
     },
     {
@@ -786,10 +786,6 @@
     },
     {
       "slug": "minimax/minimax-m2",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "ibm-granite/granite-4.0-h-micro",
       "reason": "below_all_thresholds"
     },
     {
@@ -881,10 +877,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "mistralai/mistral-medium-3.1:batch",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "z-ai/glm-4.5v",
       "reason": "below_all_thresholds"
     },
@@ -922,10 +914,6 @@
     },
     {
       "slug": "mistralai/codestral-2508",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "mistralai/codestral-2508:batch",
       "reason": "below_all_thresholds"
     },
     {

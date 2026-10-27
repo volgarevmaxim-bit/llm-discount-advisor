@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "counts": {
     "families_total": 381,
-    "rankings_surface_families": 352,
-    "benchmark_cost_families": 119,
+    "rankings_surface_families": 353,
+    "benchmark_cost_families": 121,
     "session_cost_families": 45,
-    "union_secondary_covered": 127,
+    "union_secondary_covered": 129,
     "uncovered": 148,
     "worthy_uncovered": 0,
     "likely_low_signal_uncovered": 148
@@ -214,13 +214,6 @@
       "classification": "covered"
     },
     {
-      "canonical_family": "arcee-ai/trinity-large-thinking",
-      "covered_by": [
-        "rankings_surface"
-      ],
-      "classification": "covered"
-    },
-    {
       "canonical_family": "bytedance-seed/seed-1.6-20250625",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -264,8 +257,10 @@
     },
     {
       "canonical_family": "cohere/command-a-plus-05-2026",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "cohere/command-r-08-2024",
@@ -621,13 +616,6 @@
       "canonical_family": "gryphe/mythomax-l2-13b",
       "covered_by": [],
       "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "ibm-granite/granite-4.0-h-micro",
-      "covered_by": [
-        "rankings_surface"
-      ],
-      "classification": "covered"
     },
     {
       "canonical_family": "ibm-granite/granite-4.2-8b-20260831",
@@ -1522,6 +1510,18 @@
     },
     {
       "canonical_family": "openai/gpt-6.1-sol-pro-20260929",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "openai/gpt-6.1-terra-20261026",
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
+    },
+    {
+      "canonical_family": "openai/gpt-6.1-terra-pro-20261026",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
