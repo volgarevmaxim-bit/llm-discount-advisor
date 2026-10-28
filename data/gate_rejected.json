@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-27T10:38:52Z",
-  "total": 463,
-  "total_unique_families": 381,
-  "passed": 131,
+  "generated_at": "2026-10-28T11:23:21Z",
+  "total": 464,
+  "total_unique_families": 382,
+  "passed": 130,
   "passed_unique_families": 87,
-  "normalized": 130,
-  "eligible_after_prefilter": 428,
-  "eligible_unique_families": 346,
+  "normalized": 129,
+  "eligible_after_prefilter": 429,
+  "eligible_unique_families": 347,
   "rejected": [
     {
       "slug": "~unbiased/pareto-latest",
@@ -166,6 +166,10 @@
     },
     {
       "slug": "reflection/beam-1.0-501b-a23b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "prism-ml/ternary-bonsai-2-9b",
       "reason": "below_all_thresholds"
     },
     {
@@ -434,6 +438,14 @@
     },
     {
       "slug": "openai/gpt-chat-latest",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "x-ai/grok-4.3",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "x-ai/grok-4.3:batch",
       "reason": "below_all_thresholds"
     },
     {
@@ -1258,10 +1270,6 @@
     },
     {
       "slug": "meta-llama/llama-3.1-70b-instruct",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "meta-llama/llama-3.1-8b-instruct",
       "reason": "below_all_thresholds"
     },
     {

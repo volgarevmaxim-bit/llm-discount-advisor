@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 381,
+    "families_total": 382,
     "rankings_surface_families": 353,
-    "benchmark_cost_families": 121,
+    "benchmark_cost_families": 122,
     "session_cost_families": 45,
-    "union_secondary_covered": 129,
-    "uncovered": 148,
+    "union_secondary_covered": 130,
+    "uncovered": 149,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 148
+    "likely_low_signal_uncovered": 149
   },
   "families": [
     {
@@ -1516,7 +1516,8 @@
     {
       "canonical_family": "openai/gpt-6.1-terra-20261026",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -1699,6 +1700,11 @@
     },
     {
       "canonical_family": "prism-ml/ternary-bonsai-2-27b-20260918",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "prism-ml/ternary-bonsai-2-9b-20261015",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
