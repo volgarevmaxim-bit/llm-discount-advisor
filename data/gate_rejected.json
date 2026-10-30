@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-29T11:33:48Z",
-  "total": 421,
-  "total_unique_families": 371,
+  "generated_at": "2026-10-30T11:26:09Z",
+  "total": 420,
+  "total_unique_families": 370,
   "passed": 119,
   "passed_unique_families": 84,
   "normalized": 118,
-  "eligible_after_prefilter": 386,
-  "eligible_unique_families": 336,
+  "eligible_after_prefilter": 385,
+  "eligible_unique_families": 335,
   "rejected": [
     {
       "slug": "~unbiased/pareto-latest",
@@ -618,10 +618,6 @@
     },
     {
       "slug": "moonshotai/kimi-k2.5",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "upstage/solar-pro-3",
       "reason": "below_all_thresholds"
     },
     {

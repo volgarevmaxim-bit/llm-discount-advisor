@@ -1,47 +1,25 @@
 {
   "schema_version": "1.0",
-  "from": "2026-10-28T11:23:21Z",
-  "to": "2026-10-29T11:33:48Z",
+  "from": "2026-10-29T11:33:48Z",
+  "to": "2026-10-30T11:26:09Z",
   "events": [
-    {
-      "type": "decision_changed",
-      "profile": "bulk",
-      "before": {
-        "ranking_key": "moonshotai/kimi-k3.1-pro-20261023",
-        "provider": "Moonshot AI",
-        "variant_id": "moonshotai/kimi-k3.1-pro",
-        "price": 4.5902742382,
-        "score": 55.1,
-        "stable": true
-      },
-      "after": {
-        "ranking_key": "openai/gpt-6.1-terra-20261026",
-        "provider": "OpenAI",
-        "variant_id": "openai/gpt-6.1-terra",
-        "price": 1.2043952762,
-        "score": 51.0,
-        "stable": true
-      },
-      "reason": "Actionable balanced default changed.",
-      "confirmed": false
-    },
     {
       "type": "decision_changed",
       "profile": "chat",
       "before": {
-        "ranking_key": "anthropic/claude-sonnet-5.5-20260928",
-        "provider": "Google",
-        "variant_id": "anthropic/claude-sonnet-5.5",
-        "price": 4.4522147089,
-        "score": 56.0,
-        "stable": true
-      },
-      "after": {
         "ranking_key": "anthropic/claude-opus-5.5-20260921",
         "provider": "Amazon Bedrock",
         "variant_id": "anthropic/claude-opus-5.5",
         "price": 8.8598654252,
         "score": 58.4,
+        "stable": true
+      },
+      "after": {
+        "ranking_key": "openai/gpt-6-astra-20260903",
+        "provider": "OpenAI",
+        "variant_id": "openai/gpt-6-astra",
+        "price": 10.1252947402,
+        "score": 56.9,
         "stable": true
       },
       "reason": "Actionable balanced default changed.",
@@ -51,19 +29,19 @@
       "type": "decision_changed",
       "profile": "longdoc",
       "before": {
-        "ranking_key": "anthropic/claude-sonnet-5.5-20260928",
-        "provider": "Google",
-        "variant_id": "anthropic/claude-sonnet-5.5",
-        "price": 4.4522147089,
-        "score": 56.0,
-        "stable": true
-      },
-      "after": {
         "ranking_key": "anthropic/claude-opus-5.5-20260921",
         "provider": "Amazon Bedrock",
         "variant_id": "anthropic/claude-opus-5.5",
         "price": 8.8598654252,
         "score": 58.4,
+        "stable": true
+      },
+      "after": {
+        "ranking_key": "openai/gpt-6-astra-20260903",
+        "provider": "OpenAI",
+        "variant_id": "openai/gpt-6-astra",
+        "price": 10.1252947402,
+        "score": 56.9,
         "stable": true
       },
       "reason": "Actionable balanced default changed.",
