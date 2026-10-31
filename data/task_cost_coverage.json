@@ -3,12 +3,12 @@
   "counts": {
     "families_total": 370,
     "rankings_surface_families": 167,
-    "benchmark_cost_families": 120,
+    "benchmark_cost_families": 117,
     "session_cost_families": 45,
-    "union_secondary_covered": 128,
-    "uncovered": 208,
+    "union_secondary_covered": 124,
+    "uncovered": 211,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 208
+    "likely_low_signal_uncovered": 211
   },
   "families": [
     {
@@ -84,6 +84,7 @@
       "canonical_family": "anthropic/claude-4.5-haiku-20251001",
       "covered_by": [
         "rankings_surface",
+        "benchmark_cost",
         "session_cost"
       ],
       "classification": "covered"
@@ -313,10 +314,8 @@
     },
     {
       "canonical_family": "deepseek/deepseek-v3.2-exp",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "deepseek/deepseek-v4-flash-20260423",
@@ -789,10 +788,8 @@
     },
     {
       "canonical_family": "minimax/minimax-m2.1",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "minimax/minimax-m2.5-20260211",
@@ -967,8 +964,7 @@
     {
       "canonical_family": "moonshotai/kimi-k2-thinking-20251106",
       "covered_by": [
-        "rankings_surface",
-        "benchmark_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },
@@ -2109,10 +2105,8 @@
     },
     {
       "canonical_family": "z-ai/glm-4.5-air",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "z-ai/glm-4.5v",

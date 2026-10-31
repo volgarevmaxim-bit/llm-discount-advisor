@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-30T11:26:09Z",
+  "generated_at": "2026-10-31T10:57:26Z",
   "total": 420,
   "total_unique_families": 370,
-  "passed": 119,
-  "passed_unique_families": 84,
-  "normalized": 118,
+  "passed": 120,
+  "passed_unique_families": 85,
+  "normalized": 119,
   "eligible_after_prefilter": 385,
   "eligible_unique_families": 335,
   "rejected": [
@@ -51,10 +51,6 @@
     {
       "slug": "~deepseek/deepseek-v4-flash-latest",
       "reason": "alias"
-    },
-    {
-      "slug": "openrouter/auto-beta",
-      "reason": "non_text_output"
     },
     {
       "slug": "~x-ai/grok-latest",
@@ -145,6 +141,10 @@
       "reason": "non_text_output"
     },
     {
+      "slug": "openrouter/auto-beta",
+      "reason": "non_text_output"
+    },
+    {
       "slug": "openrouter/auto",
       "reason": "non_text_output"
     },
@@ -217,10 +217,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "typesafe/jev-router",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "perceptron/perceptron-mk1.5",
       "reason": "below_all_thresholds"
     },
@@ -274,10 +270,6 @@
     },
     {
       "slug": "openai/gpt-6-sol:batch",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "nvidia/switchyard",
       "reason": "below_all_thresholds"
     },
     {
@@ -417,10 +409,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "openrouter/fusion",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "x-ai/grok-build-0.1",
       "reason": "below_all_thresholds"
     },
@@ -486,10 +474,6 @@
     },
     {
       "slug": "xiaomi/mimo-v2.5",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "openrouter/pareto-code",
       "reason": "below_all_thresholds"
     },
     {
@@ -605,10 +589,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "anthropic/claude-opus-4.6",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "qwen/qwen3-coder-next",
       "reason": "below_all_thresholds"
     },
@@ -682,10 +662,6 @@
     },
     {
       "slug": "z-ai/glm-4.6v",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "openrouter/bodybuilder",
       "reason": "below_all_thresholds"
     },
     {
@@ -1210,6 +1186,26 @@
     },
     {
       "slug": "openai/gpt-4",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "typesafe/jev-router",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "nvidia/switchyard",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openrouter/fusion",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openrouter/pareto-code",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openrouter/bodybuilder",
       "reason": "below_all_thresholds"
     },
     {
