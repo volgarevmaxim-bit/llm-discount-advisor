@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-31T10:57:26Z",
-  "total": 420,
-  "total_unique_families": 370,
-  "passed": 120,
-  "passed_unique_families": 85,
-  "normalized": 119,
-  "eligible_after_prefilter": 385,
-  "eligible_unique_families": 335,
+  "generated_at": "2026-11-01T11:52:21Z",
+  "total": 416,
+  "total_unique_families": 368,
+  "passed": 116,
+  "passed_unique_families": 83,
+  "normalized": 115,
+  "eligible_after_prefilter": 381,
+  "eligible_unique_families": 333,
   "rejected": [
     {
       "slug": "~unbiased/pareto-latest",

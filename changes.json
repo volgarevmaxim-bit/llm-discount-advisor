@@ -1,52 +1,7 @@
 {
   "schema_version": "1.0",
-  "from": "2026-10-30T11:26:09Z",
-  "to": "2026-10-31T10:57:26Z",
-  "events": [
-    {
-      "type": "decision_changed",
-      "profile": "chat",
-      "before": {
-        "ranking_key": "openai/gpt-6-astra-20260903",
-        "provider": "OpenAI",
-        "variant_id": "openai/gpt-6-astra",
-        "price": 10.1252947402,
-        "score": 56.9,
-        "stable": true
-      },
-      "after": {
-        "ranking_key": "anthropic/claude-opus-5.5-20260921",
-        "provider": "Amazon Bedrock",
-        "variant_id": "anthropic/claude-opus-5.5",
-        "price": 10.9423106786,
-        "score": 58.4,
-        "stable": true
-      },
-      "reason": "Actionable balanced default changed.",
-      "confirmed": false
-    },
-    {
-      "type": "decision_changed",
-      "profile": "longdoc",
-      "before": {
-        "ranking_key": "openai/gpt-6-astra-20260903",
-        "provider": "OpenAI",
-        "variant_id": "openai/gpt-6-astra",
-        "price": 10.1252947402,
-        "score": 56.9,
-        "stable": true
-      },
-      "after": {
-        "ranking_key": "anthropic/claude-opus-5.5-20260921",
-        "provider": "Amazon Bedrock",
-        "variant_id": "anthropic/claude-opus-5.5",
-        "price": 10.9423106786,
-        "score": 58.4,
-        "stable": true
-      },
-      "reason": "Actionable balanced default changed.",
-      "confirmed": false
-    }
-  ],
+  "from": "2026-10-31T10:57:26Z",
+  "to": "2026-11-01T11:52:21Z",
+  "events": [],
   "status": "compared"
 }

@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 370,
+    "families_total": 368,
     "rankings_surface_families": 167,
     "benchmark_cost_families": 117,
     "session_cost_families": 45,
     "union_secondary_covered": 124,
-    "uncovered": 211,
+    "uncovered": 209,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 211
+    "likely_low_signal_uncovered": 209
   },
   "families": [
     {
@@ -1529,16 +1529,6 @@
     },
     {
       "canonical_family": "perplexity/sonar-reasoning-pro",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "poolside/laguna-s-2.1-20260720",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "poolside/laguna-xs-2.1-20260625",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
