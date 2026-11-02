@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 368,
+    "families_total": 366,
     "rankings_surface_families": 167,
     "benchmark_cost_families": 117,
-    "session_cost_families": 45,
+    "session_cost_families": 44,
     "union_secondary_covered": 124,
-    "uncovered": 209,
+    "uncovered": 207,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 209
+    "likely_low_signal_uncovered": 207
   },
   "families": [
     {
@@ -819,7 +819,8 @@
       "canonical_family": "minimax/minimax-m3.1-flash-20261019",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost"
+        "benchmark_cost",
+        "session_cost"
       ],
       "classification": "covered"
     },
@@ -876,7 +877,8 @@
     {
       "canonical_family": "mistralai/mistral-large-4-0-20261006",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "session_cost"
       ],
       "classification": "covered"
     },
@@ -980,8 +982,7 @@
       "canonical_family": "moonshotai/kimi-k2.6-20260420",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost",
-        "session_cost"
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -1032,16 +1033,6 @@
       "classification": "likely_low_signal"
     },
     {
-      "canonical_family": "nousresearch/hermes-3-llama-3.1-405b",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "nousresearch/hermes-3-llama-3.1-70b",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
       "canonical_family": "nousresearch/hermes-4-405b",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -1070,8 +1061,7 @@
     {
       "canonical_family": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
       "covered_by": [
-        "rankings_surface",
-        "benchmark_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },
@@ -1083,7 +1073,8 @@
     {
       "canonical_family": "nvidia/nemotron-3.5-lightning-20260807",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -1319,8 +1310,7 @@
       "canonical_family": "openai/gpt-5.6-sol-20260709",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost",
-        "session_cost"
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -1433,8 +1423,7 @@
     {
       "canonical_family": "openai/gpt-oss-120b",
       "covered_by": [
-        "rankings_surface",
-        "session_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },

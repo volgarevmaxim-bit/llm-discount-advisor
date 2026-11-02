@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-01T11:52:21Z",
-  "total": 416,
-  "total_unique_families": 368,
+  "generated_at": "2026-11-02T13:35:02Z",
+  "total": 414,
+  "total_unique_families": 366,
   "passed": 116,
   "passed_unique_families": 83,
   "normalized": 115,
-  "eligible_after_prefilter": 381,
-  "eligible_unique_families": 333,
+  "eligible_after_prefilter": 379,
+  "eligible_unique_families": 331,
   "rejected": [
     {
       "slug": "~unbiased/pareto-latest",
@@ -1106,14 +1106,6 @@
     },
     {
       "slug": "sao10k/l3.1-euryale-70b",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "nousresearch/hermes-3-llama-3.1-70b",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "nousresearch/hermes-3-llama-3.1-405b",
       "reason": "below_all_thresholds"
     },
     {
