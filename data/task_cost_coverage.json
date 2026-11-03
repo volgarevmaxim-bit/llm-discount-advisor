@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 366,
-    "rankings_surface_families": 167,
+    "families_total": 367,
+    "rankings_surface_families": 171,
     "benchmark_cost_families": 117,
     "session_cost_families": 44,
-    "union_secondary_covered": 124,
+    "union_secondary_covered": 123,
     "uncovered": 207,
     "worthy_uncovered": 0,
     "likely_low_signal_uncovered": 207
@@ -372,6 +372,7 @@
     {
       "canonical_family": "deepseek/deepseek-v4.1-flash-20261017",
       "covered_by": [
+        "rankings_surface",
         "benchmark_cost",
         "session_cost"
       ],
@@ -752,14 +753,17 @@
     {
       "canonical_family": "meta/muse-spark-open-20261015",
       "covered_by": [
+        "rankings_surface",
         "benchmark_cost"
       ],
       "classification": "covered"
     },
     {
       "canonical_family": "meta/muse-wonder-20261012",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "microsoft/phi-4",
@@ -1073,8 +1077,7 @@
     {
       "canonical_family": "nvidia/nemotron-3.5-lightning-20260807",
       "covered_by": [
-        "rankings_surface",
-        "benchmark_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },
@@ -1793,6 +1796,7 @@
     {
       "canonical_family": "reflection/beam-1.0-501b-a23b-20261016",
       "covered_by": [
+        "rankings_surface",
         "benchmark_cost"
       ],
       "classification": "covered"
@@ -2022,6 +2026,7 @@
       "canonical_family": "x-ai/grok-4.7-20260916",
       "covered_by": [
         "rankings_surface",
+        "benchmark_cost",
         "session_cost"
       ],
       "classification": "covered"
@@ -2169,6 +2174,11 @@
     },
     {
       "canonical_family": "z-ai/glm-5.3-flashx-20260918",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "z-ai/glm-5.3-flashx-legal-20261102",
       "covered_by": [],
       "classification": "likely_low_signal"
     },

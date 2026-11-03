@@ -1,28 +1,51 @@
 {
   "schema_version": "1.0",
-  "from": "2026-11-01T11:52:21Z",
-  "to": "2026-11-02T13:35:02Z",
+  "from": "2026-11-02T13:35:02Z",
+  "to": "2026-11-03T12:50:34Z",
   "events": [
     {
-      "type": "discount_action_changed",
-      "profile": "code",
+      "type": "decision_changed",
+      "profile": "chat",
       "before": {
-        "ranking_key": "anthropic/claude-fable-5.1-20260831",
-        "provider": "Azure",
-        "variant_id": "anthropic/claude-fable-5.1",
-        "price": 21.0042187655,
-        "score": 81.6,
+        "ranking_key": "anthropic/claude-opus-5.5-20260921",
+        "provider": "Amazon Bedrock",
+        "variant_id": "anthropic/claude-opus-5.5",
+        "price": 11.5611434323,
+        "score": 58.4,
         "stable": true
       },
       "after": {
-        "ranking_key": "anthropic/claude-fable-5.1-20260831",
-        "provider": "Anthropic",
-        "variant_id": "anthropic/claude-fable-5.1",
-        "price": 23.6350866,
-        "score": 81.6,
+        "ranking_key": "openai/gpt-6-astra-20260903",
+        "provider": "OpenAI",
+        "variant_id": "openai/gpt-6-astra",
+        "price": 4.9577468399,
+        "score": 56.9,
         "stable": true
       },
-      "reason": "Current actionable provider changed."
+      "reason": "Actionable balanced default changed.",
+      "confirmed": false
+    },
+    {
+      "type": "decision_changed",
+      "profile": "longdoc",
+      "before": {
+        "ranking_key": "anthropic/claude-opus-5.5-20260921",
+        "provider": "Amazon Bedrock",
+        "variant_id": "anthropic/claude-opus-5.5",
+        "price": 11.5611434323,
+        "score": 58.4,
+        "stable": true
+      },
+      "after": {
+        "ranking_key": "openai/gpt-6-astra-20260903",
+        "provider": "OpenAI",
+        "variant_id": "openai/gpt-6-astra",
+        "price": 4.9577468399,
+        "score": 56.9,
+        "stable": true
+      },
+      "reason": "Actionable balanced default changed.",
+      "confirmed": false
     }
   ],
   "status": "compared"

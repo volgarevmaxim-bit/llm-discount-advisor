@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-02T13:35:02Z",
-  "total": 414,
-  "total_unique_families": 366,
-  "passed": 116,
+  "generated_at": "2026-11-03T12:50:34Z",
+  "total": 415,
+  "total_unique_families": 367,
+  "passed": 115,
   "passed_unique_families": 83,
-  "normalized": 115,
-  "eligible_after_prefilter": 379,
-  "eligible_unique_families": 331,
+  "normalized": 114,
+  "eligible_after_prefilter": 380,
+  "eligible_unique_families": 332,
   "rejected": [
     {
       "slug": "~unbiased/pareto-latest",
@@ -149,6 +149,10 @@
       "reason": "non_text_output"
     },
     {
+      "slug": "z-ai/glm-5.3-flashx-legal",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "particle-ai/particle-1",
       "reason": "below_all_thresholds"
     },
@@ -162,10 +166,6 @@
     },
     {
       "slug": "elorian/glimpse",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "reflection/beam-1.0-501b-a23b",
       "reason": "below_all_thresholds"
     },
     {
@@ -366,6 +366,14 @@
     },
     {
       "slug": "qwen/qwen3.7-flash",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "google/gemini-3.5-flash-lite",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "google/gemini-3.5-flash-lite:batch",
       "reason": "below_all_thresholds"
     },
     {

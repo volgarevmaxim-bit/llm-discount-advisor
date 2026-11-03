@@ -1,8 +1,8 @@
-# LLM Discount Advisor — отчёт от 2026-11-02
+# LLM Discount Advisor — отчёт от 2026-11-03
 
 Decision-support для выбора модели и provider/variant в Hermes.
 
-Legacy snapshot: **414** строк каталога / **366** семейств; после scope gate прошло **116** строк / **83** семейств.
+Legacy snapshot: **415** строк каталога / **367** семейств; после scope gate прошло **115** строк / **83** семейств.
 
 ## Decision surface
 
@@ -16,46 +16,46 @@ Discount не умножается на observed `costPerRequest`; до подт
 ### Профиль `chat`
 
 Quality: `intelligence`; floor: —.
-Candidates: 2; raw Pareto: 1; stable Pareto: 2.
-- balanced default: `anthropic/claude-opus-5.5-20260921` / Amazon Bedrock / $11.5611434323 / score 58.4
-- cost option: `anthropic/claude-opus-5.5-20260921` / Amazon Bedrock / $11.5611434323 / score 58.4
-- quality option: `anthropic/claude-opus-5.5-20260921` / Amazon Bedrock / $11.5611434323 / score 58.4
+Candidates: 2; raw Pareto: 2; stable Pareto: 2.
+- balanced default: `openai/gpt-6-astra-20260903` / OpenAI / $4.9577468399 / score 56.9
+- cost option: `openai/gpt-6-astra-20260903` / OpenAI / $4.9577468399 / score 56.9
+- quality option: `anthropic/claude-opus-5.5-20260921` / Amazon Bedrock / $9.2172404231 / score 58.4
 
 ### Профиль `code`
 
 Quality: `coding`; floor: —.
-Candidates: 34; raw Pareto: 6; stable Pareto: 17.
-- balanced default: `anthropic/claude-fable-5.1-20260831` / Anthropic / $23.6350866 / score 81.6
-- cost option: `deepseek/deepseek-v4-flash-20260731` / Relace / $0.0602900182 / score 69.1
-- quality option: `anthropic/claude-fable-5.1-20260831` / Anthropic / $23.6350866 / score 81.6
+Candidates: 34; raw Pareto: 6; stable Pareto: 13.
+- balanced default: `anthropic/claude-fable-5.1-20260831` / Anthropic / $27.7142890211 / score 81.6
+- cost option: `deepseek/deepseek-v4-flash-20260731` / Relace / $0.0577964011 / score 69.1
+- quality option: `anthropic/claude-fable-5.1-20260831` / Anthropic / $27.7142890211 / score 81.6
 
 ### Профиль `agentic`
 
 Quality: `agentic`; floor: —.
-Candidates: 14; raw Pareto: 5; stable Pareto: 6.
-- balanced default: `qwen/qwen3.8-max-20260902` / Alibaba / $4.1997724723 / score 56.0
-- cost option: `z-ai/glm-5.3-flash-20260826` / Relace / $0.1082328428 / score 50.9
-- quality option: `anthropic/claude-fable-5.1-20260831` / Anthropic / $23.6350866 / score 57.9
+Candidates: 14; raw Pareto: 7; stable Pareto: 7.
+- balanced default: `qwen/qwen3.8-max-20260902` / Alibaba / $2.3229045152 / score 56.0
+- cost option: `qwen/qwen3.8-27b-20260814` / PrimeIntellect / $0.1955775714 / score 45.8
+- quality option: `anthropic/claude-fable-5.1-20260831` / Anthropic / $27.7142890211 / score 57.9
 
 ### Профиль `longdoc`
 
 Quality: `intelligence`; floor: —.
-Candidates: 2; raw Pareto: 1; stable Pareto: 2.
-- balanced default: `anthropic/claude-opus-5.5-20260921` / Amazon Bedrock / $11.5611434323 / score 58.4
-- cost option: `anthropic/claude-opus-5.5-20260921` / Amazon Bedrock / $11.5611434323 / score 58.4
-- quality option: `anthropic/claude-opus-5.5-20260921` / Amazon Bedrock / $11.5611434323 / score 58.4
+Candidates: 2; raw Pareto: 2; stable Pareto: 2.
+- balanced default: `openai/gpt-6-astra-20260903` / OpenAI / $4.9577468399 / score 56.9
+- cost option: `openai/gpt-6-astra-20260903` / OpenAI / $4.9577468399 / score 56.9
+- quality option: `anthropic/claude-opus-5.5-20260921` / Amazon Bedrock / $9.2172404231 / score 58.4
 
 ### Профиль `bulk`
 
 Quality: `intelligence`; floor: —.
 Candidates: 2; raw Pareto: 1; stable Pareto: 1.
-- balanced default: `openai/gpt-6.1-terra-20261026` / OpenAI / $0.9513352518 / score 51.0
-- cost option: `openai/gpt-6.1-terra-20261026` / OpenAI / $0.9513352518 / score 51.0
-- quality option: `openai/gpt-6.1-terra-20261026` / OpenAI / $0.9513352518 / score 51.0
+- balanced default: `openai/gpt-6.1-terra-20261026` / OpenAI / $0.8965659907 / score 51.0
+- cost option: `openai/gpt-6.1-terra-20261026` / OpenAI / $0.8965659907 / score 51.0
+- quality option: `openai/gpt-6.1-terra-20261026` / OpenAI / $0.8965659907 / score 51.0
 
 ### Secondary evidence coverage
 
-Families total: 366; uncovered: 207;
+Families total: 367; uncovered: 207;
 `worthy_candidate`: 0; `likely_low_signal`: 207.
 Benchmark `avg_cost_per_task` и session-cost остаются разными units и не входят в primary Pareto.
 
@@ -66,7 +66,7 @@ Status: `not_applied`; requires confirmation: `True`.
 
 ### Что изменилось
 
-Status: `compared`; events: 1.
+Status: `compared`; events: 2.
 
 ## Legacy shortlist
 
@@ -77,17 +77,17 @@ Status: `compared`; events: 1.
 
 ### Код (`code`)
 
-- **Это твой рабочий вариант** — `Z.ai: GLM 5.3 Flash` через Relace: $0.0445/1M, coding 71.5, скидка 50%. Почему: coding 71.5 при цене $0.044/1M; от лидера по качеству отстаёт на 9.2 п. Reasoning: `max`, обязателен.
-- **Та же модель, но дешевле провайдер** — `Z.ai: GLM 5.2` через Morph: $0.4085/1M, coding 68.8, скидка 56%. Почему: У этой же модели есть провайдер дешевле в 4.2 раза при uptime 100.00%. Reasoning: `high`, можно отключить/не указан.
+- **Это твой рабочий вариант** — `Z.ai: GLM 5.3 Flash` через Wafer: $0.0830/1M, coding 71.5, скидка 50%. Почему: coding 71.5 при цене $0.083/1M; от лидера по качеству отстаёт на 9.2 п. Reasoning: `max`, обязателен.
+- **Та же модель, но дешевле провайдер** — `Z.ai: GLM 5.2` через Morph: $0.4153/1M, coding 68.8, скидка 56%. Почему: У этой же модели есть провайдер дешевле в 4.1 раза при uptime 100.00%. Reasoning: `high`, можно отключить/не указан.
 - **Большая скидка, но не для основной работы** — `DeepSeek: DeepSeek V4 Flash 0731` через Relace: $0.0875/1M, coding 69.1, скидка 70%. Почему: Скидка 70% активна, но качество 69.1 требует осторожной проверки. Reasoning: `high`, можно отключить/не указан.
-- **Скорее всего, менять не стоит** — `Qwen: Qwen3.8 27B` через PrimeIntellect: $0.2063/1M, coding 68.1, скидка 25%. Почему: Преимущество не окупает смену: цена $0.206/1M без минимум 30% экономии относительно дефолта. Reasoning: `xhigh`, можно отключить/не указан.
+- **Скорее всего, менять не стоит** — `Qwen: Qwen3.8 27B` через PrimeIntellect: $0.1303/1M, coding 68.1, скидка 40%. Почему: Преимущество не окупает смену: цена $0.130/1M без минимум 30% экономии относительно дефолта. Reasoning: `xhigh`, можно отключить/не указан.
 
 ### Агентный workflow (`agentic`)
 
-- **Это твой рабочий вариант** — `Z.ai: GLM 5.3 Flash` через Relace: $0.0445/1M, agentic 50.9, скидка 50%. Почему: agentic 50.9 при цене $0.044/1M; от лидера по качеству отстаёт на 6.3 п. Reasoning: `max`, обязателен.
-- **Та же модель, но дешевле провайдер** — `Qwen: Qwen3.8 27B` через PrimeIntellect: $0.2063/1M, agentic 45.8, скидка 25%. Почему: У этой же модели есть провайдер дешевле в 2.8 раза при uptime 99.09%. Reasoning: `xhigh`, можно отключить/не указан.
-- **Большая скидка, но не для основной работы** — `DeepSeek: DeepSeek V4 Flash Vision Exp` через DeepInfra: $0.3234/1M, agentic 47.5, скидка 51%. Почему: Скидка 51% активна, но качество 47.5 требует осторожной проверки. Reasoning: `high`, можно отключить/не указан.
-- **Скорее всего, менять не стоит** — `Z.ai: GLM 5.3` через Wafer: $0.4024/1M, agentic 53.1, скидка 80%. Почему: Преимущество не окупает смену: цена $0.402/1M без минимум 30% экономии относительно дефолта. Reasoning: `max`, обязателен.
+- **Это твой рабочий вариант** — `Z.ai: GLM 5.3 Flash` через Wafer: $0.0830/1M, agentic 50.9, скидка 50%. Почему: agentic 50.9 при цене $0.083/1M; от лидера по качеству отстаёт на 6.3 п. Reasoning: `max`, обязателен.
+- **Та же модель, но дешевле провайдер** — `Z.ai: GLM 5.3` через Wafer: $0.4024/1M, agentic 53.1, скидка 80%. Почему: У этой же модели есть провайдер дешевле в 2.4 раза при uptime 100.00%. Reasoning: `max`, обязателен.
+- **Большая скидка, но не для основной работы** — `Qwen: Qwen3.8 27B` через PrimeIntellect: $0.1303/1M, agentic 45.8, скидка 40%. Почему: Скидка 40% активна, но качество 45.8 требует осторожной проверки. Reasoning: `xhigh`, можно отключить/не указан.
+- **Скорее всего, менять не стоит** — `DeepSeek: DeepSeek V4 Flash Vision Exp` через DeepInfra: $0.3234/1M, agentic 47.5, скидка 51%. Почему: Преимущество не окупает смену: цена $0.323/1M без минимум 30% экономии относительно дефолта. Reasoning: `high`, можно отключить/не указан.
 
 ### Длинные документы (`longdoc`)
 
