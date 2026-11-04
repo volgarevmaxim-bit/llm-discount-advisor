@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-03T12:50:34Z",
-  "total": 415,
-  "total_unique_families": 367,
-  "passed": 115,
-  "passed_unique_families": 83,
-  "normalized": 114,
-  "eligible_after_prefilter": 380,
-  "eligible_unique_families": 332,
+  "generated_at": "2026-11-04T13:02:00Z",
+  "total": 419,
+  "total_unique_families": 369,
+  "passed": 119,
+  "passed_unique_families": 84,
+  "normalized": 118,
+  "eligible_after_prefilter": 384,
+  "eligible_unique_families": 334,
   "rejected": [
     {
       "slug": "~unbiased/pareto-latest",
@@ -149,6 +149,10 @@
       "reason": "non_text_output"
     },
     {
+      "slug": "tencent/hy4",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "z-ai/glm-5.3-flashx-legal",
       "reason": "below_all_thresholds"
     },
@@ -202,6 +206,10 @@
     },
     {
       "slug": "scaledown/extract",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "stepfun/step-5-preview",
       "reason": "below_all_thresholds"
     },
     {
@@ -262,14 +270,6 @@
     },
     {
       "slug": "openai/gpt-6-sol-pro:batch",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "openai/gpt-6-sol",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "openai/gpt-6-sol:batch",
       "reason": "below_all_thresholds"
     },
     {

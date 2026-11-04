@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 367,
-    "rankings_surface_families": 171,
+    "families_total": 369,
+    "rankings_surface_families": 172,
     "benchmark_cost_families": 117,
     "session_cost_families": 44,
     "union_secondary_covered": 123,
-    "uncovered": 207,
+    "uncovered": 209,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 207
+    "likely_low_signal_uncovered": 209
   },
   "families": [
     {
@@ -1372,6 +1372,7 @@
     {
       "canonical_family": "openai/gpt-6-sol-20260922",
       "covered_by": [
+        "rankings_surface",
         "benchmark_cost"
       ],
       "classification": "covered"
@@ -1857,6 +1858,11 @@
       "classification": "likely_low_signal"
     },
     {
+      "canonical_family": "stealth/crouton-alpha",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
       "canonical_family": "stepfun/step-3.5-flash",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -1906,6 +1912,11 @@
         "rankings_surface"
       ],
       "classification": "covered"
+    },
+    {
+      "canonical_family": "tencent/hy4-20261104",
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "tencent/hy4-preview-20260827",
