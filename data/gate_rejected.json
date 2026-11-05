@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-04T13:02:00Z",
-  "total": 419,
-  "total_unique_families": 369,
-  "passed": 119,
-  "passed_unique_families": 84,
-  "normalized": 118,
-  "eligible_after_prefilter": 384,
-  "eligible_unique_families": 334,
+  "generated_at": "2026-11-05T13:16:14Z",
+  "total": 415,
+  "total_unique_families": 367,
+  "passed": 118,
+  "passed_unique_families": 85,
+  "normalized": 117,
+  "eligible_after_prefilter": 380,
+  "eligible_unique_families": 332,
   "rejected": [
     {
       "slug": "~unbiased/pareto-latest",
@@ -149,7 +149,7 @@
       "reason": "non_text_output"
     },
     {
-      "slug": "tencent/hy4",
+      "slug": "ricursiveai/ripple-65b-preview",
       "reason": "below_all_thresholds"
     },
     {
@@ -362,6 +362,10 @@
     },
     {
       "slug": "meta/muse-glimmer-30b",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "thinkingmachines/inkling-small",
       "reason": "below_all_thresholds"
     },
     {
@@ -609,10 +613,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "minimax/minimax-m2-her",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "writer/palmyra-x5",
       "reason": "below_all_thresholds"
     },
@@ -630,10 +630,6 @@
     },
     {
       "slug": "bytedance-seed/seed-1.6",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "minimax/minimax-m2.1",
       "reason": "below_all_thresholds"
     },
     {
@@ -734,10 +730,6 @@
     },
     {
       "slug": "openai/gpt-oss-safeguard-20b",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "minimax/minimax-m2",
       "reason": "below_all_thresholds"
     },
     {
@@ -1034,10 +1026,6 @@
     },
     {
       "slug": "perplexity/sonar",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "minimax/minimax-01",
       "reason": "below_all_thresholds"
     },
     {

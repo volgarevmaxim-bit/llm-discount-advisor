@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 369,
-    "rankings_surface_families": 172,
-    "benchmark_cost_families": 117,
+    "families_total": 367,
+    "rankings_surface_families": 173,
+    "benchmark_cost_families": 108,
     "session_cost_families": 44,
-    "union_secondary_covered": 123,
-    "uncovered": 209,
+    "union_secondary_covered": 113,
+    "uncovered": 207,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 209
+    "likely_low_signal_uncovered": 207
   },
   "families": [
     {
@@ -293,8 +293,10 @@
     },
     {
       "canonical_family": "deepseek/deepseek-r1-0528",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "benchmark_cost"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "deepseek/deepseek-v3.1-terminus",
@@ -633,6 +635,13 @@
       "classification": "covered"
     },
     {
+      "canonical_family": "inclusionai/ling-3.0-tiny-20260806",
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
+    },
+    {
       "canonical_family": "inclusionai/ling-3.1-flash-20261002",
       "covered_by": [
         "benchmark_cost"
@@ -771,27 +780,7 @@
       "classification": "likely_low_signal"
     },
     {
-      "canonical_family": "minimax/minimax-01",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
       "canonical_family": "minimax/minimax-m1",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "minimax/minimax-m2",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "minimax/minimax-m2-her-20260123",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "minimax/minimax-m2.1",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
@@ -923,7 +912,8 @@
     {
       "canonical_family": "mistralai/mistral-small-2603",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -1012,6 +1002,7 @@
       "canonical_family": "moonshotai/kimi-k3.1-pro-20261023",
       "covered_by": [
         "rankings_surface",
+        "benchmark_cost",
         "session_cost"
       ],
       "classification": "covered"
@@ -1091,10 +1082,8 @@
     },
     {
       "canonical_family": "nvidia/switchyard",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "openai/gpt-3.5-turbo-0613",
@@ -1271,7 +1260,8 @@
     {
       "canonical_family": "openai/gpt-5.4-nano-20260317",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -1455,10 +1445,8 @@
     },
     {
       "canonical_family": "openrouter/auto",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "openrouter/auto-beta",
@@ -1575,7 +1563,8 @@
     {
       "canonical_family": "qwen/qwen3-235b-a22b-thinking-2507",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -1614,7 +1603,8 @@
     {
       "canonical_family": "qwen/qwen3-coder-next-2025-02-03",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -1823,6 +1813,11 @@
       "classification": "likely_low_signal"
     },
     {
+      "canonical_family": "ricursiveai/ripple-65b-preview-20261104",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
       "canonical_family": "sakana/fugu-max-20260911",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -1915,8 +1910,10 @@
     },
     {
       "canonical_family": "tencent/hy4-20261104",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "tencent/hy4-preview-20260827",
@@ -1959,10 +1956,8 @@
     },
     {
       "canonical_family": "typesafe/jev-router",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "unbiased/pareto-26.10-20261015",
