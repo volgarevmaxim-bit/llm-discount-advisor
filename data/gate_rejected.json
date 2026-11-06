@@ -1,13 +1,21 @@
 {
-  "generated_at": "2026-11-05T13:16:14Z",
-  "total": 415,
-  "total_unique_families": 367,
+  "generated_at": "2026-11-06T12:59:14Z",
+  "total": 417,
+  "total_unique_families": 370,
   "passed": 118,
-  "passed_unique_families": 85,
+  "passed_unique_families": 86,
   "normalized": 117,
-  "eligible_after_prefilter": 380,
+  "eligible_after_prefilter": 379,
   "eligible_unique_families": 332,
   "rejected": [
+    {
+      "slug": "google/gemini-omni-1.2-flash-20261105",
+      "reason": "non_text_output"
+    },
+    {
+      "slug": "google/gemini-omni-1.1-flash-20260911",
+      "reason": "non_text_output"
+    },
     {
       "slug": "~unbiased/pareto-latest",
       "reason": "alias"
@@ -141,11 +149,15 @@
       "reason": "non_text_output"
     },
     {
-      "slug": "openrouter/auto-beta",
+      "slug": "openrouter/auto",
       "reason": "non_text_output"
     },
     {
-      "slug": "openrouter/auto",
+      "slug": "openrouter/auto-code",
+      "reason": "non_text_output"
+    },
+    {
+      "slug": "openrouter/auto-beta",
       "reason": "non_text_output"
     },
     {
@@ -246,10 +258,6 @@
     },
     {
       "slug": "aion-labs/aion-3.5",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "upstage/solar-mini4",
       "reason": "below_all_thresholds"
     },
     {
@@ -421,6 +429,10 @@
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "nvidia/nemotron-3.5-content-safety",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "x-ai/grok-build-0.1",
       "reason": "below_all_thresholds"
     },
@@ -518,10 +530,6 @@
     },
     {
       "slug": "z-ai/glm-5-turbo",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "nvidia/nemotron-3-super-120b-a12b",
       "reason": "below_all_thresholds"
     },
     {

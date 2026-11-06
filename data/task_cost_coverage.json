@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 367,
+    "families_total": 370,
     "rankings_surface_families": 173,
     "benchmark_cost_families": 108,
     "session_cost_families": 44,
     "union_secondary_covered": 113,
-    "uncovered": 207,
+    "uncovered": 210,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 207
+    "likely_low_signal_uncovered": 210
   },
   "families": [
     {
@@ -534,6 +534,16 @@
     },
     {
       "canonical_family": "google/gemini-nano-banana-2.1-20261006",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "google/gemini-omni-1.1-flash-20260911",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "google/gemini-omni-1.2-flash-20261105",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
@@ -1450,6 +1460,11 @@
     },
     {
       "canonical_family": "openrouter/auto-beta",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "openrouter/auto-code",
       "covered_by": [],
       "classification": "likely_low_signal"
     },

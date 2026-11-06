@@ -1,29 +1,7 @@
 {
   "schema_version": "1.0",
-  "from": "2026-11-04T13:02:00Z",
-  "to": "2026-11-05T13:16:14Z",
-  "events": [
-    {
-      "type": "discount_action_changed",
-      "profile": "bulk",
-      "before": {
-        "ranking_key": "openai/gpt-6.1-terra-20261026",
-        "provider": "Azure",
-        "variant_id": "openai/gpt-6.1-terra",
-        "price": 0.5311021991,
-        "score": 51.3,
-        "stable": true
-      },
-      "after": {
-        "ranking_key": "openai/gpt-6.1-terra-20261026",
-        "provider": "OpenAI",
-        "variant_id": "openai/gpt-6.1-terra",
-        "price": 0.9479842009,
-        "score": 51.3,
-        "stable": true
-      },
-      "reason": "Current actionable provider changed."
-    }
-  ],
+  "from": "2026-11-05T13:16:14Z",
+  "to": "2026-11-06T12:59:14Z",
+  "events": [],
   "status": "compared"
 }
