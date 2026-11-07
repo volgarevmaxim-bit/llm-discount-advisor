@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-06T12:59:14Z",
-  "total": 417,
-  "total_unique_families": 370,
-  "passed": 118,
+  "generated_at": "2026-11-07T11:46:03Z",
+  "total": 424,
+  "total_unique_families": 371,
+  "passed": 122,
   "passed_unique_families": 86,
-  "normalized": 117,
-  "eligible_after_prefilter": 379,
-  "eligible_unique_families": 332,
+  "normalized": 121,
+  "eligible_after_prefilter": 386,
+  "eligible_unique_families": 333,
   "rejected": [
     {
       "slug": "google/gemini-omni-1.2-flash-20261105",
@@ -182,6 +182,10 @@
     },
     {
       "slug": "elorian/glimpse",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "reflection/beam-1.0-501b-a23b",
       "reason": "below_all_thresholds"
     },
     {
@@ -373,7 +377,15 @@
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "meta/muse-glimmer-30b:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "thinkingmachines/inkling-small",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "thinkingmachines/inkling-small:batch",
       "reason": "below_all_thresholds"
     },
     {

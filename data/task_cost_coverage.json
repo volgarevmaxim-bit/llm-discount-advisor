@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 370,
+    "families_total": 371,
     "rankings_surface_families": 173,
     "benchmark_cost_families": 108,
     "session_cost_families": 44,
-    "union_secondary_covered": 113,
-    "uncovered": 210,
+    "union_secondary_covered": 114,
+    "uncovered": 211,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 210
+    "likely_low_signal_uncovered": 211
   },
   "families": [
     {
@@ -84,7 +84,6 @@
       "canonical_family": "anthropic/claude-4.5-haiku-20251001",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost",
         "session_cost"
       ],
       "classification": "covered"
@@ -677,6 +676,11 @@
     },
     {
       "canonical_family": "liquid/lfm-2.5-24b-a2b-20261012",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "liquid/lfm-3-1.7b-20261106",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
@@ -1427,7 +1431,8 @@
     {
       "canonical_family": "openai/gpt-oss-120b",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
