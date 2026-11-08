@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-07T11:46:03Z",
-  "total": 424,
-  "total_unique_families": 371,
+  "generated_at": "2026-11-08T11:58:03Z",
+  "total": 425,
+  "total_unique_families": 368,
   "passed": 122,
-  "passed_unique_families": 86,
+  "passed_unique_families": 84,
   "normalized": 121,
-  "eligible_after_prefilter": 386,
-  "eligible_unique_families": 333,
+  "eligible_after_prefilter": 387,
+  "eligible_unique_families": 330,
   "rejected": [
     {
       "slug": "google/gemini-omni-1.2-flash-20261105",
@@ -325,10 +325,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "inception/mercury-2.5",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "nex-agi/nex-n2.5-mini",
       "reason": "below_all_thresholds"
     },
@@ -561,10 +557,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "inception/mercury-2",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "google/gemini-3.1-flash-lite-preview",
       "reason": "below_all_thresholds"
     },
@@ -618,6 +610,10 @@
     },
     {
       "slug": "z-ai/glm-5",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "anthropic/claude-opus-4.6",
       "reason": "below_all_thresholds"
     },
     {
@@ -905,7 +901,15 @@
       "reason": "below_all_thresholds"
     },
     {
+      "slug": "morph/morph-v3-large:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "morph/morph-v3-fast",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "morph/morph-v3-fast:batch",
       "reason": "below_all_thresholds"
     },
     {

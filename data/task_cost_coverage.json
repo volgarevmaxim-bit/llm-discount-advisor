@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 371,
+    "families_total": 368,
     "rankings_surface_families": 173,
     "benchmark_cost_families": 108,
     "session_cost_families": 44,
     "union_secondary_covered": 114,
-    "uncovered": 211,
+    "uncovered": 209,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 211
+    "likely_low_signal_uncovered": 209
   },
   "families": [
     {
@@ -609,23 +609,6 @@
         "rankings_surface"
       ],
       "classification": "covered"
-    },
-    {
-      "canonical_family": "inception/mercury-2-20260304",
-      "covered_by": [
-        "rankings_surface"
-      ],
-      "classification": "covered"
-    },
-    {
-      "canonical_family": "inception/mercury-2.5-20260908",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "inception/mercury-3-20261019",
-      "covered_by": [],
-      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "inclusionai/ling-3.0-flash-20260723",
