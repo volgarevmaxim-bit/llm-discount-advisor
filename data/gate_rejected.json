@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-08T11:58:03Z",
+  "generated_at": "2026-11-09T13:57:52Z",
   "total": 425,
   "total_unique_families": 368,
-  "passed": 122,
-  "passed_unique_families": 84,
-  "normalized": 121,
+  "passed": 123,
+  "passed_unique_families": 85,
+  "normalized": 122,
   "eligible_after_prefilter": 387,
   "eligible_unique_families": 330,
   "rejected": [
@@ -1138,10 +1138,6 @@
     },
     {
       "slug": "meta-llama/llama-3.1-70b-instruct",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "meta-llama/llama-3.1-8b-instruct",
       "reason": "below_all_thresholds"
     },
     {
