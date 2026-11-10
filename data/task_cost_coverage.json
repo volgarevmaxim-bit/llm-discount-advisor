@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 368,
-    "rankings_surface_families": 173,
+    "families_total": 370,
+    "rankings_surface_families": 175,
     "benchmark_cost_families": 108,
     "session_cost_families": 44,
     "union_secondary_covered": 114,
@@ -154,6 +154,13 @@
         "rankings_surface",
         "benchmark_cost",
         "session_cost"
+      ],
+      "classification": "covered"
+    },
+    {
+      "canonical_family": "anthropic/claude-fable-5.2-20261109",
+      "covered_by": [
+        "rankings_surface"
       ],
       "classification": "covered"
     },
@@ -728,6 +735,11 @@
       "classification": "likely_low_signal"
     },
     {
+      "canonical_family": "meta/muse-ember-20261109",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
       "canonical_family": "meta/muse-glimmer-30b-20260810",
       "covered_by": [
         "rankings_surface",
@@ -773,11 +785,6 @@
     },
     {
       "canonical_family": "microsoft/phi-4",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "minimax/minimax-m1",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
@@ -1021,6 +1028,11 @@
     },
     {
       "canonical_family": "nex-agi/nex-n2.5-pro-20260907",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "nex-agi/nex-n2.6-20261110",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
@@ -1856,11 +1868,6 @@
       "classification": "likely_low_signal"
     },
     {
-      "canonical_family": "stealth/crouton-alpha",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
       "canonical_family": "stepfun/step-3.5-flash",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -1940,6 +1947,13 @@
       "canonical_family": "thedrummer/unslopnemo-12b",
       "covered_by": [],
       "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "thinkingmachines/inkling-2-small-20261107",
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "thinkingmachines/inkling-20260715",
