@@ -1,52 +1,7 @@
 {
   "schema_version": "1.0",
-  "from": "2026-11-09T13:57:52Z",
-  "to": "2026-11-10T13:30:58Z",
-  "events": [
-    {
-      "type": "decision_changed",
-      "profile": "chat",
-      "before": {
-        "ranking_key": "anthropic/claude-opus-5.5-20260921",
-        "provider": "Amazon Bedrock",
-        "variant_id": "anthropic/claude-opus-5.5",
-        "price": 11.0384362229,
-        "score": 59.1,
-        "stable": true
-      },
-      "after": {
-        "ranking_key": "anthropic/claude-fable-5.2-20261109",
-        "provider": "Google",
-        "variant_id": "anthropic/claude-fable-5.2",
-        "price": 18.1504028216,
-        "score": 64.6,
-        "stable": true
-      },
-      "reason": "Actionable balanced default changed.",
-      "confirmed": false
-    },
-    {
-      "type": "decision_changed",
-      "profile": "longdoc",
-      "before": {
-        "ranking_key": "anthropic/claude-opus-5.5-20260921",
-        "provider": "Amazon Bedrock",
-        "variant_id": "anthropic/claude-opus-5.5",
-        "price": 11.0384362229,
-        "score": 59.1,
-        "stable": true
-      },
-      "after": {
-        "ranking_key": "anthropic/claude-fable-5.2-20261109",
-        "provider": "Google",
-        "variant_id": "anthropic/claude-fable-5.2",
-        "price": 18.1504028216,
-        "score": 64.6,
-        "stable": true
-      },
-      "reason": "Actionable balanced default changed.",
-      "confirmed": false
-    }
-  ],
+  "from": "2026-11-10T13:30:58Z",
+  "to": "2026-11-11T12:45:35Z",
+  "events": [],
   "status": "compared"
 }

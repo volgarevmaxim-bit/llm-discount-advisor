@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 370,
-    "rankings_surface_families": 175,
-    "benchmark_cost_families": 108,
+    "families_total": 373,
+    "rankings_surface_families": 177,
+    "benchmark_cost_families": 109,
     "session_cost_families": 44,
-    "union_secondary_covered": 114,
-    "uncovered": 209,
+    "union_secondary_covered": 115,
+    "uncovered": 210,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 209
+    "likely_low_signal_uncovered": 210
   },
   "families": [
     {
@@ -160,7 +160,8 @@
     {
       "canonical_family": "anthropic/claude-fable-5.2-20261109",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -208,6 +209,16 @@
         "session_cost"
       ],
       "classification": "covered"
+    },
+    {
+      "canonical_family": "baidu/ernie-5.5-flash-preview-20261110",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "baidu/ernie-light-dt-1.0-intl-20261110",
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "bytedance-seed/seed-1.6-20250625",
@@ -539,6 +550,13 @@
       "classification": "covered"
     },
     {
+      "canonical_family": "google/gemini-4-carbon-20261110",
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
+    },
+    {
       "canonical_family": "google/gemini-nano-banana-2.1-20261006",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -654,6 +672,11 @@
     },
     {
       "canonical_family": "inference-net/schematron-v2-turbo-20260902",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "kt/midm-k-3.0-pro",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
@@ -1020,6 +1043,13 @@
       "canonical_family": "morph/morph-v3-large",
       "covered_by": [],
       "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "motif-technologies/motif-3",
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "nex-agi/nex-n2.5-mini-20260908",
@@ -1426,8 +1456,7 @@
     {
       "canonical_family": "openai/gpt-oss-120b",
       "covered_by": [
-        "rankings_surface",
-        "benchmark_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },
@@ -1544,11 +1573,6 @@
       "classification": "likely_low_signal"
     },
     {
-      "canonical_family": "qwen/qwen-2.5-7b-instruct",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
       "canonical_family": "qwen/qwen-2.5-coder-32b-instruct",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -1618,8 +1642,7 @@
     {
       "canonical_family": "qwen/qwen3-coder-next-2025-02-03",
       "covered_by": [
-        "rankings_surface",
-        "benchmark_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },
@@ -1921,7 +1944,8 @@
     {
       "canonical_family": "tencent/hy4-20261104",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -1999,7 +2023,8 @@
     {
       "canonical_family": "upstage/solar-pro4-20260810",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -2097,11 +2122,6 @@
     },
     {
       "canonical_family": "xiaomi/mimo-v2.6-pro-ultraspeed-20260921",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "xingchen-agi/xing4.0-29b-a4b-20261015",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
