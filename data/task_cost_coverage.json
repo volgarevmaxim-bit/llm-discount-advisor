@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 373,
+    "families_total": 371,
     "rankings_surface_families": 177,
     "benchmark_cost_families": 109,
     "session_cost_families": 44,
     "union_secondary_covered": 115,
-    "uncovered": 210,
+    "uncovered": 208,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 210
+    "likely_low_signal_uncovered": 208
   },
   "families": [
     {
@@ -221,22 +221,7 @@
       "classification": "likely_low_signal"
     },
     {
-      "canonical_family": "bytedance-seed/seed-1.6-20250625",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "bytedance-seed/seed-1.6-flash-20250625",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
       "canonical_family": "bytedance-seed/seed-2-1-turbo-20260810",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "bytedance-seed/seed-2.0-code-20260730",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
@@ -2002,6 +1987,11 @@
     },
     {
       "canonical_family": "unbiased/pareto-26.10-20261015",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "unbiased/pareto-26.10-preview-20260929",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
