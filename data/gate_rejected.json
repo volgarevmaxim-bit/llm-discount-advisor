@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-12T13:48:39Z",
-  "total": 432,
+  "generated_at": "2026-11-13T13:10:16Z",
+  "total": 435,
   "total_unique_families": 371,
-  "passed": 131,
-  "passed_unique_families": 89,
-  "normalized": 130,
-  "eligible_after_prefilter": 394,
+  "passed": 134,
+  "passed_unique_families": 90,
+  "normalized": 133,
+  "eligible_after_prefilter": 397,
   "eligible_unique_families": 333,
   "rejected": [
     {
@@ -161,6 +161,14 @@
       "reason": "non_text_output"
     },
     {
+      "slug": "google/gemini-4-hydrogen",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "google/gemini-4-hydrogen:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "baidu/ernie-light-dt-1.0-intl",
       "reason": "below_all_thresholds"
     },
@@ -182,10 +190,6 @@
     },
     {
       "slug": "z-ai/glm-5.3-flashx-legal",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "particle-ai/particle-1",
       "reason": "below_all_thresholds"
     },
     {
@@ -558,10 +562,6 @@
     },
     {
       "slug": "bytedance-seed/seed-2.0-lite",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "qwen/qwen3.5-9b",
       "reason": "below_all_thresholds"
     },
     {

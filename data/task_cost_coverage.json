@@ -3,9 +3,9 @@
   "counts": {
     "families_total": 371,
     "rankings_surface_families": 177,
-    "benchmark_cost_families": 109,
+    "benchmark_cost_families": 110,
     "session_cost_families": 44,
-    "union_secondary_covered": 115,
+    "union_secondary_covered": 116,
     "uncovered": 208,
     "worthy_uncovered": 0,
     "likely_low_signal_uncovered": 208
@@ -542,6 +542,11 @@
       "classification": "covered"
     },
     {
+      "canonical_family": "google/gemini-4-hydrogen-20261112",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
       "canonical_family": "google/gemini-nano-banana-2.1-20261006",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -664,13 +669,6 @@
       "canonical_family": "kt/midm-k-3.0-pro",
       "covered_by": [],
       "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "liquid/lfm-2.5-2.6b-20260811",
-      "covered_by": [
-        "rankings_surface"
-      ],
-      "classification": "covered"
     },
     {
       "canonical_family": "liquid/lfm-2.5-24b-a2b-20261012",
@@ -924,8 +922,7 @@
     {
       "canonical_family": "mistralai/mistral-small-2603",
       "covered_by": [
-        "rankings_surface",
-        "benchmark_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },
@@ -1960,7 +1957,8 @@
     {
       "canonical_family": "thinkingmachines/inkling-2-small-20261107",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -2207,8 +2205,10 @@
     },
     {
       "canonical_family": "z-ai/glm-5.3-flashx-20260918",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "benchmark_cost"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "z-ai/glm-5.3-flashx-legal-20261102",
