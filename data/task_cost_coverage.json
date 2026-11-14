@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 371,
-    "rankings_surface_families": 177,
-    "benchmark_cost_families": 110,
+    "families_total": 372,
+    "rankings_surface_families": 179,
+    "benchmark_cost_families": 108,
     "session_cost_families": 44,
-    "union_secondary_covered": 116,
-    "uncovered": 208,
+    "union_secondary_covered": 114,
+    "uncovered": 210,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 208
+    "likely_low_signal_uncovered": 210
   },
   "families": [
     {
@@ -295,10 +295,8 @@
     },
     {
       "canonical_family": "deepseek/deepseek-r1-0528",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "deepseek/deepseek-v3.1-terminus",
@@ -543,8 +541,10 @@
     },
     {
       "canonical_family": "google/gemini-4-hydrogen-20261112",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "google/gemini-nano-banana-2.1-20261006",
@@ -651,9 +651,15 @@
     {
       "canonical_family": "inclusionai/ling-3.1-flash-20261002",
       "covered_by": [
+        "rankings_surface",
         "benchmark_cost"
       ],
       "classification": "covered"
+    },
+    {
+      "canonical_family": "inclusionai/ling-3.2-flash-20261113",
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "inference-net/schematron-v2-small-20260902",
@@ -2151,10 +2157,8 @@
     },
     {
       "canonical_family": "z-ai/glm-4.7-flash-20260119",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "z-ai/glm-5-20260211",
