@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-14T12:15:23Z",
-  "total": 436,
+  "generated_at": "2026-11-15T12:47:35Z",
+  "total": 435,
   "total_unique_families": 372,
   "passed": 137,
-  "passed_unique_families": 92,
+  "passed_unique_families": 93,
   "normalized": 136,
-  "eligible_after_prefilter": 398,
+  "eligible_after_prefilter": 397,
   "eligible_unique_families": 334,
   "rejected": [
     {
@@ -550,10 +550,6 @@
     },
     {
       "slug": "bytedance-seed/seed-2.0-lite",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "qwen/qwen3.5-9b",
       "reason": "below_all_thresholds"
     },
     {
