@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-15T12:47:35Z",
-  "total": 435,
-  "total_unique_families": 372,
+  "generated_at": "2026-11-16T13:43:28Z",
+  "total": 433,
+  "total_unique_families": 370,
   "passed": 137,
   "passed_unique_families": 93,
   "normalized": 136,
-  "eligible_after_prefilter": 397,
-  "eligible_unique_families": 334,
+  "eligible_after_prefilter": 395,
+  "eligible_unique_families": 332,
   "rejected": [
     {
       "slug": "google/gemini-omni-1.2-flash-20261105",
@@ -159,6 +159,10 @@
     {
       "slug": "openrouter/auto-beta",
       "reason": "non_text_output"
+    },
+    {
+      "slug": "qwen/qwen4-max",
+      "reason": "below_all_thresholds"
     },
     {
       "slug": "baidu/ernie-light-dt-1.0-intl",
@@ -621,10 +625,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "stepfun/step-3.5-flash",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "moonshotai/kimi-k2.5",
       "reason": "below_all_thresholds"
     },
@@ -746,10 +746,6 @@
     },
     {
       "slug": "qwen/qwen3-vl-8b-instruct",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "qwen/qwen3-vl-30b-a3b-thinking",
       "reason": "below_all_thresholds"
     },
     {
@@ -882,10 +878,6 @@
     },
     {
       "slug": "cognitivecomputations/dolphin-mistral-24b-venice-edition",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "tencent/hunyuan-a13b-instruct",
       "reason": "below_all_thresholds"
     },
     {

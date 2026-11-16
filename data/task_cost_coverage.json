@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 372,
+    "families_total": 370,
     "rankings_surface_families": 179,
     "benchmark_cost_families": 108,
-    "session_cost_families": 44,
-    "union_secondary_covered": 114,
-    "uncovered": 210,
+    "session_cost_families": 41,
+    "union_secondary_covered": 112,
+    "uncovered": 209,
     "worthy_uncovered": 0,
-    "likely_low_signal_uncovered": 210
+    "likely_low_signal_uncovered": 209
   },
   "families": [
     {
@@ -125,8 +125,7 @@
       "canonical_family": "anthropic/claude-4.7-opus-20260416",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost",
-        "session_cost"
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -143,8 +142,7 @@
       "canonical_family": "anthropic/claude-5-fable-20260609",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost",
-        "session_cost"
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
@@ -161,7 +159,8 @@
       "canonical_family": "anthropic/claude-fable-5.2-20261109",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost"
+        "benchmark_cost",
+        "session_cost"
       ],
       "classification": "covered"
     },
@@ -886,8 +885,7 @@
     {
       "canonical_family": "mistralai/mistral-large-4-0-20261006",
       "covered_by": [
-        "rankings_surface",
-        "session_cost"
+        "rankings_surface"
       ],
       "classification": "covered"
     },
@@ -1417,7 +1415,8 @@
       "canonical_family": "openai/gpt-6.1-terra-20261026",
       "covered_by": [
         "rankings_surface",
-        "benchmark_cost"
+        "benchmark_cost",
+        "session_cost"
       ],
       "classification": "covered"
     },
@@ -1630,7 +1629,8 @@
     {
       "canonical_family": "qwen/qwen3-coder-next-2025-02-03",
       "covered_by": [
-        "rankings_surface"
+        "rankings_surface",
+        "session_cost"
       ],
       "classification": "covered"
     },
@@ -1646,11 +1646,6 @@
     },
     {
       "canonical_family": "qwen/qwen3-vl-30b-a3b-instruct",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
-      "canonical_family": "qwen/qwen3-vl-30b-a3b-thinking",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
@@ -1741,10 +1736,8 @@
     },
     {
       "canonical_family": "qwen/qwen3.7-flash-20260727",
-      "covered_by": [
-        "session_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "qwen/qwen3.7-max-20260520",
@@ -1802,6 +1795,11 @@
     },
     {
       "canonical_family": "qwen/qwen3.8-omni-flash-20260918",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "qwen/qwen4-max-20261115",
       "covered_by": [],
       "classification": "likely_low_signal"
     },
@@ -1879,11 +1877,6 @@
       "classification": "likely_low_signal"
     },
     {
-      "canonical_family": "stepfun/step-3.5-flash",
-      "covered_by": [],
-      "classification": "likely_low_signal"
-    },
-    {
       "canonical_family": "stepfun/step-3.7-flash-20260528",
       "covered_by": [
         "rankings_surface"
@@ -1896,11 +1889,6 @@
         "rankings_surface"
       ],
       "classification": "covered"
-    },
-    {
-      "canonical_family": "tencent/hunyuan-a13b-instruct",
-      "covered_by": [],
-      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "tencent/hy-mt2-1.8b-20260521",
@@ -1940,8 +1928,7 @@
     {
       "canonical_family": "tencent/hy4-preview-20260827",
       "covered_by": [
-        "benchmark_cost",
-        "session_cost"
+        "benchmark_cost"
       ],
       "classification": "covered"
     },
