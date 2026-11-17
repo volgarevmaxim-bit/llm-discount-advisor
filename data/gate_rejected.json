@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-16T13:43:28Z",
-  "total": 433,
-  "total_unique_families": 370,
-  "passed": 137,
-  "passed_unique_families": 93,
-  "normalized": 136,
-  "eligible_after_prefilter": 395,
-  "eligible_unique_families": 332,
+  "generated_at": "2026-11-17T14:31:48Z",
+  "total": 435,
+  "total_unique_families": 371,
+  "passed": 140,
+  "passed_unique_families": 94,
+  "normalized": 139,
+  "eligible_after_prefilter": 397,
+  "eligible_unique_families": 333,
   "rejected": [
     {
       "slug": "google/gemini-omni-1.2-flash-20261105",
@@ -161,6 +161,10 @@
       "reason": "non_text_output"
     },
     {
+      "slug": "tencent/hy4-flash",
+      "reason": "below_all_thresholds"
+    },
+    {
       "slug": "qwen/qwen4-max",
       "reason": "below_all_thresholds"
     },
@@ -214,10 +218,6 @@
     },
     {
       "slug": "moondream/moondream3.1-9b-a2b",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "meta/muse-spark-open",
       "reason": "below_all_thresholds"
     },
     {
@@ -378,14 +378,6 @@
     },
     {
       "slug": "bytedance-seed/seed-2-1-turbo",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "meta/muse-glimmer-30b",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "meta/muse-glimmer-30b:batch",
       "reason": "below_all_thresholds"
     },
     {
@@ -554,6 +546,10 @@
     },
     {
       "slug": "bytedance-seed/seed-2.0-lite",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3.5-9b",
       "reason": "below_all_thresholds"
     },
     {

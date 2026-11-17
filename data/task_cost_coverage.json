@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 370,
+    "families_total": 371,
     "rankings_surface_families": 179,
-    "benchmark_cost_families": 108,
+    "benchmark_cost_families": 109,
     "session_cost_families": 41,
-    "union_secondary_covered": 112,
+    "union_secondary_covered": 113,
     "uncovered": 209,
     "worthy_uncovered": 0,
     "likely_low_signal_uncovered": 209
@@ -294,8 +294,10 @@
     },
     {
       "canonical_family": "deepseek/deepseek-r1-0528",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "benchmark_cost"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "deepseek/deepseek-v3.1-terminus",
@@ -1924,6 +1926,11 @@
         "benchmark_cost"
       ],
       "classification": "covered"
+    },
+    {
+      "canonical_family": "tencent/hy4-flash-20261116",
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "tencent/hy4-preview-20260827",
