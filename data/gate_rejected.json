@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-17T14:31:48Z",
-  "total": 435,
-  "total_unique_families": 371,
-  "passed": 140,
-  "passed_unique_families": 94,
-  "normalized": 139,
-  "eligible_after_prefilter": 397,
-  "eligible_unique_families": 333,
+  "generated_at": "2026-11-18T14:07:47Z",
+  "total": 443,
+  "total_unique_families": 375,
+  "passed": 146,
+  "passed_unique_families": 98,
+  "normalized": 145,
+  "eligible_after_prefilter": 405,
+  "eligible_unique_families": 337,
   "rejected": [
     {
       "slug": "google/gemini-omni-1.2-flash-20261105",
@@ -161,11 +161,23 @@
       "reason": "non_text_output"
     },
     {
-      "slug": "tencent/hy4-flash",
+      "slug": "openai/gpt-6.2-astra-pro",
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "qwen/qwen4-max",
+      "slug": "openai/gpt-6.2-astra-pro:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-6.2-sol-pro",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "openai/gpt-6.2-sol-pro:batch",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "tencent/hy4-flash",
       "reason": "below_all_thresholds"
     },
     {
@@ -177,15 +189,15 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "meta/muse-ember",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "kt/midm-k-3.0-pro",
       "reason": "below_all_thresholds"
     },
     {
       "slug": "ricursiveai/ripple-65b-preview",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "motif-technologies/motif-3",
       "reason": "below_all_thresholds"
     },
     {
@@ -202,10 +214,6 @@
     },
     {
       "slug": "elorian/glimpse",
-      "reason": "below_all_thresholds"
-    },
-    {
-      "slug": "reflection/beam-1.0-501b-a23b",
       "reason": "below_all_thresholds"
     },
     {
@@ -361,10 +369,6 @@
       "reason": "below_all_thresholds"
     },
     {
-      "slug": "qwen/qwen3.8-flash",
-      "reason": "below_all_thresholds"
-    },
-    {
       "slug": "tencent/hy-mt2-1.8b",
       "reason": "below_all_thresholds"
     },
@@ -442,6 +446,10 @@
     },
     {
       "slug": "nvidia/nemotron-3.5-content-safety",
+      "reason": "below_all_thresholds"
+    },
+    {
+      "slug": "qwen/qwen3.7-max",
       "reason": "below_all_thresholds"
     },
     {

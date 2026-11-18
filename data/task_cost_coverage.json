@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
   "counts": {
-    "families_total": 371,
-    "rankings_surface_families": 179,
-    "benchmark_cost_families": 109,
+    "families_total": 375,
+    "rankings_surface_families": 185,
+    "benchmark_cost_families": 108,
     "session_cost_families": 41,
-    "union_secondary_covered": 113,
+    "union_secondary_covered": 112,
     "uncovered": 209,
     "worthy_uncovered": 0,
     "likely_low_signal_uncovered": 209
@@ -294,10 +294,8 @@
     },
     {
       "canonical_family": "deepseek/deepseek-r1-0528",
-      "covered_by": [
-        "benchmark_cost"
-      ],
-      "classification": "covered"
+      "covered_by": [],
+      "classification": "likely_low_signal"
     },
     {
       "canonical_family": "deepseek/deepseek-v3.1-terminus",
@@ -684,8 +682,10 @@
     },
     {
       "canonical_family": "liquid/lfm-3-1.7b-20261106",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "mancer/weaver",
@@ -749,8 +749,10 @@
     },
     {
       "canonical_family": "meta/muse-ember-20261109",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "meta/muse-glimmer-30b-20260810",
@@ -1428,6 +1430,30 @@
       "classification": "likely_low_signal"
     },
     {
+      "canonical_family": "openai/gpt-6.2-astra-20261117",
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
+    },
+    {
+      "canonical_family": "openai/gpt-6.2-astra-pro-20261117",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
+      "canonical_family": "openai/gpt-6.2-sol-20261117",
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
+    },
+    {
+      "canonical_family": "openai/gpt-6.2-sol-pro-20261117",
+      "covered_by": [],
+      "classification": "likely_low_signal"
+    },
+    {
       "canonical_family": "openai/gpt-audio",
       "covered_by": [],
       "classification": "likely_low_signal"
@@ -1777,6 +1803,7 @@
     {
       "canonical_family": "qwen/qwen3.8-flash-20260826",
       "covered_by": [
+        "rankings_surface",
         "benchmark_cost",
         "session_cost"
       ],
@@ -1802,8 +1829,10 @@
     },
     {
       "canonical_family": "qwen/qwen4-max-20261115",
-      "covered_by": [],
-      "classification": "likely_low_signal"
+      "covered_by": [
+        "rankings_surface"
+      ],
+      "classification": "covered"
     },
     {
       "canonical_family": "recursive/flint-v1.0-20261021",
